@@ -22,7 +22,7 @@ const { section, alt = false } = Astro.props;
     <ol class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
       {section.steps.map((step, index) => (
         <li class="card flex flex-col gap-2 reveal" data-index={index}>
-          <p class="eyebrow">{String(index + 1).padStart(2, "0")}</p>
+          <p class="step-index" aria-hidden="true">{String(index + 1).padStart(2, "0")}</p>
           <h3 class="h3">{step.title}</h3>
           <p class="muted">{step.text}</p>
         </li>

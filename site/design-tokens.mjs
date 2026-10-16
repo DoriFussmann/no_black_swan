@@ -3,28 +3,37 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 function guidePath() {
-  const besideModule = join(dirname(fileURLToPath(import.meta.url)), "Design Guide.md");
-  if (existsSync(besideModule)) return besideModule;
-  const fromCwd = join(process.cwd(), "Design Guide.md");
-  if (existsSync(fromCwd)) return fromCwd;
-  throw new Error("Design tokens: missing Design Guide.md.");
+  const siteDir = dirname(fileURLToPath(import.meta.url));
+  const candidates = [
+    join(siteDir, "..", "DESIGN_GUIDE.md"),
+    join(process.cwd(), "..", "DESIGN_GUIDE.md"),
+    join(process.cwd(), "DESIGN_GUIDE.md"),
+  ];
+  for (const candidate of candidates) {
+    if (existsSync(candidate)) return candidate;
+  }
+  throw new Error(
+    'Design tokens: missing DESIGN_GUIDE.md (looked one level above site/, process.cwd()/.., and process.cwd()).',
+  );
 }
 
 const guide = readFileSync(guidePath(), "utf8");
-const match = guide.match(/```tokens\r?\n([\s\S]*?)\r?\n```/);
-if (!match) {
-  throw new Error("Design tokens: missing ```tokens fence in Design Guide.md.");
+const fences = [...guide.matchAll(/```tokens\r?\n([\s\S]*?)\r?\n```/g)];
+if (fences.length !== 1) {
+  throw new Error(
+    `Design tokens: expected a single \`\`\`tokens fence in DESIGN_GUIDE.md, found ${fences.length}.`,
+  );
 }
 
 let parsed;
 try {
-  parsed = JSON.parse(match[1]);
+  parsed = JSON.parse(fences[0][1]);
 } catch (error) {
   const detail = error instanceof Error ? error.message : String(error);
   throw new Error(`Design tokens: the \`\`\`tokens fence is not valid JSON — ${detail}.`);
 }
 
-const TEMPLATES = ["slate", "midnight", "press", "daylight", "night", "field"];
+const TEMPLATES = ["alpine", "heritage", "pristine", "kinetic", "tactile", "nocturne"];
 const COLOR_KEYS = [
   "bg",
   "surface",
@@ -35,6 +44,7 @@ const COLOR_KEYS = [
   "accent",
   "accentHover",
   "accentFg",
+  "accentInk",
   "highlight",
   "band",
   "bandFg",
@@ -43,13 +53,18 @@ const COLOR_KEYS = [
   "headerFg",
   "footerBg",
   "footerFg",
+  "onImage",
   "focus",
 ];
 const HEX = /^#[0-9A-Fa-f]{6}$/;
+const PX = /^\d+(?:\.\d+)?px$/;
+const REM = /^\d+(?:\.\d+)?rem$/;
+const EM = /^-?\d+(?:\.\d+)?em$/;
+const NPM = /^(?:@[a-z0-9][a-z0-9._-]*\/)?[a-z0-9][a-z0-9._-]*$/;
 const DENSITY = {
   compact: { mobile: 40, desktop: 64 },
   regular: { mobile: 56, desktop: 96 },
-  airy: { mobile: 72, desktop: 128 },
+  airy: { mobile: 64, desktop: 104 },
 };
 
 function fail(key, detail) {
@@ -84,34 +99,89 @@ function requireString(value, key) {
   return value;
 }
 
+function requireNonEmpty(value, key) {
+  const text = requireString(value, key);
+  if (!text.trim()) fail(key, "expected a non-empty string");
+  return text;
+}
+
 function requireNumber(value, key) {
-  if (typeof value !== "number" || Number.isNaN(value)) fail(key, "expected a number");
+  if (typeof value !== "number" || Number.isNaN(value) || !Number.isFinite(value)) {
+    fail(key, "expected a number");
+  }
   return value;
 }
 
 function requirePx(value, key) {
   const text = requireString(value, key);
-  if (!/^\d+(?:\.\d+)?px$/.test(text)) fail(key, "expected a px length");
+  if (!PX.test(text)) fail(key, "expected a px length");
   return text;
 }
 
 function requireRem(value, key) {
   const text = requireString(value, key);
-  if (!/^\d+(?:\.\d+)?rem$/.test(text)) fail(key, "expected a rem length");
+  if (!REM.test(text)) fail(key, "expected a rem length");
   return text;
+}
+
+function requireEm(value, key) {
+  const text = requireString(value, key);
+  if (!EM.test(text)) fail(key, "expected an em length");
+  return text;
+}
+
+function requireWeight(value, key) {
+  const weight = requireNumber(value, key);
+  if (!Number.isInteger(weight) || weight < 100 || weight > 900) {
+    fail(key, "expected an integer from 100 to 900");
+  }
+  return weight;
+}
+
+function requireBoolean(value, key) {
+  if (typeof value !== "boolean") fail(key, "expected a boolean");
+  return value;
+}
+
+function requireMs(value, key) {
+  const ms = requireNumber(value, key);
+  if (ms < 0) fail(key, "expected a number of milliseconds");
+  return ms;
+}
+
+function requireFontRole(value, key) {
+  const role = requireObject(value, key);
+  requireNonEmpty(requireKey(role, "family", `${key}.family`), `${key}.family`);
+  requireNonEmpty(requireKey(role, "fallback", `${key}.fallback`), `${key}.fallback`);
+  const pkg = requireNonEmpty(requireKey(role, "package", `${key}.package`), `${key}.package`);
+  if (!NPM.test(pkg)) fail(`${key}.package`, "expected an npm package name");
+  const imports = requireKey(role, "imports", `${key}.imports`);
+  if (!Array.isArray(imports) || imports.length === 0) {
+    fail(`${key}.imports`, "expected a non-empty array of import specifiers");
+  }
+  imports.forEach((item, index) => {
+    if (typeof item !== "string" || !item.trim()) {
+      fail(`${key}.imports[${index}]`, "expected a non-empty string");
+    }
+  });
+  return role;
 }
 
 function pxNumber(value) {
   return Number.parseFloat(value);
 }
 
+function fontStack(role) {
+  return `"${role.family}", ${role.fallback}`;
+}
+
 if (!isObject(parsed)) missing("tokens");
 
 if (!Object.prototype.hasOwnProperty.call(parsed, "version")) missing("version");
-if (parsed.version !== 2) fail("version", "expected 2");
+if (parsed.version !== 3) fail("version", "expected 3");
 
 oneOf(requireKey(parsed, "template", "template"), "template", TEMPLATES);
-requireString(requireKey(parsed, "templateName", "templateName"), "templateName");
+requireNonEmpty(requireKey(parsed, "templateName", "templateName"), "templateName");
 requireString(requireKey(parsed, "tagline", "tagline"), "tagline");
 oneOf(requireKey(parsed, "mode", "mode"), "mode", ["light", "dark"]);
 
@@ -126,18 +196,20 @@ for (const key of COLOR_KEYS) {
 }
 
 const type = requireObject(requireKey(parsed, "type", "type"), "type");
-if (requireKey(type, "family", "type.family") !== "Inter Variable") {
-  fail("type.family", 'expected "Inter Variable"');
-}
+const display = requireFontRole(requireKey(type, "display", "type.display"), "type.display");
+const body = requireFontRole(requireKey(type, "body", "type.body"), "type.body");
 requirePx(requireKey(type, "base", "type.base"), "type.base");
 const scale = requireNumber(requireKey(type, "scale", "type.scale"), "type.scale");
 if (scale <= 1) fail("type.scale", "expected a ratio greater than 1");
-requireNumber(requireKey(type, "headingWeight", "type.headingWeight"), "type.headingWeight");
-requireNumber(requireKey(type, "bodyWeight", "type.bodyWeight"), "type.bodyWeight");
-const headingTracking = requireString(requireKey(type, "headingTracking", "type.headingTracking"), "type.headingTracking");
-if (!/^-?\d+(?:\.\d+)?em$/.test(headingTracking)) fail("type.headingTracking", "expected an em length");
+requireWeight(requireKey(type, "headingWeight", "type.headingWeight"), "type.headingWeight");
+requireWeight(requireKey(type, "uiWeight", "type.uiWeight"), "type.uiWeight");
+requireWeight(requireKey(type, "strongWeight", "type.strongWeight"), "type.strongWeight");
+requireWeight(requireKey(type, "bodyWeight", "type.bodyWeight"), "type.bodyWeight");
+requireEm(requireKey(type, "headingTracking", "type.headingTracking"), "type.headingTracking");
 requireNumber(requireKey(type, "headingLeading", "type.headingLeading"), "type.headingLeading");
+oneOf(requireKey(type, "headingCase", "type.headingCase"), "type.headingCase", ["none", "uppercase"]);
 oneOf(requireKey(type, "eyebrow", "type.eyebrow"), "type.eyebrow", ["uppercase", "sentence"]);
+requireEm(requireKey(type, "eyebrowTracking", "type.eyebrowTracking"), "type.eyebrowTracking");
 
 const shape = requireObject(requireKey(parsed, "shape", "shape"), "shape");
 requirePx(requireKey(shape, "radius", "shape.radius"), "shape.radius");
@@ -151,26 +223,54 @@ requireRem(requireKey(layout, "measure", "layout.measure"), "layout.measure");
 
 const variants = requireObject(requireKey(parsed, "variants", "variants"), "variants");
 oneOf(requireKey(variants, "header", "variants.header"), "variants.header", ["solid", "blur", "band"]);
-oneOf(requireKey(variants, "hero", "variants.hero"), "variants.hero", ["plain", "band", "glow", "framed"]);
+oneOf(requireKey(variants, "hero", "variants.hero"), "variants.hero", ["plain", "band", "glow", "framed", "photo"]);
+oneOf(requireKey(variants, "heroOverlay", "variants.heroOverlay"), "variants.heroOverlay", [
+  "none",
+  "dark",
+  "fade",
+  "vignette",
+]);
 oneOf(requireKey(variants, "card", "variants.card"), "variants.card", ["line", "filled", "elevated"]);
 oneOf(requireKey(variants, "rhythm", "variants.rhythm"), "variants.rhythm", ["alternate", "flat", "bands"]);
-oneOf(requireKey(variants, "texture", "variants.texture"), "variants.texture", ["none", "grid", "dots"]);
+oneOf(requireKey(variants, "texture", "variants.texture"), "variants.texture", ["none", "grid", "dots", "scanline"]);
+oneOf(requireKey(variants, "hover", "variants.hover"), "variants.hover", [
+  "zoom",
+  "lift",
+  "jelly",
+  "glitch",
+  "brighten",
+]);
+oneOf(requireKey(variants, "portrait", "variants.portrait"), "variants.portrait", [
+  "rounded",
+  "circle",
+  "square",
+  "blob",
+]);
+oneOf(requireKey(variants, "eyebrowMark", "variants.eyebrowMark"), "variants.eyebrowMark", [
+  "none",
+  "dot",
+  "rule",
+  "slashes",
+]);
 
 const motion = requireObject(requireKey(parsed, "motion", "motion"), "motion");
-oneOf(requireKey(motion, "style", "motion.style"), "motion.style", ["none", "fade", "rise"]);
-requireNumber(requireKey(motion, "duration", "motion.duration"), "motion.duration");
-requireString(requireKey(motion, "easing", "motion.easing"), "motion.easing");
-requireNumber(requireKey(motion, "stagger", "motion.stagger"), "motion.stagger");
-requireNumber(requireKey(motion, "carouselInterval", "motion.carouselInterval"), "motion.carouselInterval");
+oneOf(requireKey(motion, "style", "motion.style"), "motion.style", ["none", "fade", "rise", "blur", "spring"]);
+requireMs(requireKey(motion, "duration", "motion.duration"), "motion.duration");
+requireNonEmpty(requireKey(motion, "easing", "motion.easing"), "motion.easing");
+requireMs(requireKey(motion, "stagger", "motion.stagger"), "motion.stagger");
+requireMs(requireKey(motion, "carouselInterval", "motion.carouselInterval"), "motion.carouselInterval");
 
 const imagery = requireObject(requireKey(parsed, "imagery", "imagery"), "imagery");
 for (const key of ["treatment", "cssFilter", "direction", "avoid"]) {
-  const value = requireString(requireKey(imagery, key, `imagery.${key}`), `imagery.${key}`);
-  if (!value.trim()) fail(`imagery.${key}`, "expected a non-empty string");
+  requireNonEmpty(requireKey(imagery, key, `imagery.${key}`), `imagery.${key}`);
 }
 requirePx(requireKey(imagery, "radius", "imagery.radius"), "imagery.radius");
 const aspect = requireString(requireKey(imagery, "aspect", "imagery.aspect"), "imagery.aspect");
 if (!/^\d+:\d+$/.test(aspect)) fail("imagery.aspect", 'expected a ratio like "4:5"');
+
+const overrides = requireObject(requireKey(parsed, "overrides", "overrides"), "overrides");
+requireBoolean(requireKey(overrides, "forceInter", "overrides.forceInter"), "overrides.forceInter");
+requireBoolean(requireKey(overrides, "forceNoBold", "overrides.forceNoBold"), "overrides.forceNoBold");
 
 const breakpoints = requireObject(requireKey(parsed, "breakpoints", "breakpoints"), "breakpoints");
 for (const key of ["sm", "md", "lg", "xl"]) {
@@ -178,6 +278,21 @@ for (const key of ["sm", "md", "lg", "xl"]) {
 }
 
 export const tokens = parsed;
+
+/** Colors named in the guide prose and not in the token contract. */
+export const extras = {
+  loginPanel: "#2D4A6E",
+  loginGlow: "#78A0CD",
+  fieldFill: "#EAF0FB",
+  outlineBorder: "#DEDDD9",
+  cardHoverBorder: "#D9D8D4",
+  footerRule: "#2C2D32",
+};
+
+function extraVar(key) {
+  const name = key.replace(/[A-Z]/g, (letter) => `-${letter.toLowerCase()}`);
+  return `  --x-${name}: ${extras[key]};`;
+}
 
 function round(value) {
   return Math.round(value * 1000) / 1000;
@@ -216,6 +331,7 @@ const h2Mobile = h3;
 const h1Mobile = h2;
 const lead = base * 1.2;
 const uppercase = type.eyebrow === "uppercase";
+const headingTransform = type.headingCase === "uppercase" ? "uppercase" : "none";
 const density = DENSITY[layout.density];
 const [aspectW, aspectH] = aspect.split(":");
 const buttonRadius = shape.button === "pill" ? "999px" : shape.radius;
@@ -225,20 +341,26 @@ const colorVars = COLOR_KEYS.map((key) => `  --c-${key}: ${colors[key]};`).join(
 export function themeCss() {
   return `:root {
 ${colorVars}
-  --font-sans: "${type.family}", system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: ${fontStack(display)};
+  --font-body: ${fontStack(body)};
+  --weight-heading: ${type.headingWeight};
+  --weight-ui: ${type.uiWeight};
+  --weight-strong: ${type.strongWeight};
+  --weight-body: ${type.bodyWeight};
   --type-base: ${round(base)}px;
   --type-lead: ${round(lead)}px;
   --fs-h1: ${clampFluid(h1Mobile, h1, minVw, lgPx)};
   --fs-h2: ${clampFluid(h2Mobile, h2, minVw, lgPx)};
   --fs-h3: ${clampFluid(h3Mobile, h3, minVw, lgPx)};
-  --heading-weight: ${type.headingWeight};
-  --body-weight: ${type.bodyWeight};
   --heading-tracking: ${type.headingTracking};
   --heading-leading: ${type.headingLeading};
-  --eyebrow-size: ${uppercase ? "0.78rem" : "0.95rem"};
-  --eyebrow-tracking: ${uppercase ? "0.12em" : "0"};
+  --heading-transform: ${headingTransform};
+  --eyebrow-size: ${uppercase ? "13px" : "0.95rem"};
+  --weight-display-light: 200;
+${Object.keys(extras).map((key) => extraVar(key)).join("\n")}
+  --eyebrow-tracking: ${type.eyebrowTracking};
   --eyebrow-transform: ${uppercase ? "uppercase" : "none"};
-  --eyebrow-color: ${uppercase ? "var(--c-accent)" : "var(--c-muted)"};
+  --eyebrow-color: ${uppercase ? "var(--c-accentInk)" : "var(--c-muted)"};
   --eyebrow-band-color: ${uppercase ? "var(--c-highlight)" : "var(--c-muted)"};
   --radius: ${shape.radius};
   --radius-lg: ${shape.radiusLg};

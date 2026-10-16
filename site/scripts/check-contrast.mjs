@@ -2,17 +2,18 @@ import { tokens } from "../design-tokens.mjs";
 
 const pairs = [
   ["fg", "bg"],
-  ["muted", "bg"],
   ["fg", "surface"],
+  ["fg", "surfaceAlt"],
+  ["muted", "bg"],
   ["muted", "surface"],
   ["muted", "surfaceAlt"],
+  ["accentInk", "bg"],
+  ["accentInk", "surface"],
   ["accentFg", "accent"],
   ["bandFg", "band"],
   ["bandMuted", "band"],
   ["headerFg", "headerBg"],
   ["footerFg", "footerBg"],
-  ["accent", "bg"],
-  ["accent", "surface"],
 ];
 
 function channel(hex, index) {

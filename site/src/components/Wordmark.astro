@@ -8,6 +8,7 @@ const fallback = !primary && !accent;
 ---
 
 <a href="/" class="wordmark">
+  <span class="wordmark-mark" aria-hidden="true"></span>
   {fallback ? (
     <span class="wordmark-primary">{SITE_NAME}</span>
   ) : (

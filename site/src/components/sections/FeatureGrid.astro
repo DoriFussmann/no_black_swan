@@ -22,7 +22,7 @@ const { section, alt = false } = Astro.props;
     <ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {section.items.map((item, index) => (
         <li class="card flex flex-col gap-2 reveal" data-index={index}>
-          <h3 class="h3">{item.title}</h3>
+          <h3 class="h3 card-title">{item.title}</h3>
           <p class="muted">{item.text}</p>
         </li>
       ))}

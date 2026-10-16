@@ -1,6 +1,12 @@
 ---
 import { HEADER_CTA, NAV } from "../config/site";
 import Wordmark from "./Wordmark.astro";
+
+const path = Astro.url.pathname;
+function current(href: string) {
+  if (href === "/") return path === "/";
+  return path === href || path.startsWith(href);
+}
 ---
 
 <header class="site-header">
@@ -19,7 +25,11 @@ import Wordmark from "./Wordmark.astro";
     <nav id="site-nav" class="site-nav hidden md:flex">
       <ul class="flex flex-col md:flex-row md:items-center">
         {NAV.map((item) => (
-          <li><a class="nav-link" href={item.href}>{item.label}</a></li>
+          <li>
+            <a class="nav-link" href={item.href} aria-current={current(item.href) ? "page" : undefined}>
+              {item.label}
+            </a>
+          </li>
         ))}
       </ul>
       <a class="btn btn-primary" href={HEADER_CTA.href}>{HEADER_CTA.label}</a>
@@ -35,5 +45,18 @@ import Wordmark from "./Wordmark.astro";
       var open = nav.classList.toggle("hidden") === false;
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
     });
+  })();
+</script>
+<script is:inline>
+  (function () {
+    var root = document.documentElement;
+    if (root.getAttribute("data-hero") !== "photo" || root.getAttribute("data-header") !== "blur") return;
+    var header = document.querySelector(".site-header");
+    if (!header) return;
+    function sync() {
+      header.classList.toggle("is-scrolled", window.scrollY > 16);
+    }
+    sync();
+    window.addEventListener("scroll", sync, { passive: true });
   })();
 </script>

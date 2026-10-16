@@ -41,7 +41,7 @@ const cards: Item[] =
     <ul class="grid gap-6 md:grid-cols-2">
       {cards.map((item, index) => (
         <li class="card flex flex-col gap-3 reveal" data-index={index}>
-          <h3 class="h3">{item.title}</h3>
+          <h3 class="h3 card-title">{item.title}</h3>
           <p class="muted">{item.text}</p>
           <a class="btn btn-secondary" href={item.cta.href}>{item.cta.label}</a>
         </li>

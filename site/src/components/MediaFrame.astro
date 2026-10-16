@@ -6,6 +6,7 @@ interface Props {
   eager?: boolean;
 }
 const { image, alt, src, eager = false } = Astro.props;
+void image;
 const hasSrc = typeof src === "string" && src.length > 0;
 ---
 
@@ -13,9 +14,6 @@ const hasSrc = typeof src === "string" && src.length > 0;
   {hasSrc ? (
     <img src={src} alt={alt} loading={eager ? "eager" : "lazy"} />
   ) : (
-    <div class="placeholder-frame">
-      <p>{image}</p>
-      <p class="placeholder-label">Image placeholder</p>
-    </div>
+    <div class="placeholder-frame" role="img" aria-label={alt}></div>
   )}
 </div>
