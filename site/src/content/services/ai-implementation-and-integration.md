@@ -1,6 +1,6 @@
 ---
 title: "AI Implementation and Integration"
-description: "Configure and connect appropriate AI tools to business processes, existing systems, and workflows instead of leaving experiments isolated."
+description: "Configure and connect appropriate AI tools to business processes, existing systems, and real workflows instead of leaving experiments isolated."
 order: 3
 icon: "plug"
 ---

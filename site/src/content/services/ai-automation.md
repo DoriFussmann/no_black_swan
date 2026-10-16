@@ -1,6 +1,6 @@
 ---
 title: "AI Automation"
-description: "Identify repetitive business processes and automate suitable work with AI to reduce manual effort and improve operational efficiency."
+description: "Identify repetitive business processes and automate suitable work with AI to reduce manual effort and improve operational efficiency in practice."
 order: 4
 icon: "workflow"
 ---
