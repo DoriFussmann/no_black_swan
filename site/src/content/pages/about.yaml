@@ -1,30 +1,72 @@
-route: /about/
-meta_title: About — Site Name
-meta_description: Placeholder about page for this publication template. Replace it with the real story of the desk, the people, and the work.
+route: "/about/"
+meta_title: "About No Black Swan | Practical Business AI Delivery"
+meta_description: "Learn how No Black Swan brings an operator mindset to AI assessment, strategy, implementation, and automation for small and midsize businesses."
 sections:
-  - type: page-header
-    eyebrow: About
-    h1: About this publication
-    intro: Placeholder introduction. Say who the publication is for, what it covers, and how the work is maintained.
-  - type: rich-text
-    heading: What belongs here
+  - type: "page-header"
+    eyebrow: "About No Black Swan"
+    h1: "AI adoption needs an owner, not another disconnected experiment."
+    intro: "No Black Swan helps businesses turn AI potential into connected, practical systems. The work combines business-led prioritization with hands-on implementation so AI can support real workflows and organizational goals."
+  - type: "rich-text"
+    heading: "Why No Black Swan exists"
     body: |
-      ## The desk
+      ## From individual experimentation to coordinated execution
 
-      Describe the practice in plain sentences. Name the subjects you actually cover and the standard you hold a page to.
+      AI tools can help people complete individual tasks, but individual productivity gains do not automatically translate into a better-running organization. Employees may work with different tools, duplicate effort, or develop processes that remain separate from existing systems. Leadership can recognize the opportunity without having a clear plan for which use cases matter, how they fit together, or who will take responsibility for implementation.
 
-      ## How pages stay current
+      No Black Swan exists to address that gap. Its mission is to help businesses turn AI potential into connected, practical systems that improve how the organization operates. The focus is on the work itself: business objectives, workflows, decisions, resources, systems, and the practical steps required to bring them together.
 
-      Explain the review cycle. A reader should be able to tell who updates a guide and what “current” means.
-  - type: team-teaser
-    heading: The people who sign the work
-    intro: Author pages list credentials and the articles each person has published.
-  - type: cta-band
-    heading: Start with the work
-    sub: The article list is the public record. Services describe how a team can use the same system.
+      The company serves small and midsize businesses across industries, with a United States focus and an openness to suitable clients elsewhere. Its work is relevant to leaders who want a practical AI plan, teams spending too much time on repetitive processes, or organizations whose early AI experiments have not yet produced operational improvements.
+
+      ## The operator mindset
+
+      Founder Dori Fussmann brings experience from entrepreneurship, executive leadership, finance, investment banking, and founder mentorship. Across those roles, a recurring theme has been turning complex goals into coordinated execution: aligning people, systems, decisions, and resources around an outcome.
+
+      His professional background includes founding and leading The Vets, a technology-enabled pet healthcare company that later merged with BetterVet; investment banking roles at Citi, Morgan Stanley, and Ion Pacific; finance leadership at BlueMark; fractional CFO work with Natrion and Snout; and founder mentorship through Cornell Tech's Runway Startups Program and Yale's Tsai CITY.
+
+      That background is relevant to how No Black Swan approaches AI adoption because implementation is also an organizational challenge. It requires choices about priorities, trade-offs, resources, responsibilities, and how a solution will function in practice. The founder's prior roles are not presented as AI-specific experience. Rather, they form the broader operational and business context behind the company's approach.
+
+      ## What success should mean
+
+      The intended outcome is not simply more experimentation or a longer list of tools. It is AI embedded in the organization's work, with selected systems connected to real workflows and solutions incorporated into day-to-day operations.
+
+      That outcome begins with a disciplined sequence: understand the current state, identify and prioritize opportunities, agree on scope and success measures, implement and test the selected solution, and evaluate how it performs. Not every idea needs implementation. The business case, feasibility, effort, and risk all matter.
+
+      No Black Swan is an early-stage business founded in 2026. Client-approved case studies and quantified before-and-after results are not yet available in the supplied company information. Its public claims should therefore remain focused on the services offered, the implementation approach, and the relevant professional background of its founder.
+  - type: "feature-split"
+    eyebrow: "Our approach"
+    heading: "Start with the business and work backward to the technology."
+    body: "The starting point is an understanding of what the organization needs to accomplish and how work currently gets done. That means considering business goals, existing workflows, constraints, current AI use, and the handoffs between people and systems. Opportunities are then compared by value, feasibility, risk, and effort. Once a direction is selected, the scope and success measures are agreed before implementation begins. This sequence keeps decisions tied to actual business requirements and helps distinguish a promising idea from a practical project."
+    highlights:
+      - title: "Understand before recommending"
+        text: "Review goals, workflows, and constraints before deciding which use cases merit investment or which tools may be appropriate."
+      - title: "Define the work clearly"
+        text: "Agree on implementation scope and success measures so both the intended outcome and the work required are understood."
+      - title: "Stay accountable to execution"
+        text: "Move beyond advisory recommendations when the engagement calls for hands-on configuration, integration, testing, and adoption support."
+    image: "An advisor listens to a business owner describe a workflow while taking notes on the steps, constraints, and intended outcome. A laptop and process sketch sit between them. The setting should feel like a real working discussion, with both participants and their materials visible. Use a 4:5 vertical crop with natural light and attentive, practical body language."
+    alt: "An advisor documenting a business owner's workflow and priorities"
+  - type: "feature-split"
+    eyebrow: "What makes us different"
+    heading: "Bridge the gap between AI advice and working systems."
+    body: "A business can leave an advisory conversation with a list of interesting ideas and still have no one responsible for putting them into practice. No Black Swan is positioned around the work between identifying an opportunity and embedding a solution into the organization. That may involve prioritization, scope definition, implementation, system connections, testing, and support after deployment. The work remains tool-agnostic and workflow-focused: technology choices should follow the business need, and the solution should be considered in the context of the processes and systems around it."
+    highlights:
+      - title: "Practical rather than abstract"
+        text: "Connect recommendations to specific workflows, implementation decisions, constraints, and the operating needs of the business."
+      - title: "Execution as part of the engagement"
+        text: "Treat implementation and integration as core parts of the offer where agreed, rather than assuming the client will deliver every recommendation alone."
+      - title: "Focus on outcomes, not tool counts"
+        text: "Evaluate the purpose and performance of the selected solution instead of treating the purchase or launch of an AI tool as the final objective."
+    image: "A founder and operations specialist work through an implementation plan with process notes beside a laptop. They compare the intended workflow with the practical steps needed to put it into operation. Show realistic working materials without software logos, readable private information, or fabricated performance charts. Frame the participants and plan for a 4:5 vertical crop with natural workplace lighting."
+    alt: "A founder and operations specialist reviewing an implementation plan"
+  - type: "team-teaser"
+    heading: "Meet the people behind the work"
+    intro: "No Black Swan is led by Dori Fussmann, whose background spans entrepreneurship, finance leadership, investment banking, and founder mentorship. Visit the team page for more information about the people behind the business."
+  - type: "cta-band"
+    heading: "Discuss the operational problem behind your AI opportunity."
+    sub: "Bring the goals, workflows, and constraints you are working with. Start a conversation about where AI may fit and what implementation would involve."
     cta_primary:
-      label: Articles
-      href: /articles/
+      label: "Book a discovery conversation"
+      href: "/contact/"
     cta_secondary:
-      label: Services
-      href: /services/
+      label: "See the services"
+      href: "/services/"

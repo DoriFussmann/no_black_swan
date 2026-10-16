@@ -2,7 +2,7 @@ import { DEFAULT_AI_CRAWLERS, type CrawlerPolicy, type SiteIdentity } from "seo-
 
 // TEMPLATE: replace every value below at Site Activation (Layer 2).
 export const SITE_URL = "https://example.com";
-export const SITE_NAME = "Site Name";
+export const SITE_NAME = "No Black Swan";
 export const SITE_TAGLINE = "Primary positioning phrase"; // used in homepage <title>
 /** Official brand profiles (LinkedIn company page, Crunchbase, X…). The audit warns while empty. */
 export const SAME_AS: string[] = [];

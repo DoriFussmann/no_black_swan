@@ -1,36 +1,71 @@
-route: /services/
-meta_title: Services — Site Name
-meta_description: Placeholder services page. The cards below are the services collection, each linking to its own page.
+route: "/services/"
+meta_title: "AI Consulting and Implementation Services | No Black Swan"
+meta_description: "Explore AI readiness assessment, strategy, implementation, integration, automation, and ongoing adoption support for practical business workflow improvements."
 sections:
-  - type: page-header
-    eyebrow: Services
-    h1: Services
-    intro: Placeholder introduction for the services index. Replace it with who the work is for and how an engagement starts.
-  - type: offerings
-    heading: Current offers
-    intro: Each card is a service entry and links to that service page.
-    source: services
-  - type: process
-    eyebrow: A typical engagement
-    heading: How the work proceeds
-    intro: Replace these steps with the real sequence a client can expect.
+  - type: "page-header"
+    eyebrow: "Services"
+    h1: "Practical AI services, from identifying opportunities to implementation."
+    intro: "No Black Swan helps businesses assess where AI fits, prioritize the most useful opportunities, connect tools to existing workflows, and support operational adoption. The appropriate starting point depends on your goals and current processes."
+  - type: "rich-text"
+    heading: "A service approach grounded in the work"
+    body: |
+      ## Choose the problem before the tool
+
+      AI projects are more useful when they start with a defined business need. That may mean understanding whether a workflow is suitable for AI, determining which opportunities deserve attention, implementing a selected tool, automating repetitive work, or improving a solution already in use.
+
+      No Black Swan offers five related services: AI Readiness and Opportunity Assessment; AI Strategy and Advisory; AI Implementation and Integration; AI Automation; and Ongoing Optimization and Adoption Support. Each addresses a different part of the path from identifying an opportunity to putting a solution into day-to-day operation.
+
+      ## Assessment, planning, and delivery
+
+      An assessment establishes the current state and considers possible use cases against value, feasibility, effort, and risk. Strategy and advisory turn those findings into a sequenced roadmap, with priorities, success measures, and implementation scope. Implementation and integration focus on configuring selected tools and connecting them to existing business systems and workflows.
+
+      AI Automation focuses on identifying manual or repetitive work that may be automated to improve operational efficiency and free up team capacity. Ongoing Optimization and Adoption Support addresses what happens after deployment: helping teams operationalize solutions, evaluate performance, and refine them as needed.
+
+      ## Scope follows the business requirement
+
+      These services are related, but they do not need to be treated as an automatic package. The right sequence depends on what is already known, what the organization needs to improve, and what is feasible with its current systems and constraints.
+
+      The discovery call is the entry point. It covers the business, current AI use, operational friction, and the improvements the organization wants to make. From there, the next step can be identified and a suitable scope discussed. No fixed pricing or standardized package details are available in the supplied company information, so commercial terms should be agreed against the actual work required.
+  - type: "offerings"
+    eyebrow: "Service areas"
+    heading: "Five ways to move AI into practice"
+    intro: "Each service addresses a distinct need. Begin with the current problem and establish the right scope before deciding which work should proceed."
+    source: "services"
+  - type: "process"
+    eyebrow: "Engagement process"
+    heading: "From discovery to day-to-day operation"
+    intro: "The sequence combines business understanding, opportunity prioritization, agreed scope, hands-on delivery, and evaluation. The depth of each step depends on the engagement."
     steps:
-      - title: Scope
-        text: Agree on the pages, the sources, and the date the first draft is due.
-      - title: Draft
-        text: Write against the brief. Keep headings, links, and claims easy to check.
-      - title: Maintain
-        text: Return to the page when the facts change and record the update.
-  - type: faq
-    heading: Questions about the work
+      - title: "Discuss the business need"
+        text: "Use a discovery call to discuss business goals, current AI use, operational friction, and the outcome the organization wants to improve."
+      - title: "Review the current state"
+        text: "Understand relevant workflows, systems, constraints, and existing experiments before deciding what needs assessment or implementation."
+      - title: "Select and scope the opportunity"
+        text: "Prioritize possible use cases based on value, feasibility, risk, and effort, then agree on implementation scope and success measures."
+      - title: "Implement and connect"
+        text: "Configure, integrate, and test the tools and workflows selected for the agreed engagement."
+      - title: "Evaluate and refine"
+        text: "Help embed deployed solutions in day-to-day operations, review their performance, and identify appropriate refinements."
+  - type: "faq"
+    eyebrow: "Services FAQ"
+    heading: "Questions about selecting and scoping a service"
     items:
-      - q: Is this a live service offer?
-        a: No. This is placeholder copy for the template. Replace it before the site is presented as a business.
-      - q: Where is the detail for one service?
-        a: Open a card. Each service has its own page with the longer description.
-  - type: cta-band
-    heading: Ask about a page
-    sub: The contact page is the placeholder inbox until a real address is set.
+      - q: "Which service should we start with?"
+        a: "Start with the problem you need to solve and what you already know about it. If your workflows and opportunities are not yet clear, an AI Readiness and Opportunity Assessment may be the appropriate starting point. If the priorities are understood but need a plan, Strategy and Advisory may be more relevant. If a specific workflow or tool has already been selected, implementation or automation may be appropriate. The discovery conversation helps clarify the next step."
+      - q: "Can we engage No Black Swan for implementation without a broad strategy project?"
+        a: "The service offering includes hands-on implementation and integration as a distinct service. The appropriate scope depends on the problem, the state of the existing systems, the feasibility of the proposed solution, and the clarity of the intended outcome. A discovery conversation can establish what is already decided and what still needs investigation. No particular package or requirement to purchase every service is specified in the company information."
+      - q: "How is pricing determined?"
+        a: "Fixed prices and confirmed service packages have not been supplied. The commercial model is expected to include project-based or retainer engagements, depending on the work, but the specific arrangement remains to be confirmed. Scope, implementation requirements, and ongoing responsibilities should be discussed before a price or commercial commitment is represented as final. Contact No Black Swan to discuss the business need and determine what information is required to define the engagement."
+      - q: "Can you work with the systems we already use?"
+        a: "The implementation focus is on configuring appropriate AI tools and connecting them to existing systems and workflows where feasible. Compatibility cannot be assumed without understanding the systems, the intended workflow, and relevant technical or operational constraints. The engagement process includes understanding the current state, defining scope, and implementing and testing the selected solution. Bring an overview of the systems and process involved to the discovery conversation."
+      - q: "What happens after a solution is implemented?"
+        a: "Ongoing Optimization and Adoption Support is intended to help teams bring deployed solutions into day-to-day operations, evaluate performance, and refine the solution as needed. The level of support should be agreed as part of the engagement rather than assumed to be included indefinitely in an implementation project. Relevant factors include the intended workflow, the agreed measures of success, how the team will use the solution, and what evaluation or refinement is required after deployment."
+  - type: "cta-band"
+    heading: "Determine the right starting point for your business."
+    sub: "Describe the workflow, operational constraint, or AI opportunity you want to address. Begin with a discovery conversation and agree on a practical next step."
     cta_primary:
-      label: Contact
-      href: /contact/
+      label: "Contact No Black Swan"
+      href: "/contact/"
+    cta_secondary:
+      label: "Learn about our approach"
+      href: "/about/"

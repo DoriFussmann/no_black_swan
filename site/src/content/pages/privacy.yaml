@@ -1,19 +1,118 @@
-route: /privacy/
-meta_title: Privacy — Site Name
-meta_description: Placeholder privacy policy. Replace this page with a reviewed policy before the site collects or describes any personal data.
+route: "/privacy/"
+meta_title: "Privacy Policy | No Black Swan"
+meta_description: "Review the draft privacy policy for No Black Swan, including website inquiries, personal information, cookies, analytics, third-party processors, retention, and privacy rights."
 sections:
-  - type: page-header
-    eyebrow: Legal
-    h1: Privacy
-    intro: This page is a placeholder. It is not a privacy policy and should not be treated as one.
-  - type: rich-text
+  - type: "page-header"
+    eyebrow: "Legal"
+    h1: "Privacy Policy"
+    intro: "This draft describes a proposed approach to handling personal information associated with the No Black Swan website and business inquiries. Confirm the actual website configuration, processing activities, retention practices, and applicable legal requirements before publishing."
+  - type: "rich-text"
+    heading: "Privacy policy"
     body: |
-      [PLACEHOLDER: replace with reviewed policy]
+      **Draft — review with legal counsel before publishing.**
 
-      ## What this page will cover
+      ## 1. Who we are and what this policy covers
 
-      A reviewed policy should say what the site collects, why, how long it is kept, and how a person can ask about it.
+      No Black Swan is the business name of The Night Ventures, LLC, doing business as No Black Swan. This policy concerns personal information that may be handled when you visit the No Black Swan website, contact the business, or communicate with us about our services.
 
-      ### Until then
+      No Black Swan provides business-to-business AI consulting and implementation services, including assessment, strategy and advisory, implementation and integration, automation, and ongoing optimization and adoption support. This policy addresses website inquiries and related communications. If you enter into a separate services engagement, additional contractual terms or information-handling arrangements may apply.
 
-      Do not add forms, tracking, or claims about data handling on top of this placeholder.
+      Contact email: team@noblackswan.com.
+
+      ## 2. Personal information you provide
+
+      When you contact No Black Swan, you may choose to provide information such as your name, work email address, business name, role, and the details of your inquiry. The information actually requested will depend on the contact methods enabled on the website. You may also provide business context, such as a description of your workflows, current AI use, operational constraints, or the improvement you are considering.
+
+      Please provide only information reasonably necessary to describe your inquiry. Do not submit passwords, payment-card information, sensitive personal information, confidential customer records, or other restricted business material through a general website contact method unless an appropriate process and a clear need have been established.
+
+      If you communicate by email, the content of your message, the address used to send it, and subsequent correspondence may be handled to understand and respond to your request. The scope of information collected should remain proportionate to the purpose of the communication.
+
+      **[GAP: Confirm which fields the website's contact form collects, whether attachments are enabled, and whether any other information is requested before publishing.]**
+
+      ## 3. Information collected through the website
+
+      Depending on the website's hosting and configuration, technical information may be generated when someone visits the site. This can include a network address, device and browser information, pages requested, timestamps, referring pages, and technical logs used to operate or protect the website. The actual categories collected depend on the hosting provider and site configuration.
+
+      A website may also use analytics tools to understand aggregate visitor activity, such as which pages are visited and how visitors arrive at the site. Cookies or similar technologies may be used for site functionality, preferences, analytics, or other purposes. The supplied company information does not identify the actual analytics products, cookies, tracking technologies, or hosting configuration used by this website.
+
+      **[GAP: Audit the live website to confirm whether analytics, cookies, pixels, server logs, or other tracking technologies are used. Identify each relevant technology, its purpose, and the information it collects.]**
+
+      ## 4. How information may be used
+
+      Personal information supplied in an inquiry may be used to understand the request, communicate with the person who submitted it, assess whether the business's services are relevant, coordinate a discovery conversation, and manage related business correspondence.
+
+      Technical information, where collected, may be used to operate the site, diagnose technical problems, protect availability and security, understand how the website is used, and improve its content and functionality. Any analytics use should be limited to the purposes actually implemented and described to visitors.
+
+      Information should not be collected for a new, unrelated purpose without an appropriate basis and any notice or consent required by applicable law. The specific lawful bases available for processing depend on the jurisdiction and the circumstances. The business should establish the applicable basis for each category of processing before publication.
+
+      **[GAP: Confirm the lawful bases for relevant processing activities and whether contact information is used only for inquiry handling or also for marketing.]**
+
+      ## 5. Third-party service providers
+
+      A website and its communications may rely on external providers, for example a hosting provider, email service, contact-form service, analytics provider, security service, or other technical processor. Such providers may process information on behalf of the business when required to deliver their services. Their involvement, access to personal information, locations, and retention practices depend on the services actually selected and configured.
+
+      No specific third-party processor is identified in the supplied company information. This policy should not imply that any particular vendor is used until the website and its operating arrangements have been reviewed.
+
+      Where applicable, No Black Swan should assess provider terms, information-security practices, processing locations, international transfers, and the contractual protections needed for the information involved. Service providers should receive only the access and information needed for their agreed functions.
+
+      **[GAP: List the actual hosting, email, form, analytics, security, and other processors; summarize their purposes; and confirm whether international transfers or additional contractual terms need to be disclosed.]**
+
+      ## 6. Cookies and similar technologies
+
+      Cookies are small files or identifiers that a website may place on a browser or device. Depending on the configuration, they may support essential website functions, remember preferences, measure website activity, or support other third-party features. Similar technologies may perform related functions.
+
+      The actual categories of cookies and tracking technologies used on the No Black Swan website must be established from the live implementation. Where applicable law requires consent before optional technologies operate, the website should provide an appropriate mechanism to obtain and manage that consent. Essential technical operations and optional analytics should not be described as the same category if they are handled differently.
+
+      Visitors can often manage cookies through browser settings. Blocking some cookies may affect site functionality. Browser controls do not necessarily provide a complete view of every technology used by a website, so the policy and any on-site preference controls should accurately explain the actual implementation.
+
+      **[GAP: Confirm the cookie inventory, durations, providers, consent requirements, and whether visitors can change cookie preferences after their initial choice.]**
+
+      ## 7. Retention of information
+
+      Personal information should be retained only for as long as reasonably necessary for the purpose for which it was collected, subject to applicable legal obligations and the legitimate operational needs of the business. For example, inquiry correspondence may need to be retained while a request is being handled and for an appropriate period afterward. Technical logs and analytics information may have different retention requirements from business correspondence.
+
+      Retention should be considered by information category rather than assigned one universal period without review. When information is no longer required, it should be deleted, anonymized, or otherwise handled in accordance with the applicable retention process and legal requirements.
+
+      **[GAP: Set actual retention periods or criteria for inquiries, email correspondence, server logs, analytics data, backups, and any records that must be kept for legal or contractual reasons. Confirm how deletion requests are implemented across relevant providers.]**
+
+      ## 8. Security and confidentiality
+
+      Personal information should be handled using safeguards appropriate to its nature and the risks associated with its processing. Relevant measures may include restricting access to people who need it, keeping account credentials secure, reviewing third-party access, maintaining appropriate technical protections, and handling information according to its purpose.
+
+      No website or communications method can be guaranteed to be completely secure. Visitors should avoid sending sensitive records or credentials through a general inquiry channel. The appropriate protections depend on the information handled, the technical configuration, and the providers involved.
+
+      **[GAP: Confirm the security controls actually in place, who can access inquiry information, and the process for addressing suspected data incidents before making specific security claims.]**
+
+      ## 9. Privacy rights and choices
+
+      Depending on the applicable law and the circumstances of the processing, individuals may have rights to request access to personal information, seek correction of inaccurate information, request deletion, object to or restrict certain processing, withdraw consent where processing relies on consent, or receive a portable copy of eligible information. Some rights are subject to exceptions and conditions under applicable law.
+
+      Individuals may also have rights relating to targeted advertising, the sale or sharing of personal information, or certain automated processing where relevant law recognizes those rights. Whether particular rights apply depends on the jurisdiction, the nature of the information, and how it is used. This draft does not establish that a particular statutory regime applies or that the website engages in any specific activity.
+
+      To make a privacy inquiry, contact team@noblackswan.com. Include enough information to understand the request, but do not send identity documents or sensitive personal data unless reasonably necessary and an appropriate method has been agreed. Additional information may be needed to verify the identity or authority of the person making a request. Responses will be handled in accordance with applicable legal requirements.
+
+      **[GAP: Determine which privacy laws apply, which rights and response deadlines must be described, how identity and authority will be verified, and which appeal or regulator-contact details are required.]**
+
+      ## 10. Children's information
+
+      The No Black Swan website is directed toward business inquiries concerning AI consulting and implementation. The supplied company information does not identify a service intended for children. The business should confirm its practices regarding information submitted by children and whether any age-related notice or procedure is required under applicable law.
+
+      **[GAP: Confirm whether the site is intended exclusively for business audiences, whether any age restriction is appropriate, and the procedure for handling information submitted by a child.]**
+
+      ## 11. External links and third-party websites
+
+      The website may link to other resources, including articles or other websites. A link does not mean that No Black Swan operates or controls the destination. External websites may have their own privacy notices, cookies, and information-handling practices. Review their notices before providing personal information to them.
+
+      The presence of a link alone does not establish that information is shared with the linked site. Any actual sharing or tracking should be described according to the website's real technical configuration and applicable law.
+
+      ## 12. Changes to this policy
+
+      This policy may need to be updated when the website's functionality, service providers, information-handling practices, or legal requirements change. An updated version should accurately describe the relevant practices and display its effective date. Material changes should be communicated where required by applicable law.
+
+      **[GAP: Add the policy's effective date, the process for recording revisions, and any legally required method of notifying affected individuals.]**
+
+      ## 13. Contact
+
+      For questions about this policy or personal information associated with a website inquiry, contact No Black Swan at team@noblackswan.com.
+
+      **[GAP: Confirm whether a postal business address, privacy contact, or designated privacy representative must also be published.]**

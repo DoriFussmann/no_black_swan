@@ -1,144 +1,147 @@
-route: /
-meta_title: Site Name — Primary positioning phrase
-meta_description: Placeholder homepage for this publication template. It previews every section in the library so a new theme can be checked before real copy replaces it.
+route: "/"
+meta_title: "Business AI Consulting and Implementation | No Black Swan"
+meta_description: "No Black Swan helps small and midsize businesses assess AI opportunities, automate repetitive work, connect systems, and put practical AI solutions into operation."
 sections:
-  - type: hero
-    eyebrow: Publication
-    h1: A calm place for work that stays current
-    sub: Placeholder homepage copy. Replace it at site activation with the real positioning line, offer, and proof.
+  - type: "hero"
+    eyebrow: "AI consulting and implementation"
+    h1: "Make AI work across your business."
+    sub: "No Black Swan helps small and midsize businesses identify valuable AI opportunities, connect tools to real workflows, and move from experimentation to practical operational improvements."
     cta_primary:
-      label: Contact
-      href: /contact/
+      label: "Book a discovery call"
+      href: "/contact/"
     cta_secondary:
-      label: Services
-      href: /services/
+      label: "Explore our services"
+      href: "/services/"
     slides:
-      - image: A quiet desk beside a window, papers stacked, one teal notebook on the corner.
-        alt: Desk by a window with a teal notebook
-      - image: Two people reviewing a printed page in natural daylight, no screens pointed at.
-        alt: Two people reviewing a printed page
-      - image: A stone corridor with a single coral chair and open floor around it.
-        alt: Stone corridor with a coral chair
-  - type: trust
-    heading: What this template holds
+      - image: "A business owner reviews an operational workflow with a colleague at a working table, tracing how information moves between everyday tasks. Include natural documents and a laptop showing a generic, unreadable workflow diagram. Frame both people and the working surface for a 4:5 vertical crop. Use natural window light and a focused, collaborative atmosphere."
+        alt: "Business leaders reviewing an operational workflow together"
+      - image: "An operations professional examines a sequence of repetitive business tasks on a laptop while handwritten notes describe the current process. A colleague points to a step that could be simplified. Keep the human interaction and process notes central, with enough surrounding office context to explain the setting. Frame vertically for a 4:5 crop and use natural working light."
+        alt: "Operations colleagues identifying repetitive work"
+      - image: "A business leader and implementation specialist review how several existing business systems exchange information. Include a laptop, process notes, and ordinary office materials without readable interface details or recognizable software branding. Show the people discussing connections between tasks rather than presenting a technology product alone. Frame the conversation for a 4:5 vertical crop with natural ambient light."
+        alt: "A business leader and specialist reviewing connected systems"
+      - image: "A small business team discusses a newly documented workflow during a working session. One person explains the steps while another checks the process against the team's existing responsibilities. Include ordinary working materials and a laptop, with no visible logos, legible private information, or interface screenshots. Compose the group for a 4:5 vertical crop with natural light and a practical, attentive atmosphere."
+        alt: "A team reviewing a practical workflow during implementation"
+  - type: "trust"
+    heading: "Practical execution, from assessment to adoption"
     items:
-      - label: Original articles
-      - label: Named authors
-      - label: Source notes
-      - label: Maintained pages
-  - type: feature-split
-    eyebrow: How a page is built
-    heading: Sections come from the library
-    body: Each block on this page is a section type. Swap the design guide and the same content takes the next theme. The image on this first split sits on the right.
+      - label: "A discovery call focused on your business, current AI use, and operational friction"
+      - label: "Opportunity prioritization based on value, feasibility, risk, and effort"
+      - label: "Hands-on implementation connected to existing systems and workflows"
+      - label: "Founder experience spanning entrepreneurship, finance leadership, and advising"
+  - type: "feature-split"
+    eyebrow: "01 / Understand the opportunity"
+    heading: "Move beyond scattered AI experiments."
+    body: "AI can help with individual tasks, but isolated experiments do not automatically improve how a business operates. Different employees may adopt different tools, repeat work that someone else has already done, or create processes that never connect to the systems around them. The opportunity is to understand where AI fits into the organization as a whole. No Black Swan starts with your business goals, current workflows, constraints, and existing AI use. That gives the work a concrete starting point: operational problems to solve, rather than technology to adopt for its own sake."
     highlights:
-      - title: One H1
-        text: The hero carries the only top-level heading on the homepage.
-      - title: Placeholder media
-        text: Until a real file is added, the frame shows the image brief.
-    image: Overhead view of a printed outline on warm paper, with a teal pen beside it.
-    alt: Printed outline and a teal pen
-  - type: feature-split
-    heading: The next split flips the image
-    body: Feature splits alternate image side on their own. This second one places the image on the left at large screens and keeps the text first on small screens.
+      - title: "Start with the work"
+        text: "Examine existing processes, recurring tasks, information handoffs, and the points where work becomes manual or unnecessarily difficult."
+      - title: "Prioritize the useful opportunities"
+        text: "Compare potential opportunities by value, feasibility, risk, and effort before deciding which ones deserve investment and implementation."
+      - title: "Keep the organization in view"
+        text: "Consider how proposed improvements affect the people, systems, and decisions around a workflow, not just one person's individual task."
+    image: "An operations leader walks a colleague through a real business process using a notebook and a laptop. Their discussion focuses on where information is entered, reviewed, and passed to another person. Include ordinary workplace details and a clear view of the working materials, without readable customer information or software branding. Frame the subjects and process notes for a 4:5 vertical crop."
+    alt: "Colleagues mapping a business process before choosing AI tools"
+  - type: "feature-split"
+    eyebrow: "02 / Set a direction"
+    heading: "Choose the right problems before choosing tools."
+    body: "Buying or configuring an AI tool is not the same as having a plan for using it. Businesses need to understand which opportunities fit their priorities, what implementation will involve, and how success should be evaluated. No Black Swan translates assessment findings into an actionable roadmap. The plan establishes priorities, success measures, and implementation scope so decisions can be made deliberately. It also creates a basis for deciding what should happen first, what can wait, and where a more detailed assessment is still needed before committing time or resources."
     highlights:
-      - title: Odd splits
-        text: The first, third, and later odd splits put the image on the right.
-      - title: Even splits
-        text: The second and later even splits put the image on the left.
-    image: A person walking a sunlit hallway, photographed from the side, with empty wall beside them.
-    alt: Person walking a sunlit hallway
-  - type: feature-grid
-    eyebrow: Included on every build
-    heading: What stays in place
-    intro: These are the parts of the template that do not move when the theme changes.
-    items:
-      - title: Articles
-        text: Published guides stay at their current paths, with the same heading order.
-      - title: Team
-        text: Author pages keep their bios, credentials, and article lists.
-      - title: Services
-        text: Each service still has its own page under the services path.
-  - type: stats
-    heading: Placeholder figures
-    items:
-      - value: "8"
-        label: Page templates in this seed
-      - value: "15"
-        label: Section types in the library
-      - value: "6"
-        label: Design presets to check
-      - value: "1"
-        label: File that sets the theme
-  - type: process
-    eyebrow: From brief to page
-    heading: A simple publishing path
-    intro: Replace these steps with the real operating cadence at activation.
+      - title: "A sequenced roadmap"
+        text: "Organize opportunities into a practical order that accounts for expected value, implementation effort, feasibility, and risk."
+      - title: "Clear implementation scope"
+        text: "Define which opportunity will be addressed, what the work includes, and which measures will help evaluate its performance."
+      - title: "Business-led decisions"
+        text: "Connect AI priorities to the organization's goals instead of treating adoption as a separate initiative without operational ownership."
+    image: "A business owner and advisor compare several documented operational opportunities on a table during a planning meeting. One person annotates a working roadmap while the other explains a business priority. Include a calendar or notebook without visible dates that could be mistaken for a committed delivery schedule. Keep both people, notes, and their interaction visible in a 4:5 vertical crop."
+    alt: "A business owner and advisor prioritizing AI opportunities"
+  - type: "feature-split"
+    eyebrow: "03 / Implement and connect"
+    heading: "Put AI into the workflows your team already uses."
+    body: "An AI solution has limited operational value if it remains disconnected from the work it is meant to support. No Black Swan takes a hands-on approach to configuring selected tools and connecting them to existing business systems and workflows. The objective is not to create another isolated experiment. It is to make the agreed solution part of a real process, then test whether the connection works as intended. The specific tools, integrations, and implementation scope depend on the opportunity, the organization's current systems, and the feasibility of the proposed solution."
+    highlights:
+      - title: "Hands-on delivery"
+        text: "Move from an agreed plan into configuration, integration, implementation, and testing instead of leaving execution entirely to internal teams."
+      - title: "Connected workflows"
+        text: "Consider how information moves between people and systems so the selected tools support a business process rather than sit beside it."
+      - title: "Scope before implementation"
+        text: "Agree on the work, objectives, and success measures before deploying the selected solution into day-to-day operations."
+    image: "An implementation specialist and an operations colleague review a workflow at a workstation, checking how a task passes between two existing business systems. Show a simple hand-drawn process on paper beside the laptop, with no recognizable logos or readable software screens. Keep the discussion and working materials central, framed closely enough for a 4:5 vertical crop."
+    alt: "An implementation specialist reviewing connected business workflows"
+  - type: "feature-split"
+    eyebrow: "04 / Make it operational"
+    heading: "Build adoption into the work, not after it."
+    body: "Deployment alone does not establish whether an AI solution is useful in everyday operations. Teams need to incorporate the new workflow into their responsibilities, observe how it performs, and identify where refinement is needed. No Black Swan's ongoing optimization and adoption support is intended to help businesses operationalize deployed solutions, evaluate performance, and make adjustments as needed. That follow-through matters because the goal is not simply to launch a tool. It is to help the organization use connected AI systems as part of how work gets done."
+    highlights:
+      - title: "Support day-to-day use"
+        text: "Help teams incorporate deployed solutions into established processes and responsibilities instead of leaving adoption as an unowned task."
+      - title: "Evaluate performance"
+        text: "Use agreed success measures and observations from actual operation to understand whether a solution is doing the work it was selected to do."
+      - title: "Refine when needed"
+        text: "Identify practical improvements after deployment and adjust the solution within the agreed scope as performance and operational needs become clearer."
+    image: "A team member demonstrates a documented workflow to a colleague after implementation. Their notes show steps for using, checking, and improving the process, while a third colleague asks a practical question. Avoid readable personal data, software branding, and claims about measured results. Frame the people and work materials for a 4:5 vertical crop in a real working environment."
+    alt: "Colleagues reviewing an implemented process and its operating steps"
+  - type: "offerings"
+    eyebrow: "Services"
+    heading: "The work your business needs, in the right order."
+    intro: "Start with the business problem. Then determine whether assessment, strategy, implementation, automation, or ongoing support is the right next step. Engagement scope is agreed around the opportunity and the work required."
+    source: "services"
+  - type: "process"
+    eyebrow: "How we work"
+    heading: "A clear path from the first conversation to operational use."
+    intro: "The engagement starts with a discovery conversation and moves through assessment, prioritization, agreed scope, implementation, and evaluation. The work is grounded in your current processes and business objectives."
     steps:
-      - title: Collect the brief
-        text: Write the page as YAML. The first block is a hero or a page header.
-      - title: Choose the theme
-        text: Drop a design guide in place. Colors, type, and layout come from that file.
-      - title: Review the build
-        text: Contrast, headings, and the articles link are checked before the site ships.
-  - type: offerings
-    eyebrow: Services
-    heading: Offers from the services collection
-    intro: This block reads the services collection and links each card to its page.
-    source: services
-  - type: testimonials
-    heading: Placeholder notes
+      - title: "Discovery call"
+        text: "Discuss your business, how AI is currently being used, where operational friction occurs, and what you want to improve. Use the conversation to identify the relevant questions and potential next step."
+      - title: "Understand the current state"
+        text: "Review business goals, existing workflows, constraints, and current AI use so potential opportunities can be considered in their operational context."
+      - title: "Prioritize the opportunities"
+        text: "Assess potential value alongside feasibility, risk, and effort. Identify which opportunities warrant attention and which assumptions need to be checked."
+      - title: "Agree on scope and measures"
+        text: "Define the work to be undertaken, the implementation plan, and the success measures that will be used to evaluate the agreed solution."
+      - title: "Implement and evaluate"
+        text: "Configure, connect, and test selected tools and workflows. Support their integration into day-to-day operations and evaluate how they perform."
+  - type: "testimonials"
+    heading: "Client experiences"
     items:
-      - quote: Placeholder quote for layout preview. Replace with a reviewed testimonial before publication.
-        name: Placeholder name
-        role: Role to be confirmed
-      - quote: Second placeholder quote. Do not present this sentence as a real customer statement.
-        name: Placeholder name
-        role: Role to be confirmed
-  - type: faq
-    eyebrow: Questions
-    heading: Frequently asked questions
-    intro: Short answers used for the FAQ section and its structured data.
-    cta:
-      label: Read the FAQ page
-      href: /faq/
+      - quote: "[PLACEHOLDER: real client testimonial]"
+        name: "[PLACEHOLDER: client name]"
+        role: "[PLACEHOLDER: role, company]"
+      - quote: "[PLACEHOLDER: real client testimonial]"
+        name: "[PLACEHOLDER: client name]"
+        role: "[PLACEHOLDER: role, company]"
+      - quote: "[PLACEHOLDER: real client testimonial]"
+        name: "[PLACEHOLDER: client name]"
+        role: "[PLACEHOLDER: role, company]"
+  - type: "faq"
+    eyebrow: "Frequently asked questions"
+    heading: "Practical questions about AI consulting and implementation"
+    intro: "Understand the starting point, the work involved, and how to decide whether an engagement fits your business."
     items:
-      - q: What is this site for?
-        a: It is a placeholder publication template. Replace the copy when the site is activated.
-      - q: Where do articles live?
-        a: Each article is a markdown file. The public list is linked from the header.
-  - type: cta-band
-    heading: Ready for a real brief
-    sub: Use the contact page to replace this prompt with the working address and response time.
+      - q: "What does No Black Swan help businesses do?"
+        a: "No Black Swan helps businesses identify, prioritize, and implement practical uses of AI. Work can include reviewing existing workflows, assessing readiness and opportunities, developing a strategy, implementing and integrating tools, automating repetitive work, and supporting adoption after deployment. The objective is to connect AI to actual business processes instead of leaving employees to experiment with disconnected tools. The specific engagement depends on the problems, constraints, and priorities of your organization."
+      - q: "Is this suitable for a small or midsize business?"
+        a: "The intended clients are small and midsize businesses across industries. The work is relevant when leadership sees potential in AI but needs help turning that potential into coordinated execution. You do not need to arrive with a fully developed AI strategy. A discovery conversation can establish what your team already does, where manual effort persists, what systems are involved, and which problems are important enough to investigate."
+      - q: "Do we need to be using AI already?"
+        a: "No existing AI program is specified as a prerequisite. Some businesses come to the work with scattered experiments; others want to assess readiness, identify valuable use cases, or decide where to start. The first conversation covers your current AI use, business goals, and operational friction. That context helps establish whether an assessment, advisory work, implementation, or another supported service is the most relevant next step."
+      - q: "How do you decide which AI opportunities to pursue?"
+        a: "Potential opportunities are considered against value, feasibility, risk, and effort. The aim is to identify work that fits the organization's goals and can be implemented sensibly, rather than selecting tools because they are available or attracting attention. Understanding the current workflow also matters. A seemingly simple task may depend on information, decisions, or systems elsewhere in the business, so prioritization should reflect those dependencies."
+      - q: "Does No Black Swan implement solutions or only provide advice?"
+        a: "The offer combines strategic prioritization with hands-on implementation. Depending on the engagement, work may progress from assessing opportunities and defining a roadmap to configuring tools, connecting systems, testing workflows, and supporting day-to-day adoption. The intention is to take ownership of execution rather than leave the business to translate recommendations into working systems alone. The actual responsibilities and deliverables are agreed as part of the engagement scope."
+      - q: "Can AI be connected to our existing business systems?"
+        a: "Connecting selected AI tools to existing systems and workflows is part of the implementation focus. Whether a particular integration is feasible depends on the systems involved, available connection options, the intended process, and associated constraints. The discovery and assessment work helps establish the relevant conditions before scope is agreed. No specific software compatibility or integration is guaranteed before those details have been reviewed."
+      - q: "How much does an engagement cost?"
+        a: "No fixed price list, rate card, or confirmed service packages are available in the supplied company information. Commercial scope is expected to depend on the work required, which may range from assessment and advisory through implementation and ongoing support. The practical starting point is a discovery call to understand the business need and determine the appropriate next step. A price should be confirmed only after the engagement scope and commercial terms have been established."
+      - q: "How do we get started?"
+        a: "Start by contacting No Black Swan to arrange a discovery conversation. Be prepared to describe your business, the workflows that cause friction, your current use of AI, and the result you are trying to achieve. You do not need to have selected a tool or written a complete implementation plan. The first step is to understand the problem and determine whether further assessment, advisory work, or hands-on implementation is appropriate."
+  - type: "articles-teaser"
+    heading: "Explore practical perspectives on AI and business operations"
+    intro: "Read the articles for further context on the business questions, implementation decisions, and operational considerations surrounding AI. The goal is to connect useful ideas to the decisions organizations need to make."
+  - type: "cta-band"
+    heading: "Start with the workflow you want to improve."
+    sub: "Discuss your business goals, current AI use, and operational friction. Use a discovery call to determine the right next step."
     cta_primary:
-      label: Contact
-      href: /contact/
+      label: "Contact No Black Swan"
+      href: "/contact/"
     cta_secondary:
-      label: About
-      href: /about/
-  - type: rich-text
-    heading: Notes for the next edit
-    body: |
-      This block is the rich-text section. It accepts markdown headings at the second and third level only.
-
-      ## What to replace
-
-      Swap this copy for the real story of the publication. Keep claims specific and sourced.
-
-      ### Where to look next
-
-      The [about page](/about/), [testimonials](/testimonials/), [privacy](/privacy/), and [terms](/terms/) are placeholder pages in the same system.
-  - type: contact
-    heading: Write to the desk
-    body: This contact block is a preview. Point it at the real inbox at activation.
-    email: hello@example.com
-    response_note: Placeholder note. A reply usually follows within two working days.
-  - type: team-teaser
-    heading: People behind the pages
-    intro: Names and roles come from the team collection.
-  - type: articles-teaser
-    heading: Latest articles
-    intro: The three most recently updated published articles.
-  - type: page-header
-    eyebrow: Section sample
-    h1: Page header
-    intro: Inner pages open with this block instead of a hero. On the homepage it is only here so the layout can be reviewed. It is not a second page title.
+      label: "Review our services"
+      href: "/services/"

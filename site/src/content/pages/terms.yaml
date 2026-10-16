@@ -1,19 +1,126 @@
-route: /terms/
-meta_title: Terms — Site Name
-meta_description: Placeholder terms of use. Replace this page with reviewed terms before the site is offered to the public.
+route: "/terms/"
+meta_title: "Website Terms and Conditions | No Black Swan"
+meta_description: "Read the draft terms governing use of the No Black Swan website, including informational content, intellectual property, third-party links, disclaimers, and liability."
 sections:
-  - type: page-header
-    eyebrow: Legal
-    h1: Terms
-    intro: This page is a placeholder. It is not a terms of use agreement and should not be treated as one.
-  - type: rich-text
+  - type: "page-header"
+    eyebrow: "Legal"
+    h1: "Website Terms and Conditions"
+    intro: "These draft terms describe proposed rules for using the No Black Swan website. Review them with legal counsel and confirm the applicable jurisdiction and actual business practices before publication."
+  - type: "rich-text"
+    heading: "Terms of use"
     body: |
-      [PLACEHOLDER: replace with reviewed policy]
+      **Draft — review with legal counsel before publishing.**
 
-      ## What this page will cover
+      ## 1. About these terms
 
-      Reviewed terms should say how the pages may be used, what the publication is responsible for, and how to raise a correction.
+      This website is associated with No Black Swan, the business name of The Night Ventures, LLC, doing business as No Black Swan. These terms are intended to govern use of the website and its publicly available content. Contact email: team@noblackswan.com.
 
-      ### Until then
+      By accessing or using the website, you agree to comply with these terms and with applicable law. If you do not agree with them, you should stop using the website. These terms concern website use only. A separate written agreement may govern consulting, assessment, advisory, implementation, integration, automation, or ongoing support services provided by No Black Swan.
 
-      Do not describe rights, licenses, or liability on top of this placeholder.
+      If separate service terms conflict with these website terms concerning an agreed engagement, the relationship between those documents should be determined by the actual wording of the relevant agreement and applicable law. Nothing in these draft website terms should be taken as confirming a service scope, fee, delivery date, or other commercial commitment that has not been separately agreed.
+
+      ## 2. Purpose of the website
+
+      The website provides general information about No Black Swan and its business-to-business AI consulting and implementation services. Those services include AI Readiness and Opportunity Assessment, AI Strategy and Advisory, AI Implementation and Integration, AI Automation, and Ongoing Optimization and Adoption Support.
+
+      Website content is provided to explain the business and help visitors decide whether to make an inquiry. It is not, by itself, an offer to deliver a particular project, a promise that a proposed use case is feasible, or a commitment to achieve a specific business outcome. A discovery conversation is intended to understand the business, its current AI use, operational friction, and desired improvements. Any subsequent engagement remains subject to mutually agreed scope and commercial terms.
+
+      ## 3. Permitted use
+
+      You may use the website for lawful purposes, including learning about the business, reviewing the information provided, and contacting No Black Swan with a legitimate inquiry. You agree not to use the website in a way that violates applicable law, infringes another person's rights, disrupts website operation, or interferes with another visitor's use.
+
+      You must not attempt to gain unauthorized access to the website, its hosting environment, accounts, systems, or underlying infrastructure. You must not knowingly submit malicious code, exploit a security weakness, disrupt available services, or use automated access in a way that places an unreasonable burden on the website.
+
+      You must not misrepresent your identity or authority when submitting an inquiry. Do not send information that you are not entitled to disclose. If you describe a business workflow or AI project, ensure that your communication is limited to information you are authorized to share.
+
+      No Black Swan may restrict or investigate use that reasonably appears to violate these terms or applicable law, subject to its legal obligations and the rights of affected persons.
+
+      ## 4. Intellectual property
+
+      The text, graphics, images, marks, and other content made available through the website may be protected by intellectual property laws. Their ownership and licensing depend on the relevant rights and agreements. Unless permission is expressly provided by the rights holder or applicable law allows the use, visitors should not reproduce, modify, republish, distribute, publicly display, or create derivative works from website content beyond ordinary personal review and lawful use.
+
+      No Black Swan's business name and any associated branding must not be used in a way that falsely suggests endorsement, affiliation, authorization, or a commercial relationship. A reference to a service or organization does not, by itself, grant permission to use a protected name, logo, or other asset.
+
+      Visitors retain whatever rights they hold in material they submit, subject to any separate agreement and applicable law. Submitting an inquiry should not be treated as a grant of unrestricted rights to confidential business information. Do not submit material that infringes another person's rights or that you do not have permission to disclose.
+
+      **[GAP: Confirm rights ownership or licensing for website copy, photography, illustrations, logos, and any third-party material. Add any specific permissions or reuse terms that the business intends to offer.]**
+
+      ## 5. AI-related information and professional judgment
+
+      AI capabilities, tool availability, system integrations, and business processes vary. Information on this website is general and is not a guarantee that a particular AI use case will be appropriate, feasible, secure, compliant, or commercially beneficial for every organization.
+
+      AI systems and their outputs can be incomplete, inaccurate, unsuitable, or dependent on the information and instructions provided. Visitors and organizations should apply appropriate human review and business judgment to decisions made using AI. A business should evaluate applicable privacy, security, regulatory, contractual, and operational requirements before deploying a solution.
+
+      The website does not replace an assessment of a particular organization's workflows, systems, resources, and constraints. Where No Black Swan undertakes work for a client, responsibilities and deliverables should be established in the relevant engagement agreement. No specific outcome should be inferred from general descriptions of the approach or services.
+
+      ## 6. No guarantee of results
+
+      The website describes the aims and methods of No Black Swan's services, including identifying opportunities, prioritizing work, integrating tools, automating workflows, and supporting adoption. Actual results depend on matters that may vary between engagements, including data quality, process design, existing systems, team participation, technical feasibility, implementation choices, and other operational constraints.
+
+      Unless an applicable written agreement expressly provides otherwise, website content does not guarantee cost savings, productivity improvements, time reductions, revenue, return on investment, integration compatibility, uninterrupted operation, or any particular result. No quantified performance claims are made by these terms.
+
+      ## 7. Disclaimers
+
+      To the extent permitted by applicable law, the website and its publicly available content are provided on an informational basis and without a general guarantee that the material is complete, current, error-free, continuously available, or suitable for every purpose.
+
+      No Black Swan should not be understood to provide legal, tax, regulatory, cybersecurity, or other specialist professional advice solely through the website's general content. Organizations remain responsible for obtaining advice and approvals appropriate to their circumstances before making material operational decisions or deploying technology.
+
+      Nothing in these terms is intended to exclude a warranty, duty, or right that cannot lawfully be excluded or restricted. Any disclaimer must be interpreted subject to applicable consumer, commercial, and other mandatory legal protections.
+
+      ## 8. Third-party websites and services
+
+      The website may include links to articles or other third-party resources. These links are provided for reference or convenience where appropriate. No Black Swan does not control the content, availability, accuracy, terms, or privacy practices of external websites merely because a link appears on this site.
+
+      A link does not automatically imply endorsement, a partnership, or a guarantee concerning the linked resource. Accessing an external website is at the visitor's discretion, and its own terms and policies may apply.
+
+      Any third-party products or AI tools discussed in connection with the business should be evaluated according to the relevant provider's terms, security and privacy information, licensing, and other applicable requirements. The fact that a tool may be considered for a project does not establish a particular integration, resale relationship, or endorsement.
+
+      ## 9. Limitation of liability
+
+      To the maximum extent permitted by applicable law, No Black Swan should not be liable under these website terms for indirect, incidental, consequential, special, exemplary, or punitive losses arising from or connected with use of, or inability to use, the website, including loss of data, revenue, opportunity, or business interruption, where such exclusions are legally enforceable.
+
+      To the extent permitted by applicable law, liability for reliance on general website information should be assessed in light of the informational purpose of the site and any separate agreement governing the relevant services. No provision of these terms should be read as excluding liability that cannot legally be excluded, including liability for fraud or other non-excludable conduct where applicable law prohibits such exclusion.
+
+      The scope and enforceability of limitations may vary by jurisdiction and by the nature of the relationship between the parties. These clauses require legal review before use. They are not intended to override mandatory statutory rights or terms that apply under a separately executed client agreement.
+
+      **[GAP: Have legal counsel confirm enforceable disclaimers and liability limits for the governing jurisdiction and the intended business-to-business audience.]**
+
+      ## 10. Privacy and information submitted through the website
+
+      Personal information submitted through the website or associated communications may be handled as described in the applicable privacy policy. Visitors should review that policy before providing personal information.
+
+      Do not submit confidential, sensitive, or restricted information through a general contact method unless it is reasonably necessary and an appropriate handling process has been agreed. Visitors are responsible for ensuring they have the necessary authority to provide the information included in their communications.
+
+      ## 11. Website availability and changes
+
+      Website content and functionality may be revised, suspended, or withdrawn as business needs and technical requirements change. These draft terms do not promise uninterrupted availability, a particular maintenance schedule, or advance notice of every change. Where notice is legally required, the relevant obligations continue to apply.
+
+      No Black Swan may update these terms to reflect changes in the website, service information, or applicable requirements. The published terms should carry an effective date, and material changes should be communicated where required by law.
+
+      **[GAP: Add an effective date and confirm how revised website terms will be published and, where required, communicated to users.]**
+
+      ## 12. Governing law and disputes
+
+      These terms are intended to be governed by the laws of **[PLACEHOLDER: jurisdiction]**, without applying conflict-of-law rules to the extent that such exclusion is permitted. Subject to mandatory law, disputes concerning these terms would be handled by the courts or other dispute forum specified in the final, legally reviewed version.
+
+      The appropriate governing law, venue, and dispute provisions depend on the business's legal circumstances and applicable law. No jurisdiction, county, state, court, or exclusive dispute forum has been confirmed in the supplied company information.
+
+      **[GAP: Confirm the governing law, permitted venue, dispute-resolution requirements, and whether any mandatory consumer or other statutory provisions must be preserved.]**
+
+      ## 13. Severability and waiver
+
+      If a provision of these terms is found to be invalid or unenforceable, the remaining provisions should continue to apply to the extent permitted by law. The affected provision should be interpreted or replaced only as permitted under the governing law.
+
+      A failure to exercise a right immediately does not necessarily mean that the right has been waived. Any intended waiver should be interpreted according to its actual terms and applicable law.
+
+      ## 14. Entire agreement and separate engagements
+
+      These terms address website use and do not, by themselves, establish the full commercial terms for consulting or implementation services. A separate agreement may be needed to define the scope of services, fees, payment arrangements, responsibilities, dependencies, success measures, intellectual property, confidentiality, data handling, support, and termination.
+
+      Visitors should not infer a project commitment, delivery date, pricing arrangement, or service-level promise from general website descriptions. Any engagement should be documented in a form agreed by the parties.
+
+      ## 15. Contact
+
+      Questions concerning these website terms may be sent to team@noblackswan.com.
+
+      **[GAP: Confirm whether a formal postal address, registered business address, or other legal contact information must be published in the final version.]**
