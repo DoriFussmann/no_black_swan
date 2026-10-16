@@ -24,7 +24,17 @@ keywords:
   - ai consulting for small business
   - ai consulting services
 draft: false
-internalLinks: []
+internalLinks:
+  - slug: ai-consulting-services
+    anchor: ai consulting services
+  - slug: ai-consulting-for-small-business-faq
+    anchor: ai consulting for small business faq
+  - slug: ai-consulting-for-small-business
+    anchor: ai consulting for small business
+  - slug: boutique-ai-consultant-vs-large-consulting-firm-small-business
+    anchor: boutique ai consultant vs large consulting firm small business
+  - slug: how-to-choose-an-ai-consultant-for-small-business
+    anchor: how to choose an ai consultant for small business
 externalLinks: []
 faqs:
   - question: "What is the cheapest way for a small business to start with AI consulting?"
@@ -138,3 +148,7 @@ Survey data from early 2026 puts 77% of US small and mid-sized businesses using 
 - Integration depth — how many of your systems need to connect — is the primary driver of cost, far more than the complexity of the AI itself; knowing this before soliciting proposals helps you compare quotes accurately.
 - Businesses under $5M in revenue get the best return from a structured workflow audit followed by a single pilot implementation, before expanding to broader automation.
 - The hidden cost of cheap AI consulting is re-work: engagements that deliver strategy documents instead of working systems, or tools that run on the consultant's accounts rather than yours, create dependency and switching costs that far exceed the initial savings.
+
+<!-- CMS-INTERNAL:START -->
+Further reading: [ai consulting services](/articles/ai-consulting-services/) · [ai consulting for small business faq](/articles/ai-consulting-for-small-business-faq/) · [ai consulting for small business](/articles/ai-consulting-for-small-business/) · [boutique ai consultant vs large consulting firm small business](/articles/boutique-ai-consultant-vs-large-consulting-firm-small-business/) · [how to choose an ai consultant for small business](/articles/how-to-choose-an-ai-consultant-for-small-business/).
+<!-- CMS-INTERNAL:END -->

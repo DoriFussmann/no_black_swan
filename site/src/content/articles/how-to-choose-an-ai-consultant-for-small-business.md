@@ -24,7 +24,17 @@ keywords:
   - ai consulting for small business
   - ai consulting services
 draft: false
-internalLinks: []
+internalLinks:
+  - slug: ai-consulting-services
+    anchor: ai consulting services
+  - slug: ai-consulting-companies-for-small-business
+    anchor: ai consulting companies for small business
+  - slug: ai-consulting-for-small-business-faq
+    anchor: ai consulting for small business faq
+  - slug: ai-consulting-for-small-business
+    anchor: ai consulting for small business
+  - slug: boutique-ai-consultant-vs-large-consulting-firm-small-business
+    anchor: boutique ai consultant vs large consulting firm small business
 externalLinks: []
 faqs:
   - question: "How do I know if an AI consultant actually builds things or just delivers slide decks?"
@@ -139,3 +149,7 @@ The AI consulting market is projected to grow from roughly $11.9 billion in 2026
 - Ask directly whether the consultant receives referral fees or commissions from any tool they might recommend — undisclosed platform relationships mean their advice optimizes for their economics, not your workflow.
 - Insist on a fixed-scope, fixed-price pilot before any larger commitment; a consultant who cannot scope a starter engagement at a defined price is protecting their hours, not your budget.
 - Walk away from any consultant who leads with technology before understanding your business, makes guaranteed outcome promises, skips a discovery phase, or builds systems only they can maintain.
+
+<!-- CMS-INTERNAL:START -->
+Further reading: [ai consulting services](/articles/ai-consulting-services/) · [ai consulting companies for small business](/articles/ai-consulting-companies-for-small-business/) · [ai consulting for small business faq](/articles/ai-consulting-for-small-business-faq/) · [ai consulting for small business](/articles/ai-consulting-for-small-business/) · [boutique ai consultant vs large consulting firm small business](/articles/boutique-ai-consultant-vs-large-consulting-firm-small-business/).
+<!-- CMS-INTERNAL:END -->

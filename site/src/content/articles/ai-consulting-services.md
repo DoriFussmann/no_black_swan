@@ -20,7 +20,27 @@ imageAlt: Business leader and AI consultant reviewing a workflow diagram on a wh
 keywords:
   - ai consulting services
 draft: false
-internalLinks: []
+internalLinks:
+  - slug: ai-consulting-companies-for-small-business
+    anchor: ai consulting companies for small business
+  - slug: ai-consulting-for-small-business-faq
+    anchor: ai consulting for small business faq
+  - slug: ai-consulting-for-small-business
+    anchor: ai consulting for small business
+  - slug: boutique-ai-consultant-vs-large-consulting-firm-small-business
+    anchor: boutique ai consultant vs large consulting firm small business
+  - slug: how-to-choose-an-ai-consultant-for-small-business
+    anchor: how to choose an ai consultant for small business
+  - slug: ai-agent-development-company
+    anchor: ai agent development company
+  - slug: ai-automation-services
+    anchor: ai automation services
+  - slug: ai-implementation-services
+    anchor: ai implementation services
+  - slug: industry-and-local-pages
+    anchor: industry and local pages
+  - slug: technical-seo-foundations
+    anchor: technical seo foundations
 externalLinks: []
 faqs:
   - question: "What is the difference between AI consulting and AI implementation?"
@@ -150,3 +170,7 @@ Most SMBs spend $10,000 to $50,000 on initial AI consulting projects,
  with boutique firms typically running $150–$300 per hour — a realistic budget for businesses that need working automation live in weeks rather than a multi-quarter enterprise transformation.
 - The critical differentiators when choosing a provider are tool agnosticism, senior-led delivery throughout the engagement, a genuine integration strategy, and a measurable definition of success agreed upon before work begins.
 - The right questions to ask before hiring focus on the provider's discovery process, who actually does the implementation work, how solutions connect to existing systems, and what concrete results they have produced for comparable businesses.
+
+<!-- CMS-INTERNAL:START -->
+Further reading: [ai consulting companies for small business](/articles/ai-consulting-companies-for-small-business/) · [ai consulting for small business faq](/articles/ai-consulting-for-small-business-faq/) · [ai consulting for small business](/articles/ai-consulting-for-small-business/) · [boutique ai consultant vs large consulting firm small business](/articles/boutique-ai-consultant-vs-large-consulting-firm-small-business/) · [how to choose an ai consultant for small business](/articles/how-to-choose-an-ai-consultant-for-small-business/) · [ai agent development company](/articles/ai-agent-development-company/) · [ai automation services](/articles/ai-automation-services/) · [ai implementation services](/articles/ai-implementation-services/) · [industry and local pages](/articles/industry-and-local-pages/) · [technical seo foundations](/articles/technical-seo-foundations/).
+<!-- CMS-INTERNAL:END -->

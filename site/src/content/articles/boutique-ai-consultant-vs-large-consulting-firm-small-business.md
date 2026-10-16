@@ -24,7 +24,17 @@ keywords:
   - ai consulting for small business
   - ai consulting services
 draft: false
-internalLinks: []
+internalLinks:
+  - slug: ai-consulting-services
+    anchor: ai consulting services
+  - slug: ai-consulting-companies-for-small-business
+    anchor: ai consulting companies for small business
+  - slug: ai-consulting-for-small-business-faq
+    anchor: ai consulting for small business faq
+  - slug: ai-consulting-for-small-business
+    anchor: ai consulting for small business
+  - slug: how-to-choose-an-ai-consultant-for-small-business
+    anchor: how to choose an ai consultant for small business
 externalLinks: []
 faqs:
   - question: "What is the typical minimum budget for a large consulting firm AI engagement?"
@@ -147,3 +157,7 @@ The fastest-growing client segment is businesses with 11 to 150 employees, where
 - The most important question to ask any consultant before hiring is not about methodology — it is who will actually do the work once the sales process ends.
 - Large firms are the right choice when a problem genuinely requires multi-entity governance, enterprise procurement credentials, or regulated-industry audit infrastructure — scenarios that are rare for most small businesses.
 - No Black Swan is built for the majority case: businesses that need a practitioner to own the outcome end-to-end, embed AI into real workflows, and deliver something working — not a strategy deck that requires a second vendor to execute.
+
+<!-- CMS-INTERNAL:START -->
+Further reading: [ai consulting services](/articles/ai-consulting-services/) · [ai consulting companies for small business](/articles/ai-consulting-companies-for-small-business/) · [ai consulting for small business faq](/articles/ai-consulting-for-small-business-faq/) · [ai consulting for small business](/articles/ai-consulting-for-small-business/) · [how to choose an ai consultant for small business](/articles/how-to-choose-an-ai-consultant-for-small-business/).
+<!-- CMS-INTERNAL:END -->
