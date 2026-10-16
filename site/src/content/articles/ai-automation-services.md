@@ -21,7 +21,17 @@ imageAlt: "Business leader reviewing an AI workflow diagram on a large monitor i
 keywords:
   - ai automation services
 draft: false
-internalLinks: []
+internalLinks:
+  - slug: ai-agent-development-company
+    anchor: ai agent development company
+  - slug: ai-consulting-services
+    anchor: ai consulting services
+  - slug: ai-implementation-services
+    anchor: ai implementation services
+  - slug: industry-and-local-pages
+    anchor: industry and local pages
+  - slug: technical-seo-foundations
+    anchor: technical seo foundations
 externalLinks: []
 faqs:
   - question: "What is the difference between buying an AI tool and hiring an AI automation service?"
@@ -154,3 +164,7 @@ Anthropic's latest Claude models have seen cache read prices halved, making agen
 If your business has already run some AI experiments but still has disconnected tools, manual handoffs between systems, and no clear picture of which automations are actually saving time, the next step is not another tool — it is a structured process for identifying which workflows are worth building, in what order, and how to connect them.
 
 No Black Swan works with business owners who want someone to take ownership of that whole process: mapping the workflows, identifying what's actually worth automating, building the integrations, and measuring the results. If you want to understand how that works in practice before committing to anything, the starting point is a conversation about your current stack and where the manual burden is highest.
+
+<!-- CMS-INTERNAL:START -->
+Further reading: [ai agent development company](/articles/ai-agent-development-company/) · [ai consulting services](/articles/ai-consulting-services/) · [ai implementation services](/articles/ai-implementation-services/) · [industry and local pages](/articles/industry-and-local-pages/) · [technical seo foundations](/articles/technical-seo-foundations/).
+<!-- CMS-INTERNAL:END -->

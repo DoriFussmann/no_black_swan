@@ -23,7 +23,17 @@ keywords:
   - ai consulting for small business
   - ai consulting services
 draft: false
-internalLinks: []
+internalLinks:
+  - slug: ai-consulting-services
+    anchor: ai consulting services
+  - slug: ai-consulting-companies-for-small-business
+    anchor: ai consulting companies for small business
+  - slug: ai-consulting-for-small-business-faq
+    anchor: ai consulting for small business faq
+  - slug: boutique-ai-consultant-vs-large-consulting-firm-small-business
+    anchor: boutique ai consultant vs large consulting firm small business
+  - slug: how-to-choose-an-ai-consultant-for-small-business
+    anchor: how to choose an ai consultant for small business
 externalLinks: []
 faqs:
   - question: "How do I know if my small business is ready for AI consulting?"
@@ -152,3 +162,7 @@ Analysis from this month notes that rules around AI accountability are tightenin
 ---
 
 For business owners who have been running scattered AI experiments and want someone to take ownership of the full process — from identifying which opportunities actually matter to building connected solutions the team will use without hand-holding — the right next step is a structured discovery conversation. No Black Swan's approach starts with a clear-eyed audit of where your highest-leverage workflow opportunities actually are, then builds connected solutions designed around how your organization really operates. The goal is systems that compound value across the business, not a longer list of subscriptions. If that's the kind of outcome you're working toward, it's worth having a focused conversation about where to start.
+
+<!-- CMS-INTERNAL:START -->
+Further reading: [ai consulting services](/articles/ai-consulting-services/) · [ai consulting companies for small business](/articles/ai-consulting-companies-for-small-business/) · [ai consulting for small business faq](/articles/ai-consulting-for-small-business-faq/) · [boutique ai consultant vs large consulting firm small business](/articles/boutique-ai-consultant-vs-large-consulting-firm-small-business/) · [how to choose an ai consultant for small business](/articles/how-to-choose-an-ai-consultant-for-small-business/).
+<!-- CMS-INTERNAL:END -->

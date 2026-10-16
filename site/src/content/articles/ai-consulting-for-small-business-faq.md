@@ -24,7 +24,17 @@ keywords:
   - ai consulting for small business
   - ai consulting services
 draft: false
-internalLinks: []
+internalLinks:
+  - slug: ai-consulting-services
+    anchor: ai consulting services
+  - slug: ai-consulting-companies-for-small-business
+    anchor: ai consulting companies for small business
+  - slug: ai-consulting-for-small-business
+    anchor: ai consulting for small business
+  - slug: boutique-ai-consultant-vs-large-consulting-firm-small-business
+    anchor: boutique ai consultant vs large consulting firm small business
+  - slug: how-to-choose-an-ai-consultant-for-small-business
+    anchor: how to choose an ai consultant for small business
 externalLinks: []
 faqs:
   - question: "How do I know if a workflow is worth automating before I hire an AI consultant?"
@@ -142,3 +152,7 @@ The broader industry shift is from AI as an assistant that answers questions to 
 ---
 
 If working through these answers has surfaced a specific question about a workflow in your own business — one where you're not sure whether automation makes sense, or how it would connect to your existing tools — that question deserves a concrete answer, not a generic brochure. A short discovery call with No Black Swan is where that conversation happens: direct, workflow-specific, and without a sales agenda attached to every answer.
+
+<!-- CMS-INTERNAL:START -->
+Further reading: [ai consulting services](/articles/ai-consulting-services/) · [ai consulting companies for small business](/articles/ai-consulting-companies-for-small-business/) · [ai consulting for small business](/articles/ai-consulting-for-small-business/) · [boutique ai consultant vs large consulting firm small business](/articles/boutique-ai-consultant-vs-large-consulting-firm-small-business/) · [how to choose an ai consultant for small business](/articles/how-to-choose-an-ai-consultant-for-small-business/).
+<!-- CMS-INTERNAL:END -->

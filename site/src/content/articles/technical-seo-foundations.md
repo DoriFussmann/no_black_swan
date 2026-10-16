@@ -24,12 +24,22 @@ keywords:
   - "Technical SEO"
 draft: false
 internalLinks:
-  - slug: "improve-core-web-vitals-howto"
-    anchor: "improve core web vitals"
-  - slug: "core-web-vitals-complete-guide"
-    anchor: "core web vitals complete guide"
-  - slug: "content-strategy-foundations"
-    anchor: "content strategy foundations"
+  - slug: improve-core-web-vitals-howto
+    anchor: improve core web vitals
+  - slug: core-web-vitals-complete-guide
+    anchor: core web vitals complete guide
+  - slug: content-strategy-foundations
+    anchor: content strategy foundations
+  - slug: ai-agent-development-company
+    anchor: ai agent development company
+  - slug: ai-automation-services
+    anchor: ai automation services
+  - slug: ai-consulting-services
+    anchor: ai consulting services
+  - slug: ai-implementation-services
+    anchor: ai implementation services
+  - slug: industry-and-local-pages
+    anchor: industry and local pages
 externalLinks:
   - label: "Google Search Central documentation"
     url: "https://developers.google.com/search/docs"
@@ -77,7 +87,7 @@ The conversation around crawlability has shifted toward rendering honesty and ca
 - Fix crawl traps before commissioning more content on the same templates.
 
 <!-- CMS-INTERNAL:START -->
-Further reading: [improve core web vitals](/articles/improve-core-web-vitals-howto/) · [core web vitals complete guide](/articles/core-web-vitals-complete-guide/) · [content strategy foundations](/articles/content-strategy-foundations/).
+Further reading: [improve core web vitals](/articles/improve-core-web-vitals-howto/) · [core web vitals complete guide](/articles/core-web-vitals-complete-guide/) · [content strategy foundations](/articles/content-strategy-foundations/) · [ai agent development company](/articles/ai-agent-development-company/) · [ai automation services](/articles/ai-automation-services/) · [ai consulting services](/articles/ai-consulting-services/) · [ai implementation services](/articles/ai-implementation-services/) · [industry and local pages](/articles/industry-and-local-pages/).
 <!-- CMS-INTERNAL:END -->
 
 <!-- CMS-EXTERNAL:START -->

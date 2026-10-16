@@ -21,7 +21,17 @@ imageAlt: "Business owner reviewing a tablet displaying a map of local markets a
 keywords:
   - industry and local pages
 draft: false
-internalLinks: []
+internalLinks:
+  - slug: ai-agent-development-company
+    anchor: ai agent development company
+  - slug: ai-automation-services
+    anchor: ai automation services
+  - slug: ai-consulting-services
+    anchor: ai consulting services
+  - slug: ai-implementation-services
+    anchor: ai implementation services
+  - slug: technical-seo-foundations
+    anchor: technical seo foundations
 externalLinks: []
 faqs:
   - question: "Why does No Black Swan create separate pages for specific industries and locations instead of one general service page?"
@@ -149,3 +159,7 @@ Recent research further suggests that as AI reduces the cost and time required f
 - Local pages matter because AI adoption decisions are trust decisions — geographic context signals that a consultant understands your market conditions, vendor ecosystem, and competitive landscape, not just AI in the abstract.
 - Every No Black Swan engagement begins with process mapping before any tool is recommended, ensuring AI is embedded into real connected workflows rather than deployed as an isolated add-on.
 - The goal of this hub is to give business owners a clear, specific starting point — organized by industry and location — so that the first conversation skips the generic overview and goes straight to what is most likely to work for their business.
+
+<!-- CMS-INTERNAL:START -->
+Further reading: [ai agent development company](/articles/ai-agent-development-company/) · [ai automation services](/articles/ai-automation-services/) · [ai consulting services](/articles/ai-consulting-services/) · [ai implementation services](/articles/ai-implementation-services/) · [technical seo foundations](/articles/technical-seo-foundations/).
+<!-- CMS-INTERNAL:END -->
