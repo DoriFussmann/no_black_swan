@@ -2,7 +2,6 @@
 title: "AI Strategy and Advisory"
 description: "Turn AI assessment findings into a practical, sequenced roadmap with clear priorities, success measures, and an agreed implementation scope."
 order: 2
-icon: "compass"
 ---
 
 ## Turn AI opportunities into an actionable plan
@@ -41,7 +40,7 @@ The roadmap can provide a basis for answering practical questions:
 - What implementation work needs to be scoped?
 - Which measures will help evaluate whether the chosen work is delivering its intended result?
 
-The precise format and level of detail must be agreed for the engagement. No standardized document template or fixed strategy package has been specified in the company information.
+The format and the level of detail are agreed for the engagement. There is no standard strategy package.
 
 ## Make success measurable
 

@@ -17,12 +17,12 @@ tags:
   - "javascript"
   - "cls"
 image: "../../assets/articles/improve-core-web-vitals-howto.png"
-imageAlt: "Developer checklist next to a 16:9 article hero image with reserved height"
+imageAlt: "A solid gray field with no checklist, people, or text"
 keywords:
   - "improve core web vitals"
   - "howto"
   - "Technical SEO"
-draft: false
+draft: true
 internalLinks:
   - slug: "technical-seo-foundations"
     anchor: "technical seo foundations"

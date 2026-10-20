@@ -17,12 +17,12 @@ tags:
   - "cannibalization"
   - "information architecture"
 image: "../../assets/articles/content-strategy-foundations.png"
-imageAlt: "Editorial cluster map with one pillar connected to supporting how-to articles"
+imageAlt: "A solid gold field with no diagram, people, or text"
 keywords:
   - "content strategy foundations"
   - "topic clusters"
   - "Content Strategy"
-draft: false
+draft: true
 internalLinks:
   - slug: technical-seo-foundations
     anchor: technical seo foundations

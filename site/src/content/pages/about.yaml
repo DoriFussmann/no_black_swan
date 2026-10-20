@@ -31,7 +31,7 @@ sections:
 
       That outcome begins with a disciplined sequence: understand the current state, identify and prioritize opportunities, agree on scope and success measures, implement and test the selected solution, and evaluate how it performs. Not every idea needs implementation. The business case, feasibility, effort, and risk all matter.
 
-      No Black Swan is an early-stage business founded in 2026. Client-approved case studies and quantified before-and-after results are not yet available in the supplied company information. Its public claims should therefore remain focused on the services offered, the implementation approach, and the relevant professional background of its founder.
+      No Black Swan was founded in 2026. It does not publish client case studies or quantified results. What it does publish is the services, the way the work is done, and the founder's professional background.
   - type: "feature-split"
     eyebrow: "Our approach"
     heading: "Start with the business and work backward to the technology."
@@ -43,8 +43,9 @@ sections:
         text: "Agree on implementation scope and success measures so both the intended outcome and the work required are understood."
       - title: "Stay accountable to execution"
         text: "Move beyond advisory recommendations when the engagement calls for hands-on configuration, integration, testing, and adoption support."
-    image: "An advisor listens to a business owner describe a workflow while taking notes on the steps, constraints, and intended outcome. A laptop and process sketch sit between them. The setting should feel like a real working discussion, with both participants and their materials visible. Use a 4:5 vertical crop with natural light and attentive, practical body language."
-    alt: "An advisor documenting a business owner's workflow and priorities"
+    image: "Abstract geometric illustration."
+    alt: "A gray panel beside four stacked bars, the top one blue and the bottom one black"
+    src: "/images/about-approach.svg"
   - type: "feature-split"
     eyebrow: "What makes us different"
     heading: "Bridge the gap between AI advice and working systems."
@@ -56,8 +57,9 @@ sections:
         text: "Treat implementation and integration as core parts of the offer where agreed, rather than assuming the client will deliver every recommendation alone."
       - title: "Focus on outcomes, not tool counts"
         text: "Evaluate the purpose and performance of the selected solution instead of treating the purchase or launch of an AI tool as the final objective."
-    image: "A founder and operations specialist work through an implementation plan with process notes beside a laptop. They compare the intended workflow with the practical steps needed to put it into operation. Show realistic working materials without software logos, readable private information, or fabricated performance charts. Frame the participants and plan for a 4:5 vertical crop with natural workplace lighting."
-    alt: "A founder and operations specialist reviewing an implementation plan"
+    image: "Abstract geometric illustration."
+    alt: "Four vertical bars of different heights in pale blue, blue, black, and gray"
+    src: "/images/about-plan.svg"
   - type: "team-teaser"
     heading: "Meet the people behind the work"
     intro: "No Black Swan is led by Dori Fussmann, whose background spans entrepreneurship, finance leadership, investment banking, and founder mentorship. Visit the team page for more information about the people behind the business."

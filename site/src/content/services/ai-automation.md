@@ -2,7 +2,6 @@
 title: "AI Automation"
 description: "Identify repetitive business processes and automate suitable work with AI to reduce manual effort and improve operational efficiency in practice."
 order: 4
-icon: "workflow"
 ---
 
 ## Reduce repetitive work by improving how processes operate
@@ -35,7 +34,7 @@ Once an opportunity has been selected and scoped, the work can move toward imple
 
 The objective is to make the process work more effectively in practice. Automation should be considered alongside the surrounding tasks and systems, not as a disconnected technical addition. Relevant steps need to be configured, connected, and tested against the intended use.
 
-No particular automation platform, software integration, or custom AI agent development capability has been specified in the company information. Tool choices and feasibility must therefore be confirmed for the proposed workflow before a particular solution is promised.
+No automation platform is promised in advance. The tool and the feasibility are confirmed for the proposed workflow before a particular solution is offered.
 
 ## Evaluate the operational effect
 

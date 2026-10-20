@@ -17,12 +17,12 @@ tags:
   - "rendering"
   - "site architecture"
 image: "../../assets/articles/technical-seo-foundations.png"
-imageAlt: "Abstract diagram of a crawler following internal links across a structured website"
+imageAlt: "A solid navy field with no diagram, people, or text"
 keywords:
-  - "technical seo foundations (no volume data)"
+  - "technical seo foundations"
   - "crawlability"
   - "Technical SEO"
-draft: false
+draft: true
 internalLinks:
   - slug: improve-core-web-vitals-howto
     anchor: improve core web vitals

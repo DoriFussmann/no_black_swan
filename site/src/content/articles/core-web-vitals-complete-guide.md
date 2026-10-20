@@ -18,12 +18,12 @@ tags:
   - "cls"
   - "performance"
 image: "../../assets/articles/core-web-vitals-complete-guide.png"
-imageAlt: "Field metrics dashboard showing LCP, INP, and CLS across mobile and desktop"
+imageAlt: "A solid navy field with no chart, people, or text"
 keywords:
   - "core web vitals complete guide"
   - "lcp"
   - "Technical SEO"
-draft: false
+draft: true
 internalLinks:
   - slug: "technical-seo-foundations"
     anchor: "technical seo foundations"

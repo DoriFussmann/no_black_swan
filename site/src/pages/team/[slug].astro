@@ -40,10 +40,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [orgNode(site), websiteNode(site), person, breadcrumbNode(crumbs, SITE_URL)],
 };
-const description =
-  bioPlain.length >= 140 && bioPlain.length <= 160
-    ? bioPlain
-    : `${member.data.name} is ${member.data.role}. Read credentials, focus areas, and published articles.`;
+const description = `${member.data.name}, ${member.data.role}. Background in company building, finance leadership, investment banking, and founder mentorship.`;
 ---
 
 <BaseLayout
@@ -59,7 +56,7 @@ const description =
         src={member.data.photo}
         width={320}
         height={320}
-        alt={`${member.data.name} headshot`}
+        alt={`Portrait of ${member.data.name}`}
         loading="eager"
         fetchpriority="high"
         class="avatar avatar-lg"

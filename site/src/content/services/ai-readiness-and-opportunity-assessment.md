@@ -2,7 +2,6 @@
 title: "AI Readiness and Opportunity Assessment"
 description: "Assess current workflows, constraints, and AI use to identify practical opportunities based on business value, feasibility, effort, and risk."
 order: 1
-icon: "search"
 ---
 
 ## Understand where AI can help before investing in tools
@@ -51,7 +50,7 @@ The purpose is to create a better-informed basis for action. Depending on the fi
 - Separate useful, practical opportunities from experiments without a clear operational purpose.
 - Decide whether further assessment, a strategy roadmap, or implementation planning is the appropriate next step.
 
-These are intended decision benefits, not a promise of a specific financial or productivity result. No quantified savings, performance percentages, or guaranteed outcomes have been established in the supplied company information.
+These are decision benefits, not a promise of a specific financial or productivity result. No Black Swan does not publish quantified savings or guaranteed outcomes.
 
 ## When this service is a good starting point
 

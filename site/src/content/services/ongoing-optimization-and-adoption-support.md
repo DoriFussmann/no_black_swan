@@ -2,7 +2,6 @@
 title: "Ongoing Optimization and Adoption Support"
 description: "Help teams operationalize deployed AI solutions, evaluate their performance, and refine workflows so implementations become part of everyday work."
 order: 5
-icon: "refresh"
 ---
 
 ## Make implementation useful beyond launch
@@ -35,7 +34,7 @@ Business workflows and their operating requirements may reveal issues that were 
 
 Refinement should remain tied to the business need and the agreed scope. Not every observed issue necessarily requires a change to the underlying tool. The appropriate response may involve clarifying a process, addressing an operational dependency, revisiting a configuration, or determining that further implementation work is needed.
 
-The precise work depends on the solution and the problem identified. No particular monitoring product, service-level commitment, response time, or guaranteed frequency of optimization has been specified in the company information. Those details should be agreed rather than inferred from the service name.
+The work depends on the solution and the problem identified. No monitoring product, response time, or optimization schedule is included automatically. Those details are agreed for the engagement.
 
 ## Connect adoption to operational ownership
 

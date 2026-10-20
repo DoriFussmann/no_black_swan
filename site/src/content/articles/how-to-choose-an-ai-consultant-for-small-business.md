@@ -17,8 +17,8 @@ tags:
   - how to choose an ai consultant for small business
   - ai implementation
   - workflow automation
-image: ../../assets/articles/how-to-choose-an-ai-consultant-for-small-business.png
-imageAlt: Small business owner sitting across from a consultant at a desk reviewing a workflow diagram on a laptop
+image: ../../assets/articles/how-to-choose-an-ai-consultant-for-small-business.jpg
+imageAlt: "Four small cubes in a row on paper in a bright empty office"
 keywords:
   - how to choose an ai consultant for small business
   - ai consulting for small business
@@ -40,11 +40,11 @@ faqs:
   - question: "How do I know if an AI consultant actually builds things or just delivers slide decks?"
     answer: "Ask them directly to show you a live system they built that real people use today — not a case study PDF, not a demo environment. A working system means you can ask who uses it, how often, and what it replaced. A consultant who cannot point to something running in production is still in the strategy business, not the implementation business."
   - question: "Should I pay for a discovery phase before committing to a full engagement?"
-    answer: "Yes — and a good consultant will offer one. A paid discovery phase (typically 2–4 weeks with a fixed fee) lets the consultant map your workflows, identify the highest-value starting point, and produce a scoped proposal. If a consultant skips this step and jumps straight to a multi-month contract, they are protecting their revenue, not your outcome."
+    answer: "Yes — and a good consultant will offer one. A paid discovery phase with a fixed fee lets the consultant map your workflows, identify the highest-value starting point, and produce a scoped proposal. If a consultant skips this step and jumps straight to a long open-ended contract, they are protecting their revenue, not your outcome."
   - question: "What does it mean for a consultant to be 'tool-independent,' and why does it matter?"
     answer: "A tool-independent consultant recommends software based on what fits your workflow, not based on referral fees or platform partnerships. Ask directly: do you receive any compensation from the tools you recommend? A conflicted advisor will steer you toward their preferred platform regardless of fit, which often means you inherit ongoing costs and dependencies that serve their business model, not yours."
   - question: "What is a reasonable scope and budget for a first AI engagement with a small business?"
-    answer: "Most well-scoped first engagements for small businesses target a single workflow, run 4–8 weeks, and land in the $5,000–$20,000 range depending on complexity. Some consultants offer a smaller fixed-fee assessment ($2,000–$5,000) before any build begins. If you are being asked for a large open-ended retainer before any concrete deliverable is defined, that is a red flag."
+    answer: "A sensible first engagement names one workflow and a fixed fee for a defined deliverable. Some consultants start with a smaller paid assessment before any build. A large open-ended retainer before that deliverable exists is a red flag."
 ---
 
 Hiring an AI consultant is not like hiring an accountant or a web designer. The category is crowded with vendors wearing the consultant label, and the evaluation signals that normally filter out weak candidates — credentials, certifications, polished proposals — are almost useless here. A certification does not tell you whether someone can connect your CRM to an AI triage layer and hand the result to your operations team. A proposal deck does not tell you whether they have ever shipped anything a real employee uses on a Tuesday afternoon. This guide gives you a concrete, ordered process for finding and vetting a consultant before you commit real money — and for walking away when the signs say you should.
@@ -86,15 +86,13 @@ One of the clearest signals that a consultant is protecting their own hours rath
 
 Require a fixed-scope phase one. Time-and-materials engagements without a written scope create unbounded bills. A capable AI business consultant can scope and price the first phase before you sign.
  The pilot does not need to be enormous — the point is to produce something real that proves the approach works before you commit to anything larger. 
-The right consultant scopes a single workflow, ships a working pilot in a few weeks, and proves ROI before widening the engagement.
+The right consultant scopes a single workflow, ships a working pilot, and shows that it works before widening the engagement.
 
 What should a good scoped proposal look like? 
 A useful proposal for small businesses should name the workflow, the systems involved, the expected time savings, the review process, and the first 30-day deliverable.
  If a proposal you receive is missing any of those elements, send it back and ask for them. If the consultant cannot add them, you have learned something important about how they will behave once the engagement starts.
 
-Budget context helps here: 
-expect roughly $5,000–$15,000 for a strategy sprint and $15,000–$50,000 for a first implementation, with the build typically running 4–8 weeks.
- A consultant who cannot operate within a defined budget range is a risk regardless of their technical ability.
+Ask for the price of that first phase in writing. A consultant who will not attach a number to a defined deliverable is a risk regardless of their technical ability.
 
 ## Step Five: Know the Red Flags That Should End the Conversation
 
@@ -132,14 +130,7 @@ No Black Swan is built to pass every one of these tests. The work begins with yo
 
 ## Where Things Stand
 <!-- WHERE-THINGS-STAND:START -->
-The global AI consulting market is valued at $14.1 billion in 2026, with demand driven by companies seeking guidance on AI strategy and implementation. The shift in the broader small business landscape reflects a move from "trying AI" to "using it well" — a transition that creates real pressure to find consultants who can help businesses move beyond experimentation into productive deployment.
-
-The Small Business & Entrepreneurship Council's data from early 2026 found the average small business already uses a median of five AI tools and plans to add more
- — meaning the typical buyer is no longer evaluating whether to use AI at all, but whether their scattered tool adoption can be turned into something connected and measurable. 
-A Goldman Sachs survey from March 2026 found that 67% of small business owners expect AI to increase revenue, yet many lack the expertise to implement it themselves
- — precisely the gap a well-chosen consultant is positioned to close. 
-The AI consulting market is projected to grow from roughly $11.9 billion in 2026 to $73.89 billion by 2034
-, which means the supply of self-described AI consultants will continue to grow rapidly, making a disciplined evaluation process more valuable, not less.
+Many small businesses have already tried more than one AI tool. The open question is whether those tools are connected to the work, or whether each one still sits on its own. That is the gap a careful evaluation process is meant to close. The supply of people using the consultant title is easy to expand. A disciplined way to compare them matters more than a market-size forecast.
 <!-- WHERE-THINGS-STAND:END -->
 
 ## Key Takeaways

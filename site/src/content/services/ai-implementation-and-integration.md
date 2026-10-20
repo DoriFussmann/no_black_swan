@@ -2,7 +2,6 @@
 title: "AI Implementation and Integration"
 description: "Configure and connect appropriate AI tools to business processes, existing systems, and real workflows instead of leaving experiments isolated."
 order: 3
-icon: "plug"
 ---
 
 ## Put selected AI tools into the workflows your business uses
@@ -25,7 +24,7 @@ The service includes hands-on deployment of selected tools, with a focus on conn
 
 Connecting systems also requires considering the process around the technology. Information may move between people, decisions, and existing business applications. The implementation should account for the agreed workflow rather than treat a connection as an end in itself.
 
-No specific software platforms, prebuilt connectors, or compatibility guarantees have been identified in the company information. Those details should be established through discovery and technical scoping before an integration is promised.
+No software platform or prebuilt connector is promised in advance. Compatibility is established through discovery and technical scoping before an integration is offered.
 
 ## Test the workflow, not just the tool
 

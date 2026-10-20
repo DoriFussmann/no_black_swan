@@ -511,8 +511,8 @@
     width: 26px;
     height: 26px;
     flex: none;
-    border-radius: 7px;
-    background: var(--c-accent);
+    display: block;
+    color: var(--c-accent);
   }
 
   .wordmark:hover {

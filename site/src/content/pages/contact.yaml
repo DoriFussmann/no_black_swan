@@ -15,13 +15,13 @@ sections:
 
       Email your initial inquiry with enough context to understand the problem. Avoid sending passwords, sensitive customer records, confidential employee details, or other unnecessary personal information in an initial message.
     email: "team@noblackswan.com"
-    response_note: "[GAP: Confirm and publish an expected response time before launch. No response-time commitment is provided in the source information.]"
+    response_note: "We reply within 1 business day."
   - type: "faq"
     eyebrow: "Before you contact us"
     heading: "What to expect from the first conversation"
     items:
       - q: "How quickly will I receive a response?"
-        a: "A specific response time has not been provided in the company information. Email team@noblackswan.com with a concise description of your business and inquiry. If you have a decision deadline or a time-sensitive operational need, mention the relevant date in your message. Do not assume a guaranteed response window until No Black Swan publishes one. [GAP: Confirm and publish the expected response time.]"
+        a: "Email team@noblackswan.com. We reply within 1 business day. Include a concise description of your business and the workflow you want to improve. If a decision deadline matters, mention the date in your message."
       - q: "What information should I include?"
         a: "Explain what your business does, which workflow or operational issue you want to improve, how the process currently works, and whether any AI tools are already in use. It is helpful to describe the outcome you are trying to achieve and any known constraints. You do not need to provide a fully developed technical specification. Avoid including credentials, sensitive customer information, or confidential material that is not needed for an initial discussion."
       - q: "What happens after I make contact?"

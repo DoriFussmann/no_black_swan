@@ -96,6 +96,8 @@ const ogImageUrl = abs(ogImage || DEFAULT_OG_IMAGE, SITE_URL);
       <link rel="alternate" type="text/markdown" href={abs(alternateMarkdown, SITE_URL)} />
     )}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="alternate" type="application/rss+xml" title={SITE_NAME} href={rssHref} />
     {SEARCH_CONSOLE_VERIFICATION && (
       <meta name="google-site-verification" content={SEARCH_CONSOLE_VERIFICATION} />
