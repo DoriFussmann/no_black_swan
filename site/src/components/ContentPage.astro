@@ -18,5 +18,5 @@ const crumbs = pageCrumbs(page.data);
   canonicalPath={page.data.route}
   jsonLd={jsonLd}
 >
-  <SectionRenderer sections={page.data.sections} crumbs={crumbs} />
+  <SectionRenderer sections={page.data.sections} crumbs={crumbs} route={page.data.route} />
 </BaseLayout>

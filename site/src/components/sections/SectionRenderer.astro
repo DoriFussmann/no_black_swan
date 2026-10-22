@@ -22,8 +22,10 @@ interface Crumb {
 interface Props {
   sections: { type: string; [key: string]: unknown }[];
   crumbs?: Crumb[];
+  /** Page route, so a section can pick the pattern that page calls for. */
+  route?: string;
 }
-const { sections, crumbs } = Astro.props;
+const { sections, crumbs, route } = Astro.props;
 
 const known = new Set([
   "hero",
@@ -80,7 +82,7 @@ const items = sections.map((section, index) => {
       {item.section.type === "feature-grid" && <FeatureGrid section={item.section as never} alt={item.alt} />}
       {item.section.type === "stats" && <Stats section={item.section as never} alt={item.alt} />}
       {item.section.type === "process" && <Process section={item.section as never} alt={item.alt} />}
-      {item.section.type === "offerings" && <Offerings section={item.section as never} alt={item.alt} />}
+      {item.section.type === "offerings" && <Offerings section={item.section as never} alt={item.alt} switcher={route === "/"} />}
       {item.section.type === "testimonials" && <Testimonials section={item.section as never} alt={item.alt} />}
       {item.section.type === "faq" && <Faq section={item.section as never} alt={item.alt} />}
       {item.section.type === "cta-band" && <CtaBand section={item.section as never} alt={item.alt} />}

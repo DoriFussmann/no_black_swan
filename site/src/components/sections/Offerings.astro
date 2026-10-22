@@ -1,10 +1,12 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 
 interface Item {
   title: string;
   text: string;
   cta: { label: string; href: string };
+  /** The service page's own section headings, linked; shown in the switcher panel. */
+  topics?: { text: string; href: string }[];
 }
 interface Section {
   eyebrow?: string;
@@ -16,36 +18,124 @@ interface Section {
 interface Props {
   section: Section;
   alt?: boolean;
+  /** Role switcher (pattern P4 on pale blue, P15); otherwise indexed cards (P5). */
+  switcher?: boolean;
 }
-const { section, alt = false } = Astro.props;
+const { section, alt = false, switcher = false } = Astro.props;
 
 const cards: Item[] =
   section.source === "services"
-    ? (await getCollection("services"))
-        .sort((a, b) => a.data.order - b.data.order)
-        .map((service) => ({
-          title: service.data.title,
-          text: service.data.description,
-          cta: { label: "View service", href: `/services/${service.id}/` },
-        }))
+    ? await Promise.all(
+        (await getCollection("services"))
+          .sort((a, b) => a.data.order - b.data.order)
+          .map(async (service) => {
+            const href = `/services/${service.id}/`;
+            const { headings } = await render(service);
+            return {
+              title: service.data.title,
+              text: service.data.description,
+              cta: { label: "View service", href },
+              topics: headings.filter((h) => h.depth === 2).map((h) => ({ text: h.text, href: `${href}#${h.slug}` })),
+            };
+          }),
+      )
     : section.items ?? [];
+const uid = "services";
 ---
 
-<section class:list={["section", alt && "section-alt"]}>
-  <div class="container-page flex flex-col gap-8">
-    <div class="flex flex-col gap-3">
-      {section.eyebrow && <p class="eyebrow reveal" data-index="0">{section.eyebrow}</p>}
-      <h2 class="h2 reveal" data-index="1">{section.heading}</h2>
-      {section.intro && <p class="lead reveal" data-index="2">{section.intro}</p>}
+{switcher ? (
+  <section class="section section-pale">
+    <div class="container-page stack-lg">
+      <div class="section-head section-head-center">
+        {section.eyebrow && <p class="eyebrow reveal">{section.eyebrow}</p>}
+        <h2 class="h2 reveal">{section.heading}</h2>
+        {section.intro && <p class="lead reveal">{section.intro}</p>}
+      </div>
+      <div class="switcher reveal" data-switcher>
+        <div class="switcher-tabs" role="tablist" aria-label={section.heading}>
+          {cards.map((item, index) => (
+            <button
+              type="button"
+              class="switcher-tab"
+              role="tab"
+              id={`${uid}-tab-${index}`}
+              aria-controls={`${uid}-panel-${index}`}
+              aria-selected={index === 0 ? "true" : "false"}
+              tabindex={index === 0 ? 0 : -1}
+            >
+              <span class="switcher-icon" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span>
+              <span>{item.title}</span>
+            </button>
+          ))}
+        </div>
+        {cards.map((item, index) => (
+          <div
+            class="switcher-panel"
+            role="tabpanel"
+            id={`${uid}-panel-${index}`}
+            aria-labelledby={`${uid}-tab-${index}`}
+            hidden={index !== 0}
+          >
+            <h3 class="h3">{item.title}</h3>
+            <p class="lead">{item.text}</p>
+            {item.topics && item.topics.length > 0 && (
+              <ul class="topic-rows">
+                {item.topics.map((topic) => (
+                  <li><a href={topic.href}>{topic.text}</a></li>
+                ))}
+              </ul>
+            )}
+            <p><a class="read-more" href={item.cta.href}>{item.cta.label}</a></p>
+          </div>
+        ))}
+      </div>
     </div>
-    <ul class="grid gap-6 md:grid-cols-2">
-      {cards.map((item, index) => (
-        <li class="card flex flex-col gap-3 reveal" data-index={index}>
-          <h3 class="h3 card-title">{item.title}</h3>
-          <p class="muted">{item.text}</p>
-          <a class="btn btn-secondary" href={item.cta.href}>{item.cta.label}</a>
-        </li>
-      ))}
-    </ul>
-  </div>
-</section>
+  </section>
+) : (
+  <section class:list={["section", alt && "section-alt"]}>
+    <div class="container-page stack-lg">
+      <div class="section-head">
+        {section.eyebrow && <p class="eyebrow reveal">{section.eyebrow}</p>}
+        <h2 class="h2 reveal">{section.heading}</h2>
+        {section.intro && <p class="lead reveal">{section.intro}</p>}
+      </div>
+      <ul class="card-grid indexed" data-count={cards.length}>
+        {cards.map((item) => (
+          <li class="card hoverable reveal">
+            <h3 class="h3 card-title">{item.title}</h3>
+            <p class="muted">{item.text}</p>
+            <p class="card-foot"><a class="read-more" href={item.cta.href}>{item.cta.label}</a></p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+)}
+
+<script is:inline>
+  (function () {
+    document.querySelectorAll("[data-switcher]").forEach(function (root) {
+      var tabs = Array.prototype.slice.call(root.querySelectorAll('[role="tab"]'));
+      var panels = Array.prototype.slice.call(root.querySelectorAll('[role="tabpanel"]'));
+      function select(i, focus) {
+        tabs.forEach(function (tab, j) {
+          var on = i === j;
+          tab.setAttribute("aria-selected", on ? "true" : "false");
+          tab.tabIndex = on ? 0 : -1;
+          panels[j].hidden = !on;
+          panels[j].classList.toggle("is-entering", on);
+        });
+        if (focus) tabs[i].focus();
+      }
+      tabs.forEach(function (tab, i) {
+        tab.addEventListener("click", function () { select(i, false); });
+        tab.addEventListener("keydown", function (e) {
+          var next = { ArrowDown: i + 1, ArrowRight: i + 1, ArrowUp: i - 1, ArrowLeft: i - 1, Home: 0, End: tabs.length - 1 }[e.key];
+          if (next === undefined) return;
+          e.preventDefault();
+          select((next + tabs.length) % tabs.length, true);
+        });
+      });
+    });
+  })();
+</script>

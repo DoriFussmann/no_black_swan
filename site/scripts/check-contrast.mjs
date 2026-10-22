@@ -12,6 +12,7 @@ const pairs = [
   ["accentFg", "accent"],
   ["bandFg", "band"],
   ["bandMuted", "band"],
+  ["highlight", "band"],
   ["headerFg", "headerBg"],
   ["footerFg", "footerBg"],
 ];

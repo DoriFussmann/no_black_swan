@@ -281,12 +281,30 @@ export const tokens = parsed;
 
 /** Colors named in the guide prose and not in the token contract. */
 export const extras = {
-  loginPanel: "#2D4A6E",
-  loginGlow: "#78A0CD",
-  fieldFill: "#EAF0FB",
-  outlineBorder: "#DEDDD9",
-  cardHoverBorder: "#D9D8D4",
-  footerRule: "#2C2D32",
+  heroStop1: "#0B57D0",
+  heroStop2: "#0A55C8",
+  heroStop3: "#0A3C8F",
+  heroStop4: "#071C40",
+  heroGlow: "rgba(24, 150, 255, 0.55)",
+  bandGlow: "#78A0CD",
+  onBluePrimary: "#FFFFFF",
+  onBluePrimaryInk: "#0B2F6E",
+  glassCard: "rgba(9, 32, 78, 0.62)",
+  connectorBlue: "#3DA0FF",
+  paleSection: "#F0F5FF",
+  activeTab: "#DCE6FB",
+  activeTabBorder: "#C7D6F7",
+  statTile: "#F7F9FC",
+  fieldFill: "#E8EEFB",
+  fieldBorder: "#DCE3EE",
+  strongBorder: "#D5DAE1",
+  cardHoverBorder: "#C9D2DE",
+  outlineOnBand: "rgba(255, 255, 255, 0.35)",
+  navHoverOnBand: "rgba(255, 255, 255, 0.08)",
+  navActiveOnBand: "rgba(255, 255, 255, 0.12)",
+  gridLine: "rgba(255, 255, 255, 0.08)",
+  headerRule: "rgba(255, 255, 255, 0.08)",
+  footerRule: "rgba(255, 255, 255, 0.10)",
 };
 
 function extraVar(key) {
@@ -356,7 +374,7 @@ ${colorVars}
   --heading-leading: ${type.headingLeading};
   --heading-transform: ${headingTransform};
   --eyebrow-size: ${uppercase ? "13px" : "0.95rem"};
-  --weight-display-light: 200;
+  --weight-display-light: 300;
 ${Object.keys(extras).map((key) => extraVar(key)).join("\n")}
   --eyebrow-tracking: ${type.eyebrowTracking};
   --eyebrow-transform: ${uppercase ? "uppercase" : "none"};

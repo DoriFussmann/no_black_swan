@@ -9,13 +9,16 @@ interface Props {
 }
 const { section, alt = false } = Astro.props;
 ---
-
 <section class:list={["section", alt && "section-alt"]} aria-labelledby="trust-heading">
-  <div class="container-page flex flex-col gap-6">
-    <h2 id="trust-heading" class="h2 reveal" data-index="0">{section.heading}</h2>
-    <ul class="flex flex-wrap gap-3">
-      {section.items.map((item, index) => (
-        <li class="card reveal" data-index={index + 1}>{item.label}</li>
+  <div class="container-page stack-lg">
+    <div class="section-head">
+      <h2 id="trust-heading" class="h2 reveal">{section.heading}</h2>
+    </div>
+    <ul class="card-grid indexed" data-count={section.items.length}>
+      {section.items.map((item) => (
+        <li class="card reveal">
+          <p class="m-0">{item.label}</p>
+        </li>
       ))}
     </ul>
   </div>
