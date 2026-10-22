@@ -917,6 +917,13 @@
   html[data-hero="band"] .hero .tw-word {
     color: var(--c-highlight);
   }
+  /* Letters are split into spans, so per-word capitalize would capitalize every letter. */
+  .tw-letter {
+    text-transform: none;
+  }
+  .tw-letter:first-child {
+    text-transform: uppercase;
+  }
   .tw-letter {
     visibility: hidden;
   }
