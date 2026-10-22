@@ -18,7 +18,7 @@ tags:
   - ai consulting pricing
   - small business ai
 image: ../../assets/articles/ai-consulting-companies-for-small-business.jpg
-imageAlt: "A calculator, a paper stack, and blue bar shapes on a white table"
+imageAlt: "A small team working on laptops around a long shared table, seen from above"
 keywords:
   - ai consulting companies for small business
   - ai consulting for small business

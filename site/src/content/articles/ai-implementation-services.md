@@ -16,7 +16,7 @@ tags:
   - workflow automation
   - AI adoption
 image: ../../assets/articles/ai-implementation-services.jpg
-imageAlt: "A blue cube and a wireframe cube on a concrete plinth in a white hall"
+imageAlt: "Two colleagues smiling at a laptop while working through a task at a desk"
 keywords:
   - ai implementation services
 draft: false

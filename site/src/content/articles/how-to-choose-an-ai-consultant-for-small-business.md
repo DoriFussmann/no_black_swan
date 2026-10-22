@@ -18,7 +18,7 @@ tags:
   - ai implementation
   - workflow automation
 image: ../../assets/articles/how-to-choose-an-ai-consultant-for-small-business.jpg
-imageAlt: "Four small cubes in a row on paper in a bright empty office"
+imageAlt: "Two women shaking hands across a desk in an office"
 keywords:
   - how to choose an ai consultant for small business
   - ai consulting for small business

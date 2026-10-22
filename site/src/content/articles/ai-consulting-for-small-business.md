@@ -18,7 +18,7 @@ tags:
   - workflow automation
   - ai implementation
 image: ../../assets/articles/ai-consulting-for-small-business.jpg
-imageAlt: "A closed laptop, books, and a small blue cube on a pale table"
+imageAlt: "A shop owner serving a customer at the counter of a small plant-filled store"
 keywords:
   - ai consulting for small business
   - ai consulting services

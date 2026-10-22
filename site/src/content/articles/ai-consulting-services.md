@@ -16,7 +16,7 @@ tags:
   - business automation
   - workflow improvement
 image: ../../assets/articles/ai-consulting-services.jpg
-imageAlt: "Blue bar forms and stone slabs on a concrete table in a bright gallery"
+imageAlt: "Two people planning a roadmap with sticky notes on a glass wall"
 keywords:
   - ai consulting services
 draft: false

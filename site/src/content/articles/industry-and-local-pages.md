@@ -17,7 +17,7 @@ tags:
   - workflow automation
   - industry and local pages
 image: ../../assets/articles/industry-and-local-pages.jpg
-imageAlt: "A white architectural model and blue blocks on a table in a bright concrete hall"
+imageAlt: "A small brick corner market with a cream awning on a quiet street"
 keywords:
   - industry and local pages
 draft: false

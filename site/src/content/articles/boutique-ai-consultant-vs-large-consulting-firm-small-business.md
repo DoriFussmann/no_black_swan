@@ -18,7 +18,7 @@ tags:
   - small business ai
   - ai implementation
 image: ../../assets/articles/boutique-ai-consultant-vs-large-consulting-firm-small-business.jpg
-imageAlt: "A small desk and one chair beside a large empty conference room"
+imageAlt: "A small team working on laptops in a warm, compact studio"
 keywords:
   - boutique ai consultant vs large consulting firm small business
   - ai consulting for small business

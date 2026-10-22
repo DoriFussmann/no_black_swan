@@ -18,7 +18,7 @@ tags:
   - small business automation
   - workflow improvement
 image: ../../assets/articles/ai-consulting-for-small-business-faq.jpg
-imageAlt: "An open laptop with a dark screen, notebooks, and a blue sphere on a white desk"
+imageAlt: "Two women talking through a question over a laptop and coffee"
 keywords:
   - ai consulting for small business faq
   - ai consulting for small business

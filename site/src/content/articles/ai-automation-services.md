@@ -17,7 +17,7 @@ tags:
   - business automation
   - SMB AI
 image: ../../assets/articles/ai-automation-services.jpg
-imageAlt: "Blue and black blocks connected by clear tubes in a concrete interior"
+imageAlt: "Two colleagues with a clipboard and scanner walking a warehouse aisle"
 keywords:
   - ai automation services
 draft: false

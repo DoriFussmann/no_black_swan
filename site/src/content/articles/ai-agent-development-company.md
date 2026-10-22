@@ -17,7 +17,7 @@ tags:
   - ai implementation
   - business ai
 image: ../../assets/articles/ai-agent-development-company.jpg
-imageAlt: "Stacked translucent blue cubes on a pedestal in a sunlit concrete room"
+imageAlt: "Two developers working at laptops and monitors in a bright office"
 keywords:
   - ai agent development company
 draft: false
