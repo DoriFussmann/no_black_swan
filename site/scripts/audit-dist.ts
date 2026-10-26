@@ -29,13 +29,7 @@ function walkHtml(dir: string, acc: string[] = []): string[] {
 const themeErrors: string[] = [];
 const articlesHref = `/${ARTICLES_BASE}/`;
 const banned = ["[PLACEHOLDER", "[GAP", "Primary positioning phrase", "example.com", "this publication", "(no volume data)"];
-const unpublished = [
-  "/testimonials/",
-  "/articles/content-strategy-foundations/",
-  "/articles/technical-seo-foundations/",
-  "/articles/core-web-vitals-complete-guide/",
-  "/articles/improve-core-web-vitals-howto/",
-];
+const unpublished = ["/testimonials/"];
 const descriptions = new Map<string, string[]>();
 
 function distHas(urlPath: string): boolean {
