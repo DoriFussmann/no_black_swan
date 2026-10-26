@@ -2,8 +2,23 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.noblackswan.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.noblackswan.com"
+        }
+      ],
       "destination": "https://noblackswan.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/contact/",
+      "destination": "/book-call/",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/book-call/",
       "permanent": true
     }
   ]

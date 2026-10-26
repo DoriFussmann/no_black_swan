@@ -15,7 +15,7 @@ Updated 20 October 2026 after the production-readiness pass. Checked items are d
 - [x] Positioning phrase is “Practical AI. Connected workflows. Real business outcomes.”
 - [x] Header mark is the original SVG swan. `logo.png`, `og-default.png`, `favicon.svg`, `favicon-32.png`, and `apple-touch-icon.png` use that mark.
 - [x] Canonical origin is `https://noblackswan.com`. `vercel.json` and `site/vercel.json` redirect `www.noblackswan.com` to that origin.
-- [x] Contact is email only (`team@noblackswan.com`) and says replies are within 1 business day.
+- [x] The only call to action is a 30-minute discovery call booked on `/book-call/` (inline Cal.com calendar, same pattern as heyrupert.com). `/contact/` redirects there. Email fallback and legal contact is dori@thenightventures.com. Override the calendar with `PUBLIC_CAL_COM_URL`.
 - [x] `/privacy/` and `/terms/` are published pages. They do not say they are drafts or awaiting legal review.
 - [x] `/testimonials/` is not generated.
 - [x] Articles reset to zero on 26 October 2026. New articles, keywords and supporting keywords are planned in The Night Ventures SEO Advisor and published to `site/src/content/articles/`. The homepage articles section stays hidden until the first article is published.

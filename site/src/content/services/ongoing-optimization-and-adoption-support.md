@@ -62,4 +62,4 @@ If no solution has been implemented yet, the appropriate next step may be assess
 
 Explain what has been deployed, which workflow it supports, what the solution was intended to improve, and where further evaluation or adoption assistance may be required. No Black Swan can discuss whether a scoped support engagement is appropriate.
 
-Contact team@noblackswan.com to arrange a discovery conversation. Any ongoing responsibilities, scope, timing, evaluation measures, and commercial terms must be agreed before work begins.
+[Book a discovery call](/book-call/) to start the conversation. Any ongoing responsibilities, scope, timing, evaluation measures, and commercial terms must be agreed before work begins.

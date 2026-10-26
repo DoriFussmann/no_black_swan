@@ -60,4 +60,4 @@ If the problem is not yet clear, assessment or strategy may be the better starti
 
 Describe the workflow, systems involved, current problem, and desired outcome. No Black Swan can use that context to discuss feasibility and define an appropriate scope.
 
-Contact team@noblackswan.com to arrange a discovery conversation. No integration, compatibility, delivery date, or quantified result should be assumed until the necessary details have been reviewed and agreed.
+[Book a discovery call](/book-call/) to start the conversation. No integration, compatibility, delivery date, or quantified result should be assumed until the necessary details have been reviewed and agreed.

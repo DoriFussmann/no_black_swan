@@ -12,6 +12,7 @@ import Faq from "./Faq.astro";
 import CtaBand from "./CtaBand.astro";
 import RichText from "./RichText.astro";
 import Contact from "./Contact.astro";
+import Booking from "./Booking.astro";
 import TeamTeaser from "./TeamTeaser.astro";
 import ArticlesTeaser from "./ArticlesTeaser.astro";
 
@@ -41,6 +42,7 @@ const known = new Set([
   "cta-band",
   "rich-text",
   "contact",
+  "booking",
   "team-teaser",
   "articles-teaser",
 ]);
@@ -88,6 +90,7 @@ const items = sections.map((section, index) => {
       {item.section.type === "cta-band" && <CtaBand section={item.section as never} alt={item.alt} />}
       {item.section.type === "rich-text" && <RichText section={item.section as never} alt={item.alt} />}
       {item.section.type === "contact" && <Contact section={item.section as never} alt={item.alt} />}
+      {item.section.type === "booking" && <Booking section={item.section as never} alt={item.alt} />}
       {item.section.type === "team-teaser" && <TeamTeaser section={item.section as never} alt={item.alt} />}
       {item.section.type === "articles-teaser" && <ArticlesTeaser section={item.section as never} alt={item.alt} />}
     </>

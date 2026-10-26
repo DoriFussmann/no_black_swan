@@ -55,7 +55,7 @@ sections:
       - q: "Can we engage No Black Swan for implementation without a broad strategy project?"
         a: "The service offering includes hands-on implementation and integration as a distinct service. The appropriate scope depends on the problem, the state of the existing systems, the feasibility of the proposed solution, and the clarity of the intended outcome. A discovery conversation can establish what is already decided and what still needs investigation. You do not have to buy every service."
       - q: "How is pricing determined?"
-        a: "No Black Swan does not publish fixed prices or packages. Scope, implementation requirements, and any support after launch are discussed before a price is agreed. Contact No Black Swan with the business need so the engagement can be defined."
+        a: "No Black Swan does not publish fixed prices or packages. Scope, implementation requirements, and any support after launch are discussed before a price is agreed. Book a discovery call with the business need so the engagement can be defined."
       - q: "Can you work with the systems we already use?"
         a: "The implementation focus is on configuring appropriate AI tools and connecting them to existing systems and workflows where feasible. Compatibility cannot be assumed without understanding the systems, the intended workflow, and relevant technical or operational constraints. The engagement process includes understanding the current state, defining scope, and implementing and testing the selected solution. Bring an overview of the systems and process involved to the discovery conversation."
       - q: "What happens after a solution is implemented?"
@@ -64,8 +64,8 @@ sections:
     heading: "Determine the right starting point for your business."
     sub: "Describe the workflow, operational constraint, or AI opportunity you want to address. Begin with a discovery conversation and agree on a practical next step."
     cta_primary:
-      label: "Contact No Black Swan"
-      href: "/contact/"
+      label: "Book a discovery call"
+      href: "/book-call/"
     cta_secondary:
       label: "Learn about our approach"
       href: "/about/"

@@ -1,0 +1,35 @@
+route: "/book-call/"
+meta_title: "Book a Discovery Call | No Black Swan"
+meta_description: "Book a 30-minute discovery call with No Black Swan to discuss AI readiness, workflow automation, implementation, and integration for your business."
+sections:
+  - type: "page-header"
+    eyebrow: "Book a call"
+    h1: "Start with the business problem you want to solve."
+    intro: "A 30-minute discovery call is the entry point for working with No Black Swan. Bring your business goals, current AI use, and the operational friction you want to address."
+  - type: "booking"
+    heading: "Pick a day and time"
+    intro: "Choose a 30-minute slot below. It takes under a minute."
+    fields_heading: "After you pick a time, we ask for"
+    fields:
+      - label: "Your name"
+        required: true
+      - label: "Email address"
+        required: true
+      - label: "Company name"
+        required: true
+      - label: "Additional notes"
+        required: false
+    email_note: "Prefer email?"
+    email: "dori@thenightventures.com"
+  - type: "faq"
+    eyebrow: "Before the call"
+    heading: "What to expect from the first conversation"
+    items:
+      - q: "What should I share when I book?"
+        a: "Your name, email, and company are required. In the optional notes, it helps to say what your business does, which workflow or operational issue you want to improve, and whether any AI tools are already in use. Avoid including credentials, sensitive customer information, or confidential material that is not needed for an initial discussion."
+      - q: "What happens on the call?"
+        a: "The call covers your business, current AI use, operational friction, and goals. It helps clarify the problem and determine a relevant next step. Depending on the situation, that may involve assessing readiness and opportunities, developing priorities, or discussing an implementation scope. The exact scope, commercial terms, and success measures need to be agreed before a specific engagement proceeds."
+      - q: "Do I need to know which AI tool I want?"
+        a: "No. Identifying the right opportunities before investing in tools is a central part of the service approach. You can begin with a business problem, a repetitive process, or uncertainty about where AI might help. The discussion considers the existing workflow and constraints first. Tool selection and implementation should follow the requirements of the problem, subject to feasibility and an agreed scope."
+      - q: "What if none of the times work for me?"
+        a: "Email dori@thenightventures.com with a few times that suit you, and we will find a slot."

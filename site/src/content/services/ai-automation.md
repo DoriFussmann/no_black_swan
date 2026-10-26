@@ -62,4 +62,4 @@ If you do not yet know which workflows offer the strongest opportunities, an AI 
 
 Start with a specific task or process, how it works today, and the result you want to achieve. Include known constraints and any systems involved, but do not send credentials or unnecessary sensitive records through a general inquiry channel.
 
-Contact team@noblackswan.com to discuss whether AI Automation is appropriate. Scope, timeline, tool choices, commercial terms, and expected measures must be confirmed before implementation is represented as agreed.
+[Book a discovery call](/book-call/) to discuss whether AI Automation is appropriate. Scope, timeline, tool choices, commercial terms, and expected measures must be confirmed before implementation is represented as agreed.

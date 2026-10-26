@@ -62,4 +62,4 @@ If you already have a clear, sufficiently assessed use case, a more direct strat
 
 Start by describing the business problem, the workflow involved, and what you hope to improve. No Black Swan can use that context to discuss whether an AI Readiness and Opportunity Assessment is appropriate and what the engagement would need to cover.
 
-The exact assessment scope, deliverables, timeline, and commercial terms must be agreed before work begins. Contact No Black Swan at team@noblackswan.com to arrange a discovery conversation.
+The exact assessment scope, deliverables, timeline, and commercial terms must be agreed before work begins. [Book a discovery call](/book-call/) to start the conversation.

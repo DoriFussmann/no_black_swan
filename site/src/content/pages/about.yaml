@@ -68,7 +68,7 @@ sections:
     sub: "Bring the goals, workflows, and constraints you are working with. Start a conversation about where AI may fit and what implementation would involve."
     cta_primary:
       label: "Book a discovery conversation"
-      href: "/contact/"
+      href: "/book-call/"
     cta_secondary:
       label: "See the services"
       href: "/services/"

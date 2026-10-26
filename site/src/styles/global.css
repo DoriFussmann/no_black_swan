@@ -1935,6 +1935,23 @@
   }
 
   /* ---- Contact, team, services detail ---- */
+  .cal-embed {
+    width: 100%;
+    min-height: 36rem;
+    overflow: auto;
+  }
+  .booking-fields {
+    border-top: 1px solid var(--c-border);
+    padding-top: 1.5rem;
+  }
+  .booking-fields ul {
+    margin: 0.75rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  .booking-fields li {
+    padding-block: 0.25rem;
+  }
   .contact-email {
     font-family: var(--font-display);
     font-size: 24px;

@@ -25,10 +25,10 @@ export const NAV: { label: string; href: string }[] = [
   { label: "About", href: "/about/" },
   { label: "Services", href: "/services/" },
   { label: "Articles", href: `/${ARTICLES_BASE}/` },
-  { label: "Contact", href: "/contact/" },
+  { label: "Book a Call", href: "/book-call/" },
 ];
 
-export const HEADER_CTA = { label: "Contact", href: "/contact/" };
+export const HEADER_CTA = { label: "Book a Call", href: "/book-call/" };
 
 export const LEGAL_LINKS: { label: string; href: string }[] = [
   { label: "Privacy", href: "/privacy/" },

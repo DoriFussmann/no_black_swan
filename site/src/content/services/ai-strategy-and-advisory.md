@@ -68,4 +68,4 @@ If you are not yet sure which opportunities are viable, an AI Readiness and Oppo
 
 Explain the business goals you want to support, the workflows under consideration, and what has already been assessed. No Black Swan can use that context to discuss whether strategy and advisory work is suitable and which decisions the engagement should help resolve.
 
-The roadmap scope, measures, timeline, and commercial terms must be agreed before work begins. Contact team@noblackswan.com to arrange a discovery conversation.
+The roadmap scope, measures, timeline, and commercial terms must be agreed before work begins. [Book a discovery call](/book-call/) to start the conversation.

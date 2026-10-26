@@ -1,0 +1,96 @@
+---
+import { CAL_COM_URL } from "../../config/publicEnv";
+
+interface Section {
+  heading: string;
+  intro: string;
+  fields_heading: string;
+  fields: { label: string; required: boolean }[];
+  email_note?: string;
+  email?: string;
+}
+interface Props {
+  section: Section;
+  alt?: boolean;
+}
+const { section, alt = false } = Astro.props;
+---
+<section class:list={["section", alt && "section-alt"]}>
+  <div class="container-page">
+    <div class="card booking-card flex flex-col gap-4" id="booking-scheduler" data-calendar={CAL_COM_URL}>
+      <h2 class="h2">{section.heading}</h2>
+      <p class="m-0">{section.intro}</p>
+
+      <div class="cal-embed" id="cal-embed" aria-label="Booking calendar"></div>
+      <p class="muted m-0">
+        Calendar not showing?
+        <a href={CAL_COM_URL} target="_blank" rel="noopener noreferrer">Book on Cal.com</a>.
+      </p>
+
+      <div class="booking-fields">
+        <h3 class="h3">{section.fields_heading}</h3>
+        <ul>
+          {section.fields.map((field) => (
+            <li>
+              {field.label}
+              <span class="muted">{field.required ? " · required" : " · optional"}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {section.email && (
+        <p class="muted m-0">
+          {section.email_note}{" "}
+          <a href={`mailto:${section.email}`}>{section.email}</a>
+        </p>
+      )}
+    </div>
+  </div>
+</section>
+
+<script>
+  type CalCommand = ((...args: unknown[]) => void) & {
+    loaded?: boolean;
+    ns?: Record<string, CalCommand>;
+    q?: unknown[];
+  };
+
+  declare global {
+    interface Window {
+      Cal?: CalCommand;
+    }
+  }
+
+  // Cal.com's embed snippet: queues commands until embed.js loads.
+  function ensureCal() {
+    if (window.Cal) return;
+    const stub = function Cal(...args: unknown[]) {
+      const cal = window.Cal as CalCommand;
+      if (!cal.loaded) {
+        cal.ns = {};
+        cal.q = cal.q || [];
+        document.head.appendChild(document.createElement("script")).src = "https://app.cal.com/embed/embed.js";
+        cal.loaded = true;
+      }
+      (cal.q = cal.q || []).push(args);
+    } as CalCommand;
+    stub.q = [];
+    stub.ns = {};
+    window.Cal = stub;
+  }
+
+  const scheduler = document.getElementById("booking-scheduler");
+  const embed = document.getElementById("cal-embed");
+  const calendarUrl = scheduler instanceof HTMLElement ? scheduler.dataset.calendar || "" : "";
+
+  if (embed instanceof HTMLElement && calendarUrl) {
+    ensureCal();
+    window.Cal?.("init", { origin: "https://cal.com" });
+    window.Cal?.("inline", {
+      elementOrSelector: embed,
+      calLink: new URL(calendarUrl).pathname.replace(/^\/+|\/+$/g, ""),
+      config: { layout: "month_view", theme: "light" },
+    });
+  }
+</script>

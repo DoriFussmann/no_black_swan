@@ -8,7 +8,7 @@ sections:
     sub: "No Black Swan helps small and midsize businesses identify valuable AI opportunities, connect tools to real workflows, and move from experimentation to practical operational improvements."
     cta_primary:
       label: "Book a discovery call"
-      href: "/contact/"
+      href: "/book-call/"
     cta_secondary:
       label: "Explore our services"
       href: "/services/"
@@ -128,7 +128,7 @@ sections:
       - q: "How much does an engagement cost?"
         a: "No Black Swan does not publish a rate card or fixed packages. The work may be an assessment, advice, implementation, or support after launch, and the price is set only after that scope is agreed. The practical starting point is a discovery call."
       - q: "How do we get started?"
-        a: "Start by contacting No Black Swan to arrange a discovery conversation. Be prepared to describe your business, the workflows that cause friction, your current use of AI, and the result you are trying to achieve. You do not need to have selected a tool or written a complete implementation plan. The first step is to understand the problem and determine whether further assessment, advisory work, or hands-on implementation is appropriate."
+        a: "Start by booking a 30-minute discovery call. Be prepared to describe your business, the workflows that cause friction, your current use of AI, and the result you are trying to achieve. You do not need to have selected a tool or written a complete implementation plan. The first step is to understand the problem and determine whether further assessment, advisory work, or hands-on implementation is appropriate."
   - type: "articles-teaser"
     heading: "Explore practical perspectives on AI and business operations"
     intro: "Read the articles for further context on the business questions, implementation decisions, and operational considerations surrounding AI. The goal is to connect useful ideas to the decisions organizations need to make."
@@ -136,8 +136,8 @@ sections:
     heading: "Start with the workflow you want to improve."
     sub: "Discuss your business goals, current AI use, and operational friction. Use a discovery call to determine the right next step."
     cta_primary:
-      label: "Contact No Black Swan"
-      href: "/contact/"
+      label: "Book a discovery call"
+      href: "/book-call/"
     cta_secondary:
       label: "Review our services"
       href: "/services/"

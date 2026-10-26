@@ -136,6 +136,16 @@ const contact = z.object({
   response_note: z.string().min(1).optional(),
 });
 
+const booking = z.object({
+  type: z.literal("booking"),
+  heading: z.string().min(1),
+  intro: z.string().min(1),
+  fields_heading: z.string().min(1),
+  fields: z.array(z.object({ label: z.string().min(1), required: z.boolean() })).min(1),
+  email_note: z.string().min(1).optional(),
+  email: z.string().email().optional(),
+});
+
 const teamTeaser = z.object({
   type: z.literal("team-teaser"),
   heading: z.string().min(1),
@@ -162,6 +172,7 @@ export const sectionSchema = z.discriminatedUnion("type", [
   ctaBand,
   richText,
   contact,
+  booking,
   teamTeaser,
   articlesTeaser,
 ]);

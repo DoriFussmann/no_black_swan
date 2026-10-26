@@ -18,5 +18,5 @@ export default defineConfig({
     remarkPlugins: [remarkPreserveWts],
     rehypePlugins: [rehypeEmitWtsComments, rehypeKeyTakeaways],
   },
-  integrations: [tailwind(), seoSitemap()],
+  integrations: [tailwind(), seoSitemap({ exclude: ["/book-call/"] })],
 });
