@@ -1,44 +1,85 @@
 route: "/terms/"
-meta_title: "Website Terms and Conditions | No Black Swan"
-meta_description: "Terms for using the No Black Swan website, including acceptable use, site content, links to other sites, and the limits of liability."
+meta_title: "Terms of Use | No Black Swan"
+meta_description: "Terms for using the No Black Swan website, including booking calls, site content, acceptable use, disclaimers, limits of liability, and governing law."
 sections:
   - type: "page-header"
     eyebrow: "Legal"
-    h1: "Website terms"
-    intro: "These terms apply to your use of the No Black Swan website."
+    h1: "Terms of Use"
+    intro: "Effective date: October 26, 2026. These terms apply to your use of the No Black Swan website."
   - type: "rich-text"
     heading: "Terms of use"
     body: |
-      ## 1. Who operates the site
+      These Terms of Use ("Terms") govern your use of noblackswan.com (the "Site"), operated by The Night Ventures, LLC, a California limited liability company doing business as No Black Swan ("No Black Swan," "we," "us," or "our"). By using the Site, you agree to these Terms. If you do not agree, do not use the Site.
 
-      This website is operated for No Black Swan, the business name of The Night Ventures, LLC, doing business as No Black Swan. Questions about these terms can be sent to team@noblackswan.com. No postal address is published on this page. These terms cover use of the public website. A separate written agreement governs any consulting or implementation engagement.
+      ## 1. Eligibility
 
-      Nothing on the site is an offer to deliver a particular project, a promise that a use case is feasible, or a commitment to a fee, date, or result.
+      You must be at least 18 years old to use the Site. If you use the Site on behalf of a company, you represent that you have authority to accept these Terms for it.
 
-      ## 2. How you may use the site
+      ## 2. What the Site is (and isn't)
 
-      You may use the site to learn about No Black Swan and to email a legitimate inquiry. Do not use the site in a way that breaks the law, interferes with the site, or misrepresents who you are. Do not attempt to access the hosting environment or other systems without authorization, and do not send information you are not allowed to share.
+      The Site provides general information about No Black Swan and our AI implementation services, and lets you book an introductory call.
 
-      ## 3. Content on the site
+      - **Information only.** Content on the Site is general information, not professional, legal, financial, technical, or other advice tailored to your business. Do not rely on it as a substitute for advice specific to your situation.
+      - **No engagement created.** Booking or attending a call does not create a client, consulting, or fiduciary relationship and does not obligate either party to anything. Any services we provide will be governed by a separate written agreement signed by both parties.
+      - **No guaranteed results.** Any examples, case studies, or results described on the Site are illustrative. Outcomes depend on many factors, and we do not guarantee any particular result from AI tools or our services.
 
-      The text, graphics, and marks on the site are provided so visitors can review the business. Unless the rights holder gives permission, or the law already allows the use, do not copy the site for a competing commercial use or suggest that No Black Swan endorses you.
+      ## 3. Booking calls
 
-      ## 4. No guarantee of results
+      Calls are scheduled through Cal.com, a third-party service subject to its own terms. Please provide accurate information when booking. We may decline, reschedule, or cancel any call at our discretion. Do not share confidential or sensitive information on the booking form; if confidential matters need to be discussed, we can address that before or during the call.
 
-      Service descriptions explain an approach. They do not guarantee savings, productivity, revenue, compatibility, or any other outcome. AI output can be wrong or incomplete. A business should apply its own judgment and get the specialist advice it needs before relying on a general web page.
+      ## 4. Intellectual property
 
-      ## 5. Other websites
+      The Site and its content, including text, graphics, logos, design, and the name "No Black Swan," are owned by or licensed to The Night Ventures, LLC and are protected by intellectual property laws. We grant you a limited, revocable, non-exclusive, non-transferable license to view the Site for your personal or internal business use. You may not copy, reproduce, republish, modify, or distribute Site content, or use our name or logos, without our prior written permission.
 
-      Links to other sites are for reference. No Black Swan does not control those sites and a link is not an endorsement.
+      ## 5. Acceptable use
 
-      ## 6. Liability
+      You agree not to:
 
-      To the extent the law allows, No Black Swan is not liable under these website terms for indirect or consequential loss arising from use of the public website. These terms do not exclude liability that cannot legally be excluded.
+      - Use the Site for any unlawful purpose or in violation of these Terms
+      - Submit false information or book calls in someone else's name without permission
+      - Scrape, crawl, or harvest content or data from the Site by automated means
+      - Interfere with, disrupt, or attempt to gain unauthorized access to the Site or its systems
+      - Upload or transmit viruses, malware, or other harmful code
+      - Use Site content to train, fine-tune, or build AI models or datasets without our written permission
 
-      ## 7. Changes
+      ## 6. Feedback
 
-      The site and these terms may change. The version on this page is the current version.
+      If you send us ideas, suggestions, or feedback, you agree we may use them without restriction or compensation to you.
 
-      ## 8. Contact
+      ## 7. Third-party links and services
 
-      Email team@noblackswan.com with questions about these terms.
+      The Site may link to or rely on third-party websites and services. We do not control them and are not responsible for their content, availability, or practices. Your use of them is at your own risk and subject to their terms.
+
+      ## 8. Privacy
+
+      Our [Privacy Policy](/privacy/) explains how we handle information collected through the Site.
+
+      ## 9. Disclaimer of warranties
+
+      THE SITE AND ALL CONTENT ARE PROVIDED "AS IS" AND "AS AVAILABLE," WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE SITE WILL BE UNINTERRUPTED, ERROR-FREE, OR SECURE.
+
+      ## 10. Limitation of liability
+
+      TO THE FULLEST EXTENT PERMITTED BY LAW, NO BLACK SWAN, THE NIGHT VENTURES, LLC, AND ITS MEMBERS, MANAGERS, EMPLOYEES, AND AGENTS WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, REVENUE, DATA, OR BUSINESS OPPORTUNITY, ARISING FROM OR RELATED TO YOUR USE OF THE SITE. OUR TOTAL LIABILITY FOR ANY CLAIM RELATED TO THE SITE WILL NOT EXCEED ONE HUNDRED U.S. DOLLARS ($100). SOME JURISDICTIONS DO NOT ALLOW CERTAIN LIMITATIONS, SO SOME OF THESE MAY NOT APPLY TO YOU.
+
+      ## 11. Indemnification
+
+      You agree to indemnify and hold harmless The Night Ventures, LLC and its members, managers, employees, and agents from any claims, losses, and expenses (including reasonable attorneys' fees) arising from your misuse of the Site or violation of these Terms.
+
+      ## 12. Governing law and disputes
+
+      These Terms are governed by the laws of the State of California, without regard to conflict-of-law rules. Any dispute arising from these Terms or the Site will be resolved exclusively in the state or federal courts located in Sonoma County, California, and you consent to their jurisdiction. Before filing any claim, you agree to first contact us at dori@thenightventures.com and try in good faith to resolve the issue informally for at least 30 days.
+
+      ## 13. Changes and termination
+
+      We may update these Terms at any time by posting the revised version on this page and changing the effective date. Continued use of the Site after changes means you accept them. We may suspend or restrict access to the Site at any time, for any reason.
+
+      ## 14. General
+
+      If any part of these Terms is found unenforceable, the rest remains in effect. Our failure to enforce a provision is not a waiver. These Terms, together with the Privacy Policy, are the entire agreement between you and us about the Site; any services engagement is governed by its own separate agreement. You may not assign these Terms; we may assign them in connection with a business transfer.
+
+      ## 15. Contact us
+
+      The Night Ventures, LLC, d/b/a No Black Swan\
+      321 South Main Street, #543, Sebastopol, CA 95472\
+      dori@thenightventures.com

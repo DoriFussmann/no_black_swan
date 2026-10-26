@@ -30,6 +30,6 @@ Updated 20 October 2026 after the production-readiness pass. Checked items are d
 
 ## Later, only if you want it
 
-- [ ] **Clauses the legal pages do not state.** Governing law and venue, an effective date, retention periods, security controls, statutory privacy rights or deadlines, processors beyond Vercel hosting and Google Workspace email, international-transfer terms, a postal address, and a numeric liability cap. These were left out because they are not established in the repository. Supply the wording if you want any of them added.
+- [x] **Full legal pages.** Replaced on 26 October 2026 with a full Privacy Policy and Terms of Use supplied by the owner: effective date, California law with Sonoma County venue, postal address, dori@thenightventures.com as the legal contact, Cal.com booking, Vercel hosting, no analytics, $100 liability cap.
 - [ ] **A different logo.** The shipped mark is the original geometric swan.
 - [ ] **Testimonials.** Restore the section or `/testimonials/` only with approved quotes, names, and roles.

@@ -1,44 +1,86 @@
 route: "/privacy/"
 meta_title: "Privacy Policy | No Black Swan"
-meta_description: "How No Black Swan handles website visits and email to team@noblackswan.com. The site has no contact form and does not run advertising pixels."
+meta_description: "How No Black Swan, a d/b/a of The Night Ventures, LLC, handles the limited information collected when you visit the site, book a call, or email us."
 sections:
   - type: "page-header"
     eyebrow: "Legal"
-    h1: "Privacy notice"
-    intro: "This notice explains how the No Black Swan website handles visits and email inquiries."
+    h1: "Privacy Policy"
+    intro: "Effective date: October 26, 2026. This policy explains what information the No Black Swan website collects and how it is used."
   - type: "rich-text"
-    heading: "How this site handles information"
+    heading: "How we handle information"
     body: |
-      No Black Swan is the business name of The Night Ventures, LLC, doing business as No Black Swan. Questions about this notice can be sent to team@noblackswan.com. No postal address is published on this page.
+      This Privacy Policy explains how The Night Ventures, LLC, doing business as No Black Swan ("No Black Swan," "we," "us," or "our"), handles information collected through noblackswan.com (the "Site"). We collect very little. The Site exists to tell you about our AI implementation services and let you book a call.
 
-      ## 1. Who this notice is for
+      ## 1. Information we collect
 
-      The website is aimed at businesses and business professionals. It is not directed at children. The company does not intend to collect information from children. If you believe a child has sent personal information to team@noblackswan.com, email that address and ask for it to be deleted.
+      **Information you give us.** When you book a call, our scheduling provider, Cal.com, collects your name, email address, and company name, plus any optional notes you choose to add. If you email us, we receive whatever you choose to send.
 
-      ## 2. What you can send
+      **Information collected automatically.** Like most websites, our hosting provider, Vercel, automatically logs basic technical data when you visit, such as IP address, browser type, device type, pages requested, and timestamps. This is used to run and secure the Site.
 
-      The site does not include a contact form, file upload, or account. The only way to inquire through the site is the email link to team@noblackswan.com. If you write, you choose what to include. A useful inquiry names you, a work email address, the business, and the workflow you want to discuss.
+      We do not use analytics tools or advertising pixels.
 
-      Do not send passwords, payment-card numbers, sensitive personal information, or confidential customer records in that first email.
+      We do not ask for, and you should not submit, sensitive information (such as passwords, financial account numbers, health information, or government ID numbers) through the Site, the booking form, or email.
 
-      ## 3. How an inquiry is used
+      ## 2. How we use information
 
-      Email sent to team@noblackswan.com is used to understand the request, reply, and carry on that business conversation. It is not used for unrelated promotional marketing.
+      We use the information described above to:
 
-      ## 4. Website visits
+      - Schedule, prepare for, and hold the call you booked
+      - Respond to your messages and follow up about our services
+      - Operate, maintain, and secure the Site
+      - Comply with legal obligations and enforce our Terms of Use
 
-      The site is hosted on Vercel. The host may create technical logs, such as IP address, browser, pages requested, and timestamps, in order to operate and protect the site.
+      We do not sell your personal information. We do not share it for cross-context behavioral advertising. We do not use it to make automated decisions that have legal or similarly significant effects on you.
 
-      Google Analytics 4 is not active. No measurement ID is configured, and the site does not load an analytics script while that value is empty. No advertising pixels are installed. The site does not show a cookie-consent banner, because optional analytics is not running.
+      ## 3. How we share information
 
-      ## 5. Providers
+      We share information only as follows:
 
-      Hosting is provided by Vercel. The team@noblackswan.com mailbox is provided through Google Workspace.
+      - **Service providers** that help us run the business, such as our scheduling tool (Cal.com), website host (Vercel), email provider (Google Workspace), and video-conferencing tool. They may use the information only to provide services to us.
+      - **Legal reasons**, when required by law, subpoena, or court order, or to protect the rights, property, or safety of No Black Swan, our users, or others.
+      - **Business transfers**, if we are involved in a merger, acquisition, or sale of assets, in which case information may transfer to the successor.
+      - **With your consent**, for any other purpose you approve.
 
-      ## 6. Contact
+      ## 4. Third-party services
 
-      To ask a question about this notice, email team@noblackswan.com. Do not send identity documents unless a safer method has been agreed.
+      Booking is handled by Cal.com, a third-party service with its own privacy policy. The Site may also link to other websites. We are not responsible for the privacy practices of third parties, and we encourage you to read their policies.
 
-      ## 7. Changes
+      ## 5. Cookies and Do Not Track
 
-      This notice may be updated. The version on this page is the current notice.
+      The Site and its service providers may use cookies or similar technologies only as needed for the Site and booking to function. We do not use analytics, advertising, or tracking cookies. You can block or delete cookies in your browser settings; the Site should still work, though booking may require cookies from Cal.com.
+
+      Some browsers send a "Do Not Track" signal. There is no common industry standard for responding to it, so the Site does not currently respond to Do Not Track signals. Where required by law, we honor Global Privacy Control (GPC) signals as an opt-out request.
+
+      ## 6. How long we keep information
+
+      We keep booking and contact information for as long as needed to communicate with you and evaluate or provide services, and then only as long as needed for business records, legal compliance, or dispute resolution. You can ask us to delete it at any time (see section 8).
+
+      ## 7. Security
+
+      We use reasonable administrative and technical measures to protect information, and we rely on reputable service providers. No method of transmission or storage is fully secure, so we cannot guarantee absolute security.
+
+      ## 8. Your choices and rights
+
+      You can ask us to tell you what personal information we hold about you, correct it, or delete it by emailing dori@thenightventures.com. You can opt out of follow-up emails at any time by replying "unsubscribe" or using the unsubscribe link in any marketing email.
+
+      Depending on where you live, you may have additional rights under state privacy laws, such as the right to know, access, correct, delete, or opt out of certain processing, and the right not to be discriminated against for exercising those rights. We will honor requests as required by applicable law. We may need to verify your identity before acting on a request. You may use an authorized agent where the law allows.
+
+      **California residents.** We do not sell or share personal information as those terms are defined under California law, and we do not disclose personal information to third parties for their own direct marketing purposes.
+
+      ## 9. Children
+
+      The Site is intended for business professionals and is not directed to children under 16. We do not knowingly collect personal information from children. If you believe a child has provided us information, contact us and we will delete it.
+
+      ## 10. Visitors outside the United States
+
+      No Black Swan is based in the United States, and information is processed and stored in the United States. By using the Site, you understand that your information will be handled under U.S. law.
+
+      ## 11. Changes to this policy
+
+      We may update this Privacy Policy from time to time. We will post the updated version on this page and change the effective date above. Material changes take effect when posted unless the law requires otherwise.
+
+      ## 12. Contact us
+
+      The Night Ventures, LLC, d/b/a No Black Swan\
+      321 South Main Street, #543, Sebastopol, CA 95472\
+      dori@thenightventures.com
