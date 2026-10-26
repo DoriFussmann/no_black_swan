@@ -6,9 +6,9 @@ Updated 20 October 2026 after the production-readiness pass. Checked items are d
 
 | Status | What it covers |
 | --- | --- |
-| Done | Public review notes, legal pages as published notices, type check, claim cleanup on the 10 published articles |
+| Done | Public review notes, legal pages as published notices, type check, article reset |
 | Still open | GA4 measurement ID, Search Console token, official organization profile URLs |
-| Later, only if you want it | Extra legal clauses, a different logo, the four SEO articles, real testimonials |
+| Later, only if you want it | Extra legal clauses, a different logo, real testimonials |
 
 ## Done
 
@@ -17,7 +17,8 @@ Updated 20 October 2026 after the production-readiness pass. Checked items are d
 - [x] Canonical origin is `https://noblackswan.com`. `vercel.json` and `site/vercel.json` redirect `www.noblackswan.com` to that origin.
 - [x] Contact is email only (`team@noblackswan.com`) and says replies are within 1 business day.
 - [x] `/privacy/` and `/terms/` are published pages. They do not say they are drafts or awaiting legal review.
-- [x] `/testimonials/` is not generated. The four template SEO articles stay `draft: true`.
+- [x] `/testimonials/` is not generated.
+- [x] Articles reset to zero on 26 October 2026. New articles, keywords and supporting keywords are planned in The Night Ventures SEO Advisor and published to `site/src/content/articles/`. The homepage articles section stays hidden until the first article is published.
 - [x] Published articles do not state named survey results, market-share figures, ROI percentages, or price lists.
 - [x] Copyright line stays “© 2026 No Black Swan”.
 
@@ -31,5 +32,4 @@ Updated 20 October 2026 after the production-readiness pass. Checked items are d
 
 - [ ] **Clauses the legal pages do not state.** Governing law and venue, an effective date, retention periods, security controls, statutory privacy rights or deadlines, processors beyond Vercel hosting and Google Workspace email, international-transfer terms, a postal address, and a numeric liability cap. These were left out because they are not established in the repository. Supply the wording if you want any of them added.
 - [ ] **A different logo.** The shipped mark is the original geometric swan.
-- [ ] **Four SEO articles.** They stay unpublished until you confirm publication and supply a 2:1 cover of at least 2160×1080 for each. Slugs: `content-strategy-foundations`, `technical-seo-foundations`, `core-web-vitals-complete-guide`, `improve-core-web-vitals-howto`.
 - [ ] **Testimonials.** Restore the section or `/testimonials/` only with approved quotes, names, and roles.
