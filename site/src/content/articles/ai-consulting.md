@@ -21,7 +21,9 @@ imageAlt: Business owner and consultant reviewing an AI workflow diagram on a la
 keywords:
   - ai consulting
 draft: false
-internalLinks: []
+internalLinks:
+  - slug: ai-consultant
+    anchor: AI consultant
 externalLinks:
   - label: FTI Consulting News Bytes - 2 October 2026 - FTI Strategic Communications
     url: "https://fticommunications.com/fti-consulting-news-bytes-2-october-2026/"
@@ -52,7 +54,7 @@ Good AI consulting does not work that way. The deliverable is not a document; it
 
 The consulting industry broadly is shifting toward this model — one centered on execution and measurable outcomes, where clients expect partners who can implement solutions and drive tangible results, not just deliver recommendations. For SMB owners, that shift matters a great deal. A small or mid-sized business cannot afford to pay for advice and then separately find someone to act on it. You need a partner who owns both.
 
-This is the orientation No Black Swan brings to every engagement. The work starts with a genuine assessment of where the business is today, and it ends with implemented workflows — not a report that sits in a shared folder.
+This is the orientation [No Black Swan](/%20%E2%80%94%20use%20as%20the%20provisional%20destination%20until%20the%20exact%20discovery-call%20booking%20URL%20is%20confirmed.) brings to every engagement. The work starts with a genuine assessment of where the business is today, and it ends with implemented workflows — not a report that sits in a shared folder.
 
 ## How a Real AI Consulting Engagement Works
 
@@ -98,7 +100,7 @@ SMB buyers are increasingly seeking providers capable of delivering a specific b
 
 ## How to Evaluate an AI Consultant
 
-When you are assessing a potential AI consulting partner, three qualities matter more than any credential or case study. **Tool-agnostic orientation.** A consultant who leads with a specific platform is optimizing for their own workflow, not yours. The right tools depend on what systems you already use, what your team can realistically adopt, and what the use case actually requires. A good AI consultant is indifferent to which tools get selected; they care about which combination produces the outcome. Be wary of any partner whose discovery process ends with a recommendation to buy a specific product they happen to implement.
+When you are assessing a potential AI consulting partner, three qualities matter more than any credential or case study. **Tool-agnostic orientation.** A consultant who leads with a specific platform is optimizing for their own workflow, not yours. The right tools depend on what systems you already use, what your team can realistically adopt, and what the use case actually requires. A good [AI consultant](/articles/ai-consultant/) is indifferent to which tools get selected; they care about which combination produces the outcome. Be wary of any partner whose discovery process ends with a recommendation to buy a specific product they happen to implement.
 
 **Workflow focus over technology focus.** The question an AI consultant should be asking is not "how do we use AI here?" but "what does this process need to do, and what is the most reliable way to make it do that?" Sometimes the answer involves a sophisticated AI model. Often it involves a simpler automation, a better integration, or a cleaner data structure that enables AI to work at all. A consultant who starts from the workflow rather than the technology will make better decisions for the business.
 
