@@ -110,7 +110,7 @@ The SBE Council's March 2026 survey found that 82% of small business employers a
 
 The final test for any first conversation is whether you leave it with a clearer picture of where to start, what the first real workflow improvement would look like, and what it would take to implement it. If the conversation stays at the level of general possibilities and avoids committing to specific next steps, that's a signal about how the engagement itself will go.
 
-At No Black Swan, a discovery call follows exactly the structure described above — questions about the business, the current stack, and where operational friction is highest, before any recommendation is made. If you're at the point where experimentation has plateaued and you want to turn AI into something that actually changes how the business operates, that's the conversation worth having.
+At [No Black Swan](/%20%E2%80%94%20use%20as%20the%20provisional%20destination%20until%20the%20exact%20discovery-call%20booking%20URL%20is%20confirmed.), a discovery call follows exactly the structure described above — questions about the business, the current stack, and where operational friction is highest, before any recommendation is made. If you're at the point where experimentation has plateaued and you want to turn AI into something that actually changes how the business operates, that's the conversation worth having.
 
 ## Where Things Stand
 <!-- WHERE-THINGS-STAND:START -->
