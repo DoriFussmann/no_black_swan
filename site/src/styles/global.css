@@ -2073,3 +2073,50 @@
     }
   }
 }
+
+/* ---------- Full-width layout (Oct 2026) ----------
+   One container width on every page: header, footer, sections and articles share
+   the same left and right edges. Content blocks use the full container width.
+   Articles: "On this page" sits under the cover image, the body runs full width. */
+.container-page,
+.container-wide {
+  max-width: calc(var(--container-wide) + 2 * var(--gutter-wide));
+  padding-inline: var(--gutter-wide);
+}
+.measure,
+.lead,
+.section-head,
+.section-head-center,
+.rich-text,
+.prose-article,
+.article-title,
+.standfirst {
+  max-width: none;
+}
+@media (min-width: 900px) {
+  .article-page {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .article-page > .article-rail {
+    grid-column: 1;
+    grid-row: auto;
+    position: static;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 48px;
+  }
+  .article-rail .toc {
+    flex: 1 1 auto;
+  }
+  .article-rail .toc > ol {
+    display: block;
+    columns: 2;
+    column-gap: 48px;
+  }
+  .article-rail .toc > ol > li {
+    break-inside: avoid;
+  }
+  .article-rail .rail-tags {
+    flex: 0 0 280px;
+  }
+}
