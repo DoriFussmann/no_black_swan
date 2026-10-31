@@ -337,8 +337,8 @@
     color: var(--x-on-blue-primary-ink);
   }
   html[data-hero="band"] .hero .btn-primary:hover {
-    background: var(--c-highlight);
-    border-color: var(--c-highlight);
+    background: var(--x-on-blue-primary-hover);
+    border-color: var(--x-on-blue-primary-hover);
   }
   html[data-hero="photo"] .hero .btn-secondary {
     border-color: var(--c-onImage);
@@ -764,7 +764,7 @@
   html[data-hero="band"] .hero {
     overflow: hidden;
     background:
-      radial-gradient(circle at 62% 45%, var(--x-hero-glow), transparent 70%),
+      radial-gradient(circle at var(--x-hero-glow-at), var(--x-hero-glow), transparent 46%),
       linear-gradient(180deg, var(--x-hero-stop1) 0%, var(--x-hero-stop2) 40%, var(--x-hero-stop3) 75%, var(--x-hero-stop4) 100%);
     color: var(--c-bandFg);
   }
@@ -963,9 +963,21 @@
     background: var(--c-surfaceAlt);
   }
   /* On the band the frame lifts off with a hairline and a deep shadow. */
+  /* Top-Line: hero images sit in a polaroid frame on the navy band, slightly tilted. */
   html[data-hero="band"] .hero .carousel-viewport {
-    border: 1px solid color-mix(in srgb, var(--c-onImage) 18%, transparent);
-    box-shadow: 0 24px 60px rgb(0 0 0 / 0.28);
+    border: 14px solid var(--x-polaroid-border);
+    border-bottom-width: 52px;
+    border-radius: 4px;
+    transform: rotate(-2.5deg);
+    box-shadow: 0 24px 60px var(--x-polaroid-shadow);
+  }
+  @media (max-width: 640px) {
+    html[data-hero="band"] .hero .carousel-viewport {
+      margin-inline: 8px;
+      border-width: 10px;
+      border-bottom-width: 40px;
+      transform: rotate(-1.5deg);
+    }
   }
   .carousel-slide {
     position: absolute;
@@ -1784,10 +1796,15 @@
       gap: 24px;
     }
   }
+  /* One bordered panel, rows split by hairlines; the active marker is straight and never bends round a corner. */
   .switcher-tabs {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-self: start;
+    overflow: hidden;
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius-lg);
+    background: var(--c-surface);
   }
   .switcher-tab {
     position: relative;
@@ -1796,26 +1813,44 @@
     gap: 14px;
     width: 100%;
     min-height: 68px;
-    padding: 14px 18px;
-    border: 1px solid var(--c-border);
-    border-radius: var(--radius-lg);
+    padding: 14px 22px;
+    border: 0;
+    border-radius: 0;
     background: var(--c-surface);
     color: var(--c-fg);
     font-size: 17px;
     text-align: left;
     text-transform: var(--title-case);
     cursor: pointer;
+    transition: background-color 250ms var(--ease);
+  }
+  .switcher-tab + .switcher-tab {
+    border-top: 1px solid var(--c-border);
+  }
+  .switcher-tab::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    bottom: 16px;
+    left: 0;
+    width: 3px;
+    border-radius: 0 3px 3px 0;
+    background: var(--c-accent);
+    opacity: 0;
+    transform: scaleY(0.4);
     transition:
-      background-color 250ms var(--ease),
-      border-color 250ms var(--ease);
+      opacity 250ms var(--ease),
+      transform 350ms var(--ease);
   }
   .switcher-tab:hover {
-    border-color: var(--x-card-hover-border);
+    background: var(--c-surfaceAlt);
   }
   .switcher-tab[aria-selected="true"] {
-    border-color: var(--x-active-tab-border);
     background: var(--x-active-tab);
-    box-shadow: inset 3px 0 0 var(--c-accent);
+  }
+  .switcher-tab[aria-selected="true"]::before {
+    opacity: 1;
+    transform: scaleY(1);
   }
   .switcher-icon {
     display: inline-flex;

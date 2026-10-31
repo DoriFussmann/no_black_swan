@@ -1,9 +1,9 @@
 # Design Guide
 
-Direction: Blueprint — navy bands · modest boxes · never bold (light)
+Direction: Top-Line — warm off-white · deep navy · teal and orange · thin type (light)
 Contract: v3
 Overrides: Force Inter on · Force no bold on
-Export: B-MVJYKZD7
+Export: L-MVVU7L8P
 
 This file lives at the repository root as `DESIGN_GUIDE.md`. It is the single source of truth for the site's visual design. The `tokens` block at the end is the machine-readable contract; everything above it explains how to apply those values. Never edit this file by hand — regenerate it from the design prototype with "Export Design Guide".
 
@@ -52,7 +52,11 @@ Image rules for every slot: keep existing `alt` text, `loading="lazy"` below the
 
 ## Direction
 
-Blueprint. A deep architectural navy used as a frame, never as wallpaper: the header opens on navy, the hero breaks into a bright blue gradient that sinks back to near-black navy, the footer closes on navy, and everything between is white and calm, with one pale-blue section for the role switcher. A faint blueprint grid lives only in the hero (and the log-in panel), fading out to the right, so it reads as a signature, not a pattern. Modest boxes: hairline borders, small corners on controls, slightly larger corners on cards. One electric blue for action. Inter throughout, nothing bold.
+Top-Line. Calm, editorial and airy, taken from the Top-Line deck guidelines: warm off-white pages (#F4F2EC) with white cards, deep navy for emphasis and as the frame (the header, hero and footer are navy, like a deck's cover and closing slides), thin type, never bold. Colour carries meaning, not decoration: teal for structure and action, orange only for highlights on navy. No texture: the navy is flat apart from a soft glow. Modest boxes: 1px borders, 10px corners on controls and 16px on cards. Inter throughout in two weights, 200 for titles and 400 for everything else.
+
+### Colour meaning (Top-Line)
+
+Navy and off-white do the work; two accents only, and colour carries meaning, not decoration. Teal means structure and input (eyebrows, labels, links, the primary button). Orange (#E59A4B) means output or attention and is used only as highlight on navy (the typewriter word, active marks). Chips follow one key everywhere: mint #CFE8E1 with #0E4D42 text = input or positive, light grey #E3E6EA = calculation or neutral, orange tint #FBE6D0 with #9A4D0E text = output or attention. Separators: "·" between items, "›" for flow, en dash (–) not hyphen.
 
 ## Brand identity
 
@@ -62,30 +66,30 @@ Wordmark: when the wordmark tokens are empty, the site name is used. Set in the 
 
 | Token | Hex | Use |
 | --- | --- | --- |
-| bg | #FFFFFF | Page background |
+| bg | #F4F2EC | Page background (warm off-white) |
 | surface | #FFFFFF | Cards, dropdowns, accordion cards |
-| surfaceAlt | #F5F7FA | Alternate section (How It Works), hover fills, tag chips |
-| fg | #14171C | Body and heading text on light |
-| muted | #5B616B | Secondary text, meta lines, captions |
-| border | #E3E6EA | Hairlines and card borders |
-| accent | #3062FF | Fills: primary buttons, logo mark, active dots, focus |
-| accentHover | #2953D9 | Primary button hover fill |
+| surfaceAlt | #EEECE5 | Alternate section (How It Works), hover fills, tag chips |
+| fg | #16233A | Body and heading text on light |
+| muted | #4A5568 | Secondary text, meta lines, captions |
+| border | #D9DCE1 | Hairlines and card borders |
+| accent | #1F7A6B | Fills: primary buttons, logo mark, active dots, focus |
+| accentHover | #1A685B | Primary button hover fill |
 | accentFg | #FFFFFF | Text on an accent fill |
-| accentInk | #3062FF | Accent used as TEXT on light: links, Forgot Password, card indexes, Read More |
-| highlight | #BFD4FF | Accent text on the band: typewriter word and caret, eyebrows on navy |
-| band | #2C4A6E | The navy: header, hero, footer, log-in panel |
+| accentInk | #1F7A6B | Accent used as TEXT on light: links, Forgot Password, card indexes, Read More |
+| highlight | #E59A4B | Accent text on the band: typewriter word and caret, eyebrows on navy |
+| band | #16233A | The navy: header, hero, footer, log-in panel |
 | bandFg | #FFFFFF | Text on band |
-| bandMuted | #B9C6D8 | Secondary text on band |
-| headerBg | #1B2E47 | Header background (opaque), deliberately different from the hero band |
+| bandMuted | #BFCAD9 | Secondary text on band |
+| headerBg | #16233A | Header background (opaque), deliberately different from the hero band |
 | headerFg | #FFFFFF | Header text |
-| footerBg | #2C4A6E | Footer background |
+| footerBg | #16233A | Footer background |
 | footerFg | #FFFFFF | Footer text |
 | onImage | #FFFFFF | Text placed over photographs |
-| focus | #3062FF | Focus ring |
+| focus | #1F7A6B | Focus ring |
 
 Accent is a fill color. Accent text on light uses accentInk; accent text on the band uses highlight. Text on an accent fill uses accentFg.
 
-Extras (prose values, emit as `--x-*`): hero gradient stops #0B57D0 / #0A55C8 / #0A3C8F / #071C40 and hero glow rgba(24,150,255,.55), on-blue primary button #FFFFFF with #0B2F6E text, floating card fill rgba(9,32,78,.62), connector and bar blue #3DA0FF, pale section #F0F5FF, active tab #DCE6FB / #C7D6F7, stat tile #F7F9FC, alert tile #FFF5F0 / #F6CDBB / #C2410C, success #15803D / #E7F6EC, danger #B42318 / #FDECEC, warning #B45309 / #FEF3E2, band glow #78A0CD (radial, 38% at the upper left of the hero, 14% at the lower right), field fill #E8EEFB, field border #DCE3EE, strong border #D5DAE1 (outline buttons, inputs on white), card hover border #C9D2DE, outline-on-band white at 35%, nav hover on band white at 8%, active nav on band white at 12%, grid line white at 8%.
+Extras (prose values, emit as `--x-*`): hero gradient stops #1E2F4D / #1B2B47 / #16233A / #0D1626 and hero glow rgba(95,179,161,.55), on-blue primary button #FFFFFF with #16233A text, floating card fill rgba(10,18,32,.62), connector and bar blue #5FB3A1, pale section #E6EEF0, active tab #CFE8E1 / #B5DACE, stat tile #F7F9FC, alert tile #FBEBDD / #F0C9A3 / #C2410C, success #0E4D42 / #CFE8E1, danger #B42318 / #FDECEC, warning #9A4D0E / #FBE6D0, band glow #6E8CB4 (radial, 38% at the upper left of the hero, 14% at the lower right), field fill #E6EEF0, field border #D9DCE1, strong border #D5DAE1 (outline buttons, inputs on white), card hover border #C9D2DE, outline-on-band white at 35%, nav hover on band white at 8%, active nav on band white at 12%, grid line white at 0%.
 
 ## Typography
 
@@ -110,13 +114,13 @@ Fixed UI sizes: nav 15px · buttons 15px · field text 16px · labels 15px · ca
 
 | Weight role | Value | Applies to |
 | --- | --- | --- |
-| Heading | 400 | h1–h3, card titles, accordion titles, wordmark |
-| Display light | 300 | stat values, pull quotes |
+| Heading | 200 | h1–h3, card titles, accordion titles, wordmark |
+| Display light | 200 | stat values, pull quotes |
 | UI | 400 | eyebrows, buttons, nav links, labels |
 | Strong | 400 | strong, b, th, dt, markdown bold (emphasis comes from size and color, never weight) |
 | Body | 400 | all running text |
 
-Headings: tracking -0.03em, leading 1.08, Title Case. Body line-height 1.6; article body 1.75. Eyebrow: uppercase, tracking 0.06em, accentInk on light and highlight on band. Set `font-synthesis-weight: none` so the browser never fakes bold, and `-webkit-font-smoothing: antialiased`.
+Headings: tracking -0.03em, leading 1.08, Title Case. Body line-height 1.6; article body 1.75. Eyebrow: uppercase, tracking 0.16em (wide, as on the decks), accentInk on light and highlight on band. Set `font-synthesis-weight: none` so the browser never fakes bold, and `-webkit-font-smoothing: antialiased`.
 
 Capitalization: headings, buttons, nav items, tabs, chips, labels and card titles read in Title Case (Get Started, Log In, Forgot Password?, Leave a Message). Apply it with CSS `text-transform: capitalize` only — never retype the copy. Running text stays as written.
 
@@ -125,7 +129,7 @@ Capitalization: headings, buttons, nav items, tabs, chips, labels and card title
 Density: regular — 96px desktop / 56px mobile section padding. Hero: 96px top, 112px bottom.
 Container: 77.5rem (1240px) with a 24px side gutter. Measure (reading width): 42.5rem (680px).
 Wide pages: Articles and Article use a wide container, 90rem (1440px), with clamp(16px, 3vw, 40px) side gutters; their header and footer use the same width so edges line up. Reading text never runs full width: the article body column is capped at 47.5rem (760px) and the remaining width goes to the right rail.
-Radius: 6px on controls (buttons, fields, chips' inner shapes, nav hover, icon buttons); large radius 16px on cards, accordion cards, media frames, dropdowns and the CTA box. Only small indicators are fully rounded (carousel dots, topic tags on cards); filter chips use the control radius.
+Radius: 10px on controls (buttons, fields, chips' inner shapes, nav hover, icon buttons); large radius 16px on cards, accordion cards, media frames, dropdowns and the CTA box. Only small indicators are fully rounded (carousel dots, topic tags on cards); filter chips use the control radius.
 Gaps: 20px between cards, 56px between split columns, 16px between accordion cards, 24px between form fields.
 Controls: buttons 44px high, 20px side padding; full-width buttons inside cards (Log In, Submit); fields 52px high with a 20px stroke icon inset 18px. Minimum touch target 44×44px.
 
@@ -133,21 +137,22 @@ Controls: buttons 44px high, 20px side padding; full-width buttons inside cards 
 
 | Component | Value | Behavior |
 | --- | --- | --- |
-| Header | band | Sticky, opaque header in a deeper navy than the hero (#1B2E47), 1px bottom rule in white at 8%, so the header reads as its own bar above the hero. Links in headerFg at 86%; hover white 8%; active white 12%. Log In is an outline in white at 35%. Wordmark left; links right: What We Do (dropdown), How It Works, About, Articles, Log In. |
+| Header | band | Sticky, opaque band in the same navy as the hero, 1px bottom rule in white at 8%. Links in bandFg at 86%; hover white 8%; active white 12%. Log In is an outline on band. Wordmark left; links right: What We Do (dropdown), How It Works, About, Articles, Log In. |
 | Dropdown | chevron | 14px stroke chevron rotates 180° on open (350ms). Menu: surface, 1px border, radiusLg, 6px padding, shadow 0 16px 40px fg/10%, items in fg; fades in and slides down 6px. |
-| Hero | band | Full-bleed hero on the blue gradient: linear 180° from #0B57D0 (0%) through #0A55C8 (40%) and #0A3C8F (75%) to #071C40 (100%), plus a radial glow rgba(24,150,255,.55) centered at 62% 45% fading out by 70%. Lead text in white at 88% (bandMuted is too weak on bright blue). Primary button is a white fill with #0B2F6E text — an accent-blue button disappears on blue. Secondary is the outline-on-band. No grid on the gradient. Copy left (H1, lead, two buttons), media right. A meta row sits at the bottom of the hero with 20px stroke icons. Copy column takes ~58% of the container, media ~42%. |
-| Hero media | floating cards | Floating cards: 3–4 small dark-glass cards (rgba(9,32,78,.62) fill, 1px white 12% border, 12px radius, 18px 20px padding, 8px backdrop blur, shadow 0 20px 50px rgba(3,12,35,.35)) arranged loosely on the right half, joined by thin curved connector lines in rgba(130,195,255,.45). Card eyebrows 12px uppercase, tracking .14em, white 62%; content 14–17px white; progress bars 4px on white 14% with #3DA0FF fill. Each card bobs 8px on a 7s ease-in-out loop, offset per card. Below 720px the cards stack in a single column and the connector lines hide. |
+| Hero | band | Full-bleed band in navy with the band glow and the blueprint grid. Lead text in bandMuted. Primary button in accent; secondary outline-on-band. Copy left (H1, lead, two buttons), media right. A meta row sits at the bottom of the hero with 20px stroke icons. Copy column takes ~58% of the container, media ~42%. |
+| Hero media | carousel | Image carousel: light, high-key images in a 5:4 radiusLg frame with a 1px white 18% border and shadow 0 24px 60px rgba(10,20,35,.28); navy dots and white arrow buttons on the image. |
 | Hero headline | two lines | Always exactly two lines: an explicit break after line one, line two nowrap. The typewriter word slot reserves the width of the longest word (invisible copy stacked under the live word with inline-grid). Size is set from the copy column, not the viewport: clamp(28px, 4.4vw, 54px) for a ~660px column — reduce the max until line two fits the real column, never let it wrap. |
 | Hero overlay | none | No overlay. |
-| Texture | grid | Blueprint grid: 1px lines in white at 8% on a 64px grid, masked to fade out to the right (mask: black → 60% at 55% → transparent). Under it, the band glow. Allowed only on: the hero band and the log-in panel. Not on the header, footer or any other surface. Never on two consecutive sections, never behind body text blocks. |
+| Texture | grid | Top-Line grid: 1px lines in white at 0% on a 64px grid, masked to fade out to the right (mask: black → 60% at 55% → transparent). Under it, the band glow. Allowed only on: the hero band and the log-in panel. Texture is off in this export: the grid stays defined in CSS but is not rendered anywhere. Never on two consecutive sections, never behind body text blocks. |
 | Card | line | surface, 1px border, radiusLg, 28px padding. Index number (01, 02…) in accentInk 13px above the title. Read More link in accentInk with a chevron. |
 | Button | solid | Primary: accent fill, accentFg text, radius, hover accentHover. Secondary on light: 1px strong-border outline, fg text, hover surfaceAlt. Secondary on band: 1px white 35% outline, bandFg text, hover white 8%. |
 | Field | filled | Log-in style: field fill, 1px field border, radius, 52px, 20px stroke icon left in muted, value in fg 16px; trailing icon button (eye) 44px. Form style: white, 1px strong border, radius, label above in fg 15px, 24px between fields. Focus: border accent plus 3px accent ring at 12%. |
 | Accordion | card | Each item is its own card: surface, 1px border, radiusLg. Header row 64px: title left (fg 18px), chevron right (20px, rotates 180° when open). When open a 1px border hairline separates header and body. Opens with grid-template-rows 0fr → 1fr (450ms) plus fade (350ms). One open at a time. |
-| Role switcher | tabs + panel | Section on a pale blue (#F0F5FF) with hairlines top and bottom; centered H2 and lead above. Left: a vertical tab list (~30% width) of cards, 68px min height, radiusLg, 1px border, 18px padding, a 40px icon square (radius 8px) and the label at 17px. Inactive: surface, muted icon square on surfaceAlt. Active: #DCE6FB fill, #C7D6F7 border, a 3px inset accent bar on the left edge, icon square in band with white icon. Right: one large surface card (radiusLg, 40px padding) with H3, lead, Learn More (accentInk + arrow), and a nested summary card: header row with title and date, a row of stat tiles (radius 10px, #F7F9FC; values 40px at weight 300; positive notes in success green; one alert tile in #FFF5F0 / #F6CDBB with the value in #C2410C), a Highlights & Risks list of row tiles with status chips, and a takeaway bar on field fill with an accent bolt icon. Switching tabs swaps the panel content with a 450ms fade-and-rise. Real tab semantics: role="tablist", role="tab", aria-selected, role="tabpanel". Below 900px the tab list sits above the panel. |
-| Status chips | pill | 12px text, 3px 10px padding, fully rounded: success #15803D on #E7F6EC, danger #B42318 on #FDECEC, warning #B45309 on #FEF3E2. Always paired with an icon or label, never color alone. |
+| Role switcher | tabs + panel | Section on a pale navy (#E6EEF0) with hairlines top and bottom; centered H2 and lead above. Left: a vertical tab list (~30% width) built as ONE bordered panel (surface, 1px border, radiusLg, overflow hidden), not separate cards: rows of 68px min height, 22px side padding, separated by 1px border hairlines, square inner edges, each with a 40px icon square (radius 8px) and the label at 17px. Inactive row: surface, muted icon square on surfaceAlt; hover surfaceAlt. Active row: pale section fill (#E6EEF0), icon square in band with white icon, and a straight 3px accent marker on the left edge inset 16px from top and bottom with rounded outer ends (it never bends around a corner); the marker fades and grows in on change. Right: one large surface card (radiusLg, 40px padding) with H3, lead, Learn More (accentInk + arrow), and a nested summary card: header row with title and date, a row of stat tiles (radius 10px, #F7F9FC; values 40px at weight 300; positive notes in success green; one alert tile in #FBEBDD / #F0C9A3 with the value in #C2410C), a Highlights & Risks list of row tiles with status chips, and a takeaway bar on field fill with an accent bolt icon. Switching tabs swaps the panel content with a 450ms fade-and-rise. Real tab semantics: role="tablist", role="tab", aria-selected, role="tabpanel". Below 900px the tab list sits above the panel. |
+| Status chips | chip | Top-Line chip key (see Colour meaning): mint for input or positive, light grey for calculation or neutral, orange tint for output or attention; 10px radius, 4px 12px padding, 12–13px text. Always paired with an icon or label, never colour alone. |
 | Section rhythm | flat | Light sections on bg separated by 1px hairlines; How It Works sits on surfaceAlt. Navy appears only as bookends: header + hero at the top, footer at the bottom. |
 | Hover | lift | Cards move up 4px, border darkens to the card hover border and gain shadow 0 12px 32px fg/8% over 350ms. |
+| Hero photo | polaroid | Hero images sit in a polaroid frame on the navy band: 14px off-white (#F4F2EC) border, 52px at the bottom, 4px radius, rotated -2.5° (1.5–5° range), soft shadow 0 24px 60px rgba(4,8,16,.45). Captions, if the content has them, go in the bottom border in navy. |
 | Carousel | crossfade | Slides crossfade (900ms) while settling from scale 1.04 to 1 (1200ms). 44px round prev/next buttons in surface with a 1px border and fg chevrons. Dots sit on the image: 6px band at 30%, active stretches to a 22px pill in band. The frame lifts off the band with the shadow above. |
 | Logo marquee | marquee | "Select Clients" eyebrow left-aligned above a single row of client logos in muted at 75% opacity (~28px tall, 72px apart). Scrolls right to left, endless and seamless, fading at both edges through a mask over the outer 14%. Hover pauses it. |
 | Filter chips | button | 36px high, 14px side padding, radius (same as buttons), 1px strong border; active = band fill with bandFg text. Not pills. |
@@ -155,14 +160,14 @@ Controls: buttons 44px high, 20px side padding; full-width buttons inside cards 
 | Footer | band | footerBg, link columns in bandMuted, column heads in footerFg, 1px rule in white at 10% above a centered copyright line in bandMuted. |
 | Portrait | rounded | Author photos 40px with 12px radius. |
 | Eyebrow mark | none | Eyebrow text only. |
-| Reveal motion | rise | Scroll-linked rise with a soft blur (see Motion). |
+| Reveal motion | rise | One-time fade-and-rise on entry, never scroll-linked, no blur (see Motion). |
 
 ## Motion
 
 Easing everywhere: cubic-bezier(0.2, 0.7, 0.2, 1). Nothing bounces.
 
 - Load: hero elements rise 16px and fade in over 800ms, staggered 80ms.
-- Scroll reveal: opacity 0 → 1, translateY 36px → 0, blur 6px → 0. Scroll-linked (`animation-timeline: view()`, range entry 0% → cover 28%); cards in a row stagger by offsetting the range 10% each. Where unsupported, content simply shows.
+- Reveal on entry: each section, card and paragraph fades in once as it enters the viewport — opacity 0 → 1 and translateY 24px → 0 over 600ms, triggered by an IntersectionObserver with a 6% bottom margin — and then stays fully visible. Nothing is tied to scroll position, so content never sits half-faded or blurred at the bottom edge of the screen. No blur. Without JavaScript or IntersectionObserver, content simply shows (the hidden state is only applied once the observer is running).
 - Typewriter: the last word of the hero H1 types in and out — 95ms per letter typing, hold 1800ms, 45ms per letter deleting, 350ms pause. Words: Data., Numbers., Evidence., Research. All in highlight, with a 2px highlight caret blinking at 1s (steps).
 - Logo marquee: continuous linear scroll right to left, about 3.5s per logo (70s for 20), seamless; pauses on hover.
 - Carousel interval 4500ms; autoplay on.
@@ -174,10 +179,10 @@ Treatment: architectural-cool
 CSS filter: saturate(0.85) contrast(1.05)
 Radius: 16px
 Aspect: 5:4 (hero), 16:10 (cards), 2:1 (article cover)
-Direction: Architectural, high-key photography and clean data visuals: drawings, plans, measured lines, daylight on glass and concrete. Cool neutrals with navy and at most one electric-blue element. Calm, exact, analytical.
+Direction: Architectural, high-key photography and clean data visuals: drawings, plans, measured lines, daylight on glass and concrete. Cool neutrals with navy and at most one teal element. Calm, exact, analytical.
 Hero rule: images on the band must be light and high-contrast against it; anything that matches the navy disappears.
 Avoid: Stock-photo clichés (handshakes, pointing at screens), text or logos baked into the image, watermarks, AI-looking gloss, distorted hands or faces, warm color casts.
-Key palette: fg #14171C, bg #FFFFFF, band #2C4A6E, accent #3062FF, highlight #BFD4FF
+Key palette: fg #16233A, bg #FFFFFF, band #16233A, accent #1F7A6B, highlight #E59A4B
 
 ## Pattern library — apply when the content fits
 
@@ -205,8 +210,8 @@ How to decide:
 | P12 | Labelled form | Forms with 3+ fields | Existing labels and inputs; full-width primary button | — |
 | P13 | Collapsed secondary form | A second form on a page whose primary task is another form (e.g. contact form under log-in) | The secondary form inside an accordion card, collapsed by default | Only when that form already exists on that page |
 | P14 | Pull quote | A real quote or testimonial with an existing source | Quote at weight 300 between hairlines, source below in muted | Never without a real source |
-| P15 | Pale-blue section | The single most important mid-page section, usually the P4 section | #F0F5FF background with hairlines | Max one per page; never adjacent to a navy band |
-| P16 | Blueprint grid | Hero in the blueprint-grid style, or a log-in / auth split panel | The grid spec in Texture | Never on consecutive sections or behind body text |
+| P15 | Pale-blue section | The single most important mid-page section, usually the P4 section | #E6EEF0 background with hairlines | Max one per page; never adjacent to a navy band |
+| P16 | Top-Line grid | Hero in the blueprint-grid style, or a log-in / auth split panel | The grid spec in Texture | Never on consecutive sections or behind body text |
 | P17 | Typewriter | A hero headline whose final word or phrase has existing alternatives in the content | The real final word first, then the existing alternatives | No alternatives → type the real word once, caret keeps blinking |
 
 Page-level limits: one hero pattern, at most one P4 and one P15 per page, and never two consecutive sections using the same heavy pattern (P4, P6). If two patterns would sit back to back, demote the second to its fall-back.
@@ -215,7 +220,7 @@ Page-level limits: one hero pattern, at most one P4 and one P15 per page, and ne
 
 The pages below show the prototype with every pattern switched on. On the real site, each section gets the pattern its content triggers.
 
-- Home: Header (band) → Hero (band, grid, glow) → Select Clients (logo marquee) → What We Do (3 indexed cards) → Who We Serve (role switcher on pale blue) → How It Works (accordion cards, surfaceAlt) → About (image + copy + 3 stats) → Latest Articles (3 cards + View All) → closing CTA box (white card, filled email field + Subscribe) → Footer (band). What We Do, How It Works and About are anchors on Home; Articles and Log In are their own pages.
+- Home: Header (band) → Hero (band, grid, glow) → Select Clients (logo marquee) → What We Do (3 indexed cards) → Who We Serve (role switcher on pale navy) → How It Works (accordion cards, surfaceAlt) → About (image + copy + 3 stats) → Latest Articles (3 cards + View All) → closing CTA box (white card, filled email field + Subscribe) → Footer (band). What We Do, How It Works and About are anchors on Home; Articles and Log In are their own pages.
 - Log In: full-height split screen. Left half is the band with the grid and glow: logo + wordmark top-left, the hero headline and lead bottom-third, meta row (Clients · Projects) at the bottom. Right half is white with a centered 460px column: the log-in card (radiusLg, 1px border, 28px padding: filled email field with mail icon, filled password field with lock icon and eye toggle, Forgot Password? right-aligned in accentInk, full-width Log In button), 24px gap, the Leave a Message accordion card (collapsed by default; opens to labelled Name, Email, Message fields and a full-width Submit), then the copyright line centered in muted.
 - Articles: header band, then light: eyebrow + H1 at clamp(40px, 4.4vw, 64px) up to 1000px wide + lead; filter chips left and title search right above a hairline; "Showing X of Y"; auto-fill grid (min 280px, four columns at full width) of article cards; first 21 shown, Load More Articles adds 9; dashed empty state.
 - Article: back link (All Articles), topic pill, H1 at clamp(36px, 4.2vw, 64px) up to 1120px wide, standfirst 20px muted up to 860px, author row between hairlines across the full container with icon buttons, a 21:9 cover across the full container, then two columns: the body (max 760px, 18px / 1.75, H2 28px, pull quote at the light weight between hairlines, figures with captions) on the left and a sticky right rail (300px, 1px border, large radius, 24px padding, top 96px) holding the article's existing meta: its table of contents if the site already has one (or if the article has 3+ H2s and the site already renders heading anchors), then tags. Below 900px the rail drops under the body and stops being sticky. Keep Reading row of 3 cards below, full container width.
@@ -224,15 +229,16 @@ The pages below show the prototype with every pattern switched on. On the real s
 
 These make the Direction recognisable. Implement every one with CSS and small markup additions to existing components.
 
-- Navy bookends: the page opens on the band and closes on the band; everything between is white. The header is a separate bar in its own color above the hero.
-- The blueprint grid, fading right, only where allowed — one appearance per page.
+- Warm off-white pages with white cards; navy only for the opening hero and the closing footer, like deck cover and closing slides.
+- Navy bookends: the page opens on the band and closes on the band; everything between is off-white. The header is a separate bar in its own color above the hero.
+- No texture anywhere: flat navy with a soft glow, flat off-white pages.
 - Filled log-in fields with stroke icons, and full-width blue action buttons inside cards.
 - Every disclosure is a bordered card with a thin chevron that rotates 180°.
 - Small index numbers (01, 02, 03) in accentInk above card titles.
 - The typewriter word in highlight on the hero.
-- The hero as a bright blue gradient deepening to near-black navy, with dark-glass cards floating on it.
+- The hero as a bright navy gradient deepening to near-black navy, with dark-glass cards floating on it.
 - The role switcher: tab cards on the left, one large detailed card on the right.
-- Thin-to-regular type only; nothing on the site is bold. Title Case on every heading and button.
+- Thin type (200) for every title and header, 400 for everything else; nothing on the site is bold. Title Case on every heading and button.
 
 ## Voice (reference only)
 
@@ -398,34 +404,34 @@ Enums:
 {
   "version": 3,
   "template": "pristine",
-  "templateName": "Blueprint",
-  "tagline": "Navy bands · modest boxes · never bold",
+  "templateName": "Top-Line",
+  "tagline": "warm off-white · deep navy · teal and orange · thin type",
   "mode": "light",
   "brand": {
     "wordmarkPrimary": "",
     "wordmarkAccent": ""
   },
   "colors": {
-    "bg": "#FFFFFF",
+    "bg": "#F4F2EC",
     "surface": "#FFFFFF",
-    "surfaceAlt": "#F5F7FA",
-    "fg": "#14171C",
-    "muted": "#5B616B",
-    "border": "#E3E6EA",
-    "accent": "#3062FF",
-    "accentHover": "#2953D9",
+    "surfaceAlt": "#EEECE5",
+    "fg": "#16233A",
+    "muted": "#4A5568",
+    "border": "#D9DCE1",
+    "accent": "#1F7A6B",
+    "accentHover": "#1A685B",
     "accentFg": "#FFFFFF",
-    "accentInk": "#3062FF",
-    "highlight": "#BFD4FF",
-    "band": "#2C4A6E",
+    "accentInk": "#1F7A6B",
+    "highlight": "#E59A4B",
+    "band": "#16233A",
     "bandFg": "#FFFFFF",
-    "bandMuted": "#B9C6D8",
-    "headerBg": "#1B2E47",
+    "bandMuted": "#BFCAD9",
+    "headerBg": "#16233A",
     "headerFg": "#FFFFFF",
-    "footerBg": "#2C4A6E",
+    "footerBg": "#16233A",
     "footerFg": "#FFFFFF",
     "onImage": "#FFFFFF",
-    "focus": "#3062FF"
+    "focus": "#1F7A6B"
   },
   "type": {
     "display": {
@@ -446,7 +452,7 @@ Enums:
     },
     "base": "16px",
     "scale": 1.333,
-    "headingWeight": 400,
+    "headingWeight": 200,
     "uiWeight": 400,
     "strongWeight": 400,
     "bodyWeight": 400,
@@ -454,10 +460,10 @@ Enums:
     "headingLeading": 1.08,
     "headingCase": "none",
     "eyebrow": "uppercase",
-    "eyebrowTracking": "0.06em"
+    "eyebrowTracking": "0.16em"
   },
   "shape": {
-    "radius": "6px",
+    "radius": "10px",
     "radiusLg": "16px",
     "button": "solid"
   },
@@ -472,7 +478,7 @@ Enums:
     "heroOverlay": "none",
     "card": "line",
     "rhythm": "flat",
-    "texture": "grid",
+    "texture": "none",
     "hover": "lift",
     "portrait": "rounded",
     "eyebrowMark": "none"
@@ -489,7 +495,7 @@ Enums:
     "cssFilter": "saturate(0.85) contrast(1.05)",
     "radius": "16px",
     "aspect": "5:4",
-    "direction": "Architectural, high-key photography and clean data visuals: drawings, plans, measured lines, daylight on glass and concrete. Cool neutrals with navy and at most one electric-blue element. Calm, exact, analytical.",
+    "direction": "Architectural, high-key photography and clean data visuals: drawings, plans, measured lines, daylight on glass and concrete. Cool neutrals with navy and at most one teal element. Calm, exact, analytical.",
     "avoid": "Stock-photo clichés (handshakes, pointing at screens), text or logos baked into the image, watermarks, AI-looking gloss, distorted hands or faces, warm color casts."
   },
   "overrides": {

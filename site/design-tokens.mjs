@@ -281,28 +281,37 @@ export const tokens = parsed;
 
 /** Colors named in the guide prose and not in the token contract. */
 export const extras = {
-  heroStop1: "#0B57D0",
-  heroStop2: "#0A55C8",
-  heroStop3: "#0A3C8F",
-  heroStop4: "#071C40",
-  heroGlow: "rgba(24, 150, 255, 0.55)",
-  bandGlow: "#78A0CD",
-  onBluePrimary: "#FFFFFF",
-  onBluePrimaryInk: "#0B2F6E",
-  glassCard: "rgba(9, 32, 78, 0.62)",
-  connectorBlue: "#3DA0FF",
-  paleSection: "#F0F5FF",
-  activeTab: "#DCE6FB",
-  activeTabBorder: "#C7D6F7",
-  statTile: "#F7F9FC",
-  fieldFill: "#E8EEFB",
-  fieldBorder: "#DCE3EE",
-  strongBorder: "#D5DAE1",
-  cardHoverBorder: "#C9D2DE",
+  heroStop1: "#16233A",
+  heroStop2: "#16233A",
+  heroStop3: "#14203A",
+  heroStop4: "#0D1626",
+  heroGlow: "rgba(110, 140, 180, 0.30)",
+  heroGlowAt: "18% 30%",
+  bandGlow: "#6E8CB4",
+  onBluePrimary: "#1F7A6B",
+  onBluePrimaryInk: "#FFFFFF",
+  onBluePrimaryHover: "#196356",
+  polaroidBorder: "#F4F2EC",
+  polaroidShadow: "rgba(4, 8, 16, 0.45)",
+  glassCard: "rgba(10, 18, 32, 0.62)",
+  connectorBlue: "#5FB3A1",
+  paleSection: "#E6EEF0",
+  activeTab: "#E6EEF0",
+  activeTabBorder: "#B5DACE",
+  statTile: "#F0F3F3",
+  chipInput: "#CFE8E1",
+  chipInputInk: "#0E4D42",
+  chipCalc: "#E3E6EA",
+  chipOutput: "#FBE6D0",
+  chipOutputInk: "#9A4D0E",
+  fieldFill: "#E6EEF0",
+  fieldBorder: "#D9DCE1",
+  strongBorder: "#C9CED6",
+  cardHoverBorder: "#BCC3CD",
   outlineOnBand: "rgba(255, 255, 255, 0.35)",
   navHoverOnBand: "rgba(255, 255, 255, 0.08)",
   navActiveOnBand: "rgba(255, 255, 255, 0.12)",
-  gridLine: "rgba(255, 255, 255, 0.08)",
+  gridLine: "rgba(255, 255, 255, 0.00)",
   headerRule: "rgba(255, 255, 255, 0.08)",
   footerRule: "rgba(255, 255, 255, 0.10)",
 };
@@ -374,7 +383,7 @@ ${colorVars}
   --heading-leading: ${type.headingLeading};
   --heading-transform: ${headingTransform};
   --eyebrow-size: ${uppercase ? "13px" : "0.95rem"};
-  --weight-display-light: 300;
+  --weight-display-light: ${Math.min(300, type.headingWeight)};
 ${Object.keys(extras).map((key) => extraVar(key)).join("\n")}
   --eyebrow-tracking: ${type.eyebrowTracking};
   --eyebrow-transform: ${uppercase ? "uppercase" : "none"};
