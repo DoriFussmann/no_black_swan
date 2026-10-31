@@ -54,7 +54,7 @@ Good AI consulting does not work that way. The deliverable is not a document; it
 
 The consulting industry broadly is shifting toward this model — one centered on execution and measurable outcomes, where clients expect partners who can implement solutions and drive tangible results, not just deliver recommendations. For SMB owners, that shift matters a great deal. A small or mid-sized business cannot afford to pay for advice and then separately find someone to act on it. You need a partner who owns both.
 
-This is the orientation [No Black Swan](/%20%E2%80%94%20use%20as%20the%20provisional%20destination%20until%20the%20exact%20discovery-call%20booking%20URL%20is%20confirmed.) brings to every engagement. The work starts with a genuine assessment of where the business is today, and it ends with implemented workflows — not a report that sits in a shared folder.
+This is the orientation [No Black Swan](/book-call/) brings to every engagement. The work starts with a genuine assessment of where the business is today, and it ends with implemented workflows — not a report that sits in a shared folder.
 
 ## How a Real AI Consulting Engagement Works
 
