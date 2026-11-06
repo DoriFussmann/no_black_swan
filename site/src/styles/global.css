@@ -875,7 +875,6 @@
     font-family: inherit;
     font-size: theme("fontSize.body-sm[0]");
     font-weight: 400;
-    text-transform: capitalize;
     cursor: pointer;
     border-radius: theme("borderRadius.card");
     transition:

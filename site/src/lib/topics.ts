@@ -83,3 +83,20 @@ export function topicByName(name: string | undefined): Topic | undefined {
   if (!name) return undefined;
   return TOPICS.find((topic) => topic.name === name.trim());
 }
+
+const ACRONYMS: Record<string, string> = { ai: "AI", roi: "ROI", fde: "FDE", crm: "CRM", erp: "ERP" };
+const SMALL_WORDS = new Set(["a", "an", "and", "for", "in", "of", "or", "the", "to", "vs"]);
+
+/** Display label for a lowercase topic name: "ai for operations" -> "AI for Operations". */
+export function topicLabel(name: string): string {
+  return name
+    .trim()
+    .split(/\s+/)
+    .map((word, i) => {
+      const lower = word.toLowerCase();
+      if (ACRONYMS[lower]) return ACRONYMS[lower];
+      if (i > 0 && SMALL_WORDS.has(lower)) return lower;
+      return lower.charAt(0).toUpperCase() + lower.slice(1);
+    })
+    .join(" ");
+}
