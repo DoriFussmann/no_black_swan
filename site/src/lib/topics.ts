@@ -7,7 +7,7 @@ export const TOPICS = [
   {
     "name": "fractional ai",
     "slug": "fractional-ai",
-    "pillar": "fractional-ai",
+    "pillar": "who-should-own-ai-in-a-company",
     "title": "Who Owns AI: Head of AI or Fractional Lead | No Black Swan",
     "h1": "Fractional AI and the head of AI",
     "description": "Who should own AI in a startup or growing company: a full-time head of AI, a fractional AI lead, or an outside partner who implements the work with your team.",
