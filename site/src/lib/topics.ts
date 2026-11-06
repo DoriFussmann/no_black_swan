@@ -10,7 +10,7 @@ export const TOPICS = [
     "pillar": "fractional-ai",
     "title": "Who Owns AI: Head of AI or Fractional Lead | No Black Swan",
     "h1": "Fractional AI and the head of AI",
-    "description": "Who should own AI in a 15-250 person company: a full-time head of AI, a fractional AI lead, or an outside partner who implements the work with your team.",
+    "description": "Who should own AI in a startup or growing company: a full-time head of AI, a fractional AI lead, or an outside partner who implements the work with your team.",
     "intro": "Your team already uses AI, but nobody owns it. These guides compare a head of AI, a fractional AI lead and an outside partner, and what each costs you in time and focus."
   },
   {
