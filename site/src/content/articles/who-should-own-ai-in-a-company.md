@@ -105,7 +105,7 @@ Who should lead AI projects in an operations business with no IT team? This is w
 
 In both cases — the services firm and the operations business — the realistic answer is an outside AI partner who acts as the company's AI owner: someone who understands operations, assesses the business first, builds and integrates the chosen tools, drives adoption, and holds the agenda month to month. The inside team provides context and enforces change. The outside partner provides the technical execution, the prioritization judgment, and the continuity.
 
-A word on AI freelancers: they are a narrower alternative. A freelancer can build one automation or implement one tool well, and that is genuinely useful when you have a single, clearly defined task. What they do not provide is the broader agenda: the assessment of the whole business, the prioritization across opportunities, and the ongoing ownership that moves from one solved problem to the next. Useful for a task; not sufficient for an owner.
+A word on AI freelancers: they are a narrower alternative. A [freelancer](/articles/ai-consulting-firm-vs-freelancer/) can build one automation or implement one tool well, and that is genuinely useful when you have a single, clearly defined task. What they do not provide is the broader agenda: the assessment of the whole business, the prioritization across opportunities, and the ongoing ownership that moves from one solved problem to the next. Useful for a task; not sufficient for an owner.
 
 ---
 

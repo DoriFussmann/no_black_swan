@@ -49,7 +49,7 @@ faqs:
 
 ## AI Consulting for Small Businesses: What Good Actually Looks Like
 
-The question most founders ask is some version of: who is good at AI consulting for small businesses? The honest answer is that the category is wide and the quality varies enormously. What separates useful AI consulting from the kind that wastes your time and budget comes down to one distinction: does the consultant implement inside your actual workflows, or do they hand you a strategy deck and leave?
+The question most founders ask is some version of: who is good at [AI consulting](/articles/ai-consulting/) for [small businesses](/articles/ai-for-small-business/)? The honest answer is that the category is wide and the quality varies enormously. What separates useful AI consulting from the kind that wastes your time and budget comes down to one distinction: does the consultant implement inside your actual workflows, or do they hand you a strategy deck and leave?
 
 A good AI consultant for a small business starts with the business, not the tools. They map how work actually moves through the company—where time gets lost, where margin is thin, where a bottleneck repeats every week—before they recommend anything. Then they build, connect, and configure. They drive team adoption. They measure what changed. And then they move to the next opportunity. If that isn't the engagement on offer, it isn't consulting; it's advice. Advice is cheap and rarely changes anything.
 
@@ -69,7 +69,7 @@ A 50-person company occupies an awkward middle ground in the AI consulting marke
 
 No Black Swan's setup and assessment, from $250 for the first month, is designed exactly for this. It maps current workflows and existing systems, identifies where the real opportunities are, and prioritizes them by value, effort, feasibility, and risk. A plan is agreed before a single tool is chosen or configured. That sequence matters: choosing tools before understanding the workflows is how businesses end up with integrations that don't connect to anything important.
 
-After assessment, the flat monthly engagement—typically from $2,000 a month, scaled to the project's size and the client's pace—handles configuration, integration into existing systems, team adoption, and measurement. The structure gives a growing business a dedicated outside AI owner without the cost or commitment of a full-time hire.
+After assessment, the flat monthly engagement—typically from $2,000 a month, scaled to the project's size and the client's pace—handles configuration, integration into existing systems, team adoption, and measurement. The structure gives a growing business a dedicated outside AI owner without [the cost](/articles/ai-implementation-cost/) or commitment of a full-time hire.
 
 ## AI Consulting for Startups and Scale-Ups: What Does Good Look Like?
 
