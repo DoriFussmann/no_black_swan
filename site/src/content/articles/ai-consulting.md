@@ -27,6 +27,14 @@ externalLinks:
     url: "https://www.fortunebusinessinsights.com/ai-consulting-services-market-111179"
     addedAt: 2026-11-06
     kind: claim
+  - label: "Thomson Reuters: 2026 AI in Professional Services Report"
+    url: "https://www.thomsonreuters.com/en/institute/articles/ai-in-professional-services-report-2026"
+    addedAt: 2026-11-06
+    kind: claim
+  - label: "Goldman Sachs: Small businesses embrace AI but need training and support"
+    url: "https://www.goldmansachs.com/pressroom/press-releases/2026/small-businesses-embrace-ai-but-need-training-and-support-to-fully-harness-it"
+    addedAt: 2026-11-06
+    kind: claim
 faqs:
   - question: "What is the difference between AI consulting and AI implementation?"
     answer: "AI consulting typically refers to the advisory side: mapping opportunities, setting strategy and prioritizing where AI creates value. AI implementation is the hands-on work of building integrations, configuring tools and driving team adoption. The best engagements include both — if a consultant delivers a strategy deck and walks away, the work is advisory only. Look for a provider who owns the full cycle: assessment, build, adoption and measurement."
@@ -52,7 +60,7 @@ Operational experience across industries and companies is what makes AI consulti
 
 AI consulting, done properly, covers four things in sequence: understanding the business and how the team already uses AI; mapping current workflows to find where real opportunities exist; prioritizing those opportunities by value, effort, feasibility and risk; and then building, integrating and refining the chosen tools inside the systems the team already uses. Each step depends on the one before. Skip the first and you are building solutions to the wrong problems. Skip the prioritization and you are wasting effort on low-value integrations that nobody notices.
 
-A serious engagement has two distinct phases. The first is a paid setup and assessment: typically one month, focused entirely on understanding the business before anything is built. The consultant interviews the team, maps workflows, documents how AI is already being used inconsistently and surfaces the highest-value opportunities. The output is not a slide deck — it is a prioritized, practical plan that reflects the actual constraints of this business. The second phase is an ongoing monthly engagement: build, integrate, refine, drive adoption, measure what changed and move to the next opportunity.
+A serious engagement has two distinct phases. The first is a paid setup and assessment: typically one month, focused entirely on understanding the business before anything is built. The consultant interviews the team, maps workflows, documents how AI is already being used inconsistently and surfaces the highest-value opportunities. The output is not a slide deck — it is a prioritized, practical plan that reflects the actual constraints of this business. The second phase is an ongoing monthly engagement: build, integrate, refine, drive [adoption](/articles/ai-adoption/), [measure what changed](/articles/ai-roi/) and move to the next opportunity.
 
 The word "ongoing" matters. AI consulting that ends after a strategy presentation is advisory work, not AI consulting. The integration has to be built. The team has to be trained on it. The metric it was supposed to move has to be measured. If those things do not happen, the plan sits in a folder and the team reverts to doing things the old way. Deliverables should be working integrations and measurable workflow changes, not documents about working integrations and measurable workflow changes.
 
@@ -60,7 +68,7 @@ The consultant — the actual AI consultant doing this work, not a junior team m
 
 ## What AI Consulting Services a Small Business Actually Needs
 
-Small businesses do not need a large transformation programme. They need an outside AI owner: someone who maps admin, delivery and client workflows first, then identifies where AI saves real hours versus where it creates noise and new problems. The diagnostic is not a luxury — it is the whole point. Without it, any tool you buy is a guess.
+Small businesses do not need a large transformation programme. They need an [outside AI owner](/articles/who-should-own-ai-in-a-company/): someone who maps admin, delivery and client workflows first, then identifies where AI saves real hours versus where it creates noise and new problems. The diagnostic is not a luxury — it is the whole point. Without it, any tool you buy is a guess.
 
 The highest-value starting points for founder-led services firms are typically the work that eats billable or owner time without generating revenue: intake, scheduling, reporting, follow-up and document handling. These are not glamorous, but they are the workflows where an hour saved is an hour that can go back into client work or growth. Client-facing automation is worth considering, but only after the internal workflows are stable. Automate a broken intake process and you have a faster broken intake process.
 
@@ -108,7 +116,7 @@ The scope and fee for your business are agreed after a free 30-minute consultati
 
 ## Where Things Stand
 <!-- WHERE-THINGS-STAND:START -->
-The AI consulting services market is growing at a pace that reflects how urgently businesses feel the gap between AI potential and practical implementation. According to Fortune Business Insights, the global market is projected to grow from roughly $11.91 billion in 2026 to $73.89 billion by 2034, at a compound annual growth rate of around 25.6% — driven largely by companies moving from AI experimentation toward scaled, operational adoption. That shift in buyer maturity is reshaping what gets purchased: buyers increasingly expect consulting engagements to be scoped around implementation and measurable outcomes rather than open-ended advisory retainers, and the credible first deliverable in an engagement is a working proof of concept, not a strategy presentation. For smaller businesses specifically, the trend is toward managed AI operations — ongoing partnerships where someone external owns the AI agenda month to month — rather than one-off projects. The market conditions, in other words, are moving toward exactly the structure that makes AI consulting genuinely useful.
+The AI consulting services market is growing at a pace that reflects how urgently businesses feel the gap between AI potential and practical implementation. According to [Fortune Business Insights](https://www.fortunebusinessinsights.com/ai-consulting-services-market-111179), the global market is projected to grow from roughly $11.91 billion in 2026 to $73.89 billion by 2034, at a compound annual growth rate of around 25.6% — driven largely by companies moving from AI experimentation toward scaled, operational adoption. That shift in buyer maturity is reshaping what gets purchased: buyers increasingly expect consulting engagements to be scoped around implementation and measurable outcomes rather than open-ended advisory retainers, and the credible first deliverable in an engagement is a working proof of concept, not a strategy presentation. For smaller businesses specifically, the trend is toward managed AI operations — ongoing partnerships where someone external owns the AI agenda month to month — rather than one-off projects. The market conditions, in other words, are moving toward exactly the structure that makes AI consulting genuinely useful.
 <!-- WHERE-THINGS-STAND:END -->
 
 ## Key Takeaways

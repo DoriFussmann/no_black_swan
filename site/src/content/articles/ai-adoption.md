@@ -51,6 +51,18 @@ externalLinks:
     url: "https://softskan.com/ai-in-the-real-world-weekly-wrap-up-2-november-2026/"
     addedAt: 2026-11-06
     kind: where-things-stand
+  - label: "Microsoft Work Trend Index: AI at work is here. Now comes the hard part"
+    url: "https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part"
+    addedAt: 2026-11-06
+    kind: claim
+  - label: "TechRadar: Microsoft 2026 Work Trend Index findings"
+    url: "https://www.techradar.com/pro/every-business-leader-knows-the-world-is-changing-but-far-fewer-have-a-clear-picture-of-what-to-do-about-it-microsoft-flags-the-changing-world-of-ai-at-work-and-why-frontier-firms-are-leading-the-way"
+    addedAt: 2026-11-06
+    kind: claim
+  - label: "Gallup: Global Indicator, Artificial Intelligence"
+    url: "https://www.gallup.com/699797/indicator-artificial-intelligence.aspx"
+    addedAt: 2026-11-06
+    kind: claim
 faqs:
   - question: "How do I get my team to actually use AI instead of ignoring it?"
     answer: "Don't introduce AI as a new tool or a separate step. Identify one workflow your team runs every day, find the friction point inside it, and add AI there—so using it is the path of least resistance, not an extra task. The goal is for people to feel the benefit in their own work before they're asked to change anything else."
@@ -80,7 +92,7 @@ The word to avoid is *revolution*. The moment an AI rollout is framed as a trans
 
 An AI adoption framework is a repeatable process for deciding which workflows to change, in which order, and how to know whether the change worked. Without one, what happens instead is tool sprawl: scattered individual use, disconnected workflows, and spend that doesn't change how the company operates. Someone uses one AI for drafting, someone else uses a different one for research, a third person hasn't started—and the company has no way to tell whether any of it is producing a business outcome. A practical AI adoption framework has four stages, run in sequence.
 
-**Assess.** Understand how work actually moves through the business today—not how it's supposed to move, but how it does. Where does time go? Where do errors recur? Where do handoffs break down? And where are staff already using AI on their own? This last point matters more than most founders expect. According to Microsoft's Work Trend Index, 78% of AI users at work are bringing their own AI tools outside IT approval. Those people are your first adopters and your best signal about where AI is already proving its value. The assessment surfaces that use, makes it visible, and treats it as evidence rather than a problem to contain.
+**Assess.** Understand how work actually moves through the business today—not how it's supposed to move, but how it does. Where does time go? Where do errors recur? Where do handoffs break down? And where are staff already using AI on their own? This last point matters more than most founders expect. According to [Microsoft's Work Trend Index, 78%](https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part) of AI users at work are bringing their own AI tools outside IT approval. Those people are your first adopters and your best signal about where AI is already proving its value. The assessment surfaces that use, makes it visible, and treats it as evidence rather than a problem to contain.
 
 **Prioritize.** Not every workflow that could involve AI should involve it next. Score each opportunity by four criteria: value to the business if changed, effort to implement, technical feasibility given existing systems, and risk—including the risk of getting it wrong in that particular workflow. This produces a sequenced list, not a wishlist. The first item on the list should be winnable: high enough value to prove the approach, low enough complexity to get done in weeks rather than months.
 
@@ -94,15 +106,15 @@ The framework is business-first by design. The workflow problem is defined befor
 
 ## How to Drive AI Adoption Across the Company
 
-The gap between having AI available and using it in a way that changes business outcomes is real and well-documented. Gallup's May 2026 data shows that 47% of employees said their organization has integrated AI tools—but only 30% used AI a few times a week or more. Gallup calls this the integration-adoption lag, noting that implementation does not guarantee use. And even among organizations that have rolled out tools, only 25% of employees say their organization has communicated a clear plan for using AI.
+The gap between having AI available and using it in a way that changes business outcomes is real and well-documented. [Gallup's May 2026 data](https://www.gallup.com/699797/indicator-artificial-intelligence.aspx) shows that 47% of employees said their organization has integrated AI tools—but only 30% used AI a few times a week or more. Gallup calls this the integration-adoption lag, noting that implementation does not guarantee use. And even among organizations that have rolled out tools, only 25% of employees say their organization has communicated a clear plan for using AI.
 
 The gap between available and used is not primarily a technology problem. It's an ownership and sequence problem. Three things close it.
 
 **A workflow map.** Document how work actually moves through the business today—not how it's supposed to move, but how it does. Where does time go? Where do people do the same thing twice? Where are staff already using AI individually and quietly? The workflow map is the foundation: without it, any prioritization is a guess, and any implementation is likely to land beside the existing process rather than inside it.
 
-**Prioritized opportunities.** Once the map exists, rank the opportunities it reveals. Microsoft's Work Trend Index 2026 found that organizational factors explain 67% of reported AI impact, against 32% for individual factors. This is the evidence for starting at the workflow level, not the individual level. Early wins—visible, measurable changes in one workflow—build the credibility and the confidence that makes later changes easier to adopt across the company.
+**Prioritized opportunities.** Once the map exists, rank the opportunities it reveals. [Microsoft's Work Trend Index 2026](https://www.techradar.com/pro/every-business-leader-knows-the-world-is-changing-but-far-fewer-have-a-clear-picture-of-what-to-do-about-it-microsoft-flags-the-changing-world-of-ai-at-work-and-why-frontier-firms-are-leading-the-way) found that organizational factors explain 67% of reported AI impact, against 32% for individual factors. This is the evidence for starting at the workflow level, not the individual level. Early wins—visible, measurable changes in one workflow—build the credibility and the confidence that makes later changes easier to adopt across the company.
 
-**Someone who owns the agenda.** This is the part most founders underestimate. Without a person accountable for the AI agenda month to month—tracking what changed, deciding what comes next, pushing the team through the friction of a new tool embedded in a live process—the rollout stalls after the first tool is installed. Someone has to hold the thread. In founder-led and operations-heavy businesses, the people who could do this are already running the company. The capacity to manage a sustained AI rollout simply doesn't exist alongside everything else, and that's the most honest explanation for why most AI in growing businesses stays individual, ad hoc, and invisible.
+**Someone who owns the agenda.** This is the part most founders underestimate. Without a person accountable for the AI agenda month to month—tracking what changed, deciding what comes next, pushing the team through the friction of a new tool embedded in a live process—the rollout stalls after the first tool is installed. Someone has to hold the thread. In founder-led and [operations-heavy](/articles/ai-for-operations/) businesses, the people who could do this are already running the company. The capacity to manage a sustained AI rollout simply doesn't exist alongside everything else, and that's the most honest explanation for why most AI in growing businesses stays individual, ad hoc, and invisible.
 
 ---
 
@@ -120,11 +132,11 @@ Both groups share one concern that should be addressed directly rather than avoi
 
 ## Why Most AI Rollouts Fail Before They Change Anything
 
-The 2026 survey findings from Writer and Workplace Intelligence reveal that 79% of organizations face challenges in adopting AI—a double-digit increase from 2025. The number is striking, but the pattern beneath it is consistent: the same few failure modes appear again and again, regardless of company size or industry.
+The 2026 survey findings from [Writer and Workplace Intelligence](https://writer.com/blog/enterprise-ai-adoption-2026/) reveal that 79% of organizations face challenges in adopting AI—a double-digit increase from 2025. The number is striking, but the pattern beneath it is consistent: the same few failure modes appear again and again, regardless of company size or industry.
 
 **The tool is bought before the workflow is understood.** This is the most common failure mode and the one with the most downstream consequences. Once a tool is selected, the tendency is to introduce it and expect the workflow to adjust around it. It doesn't. Staff continue the old process; the tool sits alongside it unused. With 48% calling adoption a "massive disappointment," the gap between strategy documents and business outcomes has never been wider.
 
-**No one owns the agenda.** A rollout requires someone whose job is to hold the agenda—not just at launch, but every month after. Without that person, momentum dies after the first tool is installed. There's no one to measure what changed, no one to push through the friction of the second workflow, and no one to course-correct when the initial configuration doesn't fit how the team actually works.
+**No one owns the agenda.** A rollout requires someone whose job is to hold the agenda—not just at launch, but every month after. Without that person, momentum dies after the first tool is installed. There's no one to [measure what changed](/articles/ai-roi/), no one to push through the friction of the second workflow, and no one to course-correct when the initial configuration doesn't fit how the team actually works.
 
 **The tool is introduced before the team understands why.** When staff don't know which tasks AI is handling and why, the natural response is to route around it—using the old process because it's known and trusted, or in some cases actively disengaging from the rollout altogether. Research found that 29% of workers admit to sabotaging their company's AI strategy, whether by using unauthorized tools, inputting sensitive data into public systems, or refusing to engage. This isn't malice—it's a rational response to a rollout that didn't explain what was changing, or one that sent mixed signals about what AI meant for their roles.
 
@@ -154,7 +166,7 @@ No Black Swan is a small AI integration agency for startups and growing business
 
 The engagement has two parts. The first is a paid setup and assessment (the first month): understand the business, map current workflows and constraints, surface how the team already uses AI, find the real opportunities, prioritize them by value, effort, feasibility, and risk, and agree a practical plan. The second is a flat monthly engagement, scaled to the project's size and the client's pace: build, integrate, and refine—configure and connect the chosen AI into existing systems, drive team adoption, measure what changed, then move to the next opportunity. Setup starts from $250 for the first month, and the monthly engagement typically from $2,000, scaled to scope and pace; the exact scope and fee are agreed after a free 30-minute consultation, because every business differs.
 
-In practice, No Black Swan acts as the company's outside AI owner. It holds the agenda month to month, tracks what changed, and decides what comes next. That role—owning the AI agenda rather than delivering a one-time project—is what separates sustained operational change from a single-tool install that gets abandoned when the initial excitement fades.
+In practice, No Black Swan acts as the company's [outside AI owner](/articles/who-should-own-ai-in-a-company/). It holds the agenda month to month, tracks what changed, and decides what comes next. That role—owning the AI agenda rather than delivering a one-time project—is what separates sustained operational change from a single-tool install that gets abandoned when the initial excitement fades.
 
 The edge is first-hand. Dori's background spans investment banking at Citi, Morgan Stanley, and Ion Pacific; founding and operating The Vets, a technology-enabled pet healthcare company; fractional CFO work across companies including BlueMark, Natrion, Snout, and Translucent AI; and advisory roles at Ambi Robotics and Manatee. That's an operator's and CFO's view of where work, cost, and margin actually sit—which is what makes the prioritization in the assessment stage genuinely practical rather than theoretical.
 

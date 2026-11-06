@@ -81,7 +81,7 @@ The work follows a repeating loop. Before any tool is touched, the embedded AI o
 
 Once the high-value opportunities are mapped and prioritized, the engineer configures, connects, and sometimes builds the AI layer that fits into the workflows those people already follow. In practice, forward-deployed engineers help companies integrate AI with internal databases, APIs, and operational software, ensuring the technology can operate within existing infrastructure. That means the new AI tool does not sit in a separate tab that people have to remember to open—it surfaces in the system the team already relies on, at the moment they need it.
 
-After the build comes adoption. The embedded engineer acts as a change agent within the customer organization, redesigning workflows and job functions for effective AI integration, guiding adoption of new processes, training teams, and helping integrate AI into day-to-day operations. Then comes measurement: what actually changed, what still breaks, what needs to be tuned. Once that integration is stable, the engineer moves to the next opportunity. The result is continuous AI progress rather than a one-off project that stalls after launch.
+After the build comes [adoption](/articles/ai-adoption/). The embedded engineer acts as a change agent within the customer organization, redesigning workflows and job functions for effective [AI integration](/articles/ai-integration/), guiding adoption of new processes, training teams, and helping integrate AI into day-to-day operations. Then comes measurement: what actually changed, what still breaks, what needs to be tuned. Once that integration is stable, the engineer moves to the next opportunity. The result is continuous AI progress rather than a one-off project that stalls after launch.
 
 FDEs analyze strategies, discover applications, build agentic frameworks, and roll out AI systems with help from customers' own domain experts and engineers. What they do not do is hand over a strategy deck and disappear.
 
@@ -107,7 +107,7 @@ The forward deployed model—or its plain-English equivalent, the embedded AI op
 
 ## Why Growing Companies Need This Function, Not Just AI Tools
 
-Buying AI tools does not change how a business operates. The tool has to be connected to the right system, configured to fit the actual workflow, and adopted by the people whose jobs it is supposed to improve. In most startups and growing businesses, every person on the team uses AI in their own way—a language model here, an automation there—but nobody owns it at the company level. The result is scattered tool use, duplicated spend, and no measurable difference in how the business actually runs.
+Buying AI tools does not change how a business operates. The tool has to be connected to the right system, configured to fit the actual workflow, and adopted by the people whose jobs it is supposed to improve. In most startups and growing businesses, every person on the team uses AI in their own way—a language model here, an automation there—but [nobody owns it](/articles/who-should-own-ai-in-a-company/) at the company level. The result is scattered tool use, duplicated spend, and no measurable difference in how the business actually runs.
 
 The forward deployed engineering role is growing 42-fold because companies realized something crucial: building AI is easy; integrating it into the business is hard. That realization is the whole argument for the function. The tools exist. The gap is in owning the work of getting them into operations—mapping the workflow, choosing the right tool for that workflow, connecting it to existing systems, driving adoption, and then moving to the next opportunity.
 
@@ -123,7 +123,7 @@ No Black Swan is honest about where AI doesn't belong. Not every workflow is a g
 
 ## What to Do If You Think Your Business Needs This
 
-If your team is using AI individually but nothing has measurably changed at the company level, you are describing the problem this function solves. If your board is asking about AI and you don't have a clear owner for the answer, same problem. If you run an operations-heavy business and can see AI opportunities everywhere but have nobody internal to pick them up, same problem again.
+If your team is using AI individually but nothing has measurably changed at the company level, you are describing the problem this function solves. If your board is asking about AI and you don't have a clear owner for the answer, same problem. If you run an [operations-heavy](/articles/ai-for-operations/) business and can see AI opportunities everywhere but have nobody internal to pick them up, same problem again.
 
 The right starting point is a conversation, not a proposal. We can't tell you your exact plan or price in an article, because every business differs—but in a free 30-minute call, No Black Swan will tell you specifically what it would do in your business and what it would cost. If that sounds useful, you can book directly at /dori-fussmann-lqbqlb/.
 
