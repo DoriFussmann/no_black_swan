@@ -5,11 +5,49 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import CtaBanner from "../components/CtaBanner.astro";
 import CaseStack from "../components/CaseStack.astro";
 import FaqBlock from "../components/FaqBlock.astro";
+import LogoMarquee from "../components/LogoMarquee.astro";
+import type { ImageMetadata } from "astro";
 import { orgId } from "seo-core";
 import { DORI_LINKEDIN, SITE_URL } from "../config/site";
 import { absoluteUrl, sitePath } from "../lib/url";
 import doriPortrait from "../assets/founder/dori-fussmann/photo.jpg";
 import linkedinLogo from "../assets/brand/linkedin.png";
+
+const logoFiles = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/logos/*.png",
+  { eager: true },
+);
+
+const clientLogos = [
+  { file: "ambi-robotics.png", name: "Ambi Robotics" },
+  { file: "bluemark.png", name: "BlueMark" },
+  { file: "guardian-vets.png", name: "GuardianVets" },
+  { file: "jbecca.png", name: "jBecca" },
+  { file: "lena-health.png", name: "LenaHealth" },
+  { file: "manatee.png", name: "Manatee" },
+  { file: "natrion.png", name: "Natrion" },
+  { file: "pluto-vets.png", name: "PlutoVets" },
+  { file: "powder-pics.png", name: "PowderPics" },
+  { file: "sorso.png", name: "Sorso" },
+  { file: "sunday.png", name: "Sunday" },
+  { file: "swift-vets.png", name: "SwiftVets" },
+  { file: "the-vets.png", name: "The Vets" },
+  { file: "translucent-ai.png", name: "Translucent AI" },
+  { file: "user1st.png", name: "User1st" },
+  { file: "vetnio.png", name: "Vetnio" },
+  { file: "yourpath.png", name: "YourPath" },
+  { file: "sniffi.png", name: "Sniffi" },
+  { file: "snout.png", name: "Snout" },
+  { file: "reside-health.png", name: "ResideHealth" },
+  { file: "dex-world.png", name: "Dex World" },
+  { file: "tailplans.png", name: "Tailplans" },
+].map((item) => {
+  const mod = logoFiles[`../assets/logos/${item.file}`];
+  if (!mod) {
+    throw new Error(`Missing logo asset: ${item.file}`);
+  }
+  return { name: item.name, src: mod.default };
+});
 
 const title = "AI Integration for Business Operations | No Black Swan";
 const description =
@@ -163,6 +201,13 @@ const jsonLd: Record<string, unknown>[] = [
         <div class="hero-reveal md:col-span-6">
           <HeroFlow />
         </div>
+      </div>
+    </section>
+
+    <section class="site-wrap pt-md pb-lg lg:pt-lg lg:pb-xl reveal" aria-labelledby="clients-heading">
+      <p class="type-label" id="clients-heading">Select Clients</p>
+      <div class="mt-xl">
+        <LogoMarquee logos={clientLogos} />
       </div>
     </section>
 
