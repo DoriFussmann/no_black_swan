@@ -8,13 +8,13 @@ import { absoluteUrl, sitePath } from "../../lib/url";
 
 const title = "AI Integration Pricing & Engagement | No Black Swan";
 const description =
-  "An assessment and agreed setup scope, then a flat monthly engagement. Fees depend on the business and the work involved, and are agreed before work begins.";
+  "Setup from $250 for the first month, then a flat monthly engagement typically from $2,000. Scaled to your business and agreed after a free consultation.";
 
 const glance = [
   { value: "No percentage fees", label: "A flat fee for the agreed work" },
+  { value: "From $250", label: "First month: setup and assessment" },
+  { value: "From $2,000/mo", label: "Typical ongoing engagement, scaled to scope and pace" },
   { value: "No fixed package", label: "Scope shaped around your business" },
-  { value: "Setup first", label: "Understand, assess and agree on priorities" },
-  { value: "Monthly engagement", label: "Continue implementation and improvement" },
 ];
 
 const setup: { title: string; body: string; sub?: string[] }[] = [
@@ -55,7 +55,7 @@ const comparison = [
   },
   {
     model: "No Black Swan",
-    pay: "Initial setup/assessment, then a flat monthly fee",
+    pay: "Setup from $250 (first month), then a flat monthly fee, typically from $2,000",
     work: "Dori works with you to identify, design and implement practical AI integrations",
     owner: "Shaped around your business, its workflows and evolving priorities",
     highlight: true,
@@ -79,12 +79,12 @@ const faqs = [
   {
     question: "How much does it cost?",
     answer:
-      "Fees depend on the business, the opportunities identified and the scope of implementation. We discuss the situation on a free consultation and agree on the setup scope and flat monthly fee before any work begins.",
+      "Setup and assessment starts from $250 for the first month, when we map the business and agree a plan. The ongoing monthly engagement typically starts from $2,000 a month and scales with the size of the project and the pace your team wants to move at. We agree the exact scope and flat fee on a free consultation, before any work begins.",
   },
   {
-    question: "Why don’t you publish fixed prices?",
+    question: "Why a starting price and not a fixed price?",
     answer:
-      "There is no single package that fits every business. The work depends on existing systems, workflows, priorities and the implementation required. We scope the engagement after understanding your business.",
+      "Every business is different. The work depends on your systems, workflows, priorities and how much implementation is needed, so a fixed price list would be wrong for most companies. We publish where engagements start, then scope yours after understanding the business. On a free call we will tell you what we would do.",
   },
   {
     question: "What happens during the initial setup?",
@@ -113,6 +113,23 @@ const jsonLd: Record<string, unknown>[] = [
     url: absoluteUrl("/pricing/"),
     description:
       "An initial business assessment and setup to identify and prioritize practical AI opportunities, followed by a flat monthly engagement for implementation, integration and ongoing improvement.",
+    offers: [
+      {
+        "@type": "Offer",
+        name: "Setup and assessment (first month)",
+        priceSpecification: { "@type": "PriceSpecification", minPrice: 250, priceCurrency: "USD" },
+      },
+      {
+        "@type": "Offer",
+        name: "Monthly engagement",
+        priceSpecification: {
+          "@type": "UnitPriceSpecification",
+          minPrice: 2000,
+          priceCurrency: "USD",
+          unitText: "MONTH",
+        },
+      },
+    ],
   },
   {
     "@context": "https://schema.org",
@@ -132,9 +149,10 @@ const jsonLd: Record<string, unknown>[] = [
       <p class="type-label">Pricing</p>
       <h1 class="type-h1 mt-md">A practical engagement, scoped to your business.</h1>
       <p class="type-body-lg mt-lg max-w-prose">
-        We begin with a setup and assessment phase, then move into a flat
-        monthly engagement. The scope and fee are agreed after we understand
-        your business and what needs to be done.
+        We begin with a setup and assessment month, from $250, then move into a
+        flat monthly engagement, typically from $2,000 a month. The exact scope
+        and fee are agreed after we understand your business and what needs to
+        be done.
       </p>
       <ul class="glance-grid mt-2xl" aria-label="At a glance">
         {
@@ -156,7 +174,7 @@ const jsonLd: Record<string, unknown>[] = [
       <h2 id="plan-heading" class="type-h2 mt-md">First understand, then implement and improve.</h2>
       <div class="plan-grid mt-2xl">
         <article class="plan-card" aria-labelledby="setup-title">
-          <p class="plan-card__label">Initial engagement</p>
+          <p class="plan-card__label">First month · From $250</p>
           <h3 id="setup-title" class="plan-card__title">Setup &amp; assessment</h3>
           <p class="plan-card__lead type-body">
             Understand the business, identify opportunities and agree on the first implementation priorities.
@@ -182,7 +200,7 @@ const jsonLd: Record<string, unknown>[] = [
         </article>
 
         <article class="plan-card plan-card--plain" aria-labelledby="monthly-title">
-          <p class="plan-card__label">Flat monthly fee · Ongoing work</p>
+          <p class="plan-card__label">Flat monthly fee · Typically from $2,000/mo</p>
           <h3 id="monthly-title" class="plan-card__title">Implementation &amp; improvement</h3>
           <p class="plan-card__lead type-body">Continue building, integrating and refining AI-enabled operations.</p>
           <ul class="plan-checks">

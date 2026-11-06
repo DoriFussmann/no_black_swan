@@ -5,7 +5,7 @@ export const SITE_NAME = "No Black Swan";
 
 /** No separate tagline: llms.txt, llms-full.txt, RSS and the footer use the site description. */
 export const SITE_TAGLINE =
-  "No Black Swan helps businesses put AI to work by integrating it into their operations, workflows and everyday decisions.";
+  "No Black Swan is a small AI integration agency that helps 15-250 person businesses put AI to work in their operations, workflows and everyday decisions.";
 
 /** URL segment for articles. Changing it requires redirects for every article. */
 export const ARTICLES_BASE = "articles";
