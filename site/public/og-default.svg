@@ -3,10 +3,13 @@
   <desc id="og-desc">AI Integration. Without the AI Slop.</desc>
   <rect width="1200" height="630" fill="#FAF9F7"/>
   <g transform="translate(80,96) scale(1.5)">
-    <circle cx="32" cy="32" r="27" fill="none" stroke="#1A1A2E" stroke-width="2.5"/>
-    <path d="M32 9 L38 32 L32 55 L26 32 Z" fill="none" stroke="#1A1A2E" stroke-width="2.5" stroke-linejoin="round"/>
-    <path d="M32 9 L38 32 L26 32 Z" fill="#1A1A2E"/>
-    <circle cx="32" cy="32" r="2.5" fill="#B5935A"/>
+  <rect x="2" y="2" width="60" height="60" rx="6" fill="none" stroke="#1A1A2E" stroke-width="2.5"/>
+  <g fill="none" stroke="#1A1A2E" stroke-width="2.6" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M11 42 V22 L22 42 V22"/>
+    <path d="M28 22 V42 H34.5 A5 5 0 0 0 34.5 32 H28 M28 22 H33.5 A5 5 0 0 1 33.5 32"/>
+    <path d="M53 24.5 A5 4.5 0 0 0 48 22 H46.5 A5 5 0 0 0 46.5 32 H48.5 A5 5 0 0 1 48.5 42 H47 A5 4.5 0 0 1 42 39.5"/>
+  </g>
+  <rect x="11" y="47" width="42" height="1.5" fill="#B5935A"/>
   </g>
   <text x="80" y="340" fill="#1A1A2E" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="80" font-weight="300" letter-spacing="-2">No Black Swan</text>
   <rect x="80" y="380" width="64" height="2" fill="#B5935A"/>
