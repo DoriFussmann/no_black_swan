@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="og-title og-desc">
+  <title id="og-title">No Black Swan</title>
+  <desc id="og-desc">AI Integration. Without the AI Slop.</desc>
+  <rect width="1200" height="630" fill="#FAF9F7"/>
+  <g transform="translate(80,96) scale(1.5)">
+    <circle cx="32" cy="32" r="27" fill="none" stroke="#1A1A2E" stroke-width="2.5"/>
+    <path d="M32 9 L38 32 L32 55 L26 32 Z" fill="none" stroke="#1A1A2E" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M32 9 L38 32 L26 32 Z" fill="#1A1A2E"/>
+    <circle cx="32" cy="32" r="2.5" fill="#B5935A"/>
+  </g>
+  <text x="80" y="340" fill="#1A1A2E" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="80" font-weight="300" letter-spacing="-2">No Black Swan</text>
+  <rect x="80" y="380" width="64" height="2" fill="#B5935A"/>
+  <text x="80" y="440" fill="#2D2D2D" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="34" font-weight="400">AI Integration. Without the AI Slop.</text>
+</svg>

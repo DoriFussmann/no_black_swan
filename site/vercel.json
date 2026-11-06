@@ -1,0 +1,44 @@
+{
+  "redirects": [
+    {
+      "source": "/blog",
+      "destination": "/articles/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/",
+      "destination": "/articles/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "/articles/",
+      "permanent": true
+    },
+    {
+      "source": "/team",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/team/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/team/:path*",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/database",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/database/",
+      "destination": "/services/",
+      "permanent": true
+    }
+  ]
+}

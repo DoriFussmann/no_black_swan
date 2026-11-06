@@ -1,0 +1,52 @@
+---
+import { Image } from "astro:assets";
+import { SITE_NAME, SITE_TAGLINE } from "../config/site";
+import { sitePath } from "../lib/url";
+import brandMark from "../assets/brand/mark.svg";
+---
+
+<footer class="mt-auto border-t border-border">
+  <div class="site-wrap py-xl lg:py-2xl">
+    <a class="footer-logo" href={sitePath("/")} aria-label={SITE_NAME}>
+      <Image class="site-logo__mark" src={brandMark} alt="" width={72} height={72} />
+      <span class="site-logo__word">{SITE_NAME}</span>
+    </a>
+    <p class="type-body mt-md max-w-prose">
+      {SITE_TAGLINE}
+    </p>
+    <nav class="footer-links mt-xl" aria-label="Footer">
+      <a class="nav-link" href={sitePath("/how-it-works/")}>How It Works</a>
+      <a class="nav-link" href={sitePath("/services/")}>Services</a>
+      <a class="nav-link" href={sitePath("/pricing/")}>Pricing</a>
+      <a class="nav-link" href={sitePath("/about/")}>About</a>
+      <a class="nav-link" href={sitePath("/book-call/")}>Book a Free Consultation</a>
+      {/* Privacy and Terms return here once the No Black Swan legal copy is supplied. */}
+    </nav>
+    <div class="mt-xl flex min-h-11 flex-wrap items-center justify-between gap-md">
+      <p class="type-body-sm">© {SITE_NAME} 2026</p>
+      <div class="footer-social">
+      <p class="footer-rss">
+        <a class="nav-link gap-sm type-body-sm" href="/rss.xml">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M4 11a9 9 0 0 1 9 9"></path>
+            <path d="M4 4a16 16 0 0 1 16 16"></path>
+            <circle cx="5" cy="19" r="1"></circle>
+          </svg>
+          RSS
+        </a>
+      </p>
+      </div>
+    </div>
+  </div>
+</footer>
