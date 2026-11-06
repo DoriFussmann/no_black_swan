@@ -76,7 +76,7 @@ The Federal Reserve's 2025 Small Business Credit Survey, which drew responses fr
 
 The same survey found that the most common AI use was writing or marketing, followed by individual productivity and planning — and that just 7% of AI-using firms had fully integrated AI into their business processes. Most businesses are still experimenting. Full integration, with shared systems, real workflow changes, and someone owning the agenda, is what creates compounding ROI. Scattered use does not.
 
-ROI also compounds over months, not weeks. The first month of an AI integration is about configuration and adoption. The second month is about refinement as edge cases appear. By the third and fourth months, the team has built fluency and the workflow is running closer to its potential. Measuring on day thirty and concluding that AI didn't work is like measuring a training program the morning after the first session.
+ROI also compounds over months, not weeks. The first month of an [AI integration](/articles/ai-integration/) is about configuration and [adoption](/articles/ai-adoption/). The second month is about refinement as edge cases appear. By the third and fourth months, the team has built fluency and the workflow is running closer to its potential. Measuring on day thirty and concluding that AI didn't work is like measuring a training program the morning after the first session.
 
 ## How to Measure AI ROI: The Before-and-After Method
 
@@ -102,7 +102,7 @@ If an AI project cannot show payback within three to six months of genuine use, 
 
 ## AI ROI for Small Services Businesses
 
-For agencies, consultancies, clinic groups, and other professional services businesses, AI ROI is clearest in the workflows where hours are the actual constraint on revenue. The business sells time and expertise, so any admin work that consumes billable capacity is a direct drag on margin.
+For agencies, consultancies, clinic groups, and other [professional services](/articles/ai-for-professional-services/) businesses, AI ROI is clearest in the workflows where hours are the actual constraint on revenue. The business sells time and expertise, so any admin work that consumes billable capacity is a direct drag on margin.
 
 The highest-impact starting points in a services business are usually: proposal writing, client intake, scheduling, meeting notes and summaries, and routine reporting. These are tasks that every services firm does constantly, that require significant time, and that do not require judgment to execute well. AI can handle or substantially accelerate all of them.
 
@@ -146,7 +146,7 @@ An outside AI owner — someone who implements rather than advises, works across
 
 ## How No Black Swan Approaches AI ROI
 
-No Black Swan is a small AI integration agency for startups and growing businesses, run personally by founder Dori Fussmann. The background that shapes the approach is specific: investment banking at Citi, Morgan Stanley, and Ion Pacific; founding and operating a technology-enabled business; working as a Fractional CFO across multiple companies in different sectors. That combination — an operator's view, a CFO's view of where cost and margin actually sit, and hands-on experience putting AI into real workflows across finance, operations, sales, and customer service — is what makes AI consulting practical rather than theoretical.
+No Black Swan is a small AI integration agency for startups and growing businesses, run personally by founder Dori Fussmann. The background that shapes the approach is specific: investment banking at Citi, Morgan Stanley, and Ion Pacific; founding and operating a technology-enabled business; working as a Fractional CFO across multiple companies in different sectors. That combination — an operator's view, a CFO's view of where cost and margin actually sit, and hands-on experience putting AI into real workflows across finance, operations, sales, and customer service — is what makes [AI consulting](/articles/ai-consulting/) practical rather than theoretical.
 
 The engagement is structured to match how ROI actually works. It starts with a paid setup and assessment during the first month: map current workflows, identify constraints, understand how the team already uses AI, find the highest-value opportunities, prioritize them by value, effort, feasibility, and risk, and agree a practical plan. The first month exists to prevent the most expensive mistake in AI implementation: starting with the wrong workflow.
 

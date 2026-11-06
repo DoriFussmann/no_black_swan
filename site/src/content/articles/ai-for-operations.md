@@ -56,7 +56,7 @@ The first real AI win in an operations-heavy business is wherever the bottleneck
 
 What makes operations-heavy businesses particularly well-suited to AI is not sophistication—it's measurement. The work is practical and the numbers are right in front of you: how long it takes a truck to reach its destination, how fast inventory gets loaded, how many inbound calls get answered before the caller gives up. Those metrics exist whether you're tracking them formally or not. When you apply AI to a bottleneck in an operations business, you can see the change almost immediately. A dispatcher who used to spend ninety minutes building tomorrow's schedule spends thirty. A phone line that went dark at 5 p.m. now answers, qualifies, and logs jobs around the clock. That measurability is an advantage. Start there, measure it, then move to the next bottleneck.
 
-The practical implication is that AI integration in operations doesn't need to begin with a strategy offsite or a technology audit. It needs to begin with a clear-eyed answer to one question: what is costing us the most time, money, or dropped balls right now? Everything else follows from there.
+The practical implication is that [AI integration](/articles/ai-integration/) in operations doesn't need to begin with a strategy offsite or a technology audit. It needs to begin with a clear-eyed answer to one question: what is costing us the most time, money, or dropped balls right now? Everything else follows from there.
 
 ## Is AI for Blue-Collar Business Real, or Just Hype?
 
@@ -66,7 +66,7 @@ The practical implication is that AI integration in operations doesn't need to b
 
 The more important point is why blue-collar businesses are behind. It is not because the work is too complex for AI, or because the people running these businesses are resistant to new tools. It is because nobody internal has the time or the mandate to own it. The owner is running the business. The dispatcher is dispatching. The estimator is estimating. AI has to fit into a working operation or it doesn't get used—and vendors who sell a point tool and hand over a login are not solving that problem.
 
-Where AI fits cleanly in operations: scheduling and dispatch, inbound call handling, estimate generation from historical job data, inventory reorder alerts, and back-office document processing. Where it does not fit: site-level judgment calls, skilled negotiation with long-term clients, decisions that require trade experience accumulated over years. Honest AI consulting tells you both sides, because a rollout that oversells what AI can do is worse than no rollout at all.
+Where AI fits cleanly in operations: scheduling and dispatch, inbound call handling, estimate generation from historical job data, inventory reorder alerts, and back-office document processing. Where it does not fit: site-level judgment calls, skilled negotiation with long-term clients, decisions that require trade experience accumulated over years. Honest [AI consulting](/articles/ai-consulting/) tells you both sides, because a rollout that oversells what AI can do is worse than no rollout at all.
 
 ## What AI in Operations Management Actually Looks Like
 
@@ -84,7 +84,7 @@ BCG's 2026 analysis of field service operations found that AI drives a 20%–30%
 
 **Where do I start with AI when I have crews, trucks, and a call center?** The answer is the same regardless of your industry: start by mapping what is actually happening before you buy anything. List every workflow that is overloaded, slow, or requires manual data entry. Then rank them by cost, volume, and feasibility. That ranking tells you where to begin.
 
-For AI for small business operations in this category, the most common first target is phones and dispatch. The volume is high, the interactions are repetitive, and the cost of a missed call or a scheduling error is immediate and visible. An operations business missing a meaningful share of its after-hours call volume is leaving booked jobs on the table every week—jobs that often go to whoever answers next.
+For AI for [small business](/articles/ai-for-small-business/) operations in this category, the most common first target is phones and dispatch. The volume is high, the interactions are repetitive, and the cost of a missed call or a scheduling error is immediate and visible. An operations business missing a meaningful share of its after-hours call volume is leaving booked jobs on the table every week—jobs that often go to whoever answers next.
 
 After you identify the right starting point, the rule is to pick one workflow, not five. A business with no internal AI capability—no one who owns it, no one who has configured it before—needs to demonstrate value in a single area before expanding. Failed broad rollouts create staff resistance that is genuinely hard to undo. When people see a tool roll out across five processes at once, fail to integrate properly with any of them, and add to their workload instead of reducing it, they stop trusting the next attempt. That resistance compounds.
 
@@ -118,7 +118,7 @@ No Black Swan is a small AI integration agency run personally by founder Dori Fu
 
 Every engagement starts with a paid setup and assessment in the first month, from $250. That month is spent understanding the business: mapping current workflows, identifying where AI is already being used ad hoc, finding the real opportunities, and prioritizing them by value, effort, feasibility, and risk. The output is a practical plan, not a deck. The plan is agreed before any configuration begins.
 
-The ongoing monthly engagement is scaled to the project's size and pace. It covers building, integrating, driving team adoption, measuring what changed, and moving to the next priority. No Black Swan acts as the company's outside AI owner—which means the agenda doesn't stop when a single deliverable is done, and adoption doesn't get treated as someone else's problem.
+The ongoing monthly engagement is scaled to the project's size and pace. It covers building, integrating, driving team adoption, measuring what changed, and moving to the next priority. No Black Swan acts as the company's [outside AI owner](/articles/who-should-own-ai-in-a-company/)—which means the agenda doesn't stop when a single deliverable is done, and adoption doesn't get treated as someone else's problem.
 
 Dori's background is an operator's and CFO's view of where work, cost, and margin actually sit in a company. Former investment banker at Citi, Morgan Stanley, and Ion Pacific; founder and CEO of The Vets, a technology-enabled pet healthcare company; Fractional CFO across multiple companies including Natrion, BlueMark, and Translucent AI. That experience shapes how No Black Swan looks at an operations business: not through the lens of which AI tools are available, but through the lens of where the actual cost and friction live.
 
