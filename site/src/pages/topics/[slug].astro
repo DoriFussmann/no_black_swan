@@ -4,12 +4,12 @@ import ArticleList from "../../components/ArticleList.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { ARTICLES_BASE } from "../../config/site";
-import { getPublishedArticles } from "../../lib/articles";
-import { TOPICS, type Topic } from "../../lib/topics";
+import { getPublishedArticles, liveTopics } from "../../lib/articles";
+import type { Topic } from "../../lib/topics";
 import { sitePath } from "../../lib/url";
 
 export async function getStaticPaths() {
-  return TOPICS.map((topic) => ({ params: { slug: topic.slug }, props: { topic } }));
+  return (await liveTopics()).map((topic) => ({ params: { slug: topic.slug }, props: { topic } }));
 }
 
 const { topic } = Astro.props as { topic: Topic };

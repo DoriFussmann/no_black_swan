@@ -20,3 +20,10 @@ export async function getPublishedArticles() {
     }))
     .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 }
+
+/** Topics with at least one published article. Empty hubs are not built, so no thin pages get indexed. */
+export async function liveTopics() {
+  const { TOPICS } = await import("./topics");
+  const used = new Set((await getPublishedArticles()).map((a) => a.data.pillarKeyword?.trim()).filter(Boolean));
+  return TOPICS.filter((topic) => used.has(topic.name));
+}
