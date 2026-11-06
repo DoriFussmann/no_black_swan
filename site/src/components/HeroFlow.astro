@@ -1,420 +1,239 @@
 ---
-// Home hero: how a No Black Swan engagement runs, as one animated card.
-// The same elements (teams, workflows) move between six steps: understand,
-// identify, prioritize, design, build & test, improve. Ported from the
-// Hey Rupert hero engine. Fictional business and people, illustrative only:
-// no client examples or outcome claims. Autoplay pauses on hover, focus or a
-// hidden tab; the step rail jumps to any step; reduced motion shows each
-// step still.
+// Home hero: the engagement flow, as one animated card that steps through
+// five stages (same rail-and-autoplay pattern as the Hey Rupert hero).
+// Understand → Identify → Design → Implement → Measure, optimize, repeat.
+// Autoplay pauses on hover, focus or a hidden tab; the rail jumps to any
+// step; reduced motion shows each step still.
+const STEPS = [
+  { name: "Understand", title: "We understand the business", text: "How it runs today: teams, systems and the way work gets done.", visual: `<svg viewBox="0 0 520 180" class="nbf-svg" aria-hidden="true">
+  <line class="draw" pathLength="1" x1="150" y1="38" x2="200" y2="76" style="--d:300ms"/>
+  <line class="draw" pathLength="1" x1="370" y1="38" x2="320" y2="76" style="--d:450ms"/>
+  <line class="draw" pathLength="1" x1="150" y1="142" x2="200" y2="104" style="--d:600ms"/>
+  <line class="draw" pathLength="1" x1="370" y1="142" x2="320" y2="104" style="--d:750ms"/>
+  <g class="fi"><rect class="node node--brass" x="200" y="62" width="120" height="56" rx="12"/><text class="t t--brass t--b" x="260" y="95" text-anchor="middle">Your business</text></g>
+  <g class="fi" style="--d:300ms"><rect class="node" x="40" y="20" width="110" height="36" rx="18"/><text class="t" x="95" y="43" text-anchor="middle">Teams</text></g>
+  <g class="fi" style="--d:450ms"><rect class="node" x="370" y="20" width="110" height="36" rx="18"/><text class="t" x="425" y="43" text-anchor="middle">Systems</text></g>
+  <g class="fi" style="--d:600ms"><rect class="node" x="40" y="124" width="110" height="36" rx="18"/><text class="t" x="95" y="147" text-anchor="middle">Workflows</text></g>
+  <g class="fi" style="--d:750ms"><rect class="node" x="370" y="124" width="110" height="36" rx="18"/><text class="t" x="425" y="147" text-anchor="middle">Goals</text></g>
+</svg>` },
+  { name: "Identify", title: "We identify AI opportunities", text: "Where AI genuinely helps, and where it doesn’t belong.", visual: `<svg viewBox="0 0 520 180" class="nbf-svg" aria-hidden="true"><g class="fi hit" style="--d:0ms"><rect class="tile" x="20" y="8" width="108" height="40" rx="8"/><text class="t" x="34" y="33">Proposals</text><text class="spark" x="112" y="33" text-anchor="middle">✦</text></g><g class="fi hit" style="--d:60ms"><rect class="tile" x="144" y="8" width="108" height="40" rx="8"/><text class="t" x="158" y="33">Reporting</text><text class="spark" x="236" y="33" text-anchor="middle">✦</text></g><g class="fi" style="--d:120ms"><rect class="tile" x="268" y="8" width="108" height="40" rx="8"/><text class="t" x="282" y="33">Client calls</text></g><g class="fi" style="--d:180ms"><rect class="tile" x="392" y="8" width="108" height="40" rx="8"/><text class="t" x="406" y="33">Scheduling</text></g><g class="fi hit" style="--d:240ms"><rect class="tile" x="20" y="58" width="108" height="40" rx="8"/><text class="t" x="34" y="83">Follow-ups</text><text class="spark" x="112" y="83" text-anchor="middle">✦</text></g><g class="fi" style="--d:300ms"><rect class="tile" x="144" y="58" width="108" height="40" rx="8"/><text class="t" x="158" y="83">Pricing</text></g><g class="fi hit" style="--d:360ms"><rect class="tile" x="268" y="58" width="108" height="40" rx="8"/><text class="t" x="282" y="83">Data entry</text><text class="spark" x="360" y="83" text-anchor="middle">✦</text></g><g class="fi" style="--d:420ms"><rect class="tile" x="392" y="58" width="108" height="40" rx="8"/><text class="t" x="406" y="83">Invoices</text></g><g class="fi hit" style="--d:480ms"><rect class="tile" x="20" y="108" width="108" height="40" rx="8"/><text class="t" x="34" y="133">Research</text><text class="spark" x="112" y="133" text-anchor="middle">✦</text></g><g class="fi" style="--d:540ms"><rect class="tile" x="144" y="108" width="108" height="40" rx="8"/><text class="t" x="158" y="133">Hiring</text></g><g class="fi hit" style="--d:600ms"><rect class="tile" x="268" y="108" width="108" height="40" rx="8"/><text class="t" x="282" y="133">Intake</text><text class="spark" x="360" y="133" text-anchor="middle">✦</text></g><g class="fi" style="--d:660ms"><rect class="tile" x="392" y="108" width="108" height="40" rx="8"/><text class="t" x="406" y="133">Strategy</text></g><g class="fi" style="--d:1300ms"><text class="spark spark--on" x="20" y="172">✦</text><text class="t t--muted" x="36" y="172">AI opportunity</text></g></svg>` },
+  { name: "Design", title: "We design the plan", text: "Priorities, approach and tools, agreed with you before anything is built.", visual: `<svg viewBox="0 0 520 180" class="nbf-svg" aria-hidden="true">
+  <rect class="card" x="10" y="4" width="500" height="170" rx="12"/>
+  <text class="t t--b" x="34" y="36">AI plan</text>
+  <g class="fi" style="--d:200ms"><rect class="pill-draft" x="404" y="20" width="84" height="24" rx="12"/><text class="t t--sm pill-draft__t" x="446" y="36" text-anchor="middle">Draft</text><text class="t t--sm pill-ok__t" x="446" y="36" text-anchor="middle">Agreed ✓</text></g>
+  <line class="rule" x1="34" y1="54" x2="488" y2="54"/>
+  <g class="fi" style="--d:300ms"><circle class="num" cx="46" cy="80" r="11"/><text class="t t--sm t--brass" x="46" y="84" text-anchor="middle">1</text><text class="t" x="68" y="85">Start with the clearest win</text></g>
+  <g class="fi" style="--d:450ms"><circle class="num" cx="46" cy="114" r="11"/><text class="t t--sm t--brass" x="46" y="118" text-anchor="middle">2</text><text class="t" x="68" y="119">Choose approach and tools</text></g>
+  <g class="fi" style="--d:600ms"><circle class="num" cx="46" cy="148" r="11"/><text class="t t--sm t--brass" x="46" y="152" text-anchor="middle">3</text><text class="t" x="68" y="153">Agree scope and timing</text></g>
+  <rect class="lane" x="300" y="72" width="188" height="16" rx="8"/><rect class="lane" x="300" y="106" width="188" height="16" rx="8"/><rect class="lane" x="300" y="140" width="188" height="16" rx="8"/>
+  <rect class="bar" x="300" y="72" width="80" height="16" rx="8" style="--d:500ms"/>
+  <rect class="bar" x="360" y="106" width="88" height="16" rx="8" style="--d:700ms"/>
+  <rect class="bar" x="420" y="140" width="68" height="16" rx="8" style="--d:900ms"/>
+</svg>` },
+  { name: "Implement", title: "We implement it", text: "Built into the systems and workflows your team already uses.", visual: `<svg viewBox="0 0 520 180" class="nbf-svg" aria-hidden="true">
+  <path class="flow" d="M130 41 C165 41 165 90 200 90"/><path class="flow" d="M130 90 L200 90"/><path class="flow" d="M130 139 C165 139 165 90 200 90"/><path class="flow" d="M320 90 L390 90"/>
+  <g class="fi"><rect class="node" x="20" y="24" width="110" height="34" rx="8"/><text class="t" x="75" y="46" text-anchor="middle">CRM</text></g>
+  <g class="fi" style="--d:120ms"><rect class="node" x="20" y="73" width="110" height="34" rx="8"/><text class="t" x="75" y="95" text-anchor="middle">Email</text></g>
+  <g class="fi" style="--d:240ms"><rect class="node" x="20" y="122" width="110" height="34" rx="8"/><text class="t" x="75" y="144" text-anchor="middle">Docs</text></g>
+  <g class="fi" style="--d:450ms"><rect class="node node--brass" x="200" y="52" width="120" height="76" rx="12"/><text class="spark spark--on" x="260" y="84" text-anchor="middle" style="font-size:18px">✦</text><text class="t t--brass t--b" x="260" y="108" text-anchor="middle">AI workflow</text></g>
+  <g class="fi" style="--d:650ms"><rect class="node" x="390" y="52" width="110" height="76" rx="12"/>
+    <circle class="person" cx="425" cy="78" r="7"/><path class="person" d="M413 98 q12 -12 24 0"/>
+    <circle class="person" cx="465" cy="78" r="7"/><path class="person" d="M453 98 q12 -12 24 0"/>
+    <text class="t" x="445" y="116" text-anchor="middle">Your team</text></g>
+  <g class="fi" style="--d:900ms"><text class="t t--muted t--sm" x="75" y="174" text-anchor="middle">Your systems</text><text class="t t--muted t--sm" x="445" y="152" text-anchor="middle">Reviews and uses it</text></g>
+</svg>` },
+  { name: "Optimize", title: "We measure, optimize, repeat", text: "Track what works, improve it, then move to the next opportunity.", visual: `<svg viewBox="0 0 520 180" class="nbf-svg" aria-hidden="true">
+  <circle class="loop" cx="120" cy="92" r="62"/>
+  <text class="spark spark--on" x="120" y="100" text-anchor="middle" style="font-size:24px">↻</text>
+  <g class="fi"><rect class="node node--brass" x="80" y="16" width="80" height="28" rx="14"/><text class="t t--brass t--sm t--b" x="120" y="34" text-anchor="middle">Measure</text></g>
+  <g class="fi" style="--d:250ms"><rect class="node node--brass" x="140" y="132" width="84" height="28" rx="14"/><text class="t t--brass t--sm t--b" x="182" y="150" text-anchor="middle">Optimize</text></g>
+  <g class="fi" style="--d:500ms"><rect class="node node--brass" x="16" y="132" width="76" height="28" rx="14"/><text class="t t--brass t--sm t--b" x="54" y="150" text-anchor="middle">Repeat</text></g>
+  <g class="fi" style="--d:200ms"><rect class="card" x="262" y="12" width="246" height="156" rx="12"/>
+    <line class="rule" x1="282" y1="140" x2="488" y2="140"/><line class="rule rule--dash" x1="282" y1="100" x2="488" y2="100"/><line class="rule rule--dash" x1="282" y1="60" x2="488" y2="60"/>
+    <text class="t t--sm t--muted" x="282" y="34">What’s working</text></g>
+  <path class="draw draw--line" pathLength="1" d="M286 132 L318 122 L350 126 L382 104 L414 98 L446 76 L480 58" style="--d:500ms"/>
+  <g class="fi" style="--d:1300ms"><circle class="dot" cx="480" cy="58" r="4.5"/></g>
+</svg>` },
+];
 ---
 
-<div class="nbf-rh" data-rh="rh" role="region" aria-roledescription="animation" aria-label="How No Black Swan works, in six steps">
-  <div class="nbf-rh__frame" data-rh="frame">
-    <div class="nbf-rh__stage" data-rh="stage" aria-hidden="true"></div>
+<div class="nbf" data-nbf role="region" aria-roledescription="carousel" aria-label="How No Black Swan works, in five steps">
+  <div class="nbf__frame">
+    {
+      STEPS.map((s, i) => (
+        <div class="nbf__slide" data-slide={i} aria-hidden={i === 0 ? "false" : "true"}>
+          <p class="nbf__label">Step {i + 1} of {STEPS.length}</p>
+          <h3 class="nbf__title">{s.title}</h3>
+          <p class="nbf__text">{s.text}</p>
+          <Fragment set:html={s.visual} />
+        </div>
+      ))
+    }
   </div>
-  <div class="nbf-rh__rail" data-rh="rail"></div>
-  <div class="nbf-rh__foot">
-    <span data-rh="live" class="nbf-sr" aria-live="polite"></span>
-    <span>Human judgment at every step · Illustrative example · <button class="nbf-rh__btn" data-rh="toggle" type="button">Pause</button></span>
+  <div class="nbf__rail">
+    {
+      STEPS.map((s, i) => (
+        <button type="button" class="nbf__step" data-step={i} aria-label={`Step ${i + 1}: ${s.title}`}>
+          <span class="nbf__bar"><i /></span>
+          <span class="nbf__name">{s.name}</span>
+        </button>
+      ))
+    }
+  </div>
+  <div class="nbf__foot">
+    <button class="nbf__btn" data-toggle type="button">Pause</button>
   </div>
 </div>
 
 <style is:global>
-  .nbf-rh {
-    --ink: #1a1a2e; --body: #2d2d2d; --surface: #ffffff; --border: #e4e2de; --muted: #5c5c5c; --ash: #8a8a8a;
-    --brass: #b5935a; --brass-text: #7a5c28; --brass-tint: #f3ece0; --moss: #2f6b4f; --moss-tint: #e4efe8; --tint: #f3f1ec;
-    --ease: cubic-bezier(0.22, 0.61, 0.36, 1); --t: 700ms;
-    color: var(--body);
+  .nbf {
+    --ink: #1a1a2e; --surface: #ffffff; --border: #e4e2de; --muted: #5c5c5c;
+    --brass: #b5935a; --brass-text: #7a5c28; --brass-tint: #f3ece0; --tint: #f3f1ec;
+    --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
     width: 100%;
   }
-  .nbf-rh *, .nbf-rh *::before, .nbf-rh *::after { box-sizing: border-box; }
-
-  .nbf-rh__frame {
-    position: relative; width: 100%;
-    aspect-ratio: 600 / 390;
+  .nbf__frame {
+    position: relative; display: grid;
     background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
-    overflow: hidden;
     box-shadow: 0 1px 2px rgba(26, 26, 46, 0.04), 0 12px 32px -18px rgba(26, 26, 46, 0.18);
+    overflow: hidden;
   }
-  .nbf-rh__stage { position: absolute; left: 0; top: 0; width: 600px; height: 390px; transform-origin: 0 0; }
-  .nbf-el { position: absolute; left: 0; top: 0; transition: transform var(--t) var(--ease), opacity var(--t) var(--ease), width var(--t) var(--ease), height var(--t) var(--ease), background-color var(--t) var(--ease), border-color var(--t) var(--ease), color var(--t) var(--ease); will-change: transform, opacity; }
+  /* All slides share one grid cell, so the frame keeps the tallest height. */
+  .nbf__slide {
+    grid-area: 1 / 1; padding: 28px 28px 28px;
+    opacity: 0; transform: translateY(8px); visibility: hidden;
+    transition: opacity 500ms var(--ease), transform 500ms var(--ease), visibility 0s 500ms;
+  }
+  .nbf__slide.is-active { opacity: 1; transform: none; visibility: visible; transition: opacity 500ms var(--ease), transform 500ms var(--ease); }
+  .nbf__label { margin: 0; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--brass-text); }
+  .nbf__title { margin: 12px 0 0; font-size: 24px; line-height: 1.2; font-weight: 500; color: var(--ink); }
+  .nbf__text { margin: 10px 0 0; font-size: 15px; line-height: 1.55; color: var(--muted); max-width: 40ch; }
 
-  .nbf-head-label { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; color: var(--brass-text); }
-  .nbf-head-caption { font-size: 17px; font-weight: 400; color: var(--ink); line-height: 1.35; width: 360px; }
-  .nbf-num { text-align: right; width: 200px; }
-  .nbf-num__value { font-size: 40px; font-weight: 300; letter-spacing: -0.02em; color: var(--ink); line-height: 1; font-variant-numeric: tabular-nums; }
-  .nbf-num__label { font-size: 11px; color: var(--muted); margin-top: 6px; }
-  .nbf-rule { height: 1px; background: var(--border); width: 552px; }
+  /* Stage illustrations (inline SVG). Items fade/draw in once the slide is active. */
+  .nbf-svg { display: block; width: 100%; height: auto; margin-top: 24px; overflow: visible; }
+  .nbf-svg .t { font-family: inherit; font-size: 13px; fill: var(--ink); }
+  .nbf-svg .t--sm { font-size: 11.5px; }
+  .nbf-svg .t--b { font-weight: 500; }
+  .nbf-svg .t--brass { fill: var(--brass-text); }
+  .nbf-svg .t--muted { fill: var(--muted); }
+  .nbf-svg .node { fill: var(--tint); stroke: var(--border); }
+  .nbf-svg .node--brass { fill: var(--brass-tint); stroke: var(--brass); }
+  .nbf-svg .card { fill: #fdfcfa; stroke: var(--border); }
+  .nbf-svg .rule { stroke: var(--border); }
+  .nbf-svg .rule--dash { stroke-dasharray: 3 4; }
+  .nbf-svg .num { fill: var(--surface); stroke: var(--brass); }
+  .nbf-svg .lane { fill: var(--tint); }
+  .nbf-svg .person { fill: none; stroke: var(--muted); stroke-width: 1.4; stroke-linecap: round; }
+  .nbf-svg .dot { fill: var(--brass); }
+  .nbf-svg .spark { fill: transparent; font-size: 13px; transition: fill 400ms var(--ease) 1000ms; }
+  .nbf-svg .spark--on { fill: var(--brass); }
 
-  /* Team cards and workflow-design nodes */
-  .nbf-team { height: 46px; width: 168px; border: 1px solid var(--border); border-radius: 10px; background: var(--tint); padding: 7px 12px; }
-  .nbf-team__name { font-size: 13px; color: var(--ink); font-weight: 500; }
-  .nbf-team__meta { font-size: 11px; color: var(--muted); margin-top: 2px; }
-  .nbf-node { height: 58px; width: 120px; border: 1px solid var(--border); border-radius: 10px; background: var(--tint); padding: 8px 10px; }
-  .nbf-node__name { font-size: 12.5px; color: var(--ink); font-weight: 500; line-height: 1.3; }
-  .nbf-node__meta { font-size: 10.5px; color: var(--muted); margin-top: 3px; }
-  .nbf-node.is-ai { background: var(--brass-tint); border-color: var(--brass); }
-  .nbf-node.is-ai .nbf-node__name { color: var(--brass-text); }
-  .nbf-node.is-human { background: var(--moss-tint); border-color: var(--moss); }
-  .nbf-node.is-human .nbf-node__name { color: var(--moss); }
-  .nbf-node.is-live { border-style: solid; }
-  .nbf-node__live { display: none; width: 6px; height: 6px; border-radius: 50%; background: var(--moss); margin-right: 5px; vertical-align: 1px; }
-  .nbf-node.is-live .nbf-node__live { display: inline-block; }
-  .nbf-arrow { font-size: 14px; color: var(--ash); width: 24px; text-align: center; }
+  .nbf-svg .fi { opacity: 0; transition: opacity 500ms var(--ease) var(--d, 0ms); }
+  .nbf__slide.is-active .fi { opacity: 1; }
+  .nbf-svg .draw { fill: none; stroke: var(--brass); stroke-width: 1.4; stroke-dasharray: 1; stroke-dashoffset: 1; transition: stroke-dashoffset 900ms var(--ease) var(--d, 0ms); }
+  .nbf-svg .draw--line { stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; transition-duration: 1200ms; }
+  .nbf__slide.is-active .draw { stroke-dashoffset: 0; }
 
-  .nbf-chip { height: 26px; padding: 0 12px; border-radius: 13px; border: 1px solid var(--border); background: var(--surface); font-size: 12px; color: var(--muted); display: flex; align-items: center; white-space: nowrap; }
-  .nbf-chip.is-on { border-color: var(--brass); color: var(--brass-text); background: var(--brass-tint); }
-  .nbf-chip--label { border: 0; padding: 0; background: transparent; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; }
+  /* Identify: opportunities light up after the grid appears. */
+  .nbf-svg .tile { fill: var(--surface); stroke: var(--border); transition: fill 400ms var(--ease), stroke 400ms var(--ease); }
+  .nbf-svg .hit .tile { transition-delay: 1000ms; }
+  .nbf__slide.is-active .hit .tile { fill: var(--brass-tint); stroke: var(--brass); }
+  .nbf__slide.is-active .hit .spark { fill: var(--brass); }
 
-  /* Workflows: a pill under its team, or a full-width row */
-  .nbf-wf { height: 28px; width: 168px; border-radius: 14px; border: 1px solid var(--border); background: var(--surface); display: flex; align-items: center; gap: 8px; padding: 0 12px; overflow: hidden; white-space: nowrap; }
-  .nbf-wf__name { font-size: 12.5px; color: var(--ink); flex: none; }
-  .nbf-wf__tags { display: flex; gap: 6px; margin-left: auto; opacity: 0; transition: opacity 400ms var(--ease); }
-  .nbf-wf__badge { font-size: 10.5px; color: #fff; background: var(--brass); border-radius: 8px; padding: 1px 7px; margin-left: 8px; opacity: 0; transition: opacity 400ms var(--ease); }
-  .nbf-wf.is-row { border-radius: 8px; }
-  .nbf-wf.is-row .nbf-wf__tags { opacity: 1; }
-  .nbf-wf.is-badge .nbf-wf__badge { opacity: 1; }
-  .nbf-wf.is-dim { background: #fbfaf8; }
-  .nbf-wf.is-dim .nbf-wf__name { color: var(--ash); text-decoration: line-through; text-decoration-color: #c9c4ba; }
-  .nbf-wf.is-sel { border-color: var(--brass); }
-  .nbf-tag { font-size: 10.5px; padding: 2px 8px; border-radius: 9px; white-space: nowrap; }
-  .nbf-tag--fit { background: var(--brass-tint); color: var(--brass-text); }
-  .nbf-tag--human { background: var(--moss-tint); color: var(--moss); }
-  .nbf-tag--none { background: transparent; color: var(--ash); border: 1px dashed #d6d2ca; }
-  .nbf-more { font-size: 11.5px; color: var(--muted); }
+  /* Design: bars grow, Draft becomes Agreed. */
+  .nbf-svg .bar { fill: var(--brass); transform-box: fill-box; transform-origin: left center; transform: scaleX(0); transition: transform 700ms var(--ease) var(--d, 0ms); }
+  .nbf__slide.is-active .bar { transform: scaleX(1); }
+  .nbf-svg .pill-draft { fill: var(--surface); stroke: var(--border); transition: fill 400ms var(--ease) 1500ms, stroke 400ms var(--ease) 1500ms; }
+  .nbf-svg .pill-draft__t { fill: var(--muted); transition: opacity 300ms var(--ease) 1500ms; }
+  .nbf-svg .pill-ok__t { fill: #2f6b4f; opacity: 0; transition: opacity 300ms var(--ease) 1500ms; }
+  .nbf__slide.is-active .pill-draft { fill: #e4efe8; stroke: #2f6b4f; }
+  .nbf__slide.is-active .pill-draft__t { opacity: 0; }
+  .nbf__slide.is-active .pill-ok__t { opacity: 1; }
 
-  .nbf-tier { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; color: var(--brass-text); }
-  .nbf-tier__note { text-transform: none; letter-spacing: 0; font-weight: 400; color: var(--muted); margin-left: 6px; }
+  /* Implement: data flows along the connectors. */
+  .nbf-svg .flow { fill: none; stroke: var(--brass); stroke-width: 1.6; stroke-dasharray: 4 6; animation: nbf-flow 900ms linear infinite; animation-play-state: paused; }
+  .nbf__slide.is-active .flow { animation-play-state: running; }
+  @keyframes nbf-flow { to { stroke-dashoffset: -20; } }
 
-  /* Pilot log rows */
-  .nbf-log { width: 552px; height: 27px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); display: flex; align-items: center; gap: 10px; padding: 0 12px; font-size: 12px; white-space: nowrap; overflow: hidden; }
-  .nbf-log__what { color: var(--ink); }
-  .nbf-log__note { color: var(--muted); margin-left: auto; }
-  .nbf-log__ok { color: var(--moss); }
-  .nbf-log__back { color: var(--brass-text); }
-
-  /* Feedback note */
-  .nbf-note { width: 552px; height: 120px; border: 1px solid var(--border); border-radius: 10px; background: #fdfcfa; padding: 14px 16px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 12px; line-height: 1.6; color: var(--body); }
-  .nbf-note__meta { color: var(--muted); }
-  .nbf-note__line { white-space: nowrap; overflow: hidden; }
-  .nbf-note__body { margin-top: 8px; }
-  .nbf-note__body .nbf-note__line { opacity: 0; transition: opacity 500ms var(--ease); }
-  .nbf-note.is-typing .nbf-note__body .nbf-note__line { opacity: 1; }
-  .nbf-note.is-typing .nbf-note__body .nbf-note__line:nth-child(2) { transition-delay: 450ms; }
-  .nbf-note.is-typing .nbf-note__body .nbf-note__line:nth-child(3) { transition-delay: 900ms; }
-  .nbf-fix { color: var(--moss); }
-
-  /* Human-judgment pill */
-  .nbf-check { height: 26px; display: flex; align-items: center; gap: 7px; padding: 0 12px 0 10px; border-radius: 13px; background: var(--moss-tint); color: var(--moss); font-size: 11.5px; white-space: nowrap; }
-  .nbf-check__who { font-weight: 500; }
-  .nbf-check__what { color: #3d5c4c; }
-  .nbf-check__tick { width: 16px; height: 16px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 10px; background: transparent; border: 1px solid var(--moss); color: transparent; transition: background-color 300ms var(--ease), color 300ms var(--ease); }
-  .nbf-check.is-on .nbf-check__tick { background: var(--moss); color: #fff; }
+  /* Optimize: the loop turns. */
+  .nbf-svg .loop { fill: none; stroke: var(--brass); stroke-width: 1.4; stroke-dasharray: 6 7; transform-box: fill-box; transform-origin: center; animation: nbf-spin 14s linear infinite; animation-play-state: paused; }
+  .nbf__slide.is-active .loop { animation-play-state: running; }
+  @keyframes nbf-spin { to { transform: rotate(360deg); } }
 
   /* Rail */
-  .nbf-rh__rail { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; margin-top: 16px; }
-  .nbf-rh__step { appearance: none; border: 0; background: none; padding: 0; text-align: left; cursor: pointer; font: inherit; color: var(--muted); }
-  .nbf-rh__bar { display: block; height: 2px; background: var(--border); border-radius: 1px; overflow: hidden; }
-  .nbf-rh__bar i { display: block; height: 100%; width: 0; background: var(--brass); }
-  .nbf-rh__step.is-done .nbf-rh__bar i { width: 100%; }
-  .nbf-rh__step.is-active .nbf-rh__bar i { animation: nbf-fill linear forwards; animation-duration: var(--dur, 4s); }
-  .nbf-rh.is-paused .nbf-rh__step.is-active .nbf-rh__bar i { animation-play-state: paused; }
-  .nbf-rh__name { display: block; font-size: 12px; margin-top: 8px; white-space: nowrap; }
-  @media (max-width: 480px) { .nbf-rh__name { font-size: 11px; } .nbf-rh__rail { gap: 6px; } }
-  .nbf-rh__step.is-active .nbf-rh__name { color: var(--ink); }
-  .nbf-rh__step:focus-visible { outline: 2px solid var(--brass); outline-offset: 4px; border-radius: 2px; }
+  .nbf__rail { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin-top: 16px; }
+  .nbf__step { appearance: none; border: 0; background: none; padding: 0; text-align: left; cursor: pointer; font: inherit; color: var(--muted); }
+  .nbf__bar { display: block; height: 2px; background: var(--border); border-radius: 1px; overflow: hidden; }
+  .nbf__bar i { display: block; height: 100%; width: 0; background: var(--brass); }
+  .nbf__step.is-done .nbf__bar i { width: 100%; }
+  .nbf__step.is-active .nbf__bar i { animation: nbf-fill linear forwards; animation-duration: var(--dur, 4500ms); }
+  .nbf.is-paused .nbf__step.is-active .nbf__bar i { animation-play-state: paused; }
+  .nbf__name { display: block; font-size: 12px; margin-top: 8px; white-space: nowrap; }
+  .nbf__step.is-active .nbf__name { color: var(--ink); }
+  .nbf__step:focus-visible { outline: 2px solid var(--brass); outline-offset: 4px; border-radius: 2px; }
   @keyframes nbf-fill { from { width: 0; } to { width: 100%; } }
-  .nbf-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-  .nbf-rh__foot { display: flex; justify-content: flex-end; align-items: center; margin-top: 12px; font-size: 12px; color: var(--muted); text-align: right; line-height: 2; }
-  .nbf-rh__btn { appearance: none; border: 1px solid var(--border); background: var(--surface); border-radius: 15px; padding: 4px 12px; font: inherit; font-size: 12px; color: var(--ink); cursor: pointer; }
+  .nbf__foot { display: flex; justify-content: flex-end; margin-top: 12px; }
+  .nbf__btn { appearance: none; border: 1px solid var(--border); background: var(--surface); border-radius: 15px; padding: 4px 12px; font: inherit; font-size: 12px; color: var(--ink); cursor: pointer; }
 
+  @media (max-width: 480px) {
+    .nbf__slide { padding: 24px 22px 28px; }
+    .nbf__title { font-size: 22px; }
+    .nbf__name { font-size: 11px; }
+  }
   @media (prefers-reduced-motion: reduce) {
-    .nbf-el, .nbf-wf__tags, .nbf-wf__badge, .nbf-note__body .nbf-note__line { transition: none !important; }
-    .nbf-rh__step.is-active .nbf-rh__bar i { animation: none; width: 100%; }
+    .nbf__slide, .nbf-svg * { transition: none !important; animation: none !important; }
+    .nbf__step.is-active .nbf__bar i { animation: none; width: 100%; }
   }
 </style>
 
 <script>
-// @ts-nocheck
+  const DURATION = 5000;
+  document.querySelectorAll<HTMLElement>("[data-nbf]").forEach((root) => {
+    const slides = Array.from(root.querySelectorAll<HTMLElement>("[data-slide]"));
+    const steps = Array.from(root.querySelectorAll<HTMLElement>("[data-step]"));
+    const toggle = root.querySelector<HTMLButtonElement>("[data-toggle]")!;
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let index = 0, timer = 0, paused = false, userPaused = false, startedAt = 0, remaining = DURATION;
 
-document.querySelectorAll<HTMLElement>(".nbf-rh").forEach((root) => {
-  const SCENES = [
-    { name: "Understand", label: "Step 1 · Understand the business", caption: "How the work actually gets done today: teams, systems, workflows.", ms: 4600, check: "Mapped with your team, not from a template", at: 2600 },
-    { name: "Identify", label: "Step 2 · Identify opportunities", caption: "Where AI genuinely helps, and where it doesn’t belong.", ms: 4200, check: "Every opportunity weighed by a person", at: 1900 },
-    { name: "Prioritize", label: "Step 3 · Prioritize", caption: "One practical starting point. The rest waits its turn.", ms: 3400, check: "Starting point agreed with you", at: 1100 },
-    { name: "Design", label: "Step 4 · Design the solution", caption: "Built around the tools and people already doing the work.", ms: 4200, check: "Design signed off before anything is built", at: 2200 },
-    { name: "Build", label: "Step 5 · Build and test in real work", caption: "Connected to your systems, then tried on real requests.", ms: 4400, check: "Tested by the people who will use it", at: 2400 },
-    { name: "Improve", label: "Step 6 · Improve and extend", caption: "Refine what’s working, then move to the next opportunity.", ms: 4600, check: "Reviewed with you, every month", at: 2600 },
-  ];
-
-  const TEAMS = [
-    { name: "Sales", meta: "CRM · email" },
-    { name: "Operations", meta: "Project tool · docs" },
-    { name: "Finance", meta: "Accounting · spreadsheets" },
-  ];
-  // col: team column; tags: [kind, text]; fit: AI opportunity; rank: priority order.
-  const WORKFLOWS = [
-    { id: "w1", name: "Proposal drafting", col: 0, row: 0, fit: true, rank: 0, tags: [["fit", "Good fit"], ["fit", "Same structure every time"]] },
-    { id: "w2", name: "Lead follow-up", col: 0, row: 1, fit: true, rank: 2, tags: [["fit", "Good fit"], ["fit", "Repetitive emails"]] },
-    { id: "w3", name: "Client calls", col: 0, row: 2, fit: false, tags: [["human", "Keep human"], ["human", "Relationships, judgment"]] },
-    { id: "w4", name: "Client onboarding", col: 1, row: 0, fit: true, rank: 3, tags: [["fit", "Good fit"], ["fit", "Same details typed three times"]] },
-    { id: "w5", name: "Weekly reporting", col: 1, row: 1, fit: true, rank: 1, tags: [["fit", "Good fit"], ["fit", "Pulled from four systems"]] },
-    { id: "w6", name: "Scheduling", col: 1, row: 2, fit: false, tags: [["none", "Not worth it"], ["none", "Already works fine"]] },
-    { id: "w7", name: "Invoice matching", col: 2, row: 0, fit: false, tags: [["none", "Not now"], ["none", "Low volume today"]] },
-    { id: "w8", name: "Pricing decisions", col: 2, row: 1, fit: false, tags: [["human", "Keep human"], ["human", "Stays with people"]] },
-  ];
-  const NODES = [
-    { name: "Request arrives", meta: "Email, as today", kind: "" },
-    { name: "AI drafts proposal", meta: "Your templates", kind: "ai" },
-    { name: "Account lead reviews", meta: "Edits, approves", kind: "human" },
-    { name: "Sent and logged", meta: "CRM updated", kind: "" },
-  ];
-  const TOOLS = ["Your email", "Your CRM", "Your proposal templates"];
-  const LOGS = [
-    ["Harbor Dental · proposal", "Drafted, approved by Maya", "ok"],
-    ["Oak & Pine Studio · proposal", "Edited for tone, then approved", "ok"],
-    ["Kestrel Logistics · proposal", "Sent back: wrong package", "back"],
-    ["Fenwick Legal · proposal", "Drafted, approved by Maya", "ok"],
-  ];
-
-  const stage = root.querySelector('[data-rh="stage"]');
-  const frame = root.querySelector('[data-rh="frame"]');
-  const rail = root.querySelector('[data-rh="rail"]');
-  const live = root.querySelector('[data-rh="live"]');
-  const toggle = root.querySelector('[data-rh="toggle"]');
-  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-  const make = (cls, html) => {
-    const d = document.createElement("div");
-    d.className = "nbf-el " + cls.split(" ").map((c) => "nbf-" + c).join(" ");
-    if (html !== undefined) d.innerHTML = html;
-    d.style.opacity = "0";
-    stage.appendChild(d);
-    return d;
-  };
-  const place = (el, x, y, o = 1, extra = {}) => {
-    el.style.transform = `translate(${x}px, ${y}px)`;
-    el.style.opacity = String(o);
-    if (extra.w !== undefined) el.style.width = extra.w + "px";
-    if (extra.h !== undefined) el.style.height = extra.h + "px";
-  };
-
-  // ---- Build every element once: they persist and move between scenes.
-  const label = make("head-label");
-  const caption = make("head-caption");
-  const num = make("num", '<div class="nbf-num__value">0</div><div class="nbf-num__label"></div>');
-  const numValue = num.querySelector(".nbf-num__value");
-  const numLabel = num.querySelector(".nbf-num__label");
-  const rule = make("rule");
-  [label, caption, num, rule].forEach((e) => (e.style.opacity = "1"));
-  place(label, 24, 22); place(caption, 24, 42); place(num, 376, 24); place(rule, 24, 96);
-
-  const teams = TEAMS.map((t) => make("team", `<div class="nbf-team__name">${t.name}</div><div class="nbf-team__meta">${t.meta}</div>`));
-  const tagHtml = (tags) => tags.map(([k, t]) => `<span class="nbf-tag nbf-tag--${k}">${t}</span>`).join("");
-  const wfs = WORKFLOWS.map((w) => ({ ...w, el: make("wf", `<span class="nbf-wf__name">${w.name}</span><span class="nbf-wf__badge"></span><span class="nbf-wf__tags">${tagHtml(w.tags)}</span>`) }));
-  const wf = (id) => wfs.find((w) => w.id === id);
-  const badge = (w, text) => { w.el.querySelector(".nbf-wf__badge").textContent = text; w.el.classList.toggle("is-badge", !!text); };
-
-  const tierStart = make("tier", 'Start here<span class="nbf-tier__note">clear value, low effort</span>');
-  const tierNext = make("tier", 'Next<span class="nbf-tier__note">in order of value and effort</span>');
-  const tierAfter = make("tier", 'Next opportunity<span class="nbf-tier__note">back to step 2</span>');
-  const setAside = make("more", "4 set aside: kept human, or not worth it yet");
-
-  const nodes = NODES.map((n) => make("node" + (n.kind ? " is-" + n.kind : ""), `<div class="nbf-node__name"><span class="nbf-node__live"></span>${n.name}</div><div class="nbf-node__meta">${n.meta}</div>`));
-  const arrows = [0, 1, 2].map(() => make("arrow", "→"));
-  const toolsLabel = make("chip chip--label", "Connects to");
-  const tools = TOOLS.map((t) => make("chip", t));
-  const logs = LOGS.map(([what, note, kind]) => make("log", `<span class="nbf-log__what">${what}</span><span class="nbf-log__note"><span class="nbf-log__${kind}">${kind === "ok" ? "✓" : "↺"}</span> ${note}</span>`));
-  const note = make("note", `
-    <div class="nbf-note__line nbf-note__meta">Monthly review · Proposal drafting</div>
-    <div class="nbf-note__body">
-      <div class="nbf-note__line">Maya: “Drafts still miss the new pricing tiers.”</div>
-      <div class="nbf-note__line"><span class="nbf-fix">Fixed:</span> pricing table added to the templates.</div>
-      <div class="nbf-note__line"><span class="nbf-fix">Next:</span> weekly reporting, same approach.</div>
-    </div>`);
-  const PERSON = '<svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><circle cx="8" cy="5.2" r="2.7" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M2.8 14c.6-2.9 2.7-4.4 5.2-4.4s4.6 1.5 5.2 4.4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>';
-  const check = make("check", "");
-
-  // ---- Helpers
-  let timers = [];
-  const later = (ms, fn) => timers.push(window.setTimeout(fn, reduce ? 0 : ms));
-  const clearTimers = () => { timers.forEach(clearTimeout); timers = []; };
-  let countTimer = null;
-  const countTo = (to, ms = 900) => {
-    const from = Number(numValue.dataset.v || 0);
-    if (countTimer) cancelAnimationFrame(countTimer);
-    if (reduce) { numValue.textContent = String(to); numValue.dataset.v = to; return; }
-    const t0 = performance.now();
-    const step = (now) => {
-      const p = Math.min(1, (now - t0) / ms);
-      const e = 1 - Math.pow(1 - p, 3);
-      const v = Math.round(from + (to - from) * e);
-      numValue.textContent = String(v);
-      numValue.dataset.v = v;
-      if (p < 1) countTimer = requestAnimationFrame(step);
+    const schedule = (ms: number) => {
+      clearTimeout(timer);
+      remaining = ms; startedAt = performance.now();
+      if (!paused && !reduce) timer = window.setTimeout(() => go(index + 1), ms);
     };
-    countTimer = requestAnimationFrame(step);
-  };
-  const hideAll = () => {
-    [...teams, ...nodes, ...arrows, toolsLabel, ...tools, ...logs, note, tierStart, tierNext, tierAfter, setAside, check].forEach((e) => (e.style.opacity = "0"));
-    tools.forEach((t) => t.classList.remove("is-on"));
-    nodes.forEach((n) => n.classList.remove("is-live"));
-    note.classList.remove("is-typing");
-    check.classList.remove("is-on");
-  };
-  const resetWf = (w) => { w.el.classList.remove("is-dim", "is-sel"); badge(w, ""); };
-  const asPill = (w, x, y, o = 1) => { w.el.classList.remove("is-row"); place(w.el, x, y, o, { w: 168, h: 28 }); };
-  const asRow = (w, y, o = 1, h = 27) => { w.el.classList.add("is-row"); place(w.el, 24, y, o, { w: 552, h }); };
-  const colX = [24, 216, 408];
-  const nodeX = [24, 168, 312, 456];
-  const placeNodes = (y, o, h = 58) => {
-    nodes.forEach((n, i) => place(n, nodeX[i], y, o, { h }));
-    arrows.forEach((a, i) => place(a, nodeX[i] + 120, y + h / 2 - 10, o));
-  };
+    const go = (i: number) => {
+      index = (i + slides.length) % slides.length; // after the last step, repeat
+      slides.forEach((s, j) => { s.classList.toggle("is-active", j === index); s.setAttribute("aria-hidden", String(j !== index)); });
+      steps.forEach((b, j) => {
+        b.classList.toggle("is-done", j < index);
+        b.classList.remove("is-active");
+        b.setAttribute("aria-current", j === index ? "step" : "false");
+      });
+      void steps[index].offsetWidth; // restart the bar animation
+      steps[index].classList.add("is-active");
+      steps[index].style.setProperty("--dur", DURATION + "ms");
+      schedule(DURATION);
+    };
+    const pause = () => {
+      if (paused) return;
+      paused = true; root.classList.add("is-paused");
+      clearTimeout(timer); remaining -= performance.now() - startedAt;
+    };
+    const resume = () => {
+      if (!paused || userPaused) return;
+      paused = false; root.classList.remove("is-paused");
+      schedule(Math.max(400, remaining));
+    };
 
-  // ---- Scenes
-  const scenes = [
-    // 0 Understand: teams, then the workflows under each.
-    () => {
-      TEAMS.forEach((_, i) => place(teams[i], colX[i], 116, 1));
-      numLabel.textContent = "workflows mapped"; numValue.dataset.v = 0; countTo(0, 10);
-      wfs.forEach((w, k) => {
-        resetWf(w);
-        asPill(w, colX[w.col], 150, 0);
-        later(500 + k * 230, () => { asPill(w, colX[w.col], 176 + w.row * 36, 1); countTo(k + 1, 200); });
-      });
-    },
-    // 1 Identify: every workflow becomes a row with a verdict.
-    () => {
-      numLabel.textContent = "workflows mapped"; countTo(8, 10);
-      wfs.forEach((w, i) => { resetWf(w); asRow(w, 110 + i * 29, 1); });
-      later(1300, () => {
-        wfs.forEach((w) => { if (w.tags[0][0] === "none") w.el.classList.add("is-dim"); });
-        numLabel.textContent = "good fits for AI, from 8"; countTo(4, 700);
-      });
-    },
-    // 2 Prioritize: one starting point, the rest queued.
-    () => {
-      numLabel.textContent = "starting point, agreed"; countTo(1, 600);
-      place(tierStart, 24, 112, 1);
-      place(tierNext, 24, 178, 1);
-      wfs.forEach((w) => {
-        resetWf(w);
-        if (!w.fit) { asRow(w, 300, 0); return; }
-        if (w.rank === 0) { asRow(w, 132, 1, 30); w.el.classList.add("is-sel"); }
-        else asRow(w, 198 + (w.rank - 1) * 30, 1);
-      });
-      place(setAside, 24, 300, 0);
-      later(400, () => place(setAside, 24, 296, 1));
-    },
-    // 3 Design: the first workflow, redesigned around the people doing it.
-    () => {
-      numLabel.textContent = "steps, one stays human"; countTo(4, 900);
-      const w1 = wf("w1");
-      wfs.forEach((w) => { if (w !== w1) { resetWf(w); asRow(w, 140, 0); } });
-      w1.el.classList.add("is-sel"); badge(w1, "Start here");
-      asRow(w1, 112, 1, 30);
-      nodes.forEach((n, i) => { place(n, nodeX[i], 176, 0, { h: 58 }); later(300 + i * 320, () => place(n, nodeX[i], 166, 1, { h: 58 })); });
-      arrows.forEach((a, i) => { place(a, nodeX[i] + 120, 185, 0); later(460 + i * 320, () => place(a, nodeX[i] + 120, 185, 1)); });
-      place(toolsLabel, 24, 262, 0);
-      let tx = 132;
-      const toolX = tools.map((t) => { const x = tx; tx += t.offsetWidth + 8; return x; });
-      tools.forEach((t, i) => place(t, toolX[i], 262, 0));
-      later(1600, () => {
-        place(toolsLabel, 24, 262, 1);
-        tools.forEach((t, i) => { place(t, toolX[i], 256, 1); later(i * 150, () => t.classList.add("is-on")); });
-      });
-    },
-    // 4 Build & test: the flow goes live and runs on real requests.
-    () => {
-      numLabel.textContent = "real requests in the pilot"; countTo(0, 10);
-      const w1 = wf("w1");
-      wfs.forEach((w) => { if (w !== w1) { resetWf(w); asRow(w, 140, 0); } });
-      w1.el.classList.add("is-sel"); badge(w1, "Live pilot");
-      asRow(w1, 112, 1, 30);
-      placeNodes(154, 1, 58);
-      later(300, () => nodes.forEach((n) => n.classList.add("is-live")));
-      logs.forEach((l, i) => { place(l, 24, 232 + i * 29, 0); later(700 + i * 380, () => { place(l, 24, 226 + i * 29, 1); countTo(i + 1, 200); }); });
-    },
-    // 5 Improve: feedback in, fix made, next workflow comes up.
-    () => {
-      numLabel.textContent = "workflow live"; countTo(1, 600);
-      const w1 = wf("w1"), w5 = wf("w5");
-      wfs.forEach((w) => { if (w !== w1 && w !== w5) { resetWf(w); asRow(w, 300, 0); } });
-      resetWf(w1); badge(w1, "Live"); asRow(w1, 112, 1, 30);
-      place(note, 24, 156, 0);
-      later(250, () => { place(note, 24, 152, 1); note.classList.add("is-typing"); });
-      resetWf(w5); asRow(w5, 324, 0);
-      place(tierAfter, 24, 296, 0);
-      later(1700, () => { place(tierAfter, 24, 290, 1); asRow(w5, 308, 1, 30); w5.el.classList.add("is-sel"); badge(w5, "Next up"); });
-    },
-  ];
-
-  // ---- Rail and playback
-  SCENES.forEach((s, i) => {
-    const b = document.createElement("button");
-    b.type = "button"; b.className = "nbf-rh__step";
-    b.innerHTML = `<span class="nbf-rh__bar"><i></i></span><span class="nbf-rh__name">${s.name}</span>`;
-    b.addEventListener("click", () => go(i));
-    rail.appendChild(b);
-  });
-  const steps = Array.from(rail.children);
-  let index = -1, timer = null, paused = false, userPaused = false, startedAt = 0, remaining = 0;
-
-  const scheduleNext = (ms) => {
-    clearTimeout(timer);
-    remaining = ms; startedAt = performance.now();
-    if (!paused && !reduce) timer = setTimeout(() => go(index + 1), ms);
-  };
-  function go(i) {
-    clearTimers();
-    index = (i + SCENES.length) % SCENES.length;
-    const s = SCENES[index];
-    label.textContent = s.label;
-    caption.textContent = s.caption;
-    live.textContent = `${s.label}: ${s.caption}`;
-    hideAll();
-    scenes[index]();
-    check.innerHTML = `${PERSON}<span class="nbf-check__who">Human check</span><span class="nbf-check__what">${s.check}</span><span class="nbf-check__tick">✓</span>`;
-    place(check, 24, 364, 0);
-    later(s.at, () => { place(check, 24, 352, 1); later(350, () => check.classList.add("is-on")); });
-    steps.forEach((b, j) => {
-      b.classList.toggle("is-done", j < index);
-      b.classList.remove("is-active");
-      b.setAttribute("aria-current", j === index ? "step" : "false");
+    steps.forEach((b, j) => b.addEventListener("click", () => go(j)));
+    root.addEventListener("mouseenter", pause);
+    root.addEventListener("mouseleave", resume);
+    toggle.addEventListener("click", () => {
+      userPaused = !userPaused;
+      toggle.textContent = userPaused ? "Play" : "Pause";
+      if (userPaused) pause(); else { paused = true; resume(); }
     });
-    void steps[index].offsetWidth; // restart the bar animation
-    steps[index].classList.add("is-active");
-    steps[index].style.setProperty("--dur", s.ms + "ms");
-    scheduleNext(s.ms);
-  }
-  const pause = () => {
-    if (paused) return;
-    paused = true; root.classList.add("is-paused");
-    clearTimeout(timer); remaining -= performance.now() - startedAt;
-  };
-  const resume = () => {
-    if (!paused || userPaused) return;
-    paused = false; root.classList.remove("is-paused");
-    scheduleNext(Math.max(400, remaining));
-  };
-  root.addEventListener("mouseenter", pause);
-  root.addEventListener("mouseleave", resume);
-  root.addEventListener("focusin", pause);
-  root.addEventListener("focusout", resume);
-  toggle.addEventListener("click", () => {
-    userPaused = !userPaused;
-    toggle.textContent = userPaused ? "Play" : "Pause";
-    if (userPaused) pause(); else { paused = true; resume(); }
+    document.addEventListener("visibilitychange", () => (document.hidden ? pause() : resume()));
+    if (reduce) toggle.hidden = true;
+    go(0);
   });
-  document.addEventListener("visibilitychange", () => (document.hidden ? pause() : resume()));
-
-  // ---- Scale the 600×390 stage to the frame.
-  const fit = () => { stage.style.transform = `scale(${frame.clientWidth / 600})`; };
-  new ResizeObserver(fit).observe(frame);
-  fit();
-
-  if (reduce) toggle.hidden = true;
-  go(0);
-});
 </script>
