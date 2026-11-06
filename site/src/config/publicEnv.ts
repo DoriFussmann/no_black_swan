@@ -14,9 +14,9 @@ export const CAL_COM_URL = (
   "https://cal.com/dori-fussmann-lqbqlb/30-minutes-consultation-call-w-dori-fussmann-no-black-swan"
 ).trim();
 
-/** Google Analytics measurement ID. Empty: no analytics installed. */
+/** GA4 measurement ID (public). PUBLIC_ANALYTICS_ID overrides it. */
 export const ANALYTICS_ID = (
-  import.meta.env.PUBLIC_ANALYTICS_ID ?? ""
+  import.meta.env.PUBLIC_ANALYTICS_ID || "G-Y6F50YVGTR"
 ).trim();
 
 /** Optional Google Search Console verification token. */
