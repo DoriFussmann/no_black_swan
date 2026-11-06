@@ -3,6 +3,7 @@ import ArticleList from "../../components/ArticleList.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { SITE_NAME } from "../../config/site";
 import { getPublishedArticles, liveTopics } from "../../lib/articles";
+import { topicLabel } from "../../lib/topics";
 
 const articles = await getPublishedArticles();
 const topics = [
@@ -75,7 +76,7 @@ const description =
                 aria-checked="false"
                 data-topic={topic}
               >
-                {topic}
+                {topicLabel(topic)}
               </button>
             ))
           }
