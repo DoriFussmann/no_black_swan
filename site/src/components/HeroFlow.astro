@@ -1,0 +1,420 @@
+---
+// Home hero: how a No Black Swan engagement runs, as one animated card.
+// The same elements (teams, workflows) move between six steps: understand,
+// identify, prioritize, design, build & test, improve. Ported from the
+// Hey Rupert hero engine. Fictional business and people, illustrative only:
+// no client examples or outcome claims. Autoplay pauses on hover, focus or a
+// hidden tab; the step rail jumps to any step; reduced motion shows each
+// step still.
+---
+
+<div class="nbf-rh" data-rh="rh" role="region" aria-roledescription="animation" aria-label="How No Black Swan works, in six steps">
+  <div class="nbf-rh__frame" data-rh="frame">
+    <div class="nbf-rh__stage" data-rh="stage" aria-hidden="true"></div>
+  </div>
+  <div class="nbf-rh__rail" data-rh="rail"></div>
+  <div class="nbf-rh__foot">
+    <span data-rh="live" class="nbf-sr" aria-live="polite"></span>
+    <span>Human judgment at every step · Illustrative example · <button class="nbf-rh__btn" data-rh="toggle" type="button">Pause</button></span>
+  </div>
+</div>
+
+<style is:global>
+  .nbf-rh {
+    --ink: #1a1a2e; --body: #2d2d2d; --surface: #ffffff; --border: #e4e2de; --muted: #5c5c5c; --ash: #8a8a8a;
+    --brass: #b5935a; --brass-text: #7a5c28; --brass-tint: #f3ece0; --moss: #2f6b4f; --moss-tint: #e4efe8; --tint: #f3f1ec;
+    --ease: cubic-bezier(0.22, 0.61, 0.36, 1); --t: 700ms;
+    color: var(--body);
+    width: 100%;
+  }
+  .nbf-rh *, .nbf-rh *::before, .nbf-rh *::after { box-sizing: border-box; }
+
+  .nbf-rh__frame {
+    position: relative; width: 100%;
+    aspect-ratio: 600 / 390;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(26, 26, 46, 0.04), 0 12px 32px -18px rgba(26, 26, 46, 0.18);
+  }
+  .nbf-rh__stage { position: absolute; left: 0; top: 0; width: 600px; height: 390px; transform-origin: 0 0; }
+  .nbf-el { position: absolute; left: 0; top: 0; transition: transform var(--t) var(--ease), opacity var(--t) var(--ease), width var(--t) var(--ease), height var(--t) var(--ease), background-color var(--t) var(--ease), border-color var(--t) var(--ease), color var(--t) var(--ease); will-change: transform, opacity; }
+
+  .nbf-head-label { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; color: var(--brass-text); }
+  .nbf-head-caption { font-size: 17px; font-weight: 400; color: var(--ink); line-height: 1.35; width: 360px; }
+  .nbf-num { text-align: right; width: 200px; }
+  .nbf-num__value { font-size: 40px; font-weight: 300; letter-spacing: -0.02em; color: var(--ink); line-height: 1; font-variant-numeric: tabular-nums; }
+  .nbf-num__label { font-size: 11px; color: var(--muted); margin-top: 6px; }
+  .nbf-rule { height: 1px; background: var(--border); width: 552px; }
+
+  /* Team cards and workflow-design nodes */
+  .nbf-team { height: 46px; width: 168px; border: 1px solid var(--border); border-radius: 10px; background: var(--tint); padding: 7px 12px; }
+  .nbf-team__name { font-size: 13px; color: var(--ink); font-weight: 500; }
+  .nbf-team__meta { font-size: 11px; color: var(--muted); margin-top: 2px; }
+  .nbf-node { height: 58px; width: 120px; border: 1px solid var(--border); border-radius: 10px; background: var(--tint); padding: 8px 10px; }
+  .nbf-node__name { font-size: 12.5px; color: var(--ink); font-weight: 500; line-height: 1.3; }
+  .nbf-node__meta { font-size: 10.5px; color: var(--muted); margin-top: 3px; }
+  .nbf-node.is-ai { background: var(--brass-tint); border-color: var(--brass); }
+  .nbf-node.is-ai .nbf-node__name { color: var(--brass-text); }
+  .nbf-node.is-human { background: var(--moss-tint); border-color: var(--moss); }
+  .nbf-node.is-human .nbf-node__name { color: var(--moss); }
+  .nbf-node.is-live { border-style: solid; }
+  .nbf-node__live { display: none; width: 6px; height: 6px; border-radius: 50%; background: var(--moss); margin-right: 5px; vertical-align: 1px; }
+  .nbf-node.is-live .nbf-node__live { display: inline-block; }
+  .nbf-arrow { font-size: 14px; color: var(--ash); width: 24px; text-align: center; }
+
+  .nbf-chip { height: 26px; padding: 0 12px; border-radius: 13px; border: 1px solid var(--border); background: var(--surface); font-size: 12px; color: var(--muted); display: flex; align-items: center; white-space: nowrap; }
+  .nbf-chip.is-on { border-color: var(--brass); color: var(--brass-text); background: var(--brass-tint); }
+  .nbf-chip--label { border: 0; padding: 0; background: transparent; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; }
+
+  /* Workflows: a pill under its team, or a full-width row */
+  .nbf-wf { height: 28px; width: 168px; border-radius: 14px; border: 1px solid var(--border); background: var(--surface); display: flex; align-items: center; gap: 8px; padding: 0 12px; overflow: hidden; white-space: nowrap; }
+  .nbf-wf__name { font-size: 12.5px; color: var(--ink); flex: none; }
+  .nbf-wf__tags { display: flex; gap: 6px; margin-left: auto; opacity: 0; transition: opacity 400ms var(--ease); }
+  .nbf-wf__badge { font-size: 10.5px; color: #fff; background: var(--brass); border-radius: 8px; padding: 1px 7px; margin-left: 8px; opacity: 0; transition: opacity 400ms var(--ease); }
+  .nbf-wf.is-row { border-radius: 8px; }
+  .nbf-wf.is-row .nbf-wf__tags { opacity: 1; }
+  .nbf-wf.is-badge .nbf-wf__badge { opacity: 1; }
+  .nbf-wf.is-dim { background: #fbfaf8; }
+  .nbf-wf.is-dim .nbf-wf__name { color: var(--ash); text-decoration: line-through; text-decoration-color: #c9c4ba; }
+  .nbf-wf.is-sel { border-color: var(--brass); }
+  .nbf-tag { font-size: 10.5px; padding: 2px 8px; border-radius: 9px; white-space: nowrap; }
+  .nbf-tag--fit { background: var(--brass-tint); color: var(--brass-text); }
+  .nbf-tag--human { background: var(--moss-tint); color: var(--moss); }
+  .nbf-tag--none { background: transparent; color: var(--ash); border: 1px dashed #d6d2ca; }
+  .nbf-more { font-size: 11.5px; color: var(--muted); }
+
+  .nbf-tier { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; color: var(--brass-text); }
+  .nbf-tier__note { text-transform: none; letter-spacing: 0; font-weight: 400; color: var(--muted); margin-left: 6px; }
+
+  /* Pilot log rows */
+  .nbf-log { width: 552px; height: 27px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); display: flex; align-items: center; gap: 10px; padding: 0 12px; font-size: 12px; white-space: nowrap; overflow: hidden; }
+  .nbf-log__what { color: var(--ink); }
+  .nbf-log__note { color: var(--muted); margin-left: auto; }
+  .nbf-log__ok { color: var(--moss); }
+  .nbf-log__back { color: var(--brass-text); }
+
+  /* Feedback note */
+  .nbf-note { width: 552px; height: 120px; border: 1px solid var(--border); border-radius: 10px; background: #fdfcfa; padding: 14px 16px; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 12px; line-height: 1.6; color: var(--body); }
+  .nbf-note__meta { color: var(--muted); }
+  .nbf-note__line { white-space: nowrap; overflow: hidden; }
+  .nbf-note__body { margin-top: 8px; }
+  .nbf-note__body .nbf-note__line { opacity: 0; transition: opacity 500ms var(--ease); }
+  .nbf-note.is-typing .nbf-note__body .nbf-note__line { opacity: 1; }
+  .nbf-note.is-typing .nbf-note__body .nbf-note__line:nth-child(2) { transition-delay: 450ms; }
+  .nbf-note.is-typing .nbf-note__body .nbf-note__line:nth-child(3) { transition-delay: 900ms; }
+  .nbf-fix { color: var(--moss); }
+
+  /* Human-judgment pill */
+  .nbf-check { height: 26px; display: flex; align-items: center; gap: 7px; padding: 0 12px 0 10px; border-radius: 13px; background: var(--moss-tint); color: var(--moss); font-size: 11.5px; white-space: nowrap; }
+  .nbf-check__who { font-weight: 500; }
+  .nbf-check__what { color: #3d5c4c; }
+  .nbf-check__tick { width: 16px; height: 16px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 10px; background: transparent; border: 1px solid var(--moss); color: transparent; transition: background-color 300ms var(--ease), color 300ms var(--ease); }
+  .nbf-check.is-on .nbf-check__tick { background: var(--moss); color: #fff; }
+
+  /* Rail */
+  .nbf-rh__rail { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; margin-top: 16px; }
+  .nbf-rh__step { appearance: none; border: 0; background: none; padding: 0; text-align: left; cursor: pointer; font: inherit; color: var(--muted); }
+  .nbf-rh__bar { display: block; height: 2px; background: var(--border); border-radius: 1px; overflow: hidden; }
+  .nbf-rh__bar i { display: block; height: 100%; width: 0; background: var(--brass); }
+  .nbf-rh__step.is-done .nbf-rh__bar i { width: 100%; }
+  .nbf-rh__step.is-active .nbf-rh__bar i { animation: nbf-fill linear forwards; animation-duration: var(--dur, 4s); }
+  .nbf-rh.is-paused .nbf-rh__step.is-active .nbf-rh__bar i { animation-play-state: paused; }
+  .nbf-rh__name { display: block; font-size: 12px; margin-top: 8px; white-space: nowrap; }
+  @media (max-width: 480px) { .nbf-rh__name { font-size: 11px; } .nbf-rh__rail { gap: 6px; } }
+  .nbf-rh__step.is-active .nbf-rh__name { color: var(--ink); }
+  .nbf-rh__step:focus-visible { outline: 2px solid var(--brass); outline-offset: 4px; border-radius: 2px; }
+  @keyframes nbf-fill { from { width: 0; } to { width: 100%; } }
+  .nbf-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .nbf-rh__foot { display: flex; justify-content: flex-end; align-items: center; margin-top: 12px; font-size: 12px; color: var(--muted); text-align: right; line-height: 2; }
+  .nbf-rh__btn { appearance: none; border: 1px solid var(--border); background: var(--surface); border-radius: 15px; padding: 4px 12px; font: inherit; font-size: 12px; color: var(--ink); cursor: pointer; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .nbf-el, .nbf-wf__tags, .nbf-wf__badge, .nbf-note__body .nbf-note__line { transition: none !important; }
+    .nbf-rh__step.is-active .nbf-rh__bar i { animation: none; width: 100%; }
+  }
+</style>
+
+<script>
+// @ts-nocheck
+
+document.querySelectorAll<HTMLElement>(".nbf-rh").forEach((root) => {
+  const SCENES = [
+    { name: "Understand", label: "Step 1 · Understand the business", caption: "How the work actually gets done today: teams, systems, workflows.", ms: 4600, check: "Mapped with your team, not from a template", at: 2600 },
+    { name: "Identify", label: "Step 2 · Identify opportunities", caption: "Where AI genuinely helps, and where it doesn’t belong.", ms: 4200, check: "Every opportunity weighed by a person", at: 1900 },
+    { name: "Prioritize", label: "Step 3 · Prioritize", caption: "One practical starting point. The rest waits its turn.", ms: 3400, check: "Starting point agreed with you", at: 1100 },
+    { name: "Design", label: "Step 4 · Design the solution", caption: "Built around the tools and people already doing the work.", ms: 4200, check: "Design signed off before anything is built", at: 2200 },
+    { name: "Build", label: "Step 5 · Build and test in real work", caption: "Connected to your systems, then tried on real requests.", ms: 4400, check: "Tested by the people who will use it", at: 2400 },
+    { name: "Improve", label: "Step 6 · Improve and extend", caption: "Refine what’s working, then move to the next opportunity.", ms: 4600, check: "Reviewed with you, every month", at: 2600 },
+  ];
+
+  const TEAMS = [
+    { name: "Sales", meta: "CRM · email" },
+    { name: "Operations", meta: "Project tool · docs" },
+    { name: "Finance", meta: "Accounting · spreadsheets" },
+  ];
+  // col: team column; tags: [kind, text]; fit: AI opportunity; rank: priority order.
+  const WORKFLOWS = [
+    { id: "w1", name: "Proposal drafting", col: 0, row: 0, fit: true, rank: 0, tags: [["fit", "Good fit"], ["fit", "Same structure every time"]] },
+    { id: "w2", name: "Lead follow-up", col: 0, row: 1, fit: true, rank: 2, tags: [["fit", "Good fit"], ["fit", "Repetitive emails"]] },
+    { id: "w3", name: "Client calls", col: 0, row: 2, fit: false, tags: [["human", "Keep human"], ["human", "Relationships, judgment"]] },
+    { id: "w4", name: "Client onboarding", col: 1, row: 0, fit: true, rank: 3, tags: [["fit", "Good fit"], ["fit", "Same details typed three times"]] },
+    { id: "w5", name: "Weekly reporting", col: 1, row: 1, fit: true, rank: 1, tags: [["fit", "Good fit"], ["fit", "Pulled from four systems"]] },
+    { id: "w6", name: "Scheduling", col: 1, row: 2, fit: false, tags: [["none", "Not worth it"], ["none", "Already works fine"]] },
+    { id: "w7", name: "Invoice matching", col: 2, row: 0, fit: false, tags: [["none", "Not now"], ["none", "Low volume today"]] },
+    { id: "w8", name: "Pricing decisions", col: 2, row: 1, fit: false, tags: [["human", "Keep human"], ["human", "Stays with people"]] },
+  ];
+  const NODES = [
+    { name: "Request arrives", meta: "Email, as today", kind: "" },
+    { name: "AI drafts proposal", meta: "Your templates", kind: "ai" },
+    { name: "Account lead reviews", meta: "Edits, approves", kind: "human" },
+    { name: "Sent and logged", meta: "CRM updated", kind: "" },
+  ];
+  const TOOLS = ["Your email", "Your CRM", "Your proposal templates"];
+  const LOGS = [
+    ["Harbor Dental · proposal", "Drafted, approved by Maya", "ok"],
+    ["Oak & Pine Studio · proposal", "Edited for tone, then approved", "ok"],
+    ["Kestrel Logistics · proposal", "Sent back: wrong package", "back"],
+    ["Fenwick Legal · proposal", "Drafted, approved by Maya", "ok"],
+  ];
+
+  const stage = root.querySelector('[data-rh="stage"]');
+  const frame = root.querySelector('[data-rh="frame"]');
+  const rail = root.querySelector('[data-rh="rail"]');
+  const live = root.querySelector('[data-rh="live"]');
+  const toggle = root.querySelector('[data-rh="toggle"]');
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  const make = (cls, html) => {
+    const d = document.createElement("div");
+    d.className = "nbf-el " + cls.split(" ").map((c) => "nbf-" + c).join(" ");
+    if (html !== undefined) d.innerHTML = html;
+    d.style.opacity = "0";
+    stage.appendChild(d);
+    return d;
+  };
+  const place = (el, x, y, o = 1, extra = {}) => {
+    el.style.transform = `translate(${x}px, ${y}px)`;
+    el.style.opacity = String(o);
+    if (extra.w !== undefined) el.style.width = extra.w + "px";
+    if (extra.h !== undefined) el.style.height = extra.h + "px";
+  };
+
+  // ---- Build every element once: they persist and move between scenes.
+  const label = make("head-label");
+  const caption = make("head-caption");
+  const num = make("num", '<div class="nbf-num__value">0</div><div class="nbf-num__label"></div>');
+  const numValue = num.querySelector(".nbf-num__value");
+  const numLabel = num.querySelector(".nbf-num__label");
+  const rule = make("rule");
+  [label, caption, num, rule].forEach((e) => (e.style.opacity = "1"));
+  place(label, 24, 22); place(caption, 24, 42); place(num, 376, 24); place(rule, 24, 96);
+
+  const teams = TEAMS.map((t) => make("team", `<div class="nbf-team__name">${t.name}</div><div class="nbf-team__meta">${t.meta}</div>`));
+  const tagHtml = (tags) => tags.map(([k, t]) => `<span class="nbf-tag nbf-tag--${k}">${t}</span>`).join("");
+  const wfs = WORKFLOWS.map((w) => ({ ...w, el: make("wf", `<span class="nbf-wf__name">${w.name}</span><span class="nbf-wf__badge"></span><span class="nbf-wf__tags">${tagHtml(w.tags)}</span>`) }));
+  const wf = (id) => wfs.find((w) => w.id === id);
+  const badge = (w, text) => { w.el.querySelector(".nbf-wf__badge").textContent = text; w.el.classList.toggle("is-badge", !!text); };
+
+  const tierStart = make("tier", 'Start here<span class="nbf-tier__note">clear value, low effort</span>');
+  const tierNext = make("tier", 'Next<span class="nbf-tier__note">in order of value and effort</span>');
+  const tierAfter = make("tier", 'Next opportunity<span class="nbf-tier__note">back to step 2</span>');
+  const setAside = make("more", "4 set aside: kept human, or not worth it yet");
+
+  const nodes = NODES.map((n) => make("node" + (n.kind ? " is-" + n.kind : ""), `<div class="nbf-node__name"><span class="nbf-node__live"></span>${n.name}</div><div class="nbf-node__meta">${n.meta}</div>`));
+  const arrows = [0, 1, 2].map(() => make("arrow", "→"));
+  const toolsLabel = make("chip chip--label", "Connects to");
+  const tools = TOOLS.map((t) => make("chip", t));
+  const logs = LOGS.map(([what, note, kind]) => make("log", `<span class="nbf-log__what">${what}</span><span class="nbf-log__note"><span class="nbf-log__${kind}">${kind === "ok" ? "✓" : "↺"}</span> ${note}</span>`));
+  const note = make("note", `
+    <div class="nbf-note__line nbf-note__meta">Monthly review · Proposal drafting</div>
+    <div class="nbf-note__body">
+      <div class="nbf-note__line">Maya: “Drafts still miss the new pricing tiers.”</div>
+      <div class="nbf-note__line"><span class="nbf-fix">Fixed:</span> pricing table added to the templates.</div>
+      <div class="nbf-note__line"><span class="nbf-fix">Next:</span> weekly reporting, same approach.</div>
+    </div>`);
+  const PERSON = '<svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><circle cx="8" cy="5.2" r="2.7" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M2.8 14c.6-2.9 2.7-4.4 5.2-4.4s4.6 1.5 5.2 4.4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>';
+  const check = make("check", "");
+
+  // ---- Helpers
+  let timers = [];
+  const later = (ms, fn) => timers.push(window.setTimeout(fn, reduce ? 0 : ms));
+  const clearTimers = () => { timers.forEach(clearTimeout); timers = []; };
+  let countTimer = null;
+  const countTo = (to, ms = 900) => {
+    const from = Number(numValue.dataset.v || 0);
+    if (countTimer) cancelAnimationFrame(countTimer);
+    if (reduce) { numValue.textContent = String(to); numValue.dataset.v = to; return; }
+    const t0 = performance.now();
+    const step = (now) => {
+      const p = Math.min(1, (now - t0) / ms);
+      const e = 1 - Math.pow(1 - p, 3);
+      const v = Math.round(from + (to - from) * e);
+      numValue.textContent = String(v);
+      numValue.dataset.v = v;
+      if (p < 1) countTimer = requestAnimationFrame(step);
+    };
+    countTimer = requestAnimationFrame(step);
+  };
+  const hideAll = () => {
+    [...teams, ...nodes, ...arrows, toolsLabel, ...tools, ...logs, note, tierStart, tierNext, tierAfter, setAside, check].forEach((e) => (e.style.opacity = "0"));
+    tools.forEach((t) => t.classList.remove("is-on"));
+    nodes.forEach((n) => n.classList.remove("is-live"));
+    note.classList.remove("is-typing");
+    check.classList.remove("is-on");
+  };
+  const resetWf = (w) => { w.el.classList.remove("is-dim", "is-sel"); badge(w, ""); };
+  const asPill = (w, x, y, o = 1) => { w.el.classList.remove("is-row"); place(w.el, x, y, o, { w: 168, h: 28 }); };
+  const asRow = (w, y, o = 1, h = 27) => { w.el.classList.add("is-row"); place(w.el, 24, y, o, { w: 552, h }); };
+  const colX = [24, 216, 408];
+  const nodeX = [24, 168, 312, 456];
+  const placeNodes = (y, o, h = 58) => {
+    nodes.forEach((n, i) => place(n, nodeX[i], y, o, { h }));
+    arrows.forEach((a, i) => place(a, nodeX[i] + 120, y + h / 2 - 10, o));
+  };
+
+  // ---- Scenes
+  const scenes = [
+    // 0 Understand: teams, then the workflows under each.
+    () => {
+      TEAMS.forEach((_, i) => place(teams[i], colX[i], 116, 1));
+      numLabel.textContent = "workflows mapped"; numValue.dataset.v = 0; countTo(0, 10);
+      wfs.forEach((w, k) => {
+        resetWf(w);
+        asPill(w, colX[w.col], 150, 0);
+        later(500 + k * 230, () => { asPill(w, colX[w.col], 176 + w.row * 36, 1); countTo(k + 1, 200); });
+      });
+    },
+    // 1 Identify: every workflow becomes a row with a verdict.
+    () => {
+      numLabel.textContent = "workflows mapped"; countTo(8, 10);
+      wfs.forEach((w, i) => { resetWf(w); asRow(w, 110 + i * 29, 1); });
+      later(1300, () => {
+        wfs.forEach((w) => { if (w.tags[0][0] === "none") w.el.classList.add("is-dim"); });
+        numLabel.textContent = "good fits for AI, from 8"; countTo(4, 700);
+      });
+    },
+    // 2 Prioritize: one starting point, the rest queued.
+    () => {
+      numLabel.textContent = "starting point, agreed"; countTo(1, 600);
+      place(tierStart, 24, 112, 1);
+      place(tierNext, 24, 178, 1);
+      wfs.forEach((w) => {
+        resetWf(w);
+        if (!w.fit) { asRow(w, 300, 0); return; }
+        if (w.rank === 0) { asRow(w, 132, 1, 30); w.el.classList.add("is-sel"); }
+        else asRow(w, 198 + (w.rank - 1) * 30, 1);
+      });
+      place(setAside, 24, 300, 0);
+      later(400, () => place(setAside, 24, 296, 1));
+    },
+    // 3 Design: the first workflow, redesigned around the people doing it.
+    () => {
+      numLabel.textContent = "steps, one stays human"; countTo(4, 900);
+      const w1 = wf("w1");
+      wfs.forEach((w) => { if (w !== w1) { resetWf(w); asRow(w, 140, 0); } });
+      w1.el.classList.add("is-sel"); badge(w1, "Start here");
+      asRow(w1, 112, 1, 30);
+      nodes.forEach((n, i) => { place(n, nodeX[i], 176, 0, { h: 58 }); later(300 + i * 320, () => place(n, nodeX[i], 166, 1, { h: 58 })); });
+      arrows.forEach((a, i) => { place(a, nodeX[i] + 120, 185, 0); later(460 + i * 320, () => place(a, nodeX[i] + 120, 185, 1)); });
+      place(toolsLabel, 24, 262, 0);
+      let tx = 132;
+      const toolX = tools.map((t) => { const x = tx; tx += t.offsetWidth + 8; return x; });
+      tools.forEach((t, i) => place(t, toolX[i], 262, 0));
+      later(1600, () => {
+        place(toolsLabel, 24, 262, 1);
+        tools.forEach((t, i) => { place(t, toolX[i], 256, 1); later(i * 150, () => t.classList.add("is-on")); });
+      });
+    },
+    // 4 Build & test: the flow goes live and runs on real requests.
+    () => {
+      numLabel.textContent = "real requests in the pilot"; countTo(0, 10);
+      const w1 = wf("w1");
+      wfs.forEach((w) => { if (w !== w1) { resetWf(w); asRow(w, 140, 0); } });
+      w1.el.classList.add("is-sel"); badge(w1, "Live pilot");
+      asRow(w1, 112, 1, 30);
+      placeNodes(154, 1, 58);
+      later(300, () => nodes.forEach((n) => n.classList.add("is-live")));
+      logs.forEach((l, i) => { place(l, 24, 232 + i * 29, 0); later(700 + i * 380, () => { place(l, 24, 226 + i * 29, 1); countTo(i + 1, 200); }); });
+    },
+    // 5 Improve: feedback in, fix made, next workflow comes up.
+    () => {
+      numLabel.textContent = "workflow live"; countTo(1, 600);
+      const w1 = wf("w1"), w5 = wf("w5");
+      wfs.forEach((w) => { if (w !== w1 && w !== w5) { resetWf(w); asRow(w, 300, 0); } });
+      resetWf(w1); badge(w1, "Live"); asRow(w1, 112, 1, 30);
+      place(note, 24, 156, 0);
+      later(250, () => { place(note, 24, 152, 1); note.classList.add("is-typing"); });
+      resetWf(w5); asRow(w5, 324, 0);
+      place(tierAfter, 24, 296, 0);
+      later(1700, () => { place(tierAfter, 24, 290, 1); asRow(w5, 308, 1, 30); w5.el.classList.add("is-sel"); badge(w5, "Next up"); });
+    },
+  ];
+
+  // ---- Rail and playback
+  SCENES.forEach((s, i) => {
+    const b = document.createElement("button");
+    b.type = "button"; b.className = "nbf-rh__step";
+    b.innerHTML = `<span class="nbf-rh__bar"><i></i></span><span class="nbf-rh__name">${s.name}</span>`;
+    b.addEventListener("click", () => go(i));
+    rail.appendChild(b);
+  });
+  const steps = Array.from(rail.children);
+  let index = -1, timer = null, paused = false, userPaused = false, startedAt = 0, remaining = 0;
+
+  const scheduleNext = (ms) => {
+    clearTimeout(timer);
+    remaining = ms; startedAt = performance.now();
+    if (!paused && !reduce) timer = setTimeout(() => go(index + 1), ms);
+  };
+  function go(i) {
+    clearTimers();
+    index = (i + SCENES.length) % SCENES.length;
+    const s = SCENES[index];
+    label.textContent = s.label;
+    caption.textContent = s.caption;
+    live.textContent = `${s.label}: ${s.caption}`;
+    hideAll();
+    scenes[index]();
+    check.innerHTML = `${PERSON}<span class="nbf-check__who">Human check</span><span class="nbf-check__what">${s.check}</span><span class="nbf-check__tick">✓</span>`;
+    place(check, 24, 364, 0);
+    later(s.at, () => { place(check, 24, 352, 1); later(350, () => check.classList.add("is-on")); });
+    steps.forEach((b, j) => {
+      b.classList.toggle("is-done", j < index);
+      b.classList.remove("is-active");
+      b.setAttribute("aria-current", j === index ? "step" : "false");
+    });
+    void steps[index].offsetWidth; // restart the bar animation
+    steps[index].classList.add("is-active");
+    steps[index].style.setProperty("--dur", s.ms + "ms");
+    scheduleNext(s.ms);
+  }
+  const pause = () => {
+    if (paused) return;
+    paused = true; root.classList.add("is-paused");
+    clearTimeout(timer); remaining -= performance.now() - startedAt;
+  };
+  const resume = () => {
+    if (!paused || userPaused) return;
+    paused = false; root.classList.remove("is-paused");
+    scheduleNext(Math.max(400, remaining));
+  };
+  root.addEventListener("mouseenter", pause);
+  root.addEventListener("mouseleave", resume);
+  root.addEventListener("focusin", pause);
+  root.addEventListener("focusout", resume);
+  toggle.addEventListener("click", () => {
+    userPaused = !userPaused;
+    toggle.textContent = userPaused ? "Play" : "Pause";
+    if (userPaused) pause(); else { paused = true; resume(); }
+  });
+  document.addEventListener("visibilitychange", () => (document.hidden ? pause() : resume()));
+
+  // ---- Scale the 600×390 stage to the frame.
+  const fit = () => { stage.style.transform = `scale(${frame.clientWidth / 600})`; };
+  new ResizeObserver(fit).observe(frame);
+  fit();
+
+  if (reduce) toggle.hidden = true;
+  go(0);
+});
+</script>
