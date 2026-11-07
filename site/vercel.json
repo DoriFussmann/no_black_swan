@@ -39,6 +39,21 @@
       "source": "/database/",
       "destination": "/services/",
       "permanent": true
+    },
+    {
+      "source": "/fp-a",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/fp-a/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/fp-a/:path*",
+      "destination": "/about/",
+      "permanent": true
     }
   ]
 }

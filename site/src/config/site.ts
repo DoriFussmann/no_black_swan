@@ -24,7 +24,18 @@ export const SAME_AS: string[] = [];
 export const LOGO_PATH = "/logo.png";
 
 /** Other names the company goes by. Set on every Organization node (BaseLayout). */
-export const ORG_ALTERNATE_NAMES: string[] = ["No Black Swan", "noblackswan.com"];
+export const ORG_ALTERNATE_NAMES: string[] = ["No Black Swan", "No Black Swan AI", "noblackswan.com"];
+
+/** What the agency is known for (Organization knowsAbout). */
+export const ORG_KNOWS_ABOUT: string[] = [
+  "AI integration",
+  "AI implementation",
+  "AI consulting",
+  "Workflow automation",
+  "AI adoption",
+  "Forward deployed engineering",
+  "Operational AI",
+];
 
 export const SITE_IDENTITY: SiteIdentity = {
   siteUrl: SITE_URL,
