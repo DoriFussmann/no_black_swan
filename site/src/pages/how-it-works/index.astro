@@ -61,7 +61,7 @@ const pillars: {
     summary: "Build and integrate the selected solutions into the company’s actual operations.",
     src: howItWorks2,
     alt: "AI-enabled business workflow being designed and implemented",
-    green: false,
+    green: true,
     stages: [
       {
         title: "Agree on a practical plan",
@@ -89,7 +89,7 @@ const pillars: {
     src: howItWorks5,
     alt: "Team using an AI-enabled workflow in daily operations",
     caption: "Again, not me. Different AI actor, better hair, thinner. \u2014 Dori",
-    green: false,
+    green: true,
     stages: [
       {
         title: "Measure what’s working",
@@ -140,7 +140,7 @@ const promises = [
 
     {
       pillars.map((pillar, index) => (
-        <section id={pillar.id} class="site-wrap section-block rule pillar" aria-labelledby={`pillar-${index + 1}`}>
+        <section id={pillar.id} class:list={["site-wrap section-block rule pillar", { "pillar--flip": index % 2 === 1 }]} aria-labelledby={`pillar-${index + 1}`}>
           <div class="pillar__intro">
             <p class="step-script">Step {index + 1}</p>
             <h2 id={`pillar-${index + 1}`} class="type-h2 mt-md">{pillar.title}</h2>
