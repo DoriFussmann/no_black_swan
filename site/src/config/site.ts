@@ -14,6 +14,13 @@ export const ARTICLES_BASE = "articles";
 export const DORI_LINKEDIN =
   "https://www.linkedin.com/in/dori-fussmann-663ba242";
 
+/** Dori's official profiles: Person sameAs on both the About page and article bylines. */
+export const DORI_PROFILES: string[] = [
+  DORI_LINKEDIN,
+  "https://bluemark.co/team/dori-fussmann/",
+  "https://www.crunchbase.com/person/dori-fussmann",
+];
+
 /**
  * Organization `sameAs` profiles. Only verified company URLs; none yet.
  * Dori's personal LinkedIn belongs on Person schema, not here.
