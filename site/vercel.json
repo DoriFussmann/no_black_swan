@@ -54,6 +54,246 @@
       "source": "/fp-a/:path*",
       "destination": "/about/",
       "permanent": true
+    },
+    {
+      "source": "/articles/ai-consulting-services",
+      "destination": "/articles/ai-consulting/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/ai-consulting-services/",
+      "destination": "/articles/ai-consulting/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/ai-consulting-companies-for-small-business",
+      "destination": "/articles/ai-consulting-for-small-business/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/ai-consulting-companies-for-small-business/",
+      "destination": "/articles/ai-consulting-for-small-business/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/ai-consulting-for-small-business-faq",
+      "destination": "/articles/ai-consulting-for-small-business/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/ai-consulting-for-small-business-faq/",
+      "destination": "/articles/ai-consulting-for-small-business/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/ai-implementation-services",
+      "destination": "/articles/ai-integration/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/ai-implementation-services/",
+      "destination": "/articles/ai-integration/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/ai-automation-services",
+      "destination": "/articles/ai-automation-agency/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/ai-automation-services/",
+      "destination": "/articles/ai-automation-agency/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/ai-agent-development-company",
+      "destination": "/articles/ai-automation-agency/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/ai-agent-development-company/",
+      "destination": "/articles/ai-automation-agency/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/how-to-choose-an-ai-consultant-for-small-business",
+      "destination": "/articles/ai-integration-agency/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/how-to-choose-an-ai-consultant-for-small-business/",
+      "destination": "/articles/ai-integration-agency/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/boutique-ai-consultant-vs-large-consulting-firm-small-business",
+      "destination": "/articles/ai-consulting-firm-vs-freelancer/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/boutique-ai-consultant-vs-large-consulting-firm-small-business/",
+      "destination": "/articles/ai-consulting-firm-vs-freelancer/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/technical-seo-foundations",
+      "destination": "/articles/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/technical-seo-foundations/",
+      "destination": "/articles/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/content-strategy-foundations",
+      "destination": "/articles/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/content-strategy-foundations/",
+      "destination": "/articles/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/improve-core-web-vitals-howto",
+      "destination": "/articles/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/improve-core-web-vitals-howto/",
+      "destination": "/articles/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/industry-and-local-pages",
+      "destination": "/articles/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/industry-and-local-pages/",
+      "destination": "/articles/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/2",
+      "destination": "/articles/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/2/",
+      "destination": "/articles/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-consulting-services",
+      "destination": "/articles/ai-consulting/",
+      "permanent": true
+    },
+    {
+      "source": "/ai-consulting-services/",
+      "destination": "/articles/ai-consulting/",
+      "permanent": true
+    },
+    {
+      "source": "/services/ai-readiness-and-opportunity-assessment",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/services/ai-readiness-and-opportunity-assessment/",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/services/ai-strategy-and-advisory",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/services/ai-strategy-and-advisory/",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/faq",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/faq/",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/book-call/",
+      "permanent": true
+    },
+    {
+      "source": "/contact/",
+      "destination": "/book-call/",
+      "permanent": true
+    },
+    {
+      "source": "/forensic-accounting",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/forensic-accounting/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/the-decision-stack",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/the-decision-stack/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/data-analytics-consulting",
+      "destination": "/articles/ai-roi/",
+      "permanent": true
+    },
+    {
+      "source": "/data-analytics-consulting/",
+      "destination": "/articles/ai-roi/",
+      "permanent": true
+    },
+    {
+      "source": "/kpis",
+      "destination": "/articles/ai-roi/",
+      "permanent": true
+    },
+    {
+      "source": "/kpis/",
+      "destination": "/articles/ai-roi/",
+      "permanent": true
+    },
+    {
+      "source": "/kpis/:path*",
+      "destination": "/articles/ai-roi/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-post/:path*",
+      "destination": "/articles/",
+      "permanent": true
+    },
+    {
+      "source": "/case-studies",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/case-studies/:path*",
+      "destination": "/about/",
+      "permanent": true
     }
   ]
 }
