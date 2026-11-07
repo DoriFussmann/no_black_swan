@@ -32,6 +32,10 @@ externalLinks:
     url: "https://www.fastcompany.com/91629175/the-ai-economy-is-a-small-business-economy"
     addedAt: 2026-11-06
     kind: where-things-stand
+  - label: "Goldman Sachs: Small businesses embrace AI but need training and support"
+    url: "https://www.goldmansachs.com/pressroom/press-releases/2026/small-businesses-embrace-ai-but-need-training-and-support-to-fully-harness-it"
+    addedAt: 2026-11-06
+    kind: claim
 faqs:
   - question: "What does an AI automation agency do?"
     answer: "An AI automation agency maps your existing workflows, identifies where AI can remove manual work or speed up decisions, then configures and integrates AI tools into the systems your team already uses. A strong agency also drives team adoption and measures what changed, acting as an ongoing AI owner rather than handing over a report and stepping away."
@@ -109,7 +113,7 @@ No Black Swan cannot tell you your exact plan or price in an article, because ev
 
 ## Where Things Stand
 <!-- WHERE-THINGS-STAND:START -->
-The AI integration market for small and growing businesses remains in an active and unresolved phase. Goldman Sachs' 10,000 Small Businesses Voices survey found that 76% of small businesses currently use AI, yet only 14% have it fully integrated into core operations, and 73% say they would benefit from additional training and resources to implement it successfully. A more recent October 2026 survey of Goldman Sachs' broader alumni population found that figure rising further, with 86% now reporting AI use but only around 15% having it truly built into operations — the gap between experimentation and embedded capability is not closing at the same pace as headline adoption. In late October and early November 2026, the broader AI agent and automation landscape continued to move quickly: new agentic platforms emerged across construction management and enterprise workflow coordination, major software vendors deepened their AI agent integrations, and tool pricing shifted as more capable models became available at lower cost. For small and growing businesses, the expanding tool landscape makes the question of who owns the AI agenda — not just which tools to use — more consequential, not less.
+The AI integration market for small and growing businesses remains in an active and unresolved phase. [Goldman Sachs' 10,000 Small Businesses Voices survey](https://www.goldmansachs.com/pressroom/press-releases/2026/small-businesses-embrace-ai-but-need-training-and-support-to-fully-harness-it) found that 76% of small businesses currently use AI, yet only 14% have it fully integrated into core operations, and 73% say they would benefit from additional training and resources to implement it successfully. A more recent [October 2026 survey](https://www.fastcompany.com/91629175/the-ai-economy-is-a-small-business-economy) of Goldman Sachs' broader alumni population found that figure rising further, with 86% now reporting AI use but only around 15% having it truly built into operations — the gap between experimentation and embedded capability is not closing at the same pace as headline adoption. In late October and early November 2026, the broader AI agent and automation landscape continued to move quickly: new agentic platforms emerged across construction management and enterprise workflow coordination, major software vendors deepened their AI agent integrations, and tool pricing shifted as more capable models became available at lower cost. For small and growing businesses, the expanding tool landscape makes the question of who owns the AI agenda — not just which tools to use — more consequential, not less.
 <!-- WHERE-THINGS-STAND:END -->
 
 ## Key Takeaways
