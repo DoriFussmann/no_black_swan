@@ -236,6 +236,12 @@
     width: auto;
   }
 
+  .site-logo img.site-logo__lockup,
+  .footer-logo img.site-logo__lockup {
+    height: 34px;
+    width: auto;
+  }
+
   .site-logo img.site-logo__mark,
   .footer-logo img.site-logo__mark {
     width: 32px;

@@ -2,14 +2,13 @@
 import { Image } from "astro:assets";
 import { COMPANY_LINKEDIN, SITE_NAME, SITE_TAGLINE } from "../config/site";
 import { sitePath } from "../lib/url";
-import brandMark from "../assets/brand/mark.svg";
+import brandLockup from "../assets/brand/lockup.svg";
 ---
 
 <footer class="mt-auto border-t border-border">
   <div class="site-wrap py-xl lg:py-2xl">
     <a class="footer-logo" href={sitePath("/")} aria-label={SITE_NAME}>
-      <Image class="site-logo__mark" src={brandMark} alt="" width={72} height={72} />
-      <span class="site-logo__word">{SITE_NAME}</span>
+      <Image class="site-logo__lockup" src={brandLockup} alt="" height={72} />
     </a>
     <p class="type-body mt-md max-w-prose">
       {SITE_TAGLINE}

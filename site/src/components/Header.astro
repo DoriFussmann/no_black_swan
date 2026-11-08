@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 import { SITE_NAME } from "../config/site";
 import { sitePath } from "../lib/url";
-import brandMark from "../assets/brand/mark.svg";
+import brandLockup from "../assets/brand/lockup.svg";
 
 // Buyer's path: the process, what we do, what it costs, what we know, who we are.
 const links = [
@@ -20,15 +20,7 @@ const isCurrent = (href: string) => current === href || (href !== "/" && current
 <header class="site-header">
   <nav class="site-wrap site-header__bar" aria-label="Primary">
     <a class="site-logo" href={sitePath("/")} aria-label={SITE_NAME}>
-      <Image
-        class="site-logo__mark"
-        src={brandMark}
-        alt=""
-        width={72}
-        height={72}
-        loading="eager"
-      />
-      <span class="site-logo__word">{SITE_NAME}</span>
+      <Image class="site-logo__lockup" src={brandLockup} alt="" height={72} loading="eager" />
     </a>
 
     <div class="site-nav site-nav--desktop">
