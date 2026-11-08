@@ -3,8 +3,11 @@ import type { AuthorPath, SiteIdentity } from "seo-core";
 export const SITE_URL = "https://noblackswan.com";
 export const SITE_NAME = "No Black Swan";
 
-/** No separate tagline: llms.txt, llms-full.txt, RSS and the footer use the site description. */
-export const SITE_TAGLINE =
+/** Short brand tagline. Shown in the footer. */
+export const SITE_TAGLINE = "Less AI Hype. More Impact.";
+
+/** Site description: Organization schema, llms.txt, llms-full.txt and RSS. */
+export const SITE_DESCRIPTION =
   "No Black Swan is a small AI integration agency that helps startups and growing businesses put AI to work in their operations, workflows and everyday decisions.";
 
 /** URL segment for articles. Changing it requires redirects for every article. */
@@ -21,11 +24,14 @@ export const DORI_PROFILES: string[] = [
   "https://www.crunchbase.com/person/dori-fussmann",
 ];
 
+/** Company LinkedIn page. Footer link and Organization sameAs. */
+export const COMPANY_LINKEDIN = "https://www.linkedin.com/company/144122085/";
+
 /**
- * Organization `sameAs` profiles. Only verified company URLs; none yet.
+ * Organization `sameAs` profiles. Only verified company URLs.
  * Dori's personal LinkedIn belongs on Person schema, not here.
  */
-export const SAME_AS: string[] = [];
+export const SAME_AS: string[] = [COMPANY_LINKEDIN];
 
 /** Organization logo (512×512 PNG of the No Black Swan mark). */
 export const LOGO_PATH = "/logo.png";
@@ -53,8 +59,6 @@ export const SITE_IDENTITY: SiteIdentity = {
 
 /** Authors are profiled on the About page, anchored by slug ("/about/#dori-fussmann"). */
 export const AUTHOR_PATH: AuthorPath = (slug) => `/about/#${slug}`;
-
-export const SITE_DESCRIPTION = SITE_TAGLINE;
 
 /** Default marketing Open Graph image (1200×630). */
 export const DEFAULT_OG_IMAGE = "/og-default.png";
