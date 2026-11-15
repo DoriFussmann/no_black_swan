@@ -8,101 +8,111 @@ import howItWorks1 from "../../assets/how-it-works/how-it-works-01.png";
 import howItWorks3 from "../../assets/how-it-works/how-it-works-03.png";
 import howItWorks5 from "../../assets/how-it-works/how-it-works-05.png";
 
-const title = "How No Black Swan Integrates AI Into Business Operations";
+const title = "How No Black Swan Works | Discovery, Strategy & AI Execution";
 const description =
-  "See how No Black Swan works with businesses to identify practical AI opportunities, implement solutions in real workflows and improve them over time.";
+  "See how No Black Swan works: a free consultation, paid fixed-fee discovery, strategy and setup, followed by ongoing AI implementation and operations.";
 
-type Stage = { title: string; body: string; linkHref?: string; linkLabel?: string };
+type Stage = { title: string; body: string };
 
 const pillars: {
   id: string;
   title: string;
+  /** Which engagement this stage is, and how it is charged. */
   timing: string;
   summary: string;
+  body: string;
+  outcome: string;
   src: ImageMetadata;
   alt: string;
   /** A line under the image (optional). */
   caption?: string;
-  green: boolean;
   stages: Stage[];
 }[] = [
   {
     id: "understand",
     title: "Understand & Identify",
-    timing: "Initial engagement",
-    summary: "First, understand the business and identify where AI can make a practical difference.",
+    timing: "Discovery · Separate fixed fee",
+    summary: "Understand the business before deciding what to change.",
+    body: "We get inside the business, understand how it operates, map its workflows, systems and constraints, and identify where AI can make a meaningful difference.",
+    outcome:
+      "A clear understanding of the business and its AI opportunities, providing the foundation for the next stage.",
     src: howItWorks1,
     alt: "Business workflow discussion and assessment",
     caption: "For the record: that\u2019s an AI actor, not me. I\u2019m less photogenic and better with term sheets. - Dori",
-    green: true,
     stages: [
       {
-        title: "Understand the business",
-        body: "A direct working conversation about the company, its goals, teams, systems and how work gets done today.",
+        title: "Understand the operation",
+        body: "Learn the company’s goals, teams, systems, workflows and constraints.",
       },
       {
-        title: "Map the workflows",
-        body: "Look at recurring tasks, handoffs, information flows and decisions to understand where time and effort are being lost.",
+        title: "Map the terrain",
+        body: "Examine workflows, handoffs, information flows, bottlenecks and decision points.",
       },
       {
-        title: "Identify AI opportunities",
-        body: "Find places where AI can improve or support the work, without forcing AI into processes where it does not belong.",
+        title: "Identify opportunities",
+        body: "Find where AI can improve performance, reduce friction or create new capabilities.",
       },
       {
         title: "Prioritize what matters",
-        body: "Assess potential value, feasibility, dependencies and implementation effort to decide what to tackle first.",
+        body: "Assess business impact, feasibility, risk and effort to identify the most valuable opportunities.",
       },
     ],
   },
   {
-    id: "implement",
-    title: "Design & Implement",
-    timing: "Agreed project scope",
-    summary: "Build and integrate the selected solutions into the company’s actual operations.",
+    id: "plan",
+    title: "Strategy & Operational Plan",
+    timing: "Setup · Agreed scope",
+    summary: "Turn the findings into an executable plan.",
+    body: "We translate discovery into a practical strategy. We determine what to tackle, in what order, how the solutions should work and what is required to implement them.",
+    outcome: "A defined operational plan that establishes what will be implemented and how.",
     src: howItWorks3,
     alt: "Two people mapping an AI-enabled workflow on a laptop and in a notebook",
     caption: "Two dudes, neither of them is me. I\u2019d be the one asking for the spreadsheet. - Dori",
-    green: true,
     stages: [
       {
-        title: "Agree on a practical plan",
-        body: "Define the initial scope, priorities and approach before implementation begins.",
+        title: "Set the priorities",
+        body: "Rank opportunities by business impact, feasibility, risk and effort.",
       },
       {
-        title: "Design the solution",
-        body: "Select the appropriate models, tools, integrations and workflow design for the specific business need.",
+        title: "Design the solutions",
+        body: "Define workflows, systems, integrations and the human oversight required.",
       },
       {
-        title: "Build and connect",
-        body: "Configure or develop the solution and connect it with the systems, data and processes it needs to work with.",
+        title: "Build the execution plan",
+        body: "Establish scope, owners, milestones, dependencies and success criteria.",
       },
       {
-        title: "Test and deploy",
-        body: "Work with the people who use the process, test it in practice, refine it and put it into operation.",
+        title: "Prepare for execution",
+        body: "Agree on the tools, resources and implementation requirements.",
       },
     ],
   },
   {
-    id: "ongoing",
-    title: "Measure & Optimize",
-    timing: "Monthly engagement",
-    summary: "Track what’s working, improve it, then repeat with the next opportunity.",
+    id: "execute",
+    title: "Execute & Operate",
+    timing: "Ongoing engagement",
+    summary: "Put the plan into action. Make it work in the real world.",
+    body: "This is where we get to work. We build, integrate, deploy and operate the solutions alongside your team. Execution doesn’t end at deployment; adoption, feedback and continuous improvement are part of the work.",
+    outcome: "Practical AI solutions integrated into the business, with ongoing execution and improvement.",
     src: howItWorks5,
     alt: "Team using an AI-enabled workflow in daily operations",
     caption: "Again, not me. Different AI actor, better hair, thinner. - Dori",
-    green: true,
     stages: [
       {
-        title: "Measure what’s working",
-        body: "Help the team adopt the new workflow, and track how it performs in practice and where it creates friction.",
+        title: "Build and integrate",
+        body: "Develop or configure solutions and connect them to the systems and workflows they need.",
       },
       {
-        title: "Optimize",
-        body: "Make sensible refinements based on how the solution is actually used.",
+        title: "Deploy and operate",
+        body: "Put solutions into daily use, work with teams and address implementation challenges.",
       },
       {
-        title: "Repeat",
-        body: "Identify and prioritize the next opportunities as the business, its needs and AI capabilities evolve.",
+        title: "Measure and improve",
+        body: "Monitor performance, gather feedback, identify friction and refine the solutions.",
+      },
+      {
+        title: "Expand",
+        body: "Move to the next opportunity as the business and its needs evolve.",
       },
     ],
   },
@@ -111,7 +121,7 @@ const pillars: {
 const promises = [
   { value: "Business first", label: "Recommendations start with how your company works and what it needs." },
   { value: "Human judgment", label: "AI supports the work; experience, accountability and decisions remain with people." },
-  { value: "Practical implementation", label: "The goal is to put useful solutions into operation, not produce a strategy deck and walk away." },
+  { value: "Execution matters", label: "The goal is to put useful solutions into operation, not produce a strategy deck and walk away." },
 ];
 ---
 
@@ -119,11 +129,21 @@ const promises = [
   <main id="main-content" class="flex-1">
     <section class="site-wrap pb-xl pt-2xl lg:pb-2xl lg:pt-3xl">
       <p class="type-label">The Process</p>
-      <h1 class="type-h1 mt-md">From business understanding to working AI.</h1>
+      <h1 class="type-h1 mt-md">From understanding the business to putting AI to work.</h1>
       <p class="type-body-lg mt-lg max-w-prose">
-        We start by understanding how your company operates, then identify
-        where AI can help and implement the opportunities that make sense.
+        We don’t start by selling you a tool or proposing an off-the-shelf
+        solution. We start by understanding how your business operates, identify
+        where AI can make a difference, build a practical plan and then execute
+        it alongside your team.
       </p>
+      <aside class="consult-note mt-xl" aria-labelledby="consult-note-label">
+        <p id="consult-note-label" class="consult-note__label">Before the process · Free consultation</p>
+        <p class="type-body mt-sm">
+          Before the process begins, there’s a free 30-minute consultation with
+          Dori. You’ll receive a high-level summary of the opportunities
+          discussed and a proposed plan within a few hours, at no charge.
+        </p>
+      </aside>
       <ol class="step-grid mt-2xl">
         {
           pillars.map((pillar, index) => (
@@ -146,6 +166,7 @@ const promises = [
             <p class="step-script">Step {index + 1}</p>
             <h2 id={`pillar-${index + 1}`} class="type-h2 mt-md">{pillar.title}</h2>
             <p class="type-body-lg mt-md max-w-prose">{pillar.summary}</p>
+            <p class="type-body mt-md max-w-prose">{pillar.body}</p>
             <div class="media-frame mt-xl">
               <Image
                 class="photo"
@@ -157,25 +178,20 @@ const promises = [
             </div>
             {pillar.caption ? <p class="pillar__caption">{pillar.caption}</p> : null}
           </div>
-          <div class:list={["plan-card", { "plan-card--plain": !pillar.green }]}>
+          <div class="plan-card">
             <p class="plan-card__label">{pillar.timing}</p>
             <ol class="plan-steps">
-              {pillar.stages.map((stage) => {
-                const linkAt = stage.linkHref && stage.linkLabel ? stage.body.indexOf(stage.linkLabel) : -1;
-                return (
-                  <li>
-                    <p class="plan-item__title">{stage.title}</p>
-                    <p class="plan-item__body">
-                      {linkAt >= 0 && stage.linkHref && stage.linkLabel ? (
-                        <>{stage.body.slice(0, linkAt)}<a href={sitePath(stage.linkHref)}>{stage.linkLabel}</a>{stage.body.slice(linkAt + stage.linkLabel.length)}</>
-                      ) : (
-                        stage.body
-                      )}
-                    </p>
-                  </li>
-                );
-              })}
+              {pillar.stages.map((stage) => (
+                <li>
+                  <p class="plan-item__title">{stage.title}</p>
+                  <p class="plan-item__body">{stage.body}</p>
+                </li>
+              ))}
             </ol>
+            <div class="plan-outcome">
+              <p class="plan-outcome__label">Outcome</p>
+              <p class="plan-outcome__body">{pillar.outcome}</p>
+            </div>
           </div>
         </section>
       ))
@@ -210,5 +226,44 @@ const promises = [
     line-height: 1.6;
     font-style: italic;
     color: #5c5c5c;
+  }
+
+  /* The free consultation comes before the three stages, so it reads as a
+     note rather than as a stage card. */
+  .consult-note {
+    max-width: 42.5rem;
+    padding: 20px 24px;
+    border: 1px dashed #c9c5bd;
+    border-radius: 8px;
+    background: #ffffff;
+  }
+
+  .consult-note__label {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #5c5c5c;
+  }
+
+  .plan-outcome {
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(18, 128, 106, 0.35);
+  }
+
+  .plan-outcome__label {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #12806a;
+  }
+
+  .plan-outcome__body {
+    margin-top: 6px;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #0f172a;
   }
 </style>
