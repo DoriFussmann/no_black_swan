@@ -3,8 +3,13 @@ name: IndexNow
 # After each successful production deploy of the marketing site, tell IndexNow
 # (Bing and partners) which pages changed since the previous production deploy.
 # Run by hand with a list of URLs to submit specific pages.
+#
+# Vercel reports deploys to this repository as commit statuses (context
+# "Vercel"), not as GitHub deployment records, so the automatic run listens for
+# the `status` event. Only a successful Vercel status on a commit that is on
+# `main` counts as a production deploy; previews and failures are ignored.
 on:
-  deployment_status:
+  status:
   workflow_dispatch:
     inputs:
       urls:
@@ -13,14 +18,22 @@ on:
 
 permissions:
   contents: read
-  deployments: read
+  statuses: read
+
+# One run at a time per deployed commit, so repeated status events queue up
+# behind the first and then find its marker.
+concurrency:
+  group: indexnow-${{ github.event.sha || github.run_id }}
+  cancel-in-progress: false
 
 jobs:
   submit:
     if: >-
       github.event_name == 'workflow_dispatch' ||
-      (github.event.deployment_status.state == 'success' &&
-       github.event.deployment.environment == 'Production – no-black-swan')
+      (github.event_name == 'status' &&
+       github.event.context == 'Vercel' &&
+       github.event.state == 'success' &&
+       contains(github.event.branches.*.name, 'main'))
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -37,19 +50,52 @@ jobs:
           URLS: ${{ github.event.inputs.urls }}
         run: node site/scripts/indexnow.mjs $URLS
 
+      # Vercel can send more than one success status for the same commit
+      # (for example after a redeploy). The marker makes the second one a no-op.
+      - name: Check whether this deploy was already handled
+        id: seen
+        if: github.event_name == 'status'
+        uses: actions/cache/restore@v4
+        with:
+          path: .indexnow-done
+          key: indexnow-${{ github.event.sha }}
+          lookup-only: true
+
       - name: Submit pages changed since the previous production deploy
-        if: github.event_name == 'deployment_status'
+        id: submit
+        if: github.event_name == 'status' && steps.seen.outputs.cache-hit != 'true'
         env:
           GH_TOKEN: ${{ github.token }}
-          HEAD_SHA: ${{ github.event.deployment.sha }}
-          ENVIRONMENT: ${{ github.event.deployment.environment }}
+          HEAD_SHA: ${{ github.event.sha }}
+          REPO: ${{ github.repository }}
         run: |
-          BASE_SHA=$(gh api -X GET "repos/${{ github.repository }}/deployments" \
-            -f environment="$ENVIRONMENT" -f per_page=20 \
-            --jq "[.[] | select(.sha != \"$HEAD_SHA\")][0].sha")
-          if [ -z "$BASE_SHA" ] || [ "$BASE_SHA" = "null" ]; then
+          if ! git merge-base --is-ancestor "$HEAD_SHA" origin/main; then
+            echo "Commit $HEAD_SHA is not on main; not a production deploy."
+            exit 0
+          fi
+          # Previous production deploy: the nearest earlier commit on main that
+          # Vercel also reported as a success.
+          BASE_SHA=""
+          for sha in $(git rev-list --first-parent --max-count=30 "$HEAD_SHA^"); do
+            state=$(gh api "repos/$REPO/commits/$sha/statuses" \
+              --jq '[.[] | select(.context == "Vercel")][0].state // ""')
+            if [ "$state" = "success" ]; then
+              BASE_SHA="$sha"
+              break
+            fi
+          done
+          if [ -z "$BASE_SHA" ]; then
             echo "No previous production deploy found; nothing to compare."
             exit 0
           fi
           echo "Comparing $BASE_SHA..$HEAD_SHA"
           node site/scripts/indexnow.mjs --diff "$BASE_SHA" "$HEAD_SHA"
+          mkdir -p .indexnow-done
+          echo "$HEAD_SHA" > .indexnow-done/sha
+
+      - name: Mark this deploy as handled
+        if: github.event_name == 'status' && steps.seen.outputs.cache-hit != 'true' && hashFiles('.indexnow-done/sha') != ''
+        uses: actions/cache/save@v4
+        with:
+          path: .indexnow-done
+          key: indexnow-${{ github.event.sha }}

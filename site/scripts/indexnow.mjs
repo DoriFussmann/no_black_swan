@@ -13,6 +13,7 @@
  * What counts as changed (--diff):
  *   - articles added, edited or deleted (site/src/content/articles/<slug>.md)
  *   - static pages (site/src/pages/**.astro, except dynamic [param] routes)
+ *   - legal pages (site/src/legal/<name>.md, served at /<name>/)
  *   - new redirect sources in site/vercel.json, so engines see the 301
  * Layout, component and config changes are not submitted.
  */
@@ -59,7 +60,9 @@ function urlsFromDiff(base, head) {
   for (const line of lines.filter(Boolean)) {
     const file = line.split("\t").pop();
     const article = file.match(/^site\/src\/content\/articles\/([^/]+)\.md$/);
+    const legal = file.match(/^site\/src\/legal\/([^/]+)\.md$/);
     if (article) urls.add(`/articles/${article[1]}/`);
+    else if (legal) urls.add(`/${legal[1]}/`);
     else if (/^site\/src\/pages\/.+\.astro$/.test(file)) {
       const p = pagePath(file);
       if (p) urls.add(p);
