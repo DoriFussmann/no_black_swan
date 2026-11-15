@@ -28,7 +28,7 @@ export const caseStudies: CaseStudy[] = [
     name: "The Vets",
     role: "Founder & CEO",
     logo: caseLogo("the-vets.png"),
-    body: "Founded The Vets and led it as CEO, later serving as co-founder and COO, before its merger with BetterVet. His work with the company also includes the Fractional COO and AI Operations Integrator role.",
+    body: "Founder and CEO of The Vets, later Co-founder and COO, before its merger with BetterVet. Separately, Fractional COO and AI Operations Integrator for the company.",
   },
   {
     name: "Natrion",
