@@ -4,23 +4,24 @@ import { DORI_LINKEDIN } from "../../config/site";
 import { CAL_COM_URL } from "../../config/publicEnv";
 import { sitePath } from "../../lib/url";
 
-const title = "Book a Free AI Integration Consultation | No Black Swan";
+const title = "Book a Free AI Consultation With Dori Fussmann | No Black Swan";
 const description =
-  "Book a free 30-minute consultation with Dori Fussmann to discuss your business and explore where AI could be integrated into your operations and workflows.";
+  "Book a free 30-minute AI consultation with Dori Fussmann. Explore practical AI opportunities for your business and receive a high-level summary and proposed plan at no charge.";
 
 const cover = [
-  { title: "Your business", text: "What the company does, how it operates, its priorities and the challenges you are working through." },
-  { title: "Where AI may help", text: "Processes, workflows and decisions where AI could save effort, improve access to information or support the team." },
-  { title: "Practical opportunities", text: "Initial thoughts on what may be worth exploring, what could be implemented and what needs closer assessment." },
-  { title: "Whether there’s a fit", text: "An honest conversation about whether No Black Swan can help and what a sensible next step might look like." },
+  { title: "Your business", text: "What the company does, how it operates, its priorities and the challenges you’re facing." },
+  { title: "Your workflows", text: "Where work gets stuck, processes are repetitive, systems don’t connect or information is difficult to access." },
+  { title: "AI opportunities", text: "Where practical AI solutions could improve performance, reduce friction or create new capabilities." },
+  { title: "A sensible next step", text: "What is worth exploring, what might be involved and whether working together makes sense." },
 ];
 
-// Why speak with Dori: the angles he brings, without naming companies.
+// Why speak with Dori: the angles he brings. Not all are current roles, and
+// they were not all held at the same companies; the About page has the detail.
 const lenses = [
-  { title: "Founder & operator", text: "Built and led companies, including The Vets. Understands the decisions, trade-offs and operational realities that come with running a business." },
-  { title: "Business advisor", text: "Works directly with leadership teams on strategy, finance, priorities and execution, with a focus on practical recommendations." },
-  { title: "Fractional CFO", text: "Works inside businesses on financial planning, reporting, decision support and the operating questions that affect performance." },
-  { title: "AI practitioner", text: "Uses AI as a core part of how he works and advises, with a focus on integrating it into useful business processes rather than adopting tools for their own sake." },
+  { title: "Entrepreneur & operator", text: "Founded and led companies, including The Vets." },
+  { title: "Fractional COO", text: "Works directly with businesses on operations and AI implementation." },
+  { title: "Finance executive", text: "Fractional CFO experience and fundraising and strategic finance advisory." },
+  { title: "AI practitioner", text: "Focuses on integrating AI into practical business workflows, not adopting tools for their own sake." },
 ];
 
 ---
@@ -33,9 +34,12 @@ const lenses = [
         <p class="type-body-lg mt-lg max-w-prose">
           A free 30-minute conversation with
           <a href={sitePath("/about/")}>Dori Fussmann</a>, founder of No Black
-          Swan. Tell him how your business works and what you are trying to
-          improve. He’ll share his perspective on where AI may be useful and
-          what you could explore.
+          Swan.
+        </p>
+        <p class="type-body mt-md max-w-prose">
+          Tell him how your business operates, what’s slowing it down and what
+          you’re trying to improve. Together, we’ll explore where AI could make
+          a practical difference — and where it might not.
         </p>
         <p class="mt-md">
           <a href={DORI_LINKEDIN} target="_blank" rel="noopener noreferrer">
@@ -43,11 +47,24 @@ const lenses = [
           </a>
         </p>
 
+        <div class="call-summary mt-xl">
+          <h2 class="call-summary__title">You’ll get something useful from the conversation.</h2>
+          <p class="type-body mt-sm">
+            Within a few hours, we’ll send you a concise, high-level summary of
+            the opportunities discussed and a proposed plan for moving forward.
+            No charge, no obligation.
+          </p>
+        </div>
+
         <h2 class="type-h2 mt-2xl">Who the call is for</h2>
         <p class="type-body mt-md max-w-prose">
-          Business owners and leadership teams who want to understand where AI
-          can make a practical difference in their company’s operations,
-          workflows and everyday decisions.
+          Business owners, founders, CEOs and leadership teams who want to
+          understand how AI could improve the way their business operates.
+        </p>
+        <p class="type-body mt-md max-w-prose">
+          You don’t need to know which tools to use or arrive with a technical
+          plan. You just need to understand your business and be willing to
+          explore how it could work better.
         </p>
       </div>
 
@@ -68,13 +85,16 @@ const lenses = [
 
         <h2 class="type-h2 mt-2xl">Why speak with Dori?</h2>
         <p class="type-body mt-md max-w-prose">
-          <a href={sitePath("/about/")}>Dori</a> has spent years working closely
-          with businesses—as a founder, fractional COO, fractional CFO and
-          advisor. He
-          understands that good advice starts with understanding the company,
-          its people, its systems and the realities of getting work done. He
-          also uses AI extensively in his own work and in how he supports
-          businesses.
+          <a href={sitePath("/about/")}>Dori</a> has built and led businesses,
+          worked inside companies as a Fractional COO and AI Operations
+          Integrator, served as a Fractional CFO, advised founders on
+          fundraising and strategic finance, and worked in investment banking at
+          Citi, Morgan Stanley and Ion Pacific.
+        </p>
+        <p class="type-body mt-md max-w-prose">
+          He approaches AI from the perspective of someone who understands what
+          it takes to run a business: people, processes, systems, financial
+          realities and execution.
         </p>
         <ul class="call-lenses mt-lg">
           {
@@ -86,18 +106,15 @@ const lenses = [
             ))
           }
         </ul>
-        <p class="type-body mt-lg max-w-prose">
-          What that means for a 30-minute call: you get a direct conversation
-          with someone who understands business operations and works
-          extensively with AI. Explain how your company works, and Dori will
-          share an experienced perspective on where AI may fit, what could be
-          worth pursuing and where it may not make sense.
-        </p>
         <p class="type-body rule mt-xl max-w-prose pt-lg">
-          The goal is straightforward: understand your business, share useful
-          advice and determine whether there is a sensible opportunity to
-          <a href={sitePath("/how-it-works/")}>work together</a>. No pressure,
-          no obligation and no promises of predetermined results.
+          The objective isn’t to sell you AI. It’s to understand your business,
+          identify where there may be a real opportunity and give you a
+          practical starting point.
+        </p>
+        <p class="type-body mt-md max-w-prose">
+          If there’s a fit, we’ll explain
+          <a href={sitePath("/how-it-works/")}>how we could help</a>. If there
+          isn’t, we’ll tell you that too.
         </p>
       </div>
 
@@ -105,7 +122,9 @@ const lenses = [
         <div class="lead-form" id="booking-scheduler" data-calendar={CAL_COM_URL}>
           <h2 class="type-h2">Pick a day and time</h2>
           <p class="type-body mt-md">
-            Choose a 30-minute slot below. The consultation is free, and booking takes under a minute.
+            Choose a convenient 30-minute slot. The consultation is free, and
+            you’ll receive a high-level opportunity summary and proposed plan
+            within a few hours after the conversation.
           </p>
 
           <div class="cal-embed" id="cal-embed" aria-label="Booking calendar"></div>
@@ -180,6 +199,21 @@ const lenses = [
 </script>
 
 <style>
+  /* The free follow-up summary: prominent, but styled as a note, not a paid stage. */
+  .call-summary {
+    max-width: 42.5rem;
+    padding: 20px 24px;
+    background: #ffffff;
+    border: 1px solid #e4e2de;
+    border-left: 3px solid #b5935a;
+    border-radius: 8px;
+  }
+  .call-summary__title {
+    font-size: 20px;
+    line-height: 1.35;
+    font-weight: 500;
+    color: #1a1a2e;
+  }
   .call-cover {
     display: grid;
     gap: 16px;
