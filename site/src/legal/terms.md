@@ -1,5 +1,5 @@
 **Effective date:** November 6, 2026  
-**Last updated:** November 6, 2026
+**Last updated:** November 14, 2026
 
 ## 1. About These Terms
 
@@ -107,7 +107,15 @@ We perform the services described in the applicable signed agreement, which sets
 
 ### 12.2 Fees and payment
 
-We typically charge a setup and assessment fee for the first month, followed by a flat monthly fee. Published "from" prices are indicative starting points, not quotes. We do not charge percentage fees or success fees under our standard model.
+Our engagements typically begin with a free initial 30-minute consultation. After the consultation, we send a concise, high-level summary of the opportunities discussed and a proposed plan, within a few hours and at no charge. The consultation and the summary are not a discovery engagement, a detailed technical assessment or an implementation roadmap, and they do not commit either party to any further work.
+
+Paid work is typically structured in three stages, each agreed separately:
+
+- **Discovery:** a separate engagement, charged at a fixed fee.
+- **Strategy & Setup:** a separately scoped engagement, with an agreed fee.
+- **Execute & Operate:** an ongoing engagement, charged at a flat monthly fee on a month-to-month basis, which the client may cancel at any time.
+
+Completing one stage does not oblige the client to proceed to the next. We do not publish prices; the scope and fees for each stage are explained before the client commits to it. We do not charge percentage fees or success fees under our standard model.
 
 The applicable agreement states the actual fees, billing frequency, payment terms, taxes and any agreed expenses. Third-party software, AI usage and subscription costs are paid by the client unless the agreement says otherwise. No price, minimum commitment, renewal or cancellation charge applies merely because it appears in a general description of our services.
 
