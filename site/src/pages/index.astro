@@ -49,7 +49,7 @@ const clientLogos = [
   return { name: item.name, src: mod.default };
 });
 
-const title = "AI Integration Agency for Growing Businesses | No Black Swan";
+const title = "AI Integration for Growing Businesses | No Black Swan";
 const description =
   "No Black Swan helps businesses put AI to work, integrating it into their operations, workflows and everyday decisions. Book a free consultation with Dori.";
 
@@ -181,18 +181,22 @@ const jsonLd: Record<string, unknown>[] = [
     <section class="site-wrap pb-lg pt-xl lg:pb-xl lg:pt-2xl">
       <div class="grid gap-xl md:grid-cols-12 md:items-center md:gap-lg">
         <div class="hero-reveal md:col-span-6">
-          <h1 class="hero-headline">
-            <span class="type-label mb-md block">AI Integration Agency</span>
-            Less AI Hype.<br />
-            More <span class="hero-headline__accent">Impact.</span>
-          </h1>
-          <p class="type-body mt-lg max-w-prose">
-            No Black Swan is a small AI integration agency. We help
-            startups and growing businesses put AI to work in their
-            operations, workflows and everyday decisions.
+          <h1 class="visually-hidden">AI Integration. By Operators, Not Consultants.</h1>
+          <p class="hero-headline" aria-hidden="true">
+            AI Integration.<br />
+            By Operators, Not
+            <span class="hero-typewriter" data-typewriter>
+              <span class="hero-typewriter__sizer">Consultants.</span>
+              <span class="hero-typewriter__live">
+                <span data-typewriter-text>Consultants.</span><span
+                  class="hero-typewriter__cursor"></span>
+              </span>
+            </span>
           </p>
-          <p class="type-h4 mt-md max-w-prose">
-            Everyone on your team uses AI. Nobody owns it. We do.
+          <p class="type-body mt-lg max-w-prose">
+            We work alongside businesses to identify opportunities, implement
+            practical AI solutions and integrate them into real business
+            operations.
           </p>
           <p class="mt-xl flex flex-wrap items-center gap-md">
             <a class="btn-primary" href={sitePath("/book-call/")}>Book a Free Consultation</a>
@@ -324,3 +328,82 @@ const jsonLd: Record<string, unknown>[] = [
   </main>
   <CtaBanner />
 </BaseLayout>
+
+<script>
+  // Same typewriter as the Rupert homepage: type, hold, delete, next phrase.
+  const phrases = [
+    { text: "Consultants.", color: "#C0392B" },
+    { text: "Clowns.", color: "#B85C38" },
+    { text: "\u201CMentors\u201D.", color: "#C07C2A" },
+  ];
+
+  const root = document.querySelector("[data-typewriter]");
+  const textEl = root?.querySelector("[data-typewriter-text]");
+  if (root instanceof HTMLElement && textEl instanceof HTMLElement) {
+    const reduceMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+
+    const paint = (phrase: { text: string; color: string }, chars?: number) => {
+      root.style.setProperty("--typewriter-color", phrase.color);
+      textEl.textContent =
+        chars === undefined ? phrase.text : phrase.text.slice(0, chars);
+    };
+
+    paint(phrases[0]);
+
+    if (!reduceMotion) {
+      const typeMs = 70;
+      const deleteMs = 40;
+      const holdMs = 2000;
+      const gapMs = 260;
+
+      let index = 0;
+      let chars = phrases[0].text.length;
+      let deleting = true;
+      let timer: number | undefined;
+
+      const queue = (fn: () => void, delay: number) => {
+        if (timer !== undefined) window.clearTimeout(timer);
+        timer = window.setTimeout(fn, delay);
+      };
+
+      const tick = () => {
+        if (document.hidden) {
+          queue(tick, holdMs);
+          return;
+        }
+
+        const phrase = phrases[index];
+
+        if (!deleting) {
+          chars += 1;
+          paint(phrase, chars);
+          if (chars >= phrase.text.length) {
+            deleting = true;
+            queue(tick, holdMs);
+            return;
+          }
+          queue(tick, typeMs);
+          return;
+        }
+
+        chars -= 1;
+        paint(phrase, chars);
+        if (chars <= 0) {
+          deleting = false;
+          index = (index + 1) % phrases.length;
+          queue(tick, gapMs);
+          return;
+        }
+        queue(tick, deleteMs);
+      };
+
+      document.addEventListener("visibilitychange", () => {
+        if (!document.hidden) queue(tick, 80);
+      });
+
+      queue(tick, holdMs);
+    }
+  }
+</script>

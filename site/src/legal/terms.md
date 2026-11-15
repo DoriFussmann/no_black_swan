@@ -19,7 +19,7 @@ If you engage our services, Section 12 and the specific commercial terms in your
 
 ## 2. What No Black Swan Does
 
-No Black Swan is a small AI integration agency. We help startups and growing businesses understand where AI can make a practical difference in their operations, and then implement it.
+No Black Swan is a small, operator-led AI integration business. We help startups and growing businesses understand where AI can make a practical difference in their operations, and then implement it.
 
 Depending on the agreed scope, services may include:
 

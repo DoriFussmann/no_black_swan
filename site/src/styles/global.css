@@ -641,6 +641,46 @@
     color: theme("colors.error");
   }
 
+  .hero-typewriter {
+    --typewriter-color: theme("colors.error");
+    display: inline-grid;
+    vertical-align: baseline;
+    color: var(--typewriter-color);
+  }
+
+  .hero-typewriter__sizer,
+  .hero-typewriter__live {
+    grid-area: 1 / 1;
+    white-space: nowrap;
+  }
+
+  .hero-typewriter__sizer {
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  /* Reserve the caret's width too, so the longest word never re-wraps. */
+  .hero-typewriter__sizer::after {
+    content: "";
+    display: inline-block;
+    width: 0.14em;
+  }
+
+  .hero-typewriter__live {
+    color: var(--typewriter-color);
+    transition: color 180ms ease;
+  }
+
+  .hero-typewriter__cursor {
+    display: inline-block;
+    width: 0.08em;
+    height: 0.82em;
+    margin-left: 0.06em;
+    background: currentColor;
+    vertical-align: -0.04em;
+    animation: typewriter-caret 1s steps(1) infinite;
+  }
+
   .visually-hidden {
     position: absolute;
     width: 1px;
