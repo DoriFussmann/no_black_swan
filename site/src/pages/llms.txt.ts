@@ -18,7 +18,7 @@ export const GET: APIRoute = async () => {
     team,
     authorPath: AUTHOR_PATH,
     extraPages: [
-      { path: "/services/", title: "Services", description: "AI integration services: assess the business, find where AI fits, then build, connect and refine it in real workflows." },
+      { path: "/services/", title: "Services", description: "Practical AI implementation: workflow automation and integration, internal knowledge and information, AI assistants and internal tools, and document and data workflows, applied across the business." },
       { path: "/how-it-works/", title: "How it works", description: "How an engagement works: a free consultation, then three stages: paid fixed-fee discovery (understand and identify), strategy and setup, and ongoing execution and operation." },
       { path: "/pricing/", title: "Pricing", description: "Three separately agreed stages: fixed-fee discovery, strategy and setup with an agreed scope and fee, then ongoing execution on a flat monthly fee, month to month, which can be cancelled at any time. Scope and fees are explained before each stage." },
       { path: "/about/", title: "About", description: "No Black Swan is a small, operator-led AI integration business run by founder Dori Fussmann, an entrepreneur, founder and business leader who works as a Fractional COO and AI Operations Integrator." },
