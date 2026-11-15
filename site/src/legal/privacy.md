@@ -3,7 +3,7 @@
 
 ## 1. Who We Are
 
-No Black Swan is a small AI integration agency. We help startups and growing businesses put AI to work in their operations, workflows and everyday decisions.
+No Black Swan is a small, operator-led AI integration business. We help startups and growing businesses put AI to work in their operations, workflows and everyday decisions.
 
 This Privacy Policy describes how The Night Ventures, LLC, doing business as No Black Swan ("No Black Swan," "we," "us," or "our"), collects, uses, discloses and protects personal information when you visit https://www.noblackswan.com/, contact us, book a call, or work with us.
 

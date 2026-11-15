@@ -8,7 +8,7 @@ export const SITE_TAGLINE = "Less AI Hype. More Impact.";
 
 /** Site description: Organization schema, llms.txt, llms-full.txt and RSS. */
 export const SITE_DESCRIPTION =
-  "No Black Swan is a small AI integration agency that helps startups and growing businesses put AI to work in their operations, workflows and everyday decisions.";
+  "No Black Swan is a small, operator-led AI integration business that helps startups and growing businesses put AI to work in their operations, workflows and everyday decisions.";
 
 /** URL segment for articles. Changing it requires redirects for every article. */
 export const ARTICLES_BASE = "articles";
@@ -39,7 +39,7 @@ export const LOGO_PATH = "/logo.png";
 /** Other names the company goes by. Set on every Organization node (BaseLayout). */
 export const ORG_ALTERNATE_NAMES: string[] = ["No Black Swan", "No Black Swan AI", "noblackswan.com"];
 
-/** What the agency is known for (Organization knowsAbout). */
+/** What the company is known for (Organization knowsAbout). */
 export const ORG_KNOWS_ABOUT: string[] = [
   "AI integration",
   "AI implementation",
