@@ -2,12 +2,14 @@
 name: Dori Fussmann
 slug: dori-fussmann
 role: Founder
-bio: "Dori Fussmann is the founder of No Black Swan. An entrepreneur, fractional CFO and business advisor, he works at the forefront of operational AI: putting it to work inside real businesses, across finance, operations, sales, customer service and management, and keeping pace with what actually works as the tools change.\n\nHe founded The Vets as CEO and later served as its co-founder and COO, has served as fractional CFO for companies including BlueMark, Translucent AI, Natrion and Snout, has advised businesses across sectors and countries, from startups to established operators, mentors founders through Cornell Tech’s Runway Startups Program and Yale’s Tsai CITY, and began his career in investment banking at Citi, Morgan Stanley and Ion Pacific. That breadth shapes No Black Swan: understand the business first, put AI where it makes a practical difference, and say plainly where it doesn't."
+bio: "Dori Fussmann is the founder of No Black Swan. An entrepreneur, founder and business leader, he works at the intersection of business operations, operational leadership and AI implementation: putting AI to work inside real businesses and keeping pace with what actually works as the tools change.\n\nHe founded The Vets as CEO and later served as its co-founder and COO, and has worked directly inside businesses as a Fractional COO and AI Operations Integrator, including Natrion, JBecca, Manatee, The Vets and User1st. His broader experience spans Fractional CFO roles for companies including BlueMark, Translucent AI, Natrion and Snout, fundraising and strategic finance advisory, and investment banking at Citi, Morgan Stanley and Ion Pacific. He mentors founders through Cornell Tech’s Runway Startups Program and Yale’s Tsai CITY. That experience shapes No Black Swan: understand the business first, put AI where it makes a practical difference, and say plainly where it doesn't."
 knowsAbout:
   - Operational AI
   - AI integration
   - AI implementation in business operations
   - Workflow automation
+  - Operational leadership
+  - Fractional COO services
   - Fractional CFO services
   - Financial operations
   - Business operations

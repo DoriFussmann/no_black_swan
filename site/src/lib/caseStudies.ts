@@ -28,19 +28,37 @@ export const caseStudies: CaseStudy[] = [
     name: "The Vets",
     role: "Founder & CEO",
     logo: caseLogo("the-vets.png"),
-    body: "Founded and led The Vets, building and operating the company before its merger with BetterVet.",
+    body: "Founded The Vets and led it as CEO, later serving as co-founder and COO, before its merger with BetterVet. His work with the company also includes the Fractional COO and AI Operations Integrator role.",
+  },
+  {
+    name: "Natrion",
+    role: "Fractional COO & CFO",
+    logo: caseLogo("natrion.png"),
+    body: "Fractional COO and AI Operations Integrator at Natrion. Separately, Fractional CFO through its latest fundraise, from planning to close.",
+  },
+  {
+    name: "JBecca",
+    role: "Fractional COO",
+    logo: caseLogo("jbecca.png"),
+    body: "Fractional COO and AI Operations Integrator at JBecca.",
+  },
+  {
+    name: "Manatee",
+    role: "Fractional COO",
+    logo: caseLogo("manatee.png"),
+    body: "Fractional COO and AI Operations Integrator at Manatee. Separately, fundraising and strategic finance advisor to the company.",
+  },
+  {
+    name: "User1st",
+    role: "Fractional COO",
+    logo: caseLogo("user1st.png"),
+    body: "Fractional COO and AI Operations Integrator at User1st.",
   },
   {
     name: "BlueMark",
     role: "Fractional CFO",
     logo: caseLogo("bluemark.png"),
     body: "Fractional CFO at BlueMark, an impact-investment intelligence platform.",
-  },
-  {
-    name: "Natrion",
-    role: "Fractional CFO",
-    logo: caseLogo("natrion.png"),
-    body: "Fractional CFO at Natrion through its latest fundraise, from planning to close.",
   },
   {
     name: "Snout",
@@ -77,12 +95,6 @@ export const caseStudies: CaseStudy[] = [
     role: "Capital advisor",
     logo: caseLogo("ambi-robotics.png"),
     body: "Fundraising and strategic finance advisor to Ambi Robotics.",
-  },
-  {
-    name: "Manatee",
-    role: "Capital advisor",
-    logo: caseLogo("manatee.png"),
-    body: "Fundraising and strategic finance advisor to Manatee.",
   },
   {
     name: "Sniffi",
