@@ -3,8 +3,8 @@ import type { AuthorPath, SiteIdentity } from "seo-core";
 export const SITE_URL = "https://noblackswan.com";
 export const SITE_NAME = "No Black Swan";
 
-/** Short brand tagline. Shown in the footer. */
-export const SITE_TAGLINE = "Less AI Hype. More Impact.";
+/** Approved positioning line. Shown in the footer. */
+export const SITE_TAGLINE = "AI Integration. By Operators, Not Consultants.";
 
 /** Site description: Organization schema, llms.txt, llms-full.txt and RSS. */
 export const SITE_DESCRIPTION =
