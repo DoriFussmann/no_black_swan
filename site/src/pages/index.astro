@@ -18,7 +18,8 @@ const logoFiles = import.meta.glob<{ default: ImageMetadata }>(
   { eager: true },
 );
 
-const clientLogos = [
+// Companies from Dori's professional experience. Not a list of No Black Swan clients.
+const companyLogos = [
   { file: "ambi-robotics.png", name: "Ambi Robotics" },
   { file: "bluemark.png", name: "BlueMark" },
   { file: "guardian-vets.png", name: "GuardianVets" },
@@ -247,10 +248,10 @@ const jsonLd: Record<string, unknown>[] = [
       </div>
     </section>
 
-    <section class="site-wrap pt-md pb-lg lg:pt-lg lg:pb-xl reveal" aria-labelledby="clients-heading">
-      <p class="type-label" id="clients-heading">Select Clients</p>
+    <section class="site-wrap pt-md pb-lg lg:pt-lg lg:pb-xl reveal" aria-labelledby="company-experience-heading">
+      <p class="type-label" id="company-experience-heading">Selected Company Experience</p>
       <div class="mt-xl">
-        <LogoMarquee logos={clientLogos} />
+        <LogoMarquee logos={companyLogos} />
       </div>
     </section>
 
