@@ -16,12 +16,14 @@ on:
         description: "URLs or paths to submit, separated by spaces"
         required: true
 
+# statuses: write lets the run record an "IndexNow" status on the deployed
+# commit, which is how a repeated event is recognised.
 permissions:
   contents: read
-  statuses: read
+  statuses: write
 
 # One run at a time per deployed commit, so repeated status events queue up
-# behind the first and then find its marker.
+# behind the first and then find the status it recorded.
 concurrency:
   group: indexnow-${{ github.event.sha || github.run_id }}
   cancel-in-progress: false
@@ -50,25 +52,25 @@ jobs:
           URLS: ${{ github.event.inputs.urls }}
         run: node site/scripts/indexnow.mjs $URLS
 
-      # Vercel can send more than one success status for the same commit
-      # (for example after a redeploy). The marker makes the second one a no-op.
-      - name: Check whether this deploy was already handled
-        id: seen
-        if: github.event_name == 'status'
-        uses: actions/cache/restore@v4
-        with:
-          path: .indexnow-done
-          key: indexnow-${{ github.event.sha }}
-          lookup-only: true
-
       - name: Submit pages changed since the previous production deploy
-        id: submit
-        if: github.event_name == 'status' && steps.seen.outputs.cache-hit != 'true'
+        if: github.event_name == 'status'
         env:
           GH_TOKEN: ${{ github.token }}
           HEAD_SHA: ${{ github.event.sha }}
           REPO: ${{ github.repository }}
         run: |
+          # Vercel can send more than one success status for the same commit
+          # (for example after a redeploy). Handle each deployed commit once.
+          handled=$(gh api "repos/$REPO/commits/$HEAD_SHA/statuses" \
+            --jq '[.[] | select(.context == "IndexNow")] | length')
+          if [ "$handled" != "0" ]; then
+            echo "Deploy $HEAD_SHA was already handled; nothing to do."
+            exit 0
+          fi
+          mark() {
+            gh api -X POST "repos/$REPO/statuses/$HEAD_SHA" \
+              -f state=success -f context=IndexNow -f description="$1" > /dev/null
+          }
           if ! git merge-base --is-ancestor "$HEAD_SHA" origin/main; then
             echo "Commit $HEAD_SHA is not on main; not a production deploy."
             exit 0
@@ -86,16 +88,9 @@ jobs:
           done
           if [ -z "$BASE_SHA" ]; then
             echo "No previous production deploy found; nothing to compare."
+            mark "No previous production deploy to compare against"
             exit 0
           fi
           echo "Comparing $BASE_SHA..$HEAD_SHA"
           node site/scripts/indexnow.mjs --diff "$BASE_SHA" "$HEAD_SHA"
-          mkdir -p .indexnow-done
-          echo "$HEAD_SHA" > .indexnow-done/sha
-
-      - name: Mark this deploy as handled
-        if: github.event_name == 'status' && steps.seen.outputs.cache-hit != 'true' && hashFiles('.indexnow-done/sha') != ''
-        uses: actions/cache/save@v4
-        with:
-          path: .indexnow-done
-          key: indexnow-${{ github.event.sha }}
+          mark "Changed pages checked and submitted to IndexNow"
