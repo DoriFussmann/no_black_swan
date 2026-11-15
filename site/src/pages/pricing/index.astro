@@ -8,57 +8,62 @@ import { absoluteUrl, sitePath } from "../../lib/url";
 
 const title = "AI Integration Pricing & Engagement | No Black Swan";
 const description =
-  "Setup from $250 for the first month, then a flat monthly engagement typically from $2,000. Scaled to your business and agreed after a free consultation.";
+  "Understand how No Black Swan engagements are priced: fixed-fee discovery, agreed strategy and setup, and flexible month-to-month AI implementation.";
 
 const glance = [
-  { value: "No percentage fees", label: "A flat fee for the agreed work" },
-  { value: "From $250", label: "First month: setup and assessment" },
-  { value: "From $2,000/mo", label: "Typical ongoing engagement, scaled to scope and pace" },
-  { value: "No fixed package", label: "Scope shaped around your business" },
+  { value: "Fixed-fee discovery", label: "A separate, defined first engagement." },
+  { value: "Agreed setup scope", label: "Strategy and operational planning." },
+  { value: "Flat monthly fee", label: "Ongoing execution, month to month." },
+  { value: "Cancel at any time", label: "No long-term commitment." },
 ];
 
-const setup: { title: string; body: string; sub?: string[] }[] = [
-  { title: "Understand the business", body: "Review the company, its goals, operations, systems and current workflows." },
-  { title: "Identify opportunities", body: "Determine where AI can usefully support or improve the way work gets done." },
-  { title: "Assess feasibility and priorities", body: "Consider value, effort, dependencies, risks and what should happen first." },
-  { title: "Define the scope", body: "Agree on the initial work, responsibilities and implementation approach." },
-  { title: "Set the implementation plan", body: "Establish the first priorities and the practical steps needed to put them into operation." },
-  { title: "Agree and begin", body: "Confirm the scope and flat fee before work proceeds." },
-];
-
-const monthly = [
-  { title: "Implementation work", body: "Build, configure and integrate the agreed AI solutions into real workflows." },
-  { title: "Operational integration", body: "Connect solutions to the tools, systems and processes your team already uses, where appropriate." },
-  { title: "Iteration and refinement", body: "Improve what is in place based on actual use and changing needs." },
-  { title: "Ongoing advice", body: "Reassess priorities as the business evolves and new opportunities emerge." },
-  { title: "Next opportunities", body: "Identify and agree on further practical AI integrations as part of the ongoing engagement." },
-];
-
-const comparison = [
+// The three paid stages. Each is scoped and agreed on its own; no prices are published.
+const stages: {
+  id: string;
+  title: string;
+  label: string;
+  body: string;
+  activities: string[];
+  foot?: string;
+}[] = [
   {
-    model: "Large consultancy",
-    pay: "Typically substantial project or advisory fees",
-    work: "A larger consulting team, with implementation depending on scope",
-    owner: "Often structured around a defined project and methodology",
+    id: "discovery",
+    title: "Discovery",
+    label: "Separate fixed fee",
+    body: "Understand the business before deciding what to change. We examine how it operates, map its workflows, systems and constraints, and identify and prioritize meaningful AI opportunities.",
+    activities: [
+      "Understand the business, its goals, teams, systems and workflows.",
+      "Map handoffs, information flows, bottlenecks and decision points.",
+      "Identify potential AI opportunities.",
+      "Assess business impact, feasibility, risk and effort.",
+    ],
   },
   {
-    model: "Independent freelancer",
-    pay: "Hourly, project or retainer fee",
-    work: "Usually focused on a specific technical deliverable",
-    owner: "Often limited to the agreed task or tool",
+    id: "setup",
+    title: "Strategy & Setup",
+    label: "Agreed scope and fee",
+    body: "Turn the findings into an executable operational plan. Define the solutions, workflows, integrations, resources and requirements needed to put them into practice.",
+    activities: [
+      "Set priorities.",
+      "Design the solutions and workflows.",
+      "Define systems, integrations and human oversight.",
+      "Establish scope, owners, milestones, dependencies and success criteria.",
+      "Prepare for execution.",
+    ],
   },
   {
-    model: "DIY tools and software",
-    pay: "Subscription and internal staff time",
-    work: "Your team selects, configures and maintains the tools",
-    owner: "Depends on your internal expertise and available time",
-  },
-  {
-    model: "No Black Swan",
-    pay: "Setup from $250 (first month), then a flat monthly fee, typically from $2,000",
-    work: "Dori works with you to identify, design and implement practical AI integrations",
-    owner: "Shaped around your business, its workflows and evolving priorities",
-    highlight: true,
+    id: "execute",
+    title: "Execute & Operate",
+    label: "Flat monthly fee · Month to month",
+    body: "Build, integrate, deploy and operate the solutions alongside your team. Continue improving them through adoption, feedback and performance monitoring.",
+    activities: [
+      "Build and integrate solutions into real business workflows.",
+      "Deploy and operate them alongside the team.",
+      "Monitor performance and address implementation challenges.",
+      "Gather feedback and refine solutions.",
+      "Identify and pursue further opportunities as the business evolves.",
+    ],
+    foot: "The ongoing engagement runs month to month on a flat monthly fee. You can cancel at any time.",
   },
 ];
 
@@ -79,27 +84,27 @@ const faqs = [
   {
     question: "How much does it cost?",
     answer:
-      "Setup and assessment starts from $250 for the first month, when we map the business and agree a plan. The ongoing monthly engagement typically starts from $2,000 a month and scales with the size of the project and the pace your team wants to move at. We agree the exact scope and flat fee on a free consultation, before any work begins.",
+      "Each stage is scoped and priced separately. Discovery is a fixed-fee engagement. Strategy and setup are agreed based on the work required. Ongoing execution and operation are charged at a flat monthly fee. We explain the scope and fees before you commit to each stage.",
   },
   {
-    question: "Why a starting price and not a fixed price?",
+    question: "Why don’t you publish fixed prices?",
     answer:
-      "Every business is different. The work depends on your systems, workflows, priorities and how much implementation is needed, so a fixed price list would be wrong for most companies. We publish where engagements start, then scope yours after understanding the business. On a free call we will tell you what we would do.",
+      "Because businesses, systems, workflows and implementation requirements vary. We don’t sell generic packages. We first understand the business and the opportunities, then define the scope and fee for the work involved.",
   },
   {
-    question: "What happens during the initial setup?",
+    question: "What happens during discovery?",
     answer:
-      "We learn how the business operates, identify and prioritize AI opportunities, assess what is practical, and agree on the initial implementation scope and plan.",
+      "We get to know the business, examine its operations, workflows and systems, identify potential AI opportunities, and assess their business impact, feasibility, risk and effort. Discovery is a separate, fixed-fee engagement. It does not commit you to proceeding with strategy, setup or implementation.",
   },
   {
     question: "Is there a minimum commitment?",
     answer:
-      "The engagement structure and any commitment terms will be agreed clearly before work begins. The ongoing model is a flat monthly fee; specific terms depend on the agreed scope.",
+      "No. The ongoing engagement runs month to month on a flat monthly fee. You can cancel at any time.",
   },
   {
     question: "Do you guarantee specific results?",
     answer:
-      "No. We do not promise a particular level of savings, revenue growth or productivity improvement. We bring experienced business judgment and work hard to implement useful AI solutions, but the outcome depends on the business and the specific opportunity.",
+      "No. We do not promise a particular level of savings, revenue growth or productivity improvement. We bring experienced business judgment and work to implement useful AI solutions, but outcomes depend on the business, the opportunities and how solutions are adopted.",
   },
 ];
 
@@ -112,24 +117,7 @@ const jsonLd: Record<string, unknown>[] = [
     serviceType: "Business consulting and AI integration",
     url: absoluteUrl("/pricing/"),
     description:
-      "An initial business assessment and setup to identify and prioritize practical AI opportunities, followed by a flat monthly engagement for implementation, integration and ongoing improvement.",
-    offers: [
-      {
-        "@type": "Offer",
-        name: "Setup and assessment (first month)",
-        priceSpecification: { "@type": "PriceSpecification", minPrice: 250, priceCurrency: "USD" },
-      },
-      {
-        "@type": "Offer",
-        name: "Monthly engagement",
-        priceSpecification: {
-          "@type": "UnitPriceSpecification",
-          minPrice: 2000,
-          priceCurrency: "USD",
-          unitText: "MONTH",
-        },
-      },
-    ],
+      "A separate fixed-fee discovery to understand the business and identify AI opportunities, then strategy and setup with an agreed scope and fee, followed by ongoing execution and operation on a flat monthly fee, month to month.",
   },
   {
     "@context": "https://schema.org",
@@ -149,11 +137,15 @@ const jsonLd: Record<string, unknown>[] = [
       <p class="type-label">Pricing</p>
       <h1 class="type-h1 mt-md">A practical engagement, scoped to your business.</h1>
       <p class="type-body-lg mt-lg max-w-prose">
-        We begin with a setup and assessment month, from $250, then move into a
-        flat monthly engagement, typically from $2,000 a month. The exact scope
-        and fee are agreed after we understand your business and what needs to
-        be done. Instead of a full-time hire, you get an outside AI lead who
-        owns the work.
+        Every business is different. We start by understanding how yours
+        operates, identify where AI can make a meaningful difference, and define
+        a practical plan for putting it to work.
+      </p>
+      <p class="type-body-lg mt-md max-w-prose">
+        The engagement begins with a separate, fixed-fee discovery phase,
+        followed by strategy and setup, then an ongoing monthly engagement for
+        execution and operation. You’ll know the scope and fees before
+        committing to each stage.
       </p>
       <ul class="glance-grid mt-2xl" aria-label="At a glance">
         {
@@ -171,54 +163,39 @@ const jsonLd: Record<string, unknown>[] = [
     </section>
 
     <section class="site-wrap section-block rule" aria-labelledby="plan-heading">
-      <p class="type-label">How the engagement works</p>
-      <h2 id="plan-heading" class="type-h2 mt-md">First understand, then implement and improve.</h2>
-      <div class="plan-grid mt-2xl">
-        <article class="plan-card" aria-labelledby="setup-title">
-          <p class="plan-card__label">First month · From $250</p>
-          <h3 id="setup-title" class="plan-card__title">Setup &amp; assessment</h3>
-          <p class="plan-card__lead type-body">
-            Understand the business, identify opportunities and agree on the first implementation priorities.
-          </p>
-          <ol class="plan-steps">
-            {
-              setup.map((item) => (
-                <li>
-                  <p class="plan-item__title">{item.title}</p>
-                  <p class="plan-item__body">{item.body}</p>
-                  {item.sub ? (
-                    <ul class="plan-sub">
-                      {item.sub.map((line) => <li>{line}</li>)}
-                    </ul>
-                  ) : null}
-                </li>
-              ))
-            }
-          </ol>
-          <p class="plan-card__foot">
-            The setup is based on your business and the opportunities identified together.
-          </p>
-        </article>
-
-        <article class="plan-card plan-card--plain" aria-labelledby="monthly-title">
-          <p class="plan-card__label">Flat monthly fee · Typically from $2,000/mo</p>
-          <h3 id="monthly-title" class="plan-card__title">Implementation &amp; improvement</h3>
-          <p class="plan-card__lead type-body">Continue building, integrating and refining AI-enabled operations.</p>
-          <ul class="plan-checks">
-            {
-              monthly.map((item) => (
-                <li>
-                  <p class="plan-item__title">{item.title}</p>
-                  <p class="plan-item__body">{item.body}</p>
-                </li>
-              ))
-            }
-          </ul>
-          <p class="plan-card__foot">
-            See <a href={sitePath("/how-it-works/")}>the process</a> in full.
-          </p>
-        </article>
-      </div>
+      <p class="type-label">What you pay for</p>
+      <h2 id="plan-heading" class="type-h2 mt-md">Three stages, each scoped and agreed separately.</h2>
+      <aside class="consult-note mt-xl" aria-labelledby="consult-note-label">
+        <p id="consult-note-label" class="consult-note__label">Before the stages · Free consultation</p>
+        <p class="type-body mt-sm">
+          It starts with a free 30-minute consultation with Dori. The
+          consultation is not paid discovery, and it doesn’t commit you to
+          anything.
+        </p>
+      </aside>
+      <ol class="stage-grid mt-2xl">
+        {
+          stages.map((stage, index) => (
+            <li>
+              <article class="plan-card" aria-labelledby={`${stage.id}-title`}>
+                <p class="step-script">Stage {index + 1}</p>
+                <h3 id={`${stage.id}-title`} class="plan-card__title">{stage.title}</h3>
+                <p class="plan-card__label mt-sm">{stage.label}</p>
+                <p class="plan-card__lead type-body">{stage.body}</p>
+                <ul class="fit-list">
+                  {stage.activities.map((line) => <li>{line}</li>)}
+                </ul>
+                {stage.foot ? <p class="plan-card__foot">{stage.foot}</p> : null}
+              </article>
+            </li>
+          ))
+        }
+      </ol>
+      <p class="type-body mt-xl max-w-prose">
+        Each stage is agreed on its own. Completing one doesn’t commit you to
+        the next. See <a href={sitePath("/how-it-works/")}>the process</a> in
+        full.
+      </p>
     </section>
 
     <section class="site-wrap section-block rule" aria-labelledby="why-heading">
@@ -226,36 +203,15 @@ const jsonLd: Record<string, unknown>[] = [
       <h2 id="why-heading" class="type-h2 mt-md">The work should fit the business, not a prebuilt package.</h2>
       <p class="type-body mt-md max-w-prose">
         Every business has different workflows, systems, people and priorities.
-        The right starting point—and the amount of implementation required—cannot
-        be determined from a generic price list. We first understand the
-        business, then agree on a practical scope and fee. The monthly engagement
-        gives us room to implement, learn, refine and address the next priorities
-        without pretending that every company needs the same solution.
+        We don’t sell generic AI packages or prescribe technology before
+        understanding the problem.
       </p>
-      <div class="compare-table mt-2xl">
-        <table>
-          <thead>
-            <tr>
-              <th scope="col">Approach</th>
-              <th scope="col">How you pay</th>
-              <th scope="col">Who does the work</th>
-              <th scope="col">How the work fits your business</th>
-            </tr>
-          </thead>
-          <tbody>
-            {
-              comparison.map((row) => (
-                <tr class={row.highlight ? "is-highlight" : undefined}>
-                  <td><strong>{row.model}</strong></td>
-                  <td>{row.pay}</td>
-                  <td>{row.work}</td>
-                  <td>{row.owner}</td>
-                </tr>
-              ))
-            }
-          </tbody>
-        </table>
-      </div>
+      <p class="type-body mt-md max-w-prose">
+        We first understand the business, then define the scope and requirements
+        for each stage. This gives us a practical way to prioritize the right
+        opportunities, implement solutions properly and adapt as the business
+        evolves.
+      </p>
     </section>
 
     <section class="site-wrap section-block rule" aria-labelledby="fit-heading">
@@ -283,3 +239,49 @@ const jsonLd: Record<string, unknown>[] = [
   </main>
   <CtaBanner />
 </BaseLayout>
+
+<style>
+  /* Three sequential stages: one column on small screens, three across on wide ones. */
+  .stage-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    list-style: none;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    align-items: stretch;
+  }
+
+  .stage-grid > li {
+    display: flex;
+  }
+
+  .stage-grid .plan-card {
+    width: 100%;
+    padding: 32px 28px;
+  }
+
+  @media (min-width: 1024px) {
+    .stage-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  /* The free consultation comes before the paid stages, so it reads as a note. */
+  .consult-note {
+    max-width: 42.5rem;
+    padding: 20px 24px;
+    border: 1px dashed #c9c5bd;
+    border-radius: 8px;
+    background: #ffffff;
+  }
+
+  .consult-note__label {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #5c5c5c;
+  }
+</style>
