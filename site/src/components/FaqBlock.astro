@@ -1,6 +1,11 @@
 ---
 interface Props {
-  faqs: { question: string; answer: string }[];
+  faqs: {
+    question: string;
+    answer: string;
+    /** Optional labelled list shown under the answer text. */
+    items?: { label: string; text: string }[];
+  }[];
   bordered?: boolean;
 }
 
@@ -16,7 +21,20 @@ const { faqs, bordered = true } = Astro.props;
           <summary class="type-h4">{faq.question}</summary>
           <div class="faq-item__panel">
             <div class="faq-item__body">
-              <p class="type-body">{faq.answer}</p>
+              {faq.items && faq.items.length > 0 ? (
+                <>
+                  <p class="type-body faq-item__lead">{faq.answer}</p>
+                  <ul class="faq-item__list type-body">
+                    {faq.items.map((item) => (
+                      <li>
+                        <strong>{item.label}</strong> {item.text}
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              ) : (
+                <p class="type-body">{faq.answer}</p>
+              )}
             </div>
           </div>
         </details>
