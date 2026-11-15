@@ -113,38 +113,76 @@ const pillars = [
   },
 ];
 
-const faqs = [
+const faqs: {
+  question: string;
+  answer: string;
+  items?: { label: string; text: string }[];
+}[] = [
   {
-    question: "What does No Black Swan do?",
+    question: "What does No Black Swan actually do?",
     answer:
-      "No Black Swan helps businesses put AI to work by identifying opportunities and integrating practical AI solutions into their operations, workflows and everyday decisions.",
+      "No Black Swan helps businesses identify where AI can make a meaningful difference, then designs, implements and integrates practical solutions into their operations. We work alongside the business, from understanding how it operates to putting solutions into everyday use.",
   },
   {
-    question: "Do you only provide AI advice, or do you implement solutions too?",
+    question: "Are you consultants, or do you actually do the work?",
     answer:
-      "Both. We start by understanding the business and identifying where AI can help. Where there is a sensible opportunity, we design and implement the solution in the company’s actual workflows and operations.",
-  },
-  {
-    question: "Do you guarantee cost savings, revenue growth or other results?",
-    answer:
-      "No. Every business is different, and outcomes depend on the company, the opportunity and the implementation. We commit to thoughtful advice, hard work and practical implementation—not guaranteed financial or operational results.",
+      "We do the work. We don’t stop at recommendations or hand over a strategy document and leave implementation to your team. We design solutions, build and integrate them into your workflows, and work alongside your people to make them function in practice.",
   },
   {
     question: "What kinds of businesses do you work with?",
     answer:
-      "We start with the business, not a fixed industry or one-size-fits-all package. The free consultation helps determine whether there are meaningful opportunities to integrate AI into your company.",
+      "We work with businesses across industries. Our starting point isn’t a particular technology or industry vertical; it’s understanding how your business operates and identifying where AI can improve performance, reduce friction or create new capabilities.",
   },
   {
-    question: "Do we need to know which AI tools we want to use?",
+    question: "Do we need to know what AI tools we want to use?",
     answer:
-      "No. You do not need to arrive with a tool list or a technical plan. We begin by understanding how your business works and determine what approaches make sense.",
+      "No. You don’t need a technical plan or a list of tools. We start by understanding your business and its challenges. We determine which technologies and approaches make sense based on the actual opportunity.",
   },
   {
-    question: "What happens after the free consultation?",
+    question: "How does an engagement with No Black Swan work?",
+    answer: "There are four stages:",
+    items: [
+      {
+        label: "Free consultation:",
+        text: "An initial conversation to understand your business and determine whether there’s a meaningful opportunity.",
+      },
+      {
+        label: "Discovery:",
+        text: "A separate, fixed-fee engagement to understand your business, map its operations and identify opportunities.",
+      },
+      {
+        label: "Strategy & setup:",
+        text: "We turn the findings into a prioritized strategy and execution plan, and prepare the solutions for implementation.",
+      },
+      {
+        label: "Execute & operate:",
+        text: "We implement, integrate and operate the solutions, working alongside your team and continuously improving them through feedback and performance monitoring.",
+      },
+    ],
+  },
+  {
+    question: "How much does it cost?",
     answer:
-      "If there is a good opportunity to work together, we define the initial scope and priorities, agree on the fee, and begin with an assessment and setup phase followed by an ongoing monthly engagement.",
+      "Discovery is a separate engagement with a fixed fee, agreed before work begins. Following discovery, we define the strategy, scope and requirements for setup and ongoing execution. The commercial terms are agreed before each phase begins.",
+  },
+  {
+    question: "Do you guarantee cost savings, revenue growth or other results?",
+    answer:
+      "No. Every business is different, and results depend on the opportunities, implementation and adoption. We focus on identifying meaningful opportunities and executing practical solutions. We don’t promise outcomes we cannot guarantee.",
+  },
+  {
+    question: "How do you handle our company’s data and security requirements?",
+    answer:
+      "We work within your company’s established security and data-protection standards and follow your policies and requirements when working with your systems and information.",
   },
 ];
+
+// FAQPage answer text: the same words as the visible answer. A labelled list
+// becomes plain sentences, one per item, in the same order.
+const faqAnswerText = (faq: (typeof faqs)[number]) =>
+  faq.items && faq.items.length > 0
+    ? [faq.answer, ...faq.items.map((item) => `${item.label} ${item.text}`)].join(" ")
+    : faq.answer;
 
 const jsonLd: Record<string, unknown>[] = [
   {
@@ -164,7 +202,7 @@ const jsonLd: Record<string, unknown>[] = [
       name: faq.question,
       acceptedAnswer: {
         "@type": "Answer",
-        text: faq.answer,
+        text: faqAnswerText(faq),
       },
     })),
   },

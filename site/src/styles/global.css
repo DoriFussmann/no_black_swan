@@ -1181,9 +1181,33 @@
       transform 280ms ease;
   }
 
-  .faq-item.is-open p {
+  .faq-item.is-open p,
+  .faq-item.is-open .faq-item__list {
     opacity: 1;
     transform: none;
+  }
+
+  /* Answers with a labelled list (FaqBlock `items`). */
+  .faq-item p.faq-item__lead {
+    padding-bottom: theme("spacing.sm");
+  }
+
+  .faq-item__list {
+    margin: 0;
+    padding: 0 0 theme("spacing.lg") 1.25em;
+    list-style: disc;
+    display: grid;
+    gap: theme("spacing.xs");
+    opacity: 0;
+    transform: translateY(-6px);
+    transition:
+      opacity 280ms ease,
+      transform 280ms ease;
+  }
+
+  .faq-item__list strong {
+    font-weight: 500;
+    color: theme("colors.heading");
   }
 
   .back-to-top-wrap {
