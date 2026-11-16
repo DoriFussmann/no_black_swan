@@ -2856,202 +2856,379 @@
 
 
 
-/* Visual refresh: refined organic / editorial treatment.
-   Presentation only: preserve existing markup, content, metadata and behavior. */
+
+
+/* STYLE 2 — Modern / Technology-led.
+   Site-wide visual system. Presentation only; preserve markup, content,
+   metadata, URLs, integrations and application behavior. */
 @layer base {
   html {
-    background-color: #f8f7f3;
-    color: #252724;
-    scroll-padding-top: 6rem;
+    background: #ffffff;
+    color: #34443a;
+    scroll-padding-top: 5rem;
   }
   body {
-    background: #f8f7f3;
-    color: #353833;
+    background: #ffffff;
+    color: #34443a;
   }
   h1, h2, h3, h4 {
-    color: #202320;
+    color: #173b2b;
   }
   a {
-    transition: color 220ms ease, border-color 220ms ease, opacity 220ms ease, transform 220ms ease;
+    color: #2e6848;
+    transition: color 180ms ease, border-color 180ms ease, opacity 180ms ease, transform 180ms ease;
+  }
+  a:hover {
+    color: #173b2b;
+  }
+  :focus-visible {
+    outline-color: #4d8a65;
+    outline-offset: 3px;
   }
   ::selection {
-    background: #dce6df;
-    color: #202a24;
+    background: #d9e9dd;
+    color: #173b2b;
   }
 }
 
-/* Shared page frame and editorial rhythm */
+/* Consistent modern page frame and typography */
 .site-wrap {
-  width: min(100% - 48px, 1320px);
+  width: 100%;
+  max-width: 1360px;
+  margin-inline: auto;
+  padding-inline: 24px;
 }
 @media (min-width: 768px) {
   .site-wrap {
-    width: min(100% - 80px, 1320px);
+    padding-inline: 48px;
+  }
+}
+@media (min-width: 1200px) {
+  .site-wrap {
+    padding-inline: 64px;
   }
 }
 .type-label {
-  color: #6d756d;
-  letter-spacing: .14em;
+  color: #47745a;
+  letter-spacing: .12em;
   font-size: .72rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 .type-h2 {
+  color: #173b2b;
   letter-spacing: -.035em;
-  line-height: 1.13;
+  line-height: 1.16;
   font-weight: 400;
 }
 .type-h3, .type-h4 {
+  color: #1d4431;
   letter-spacing: -.02em;
 }
 
-/* Header: lighter rules, calm surfaces */
-.site-header, header.site-header {
-  backdrop-filter: blur(14px);
+/* Navigation: clean white header, clearer active state and CTA */
+.site-header {
+  background: rgba(255,255,255,.94);
+  border-bottom: 1px solid #e5ece6;
+  backdrop-filter: blur(16px);
 }
-.btn-primary {
-  background: #252a27;
-  border: 1px solid #252a27;
-  border-radius: 999px;
-  box-shadow: none;
-  transition: background 220ms ease, border-color 220ms ease, transform 220ms ease;
+.site-header__bar {
+  min-height: 72px;
 }
-.btn-primary:hover {
-  background: #46594d;
-  border-color: #46594d;
+.site-logo__word {
+  color: #173b2b;
+}
+.nav-link {
+  color: #43564a;
+  font-weight: 450;
+}
+.nav-link:hover,
+.nav-link[aria-current="page"] {
+  color: #1e6841;
+}
+.nav-link[aria-current="page"] {
+  text-decoration-color: #4d8a65;
+}
+.site-menu__panel {
+  background: #ffffff;
+  border-color: #e1eae3;
+}
+.site-menu__link {
+  border-color: #e7eee8;
+  color: #34443a;
+}
+
+/* Strong, consistent green calls to action */
+.btn-primary,
+.site-nav--desktop .btn-primary {
+  background: #24613f;
+  border: 1px solid #24613f;
+  color: #ffffff;
+  border-radius: 9px;
+  box-shadow: 0 5px 14px rgba(36, 97, 63, .14);
+  transition: background 180ms ease, border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+.btn-primary:hover,
+.site-nav--desktop .btn-primary:hover {
+  background: #194b30;
+  border-color: #194b30;
+  color: #ffffff;
+  box-shadow: 0 8px 18px rgba(36, 97, 63, .2);
   transform: translateY(-1px);
 }
 .btn-quiet {
-  border-radius: 999px;
-  transition: background 220ms ease, border-color 220ms ease, transform 220ms ease;
+  color: #286343;
+  border-radius: 8px;
+  transition: color 180ms ease, background 180ms ease, transform 180ms ease;
 }
 .btn-quiet:hover {
-  background: rgba(222, 229, 222, .55);
+  color: #173b2b;
+  background: #edf4ee;
   transform: translateY(-1px);
 }
 
-/* Hero: maintain the current typewriter content and HeroFlow interaction,
-   while giving the existing split layout more editorial space. */
+/* Hero: confident headline and larger, more prominent workflow visual */
 main > section:first-child {
-  padding-top: clamp(3rem, 7vw, 6.5rem);
-  padding-bottom: clamp(3rem, 6vw, 5.5rem);
+  padding-top: clamp(3.5rem, 7vw, 6.75rem);
+  padding-bottom: clamp(3.5rem, 7vw, 6.75rem);
 }
 .hero-headline {
-  font-size: clamp(2.75rem, 5vw, 5rem);
-  line-height: 1.055;
+  color: #173b2b;
+  font-size: clamp(2.8rem, 5.2vw, 5.15rem);
+  line-height: 1.045;
   letter-spacing: -.055em;
-  font-weight: 300;
-  color: #202320;
+  font-weight: 350;
 }
 .hero-typewriter {
-  color: var(--typewriter-color, #566e5e);
+  --typewriter-color: #32744c;
+  color: #32744c;
 }
 .hero-typewriter__cursor {
-  background: #879b8d;
+  background: #4d8a65;
 }
 .hero-reveal {
-  animation-duration: 900ms;
+  animation-duration: 800ms;
+}
+@media (min-width: 768px) {
+  main > section:first-child .md\\:col-span-6:last-child {
+    transform: scale(1.035);
+    transform-origin: center right;
+  }
 }
 
-/* The existing interactive HeroFlow becomes a quiet, warm instrument panel. */
+/* Workflow visual: crisp white canvas, green system accents, defined panel */
 .nbf {
-  --ink: #252a26;
-  --surface: #eeeee8;
-  --border: #d9ddd5;
-  --muted: #687168;
-  --brass: #718a79;
-  --brass-text: #526d5b;
-  --brass-tint: #e1e9e1;
-  --tint: #e8eae4;
+  --ink: #173b2b;
+  --surface: #ffffff;
+  --border: #dce8df;
+  --muted: #64766a;
+  --brass: #3c8055;
+  --brass-text: #286343;
+  --brass-tint: #e5f0e7;
+  --tint: #f0f5f1;
 }
 .nbf__frame {
-  border-radius: 22px;
-  border-color: rgba(105, 121, 108, .2);
-  background: linear-gradient(145deg, #f0f0eb 0%, #e8ece6 100%);
-  box-shadow: 0 24px 70px -42px rgba(40, 52, 43, .32);
+  border: 1px solid #d9e7dc;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #ffffff 0%, #f2f7f3 100%);
+  box-shadow: 0 22px 55px -34px rgba(25, 75, 48, .28);
 }
 .nbf__slide {
-  padding: clamp(22px, 3vw, 34px);
+  padding: clamp(24px, 3vw, 36px);
+}
+.nbf__label {
+  color: #34724c;
+  font-weight: 600;
 }
 .nbf__title {
-  font-weight: 400;
+  color: #173b2b;
+  font-size: clamp(1.35rem, 2vw, 1.65rem);
+  font-weight: 450;
   letter-spacing: -.035em;
+}
+.nbf__text {
+  color: #5a6d60;
+}
+.nbf-svg .lane-band {
+  fill: #f1f6f2;
+}
+.nbf-svg .node {
+  fill: #ffffff;
+  stroke: #d6e4d9;
+}
+.nbf-svg .node--brass {
+  fill: #e5f0e7;
+  stroke: #70a080;
+}
+.nbf-svg .card {
+  fill: #ffffff;
+  stroke: #d6e4d9;
 }
 .nbf__rail {
   gap: 12px;
+  margin-top: 18px;
 }
 .nbf__bar {
-  height: 2px;
+  height: 3px;
+  background: #e1ebe3;
+}
+.nbf__bar i {
+  background: #3c8055;
+}
+.nbf__step.is-active .nbf__name {
+  color: #205b39;
+  font-weight: 500;
 }
 .nbf__btn {
-  border-radius: 999px;
+  border: 1px solid #d6e4d9;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #286343;
   padding: 6px 14px;
-  transition: background 220ms ease, border-color 220ms ease;
 }
-.nbf__step:hover .nbf__name {
-  color: #3f5c49;
+.nbf__btn:hover {
+  background: #edf5ef;
+  border-color: #b7d0bd;
 }
 
-/* Sections: thin separators, restrained cards, no content changes. */
-.rule {
-  border-color: #dedfd8;
+/* Service and information panels: rounded, lightly tinted, consistent */
+.surface-card {
+  background: #f4f8f5;
+  border: 1px solid #e1ebe3;
+  border-radius: 14px;
+  padding: 24px;
 }
-.step-band {
-  border-top-color: #d9ddd5;
-}
-.step-band__stages {
-  gap: 12px;
-}
-.pillar-item,
 .experience-card,
+.plan-card,
 .founder-panel,
+.pillar-item,
 .faq-item {
-  border-color: #d9ddd5;
-  box-shadow: 0 1px 2px rgba(35, 42, 36, .025);
+  border-radius: 14px;
 }
 .experience-card {
-  border-radius: 16px;
-  background: #f0f0eb;
-  transition: transform 260ms cubic-bezier(.2,.7,.2,1), box-shadow 260ms ease, border-color 260ms ease;
+  background: #f1f6f2;
+  border: 1px solid #dce9df;
+  box-shadow: 0 8px 24px rgba(28, 75, 48, .045);
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
 }
 .experience-card:hover {
+  border-color: #b8d1bf;
+  box-shadow: 0 14px 30px rgba(28, 75, 48, .09);
   transform: translateY(-3px);
-  border-color: #b8c5b9;
-  box-shadow: 0 16px 34px -24px rgba(35, 52, 40, .25);
+}
+.experience-card__value,
+.step-card__step,
+.stat-rows b {
+  color: #2f754b;
+}
+.experience-card .type-h4 {
+  color: #173b2b;
 }
 .founder-panel {
-  border-radius: 18px;
-  background: #f0f0eb;
+  background: #f3f7f4;
+  border: 1px solid #dce8df;
+  box-shadow: 0 10px 28px rgba(28, 75, 48, .05);
 }
+.pillar-item,
 .faq-item {
-  transition: border-color 220ms ease, background 220ms ease;
+  border-color: #dce8df;
+  background: #ffffff;
+  box-shadow: 0 4px 16px rgba(28, 75, 48, .035);
 }
+.pillar-item:hover,
 .faq-item:hover {
-  border-color: #b8c5b9;
+  border-color: #b9d2c0;
+}
+.step-band {
+  border-color: #dce8df;
+}
+.step-band__stages {
+  gap: 14px;
+}
+.rule {
+  border-color: #e0eae2;
 }
 
-/* Existing reveal behavior, with a softer entrance curve. */
+/* Existing green content cards use one coherent palette */
+.plan-card {
+  background: linear-gradient(135deg, #edf5ef 0%, #f6f9f6 100%);
+  border: 1px solid #cfe0d2;
+  box-shadow: 0 12px 30px rgba(28, 75, 48, .06);
+}
+.plan-card--plain {
+  background: #ffffff;
+  border-color: #dce8df;
+}
+.plan-card__label,
+.plan-steps > li::before,
+.plan-sub li::before,
+.plan-checks > li::before {
+  color: #2f754b;
+}
+.plan-card__title,
+.plan-item__title {
+  color: #173b2b;
+}
+.compare-table {
+  border-color: #dce8df;
+  border-radius: 12px;
+}
+.compare-table th {
+  background: #edf5ef;
+  color: #173b2b;
+}
+.compare-table tr.is-highlight td {
+  background: #f0f6f1;
+  color: #244d34;
+}
+.compare-table tr.is-highlight td:first-child {
+  box-shadow: inset 3px 0 0 #3c8055;
+}
+
+/* Footer and utility links stay within the same clean visual language */
+footer {
+  border-color: #e0eae2;
+}
+.footer-links a,
+.footer-social a {
+  color: #45614e;
+}
+.footer-links a:hover,
+.footer-social a:hover {
+  color: #1f613c;
+}
+
+/* Motion remains progressive and respects reduced-motion preferences */
 .reveal {
-  transition: opacity 760ms cubic-bezier(.2,.7,.2,1), transform 760ms cubic-bezier(.2,.7,.2,1);
+  transition: opacity 650ms cubic-bezier(.2,.7,.2,1), transform 650ms cubic-bezier(.2,.7,.2,1);
 }
 @media (prefers-reduced-motion: no-preference) {
   .step-band,
-  .experience-card {
-    transition: border-color 240ms ease, background-color 240ms ease, transform 260ms ease, box-shadow 260ms ease;
+  .experience-card,
+  .surface-card {
+    transition: border-color 220ms ease, background-color 220ms ease, transform 220ms ease, box-shadow 220ms ease;
   }
 }
 
-/* Responsive spacing; the existing grid order and breakpoints remain intact. */
+/* Mobile: preserve existing layout order and make CTAs comfortably tappable */
 @media (max-width: 767px) {
   .site-wrap {
-    width: min(100% - 36px, 1320px);
+    padding-inline: 18px;
   }
   main > section:first-child {
-    padding-top: 2.5rem;
+    padding-top: 2.75rem;
+    padding-bottom: 3rem;
   }
   .hero-headline {
-    font-size: clamp(2.45rem, 11vw, 3.6rem);
+    font-size: clamp(2.5rem, 11vw, 3.65rem);
   }
   .nbf__frame {
-    border-radius: 16px;
+    border-radius: 14px;
+  }
+  .btn-primary {
+    min-height: 46px;
+    padding-inline: 20px;
+  }
+  .surface-card {
+    padding: 20px;
   }
 }
