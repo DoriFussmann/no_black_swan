@@ -2853,3 +2853,238 @@
     display: none;
   }
 }
+
+
+
+
+
+
+
+/* STYLE 2 — restrained application.
+   Keep the original site's typography, scale, spacing and layout.
+   Apply only the clean white / forest-green visual language. */
+@layer base {
+  html, body {
+    background: #ffffff;
+    color: #39463d;
+  }
+  h1, h2, h3, h4 {
+    color: #1d3c2b;
+  }
+  a {
+    color: #356b49;
+    transition: color 180ms ease, opacity 180ms ease;
+  }
+  a:hover {
+    color: #1d4e32;
+  }
+  :focus-visible {
+    outline-color: #5b8b68;
+  }
+  ::selection {
+    background: #dce9df;
+    color: #1d3c2b;
+  }
+}
+
+/* Preserve existing sizes and component geometry; refine color only. */
+.site-header {
+  background: rgba(255,255,255,.96);
+  border-bottom-color: #e6ece7;
+}
+.site-logo__word {
+  color: #1d3c2b;
+}
+.nav-link {
+  color: #4a5b4e;
+}
+.nav-link:hover,
+.nav-link[aria-current="page"] {
+  color: #28613d;
+}
+.nav-link[aria-current="page"] {
+  text-decoration-color: #6c9a78;
+}
+.site-menu__panel {
+  background: #ffffff;
+  border-color: #e3ebe5;
+}
+.site-menu__link {
+  color: #39463d;
+  border-color: #e8eee9;
+}
+.btn-primary,
+.site-nav--desktop .btn-primary {
+  background: #28613f;
+  border-color: #28613f;
+  color: #ffffff;
+  box-shadow: none;
+  transition: background 180ms ease, border-color 180ms ease;
+}
+.btn-primary:hover,
+.site-nav--desktop .btn-primary:hover {
+  background: #1f5033;
+  border-color: #1f5033;
+  color: #ffffff;
+  box-shadow: none;
+  transform: none;
+}
+.btn-quiet {
+  color: #356b49;
+}
+.btn-quiet:hover {
+  color: #1d4e32;
+  background: #f1f6f2;
+}
+
+/* Hero keeps its original scale, spacing and split composition. */
+.hero-headline {
+  color: #1d3c2b;
+}
+.hero-typewriter {
+  --typewriter-color: #39734d;
+  color: #39734d;
+}
+.hero-typewriter__cursor {
+  background: #6c9a78;
+}
+
+/* Match the existing interactive workflow graphic to the green palette. */
+.nbf {
+  --ink: #1d3c2b;
+  --surface: #ffffff;
+  --border: #e0e9e2;
+  --muted: #667469;
+  --brass: #548363;
+  --brass-text: #356b49;
+  --brass-tint: #eaf2ec;
+  --tint: #f4f7f4;
+}
+.nbf__frame {
+  border-color: #e0e9e2;
+  background: #ffffff;
+  box-shadow: 0 8px 26px -20px rgba(29, 60, 43, .18);
+}
+.nbf__label {
+  color: #477653;
+}
+.nbf__title {
+  color: #1d3c2b;
+}
+.nbf__text {
+  color: #667469;
+}
+.nbf-svg .lane-band {
+  fill: #f5f8f5;
+}
+.nbf-svg .node {
+  fill: #ffffff;
+  stroke: #dfe8e1;
+}
+.nbf-svg .node--brass {
+  fill: #eaf2ec;
+  stroke: #91b29a;
+}
+.nbf-svg .card {
+  fill: #ffffff;
+  stroke: #dfe8e1;
+}
+.nbf__bar {
+  background: #e5ece6;
+}
+.nbf__bar i {
+  background: #548363;
+}
+.nbf__step.is-active .nbf__name {
+  color: #285c3b;
+}
+.nbf__btn {
+  border-color: #dfe8e1;
+  color: #356b49;
+}
+.nbf__btn:hover {
+  background: #f3f7f4;
+  border-color: #c8d9cc;
+}
+
+/* Existing cards retain their original sizes and shape; only soften colors. */
+.surface-card {
+  background: #f8faf8;
+  border-color: #e4ebe5;
+}
+.experience-card {
+  background: #f3f7f4;
+  border-color: #dce8df;
+  box-shadow: 0 4px 16px rgba(29, 60, 43, .035);
+}
+.experience-card:hover {
+  border-color: #b9d0bf;
+  box-shadow: 0 8px 20px rgba(29, 60, 43, .07);
+}
+.experience-card__value,
+.step-card__step,
+.stat-rows b {
+  color: #39734d;
+}
+.experience-card .type-h4,
+.plan-card__title,
+.plan-item__title {
+  color: #1d3c2b;
+}
+.founder-panel {
+  background: #f6f9f6;
+  border-color: #e0e9e2;
+  box-shadow: 0 4px 16px rgba(29, 60, 43, .035);
+}
+.pillar-item,
+.faq-item {
+  border-color: #e0e9e2;
+}
+.pillar-item:hover,
+.faq-item:hover {
+  border-color: #c4d7c8;
+}
+.step-band,
+.rule {
+  border-color: #e3ebe4;
+}
+.plan-card {
+  background: #f3f7f4;
+  border-color: #dce8df;
+  box-shadow: 0 4px 16px rgba(29, 60, 43, .04);
+}
+.plan-card--plain {
+  background: #ffffff;
+  border-color: #e0e9e2;
+}
+.plan-card__label,
+.plan-steps > li::before,
+.plan-sub li::before,
+.plan-checks > li::before {
+  color: #39734d;
+}
+.compare-table {
+  border-color: #e0e9e2;
+}
+.compare-table th {
+  background: #f1f6f2;
+  color: #1d3c2b;
+}
+.compare-table tr.is-highlight td {
+  background: #f3f7f4;
+  color: #294a34;
+}
+.compare-table tr.is-highlight td:first-child {
+  box-shadow: inset 2px 0 0 #548363;
+}
+footer {
+  border-color: #e3ebe4;
+}
+.footer-links a,
+.footer-social a {
+  color: #4a6a53;
+}
+.footer-links a:hover,
+.footer-social a:hover {
+  color: #245b38;
+}
