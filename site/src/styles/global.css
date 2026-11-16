@@ -2853,3 +2853,12 @@
     display: none;
   }
 }
+
+
+/* Site background only: retain the original minimalist design and all component surfaces. */
+body {
+  background-color: #F0F5FB;
+}
+.site-header {
+  background-color: #FFFFFF;
+}
