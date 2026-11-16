@@ -2853,3 +2853,205 @@
     display: none;
   }
 }
+
+
+
+/* Visual refresh: refined organic / editorial treatment.
+   Presentation only: preserve existing markup, content, metadata and behavior. */
+@layer base {
+  html {
+    background-color: #f8f7f3;
+    color: #252724;
+    scroll-padding-top: 6rem;
+  }
+  body {
+    background: #f8f7f3;
+    color: #353833;
+  }
+  h1, h2, h3, h4 {
+    color: #202320;
+  }
+  a {
+    transition: color 220ms ease, border-color 220ms ease, opacity 220ms ease, transform 220ms ease;
+  }
+  ::selection {
+    background: #dce6df;
+    color: #202a24;
+  }
+}
+
+/* Shared page frame and editorial rhythm */
+.site-wrap {
+  width: min(100% - 48px, 1320px);
+}
+@media (min-width: 768px) {
+  .site-wrap {
+    width: min(100% - 80px, 1320px);
+  }
+}
+.type-label {
+  color: #6d756d;
+  letter-spacing: .14em;
+  font-size: .72rem;
+  font-weight: 500;
+}
+.type-h2 {
+  letter-spacing: -.035em;
+  line-height: 1.13;
+  font-weight: 400;
+}
+.type-h3, .type-h4 {
+  letter-spacing: -.02em;
+}
+
+/* Header: lighter rules, calm surfaces */
+.site-header, header.site-header {
+  backdrop-filter: blur(14px);
+}
+.btn-primary {
+  background: #252a27;
+  border: 1px solid #252a27;
+  border-radius: 999px;
+  box-shadow: none;
+  transition: background 220ms ease, border-color 220ms ease, transform 220ms ease;
+}
+.btn-primary:hover {
+  background: #46594d;
+  border-color: #46594d;
+  transform: translateY(-1px);
+}
+.btn-quiet {
+  border-radius: 999px;
+  transition: background 220ms ease, border-color 220ms ease, transform 220ms ease;
+}
+.btn-quiet:hover {
+  background: rgba(222, 229, 222, .55);
+  transform: translateY(-1px);
+}
+
+/* Hero: maintain the current typewriter content and HeroFlow interaction,
+   while giving the existing split layout more editorial space. */
+main > section:first-child {
+  padding-top: clamp(3rem, 7vw, 6.5rem);
+  padding-bottom: clamp(3rem, 6vw, 5.5rem);
+}
+.hero-headline {
+  font-size: clamp(2.75rem, 5vw, 5rem);
+  line-height: 1.055;
+  letter-spacing: -.055em;
+  font-weight: 300;
+  color: #202320;
+}
+.hero-typewriter {
+  color: var(--typewriter-color, #566e5e);
+}
+.hero-typewriter__cursor {
+  background: #879b8d;
+}
+.hero-reveal {
+  animation-duration: 900ms;
+}
+
+/* The existing interactive HeroFlow becomes a quiet, warm instrument panel. */
+.nbf {
+  --ink: #252a26;
+  --surface: #eeeee8;
+  --border: #d9ddd5;
+  --muted: #687168;
+  --brass: #718a79;
+  --brass-text: #526d5b;
+  --brass-tint: #e1e9e1;
+  --tint: #e8eae4;
+}
+.nbf__frame {
+  border-radius: 22px;
+  border-color: rgba(105, 121, 108, .2);
+  background: linear-gradient(145deg, #f0f0eb 0%, #e8ece6 100%);
+  box-shadow: 0 24px 70px -42px rgba(40, 52, 43, .32);
+}
+.nbf__slide {
+  padding: clamp(22px, 3vw, 34px);
+}
+.nbf__title {
+  font-weight: 400;
+  letter-spacing: -.035em;
+}
+.nbf__rail {
+  gap: 12px;
+}
+.nbf__bar {
+  height: 2px;
+}
+.nbf__btn {
+  border-radius: 999px;
+  padding: 6px 14px;
+  transition: background 220ms ease, border-color 220ms ease;
+}
+.nbf__step:hover .nbf__name {
+  color: #3f5c49;
+}
+
+/* Sections: thin separators, restrained cards, no content changes. */
+.rule {
+  border-color: #dedfd8;
+}
+.step-band {
+  border-top-color: #d9ddd5;
+}
+.step-band__stages {
+  gap: 12px;
+}
+.pillar-item,
+.experience-card,
+.founder-panel,
+.faq-item {
+  border-color: #d9ddd5;
+  box-shadow: 0 1px 2px rgba(35, 42, 36, .025);
+}
+.experience-card {
+  border-radius: 16px;
+  background: #f0f0eb;
+  transition: transform 260ms cubic-bezier(.2,.7,.2,1), box-shadow 260ms ease, border-color 260ms ease;
+}
+.experience-card:hover {
+  transform: translateY(-3px);
+  border-color: #b8c5b9;
+  box-shadow: 0 16px 34px -24px rgba(35, 52, 40, .25);
+}
+.founder-panel {
+  border-radius: 18px;
+  background: #f0f0eb;
+}
+.faq-item {
+  transition: border-color 220ms ease, background 220ms ease;
+}
+.faq-item:hover {
+  border-color: #b8c5b9;
+}
+
+/* Existing reveal behavior, with a softer entrance curve. */
+.reveal {
+  transition: opacity 760ms cubic-bezier(.2,.7,.2,1), transform 760ms cubic-bezier(.2,.7,.2,1);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .step-band,
+  .experience-card {
+    transition: border-color 240ms ease, background-color 240ms ease, transform 260ms ease, box-shadow 260ms ease;
+  }
+}
+
+/* Responsive spacing; the existing grid order and breakpoints remain intact. */
+@media (max-width: 767px) {
+  .site-wrap {
+    width: min(100% - 36px, 1320px);
+  }
+  main > section:first-child {
+    padding-top: 2.5rem;
+  }
+  .hero-headline {
+    font-size: clamp(2.45rem, 11vw, 3.6rem);
+  }
+  .nbf__frame {
+    border-radius: 16px;
+  }
+}
