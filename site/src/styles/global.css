@@ -2853,3 +2853,27 @@
     display: none;
   }
 }
+
+
+/* Site background only: retain the original minimalist design and all component surfaces. */
+body {
+  background-color: #F0F5FB;
+}
+.site-header {
+  background-color: #FFFFFF;
+}
+
+
+/* On the pale-blue site canvas, keep client and process panels crisp and neutral. */
+.case-card,
+.experience-card,
+.step-band {
+  background-color: #FFFFFF;
+  background-image: none;
+  border-color: #DCE6F0;
+}
+.case-card:hover,
+.experience-card:hover,
+.step-band:hover {
+  border-color: #C7D7E8;
+}
