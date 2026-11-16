@@ -2853,3 +2853,10 @@
     display: none;
   }
 }
+
+
+/* Single requested visual change: site-wide page canvas only. */
+html,
+body {
+  background-color: #eef5fc;
+}
