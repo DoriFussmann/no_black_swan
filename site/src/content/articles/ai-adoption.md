@@ -162,7 +162,7 @@ None of these is a wrong answer in every situation. The question is whether the 
 
 ## How No Black Swan Approaches AI Adoption
 
-No Black Swan is a small AI integration agency for startups and growing businesses, run personally by founder Dori Fussmann. Every engagement is hands-on—there is no junior team the work is delegated to.
+[No Black Swan](/book-call/) is a small AI integration agency for startups and growing businesses, run personally by founder Dori Fussmann. Every engagement is hands-on—there is no junior team the work is delegated to.
 
 The engagement has two parts. The first is a paid setup and assessment (the first month): understand the business, map current workflows and constraints, surface how the team already uses AI, find the real opportunities, prioritize them by value, effort, feasibility, and risk, and agree a practical plan. The second is a flat monthly engagement, scaled to the project's size and the client's pace: build, integrate, and refine—configure and connect the chosen AI into existing systems, drive team adoption, measure what changed, then move to the next opportunity. Setup starts from $250 for the first month, and the monthly engagement typically from $2,000, scaled to scope and pace; the exact scope and fee are agreed after a free 30-minute consultation, because every business differs.
 

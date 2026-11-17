@@ -119,7 +119,7 @@ Honest AI integration also means knowing where AI does not belong. Not every wor
 
 ## Who Can Help You Integrate AI Into Your Small Business
 
-No Black Swan is a small AI integration agency for startups and growing businesses, run personally by founder Dori Fussmann. The engagement has two parts, designed to avoid the most common failure modes.
+[No Black Swan](/book-call/) is a small AI integration agency for startups and growing businesses, run personally by founder Dori Fussmann. The engagement has two parts, designed to avoid the most common failure modes.
 
 The first part is a setup and assessment — a paid first month — built to understand the business before any AI is introduced. That means mapping current workflows, identifying how the team already uses AI informally, finding the real opportunities, and prioritizing them by value, effort, feasibility, and risk. The output is a practical plan with a defined first project and a clear way to measure whether it worked. The setup and assessment starts from a low entry point specifically so that any business — from a solo founder to a growing team — can begin without a large upfront commitment.
 

@@ -105,7 +105,7 @@ Among small business AI users, 51% had integrated AI partially or fully into the
 
 ## Where No Black Swan Fits in This Comparison
 
-No Black Swan is a small AI integration agency for startups and growing businesses, run personally by founder Dori Fussmann—not a large team, not a freelancer, and not a tool vendor. The model sits in a specific place in the market by design: hands-on, tailored, and operational, starting surgical and expanding as results justify it.
+[No Black Swan](/book-call/) is a small AI integration agency for startups and growing businesses, run personally by founder Dori Fussmann—not a large team, not a freelancer, and not a tool vendor. The model sits in a specific place in the market by design: hands-on, tailored, and operational, starting surgical and expanding as results justify it.
 
 Every engagement starts with a paid setup and assessment covering the first month. The purpose is to understand the business before touching any tool: map current workflows, identify how the team already uses AI, find the real opportunities, and prioritize by value, effort, feasibility, and risk. The output is a practical plan that both sides have agreed to—not a deck that sits in a folder.
 
