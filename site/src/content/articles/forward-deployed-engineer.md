@@ -115,7 +115,7 @@ As companies move from experimentation to the deployment of AI workflows, new jo
 
 ## How No Black Swan Fills This Role
 
-No Black Swan is a small AI integration agency for startups and growing businesses, run personally by founder Dori Fussmann. It acts as the outside AI owner—the embedded AI operator—for companies that don't have one internally. The founding perspective is an operator's and fractional CFO's view of business: understanding where work, cost, and margin actually sit before recommending anything, and then building rather than advising.
+[No Black Swan](/book-call/) is a small AI integration agency for startups and growing businesses, run personally by founder Dori Fussmann. It acts as the outside AI owner—the embedded AI operator—for companies that don't have one internally. The founding perspective is an operator's and fractional CFO's view of business: understanding where work, cost, and margin actually sit before recommending anything, and then building rather than advising.
 
 The engagement is structured in two parts. It starts with a paid setup and assessment covering the first month: mapping current workflows, identifying the right AI opportunities, and agreeing a practical plan before any tool is touched. Business first, not tools first. The ongoing monthly engagement that follows covers building, integrating, measuring, and moving to the next opportunity—the same cycle an embedded AI operator runs. No percentage fees. No guaranteed results. No strategy decks that go nowhere.
 

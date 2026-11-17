@@ -146,7 +146,7 @@ The gap these alternatives leave is an outside operator who works inside your ex
 
 ## How No Black Swan Works With Professional Services Firms
 
-No Black Swan is a small AI integration agency run personally by founder Dori Fussmann, with hands-on operational experience across finance, operations, sales, customer service, and management. The model is built for founder-led and growing firms—not enterprise transformation programmes, not product companies building AI, and not anyone who wants guaranteed savings handed to them.
+[No Black Swan](/book-call/) is a small AI integration agency run personally by founder Dori Fussmann, with hands-on operational experience across finance, operations, sales, customer service, and management. The model is built for founder-led and growing firms—not enterprise transformation programmes, not product companies building AI, and not anyone who wants guaranteed savings handed to them.
 
 The engagement starts with a paid setup and assessment covering the first month. This is the mapping phase: understand the business first, map current workflows and constraints, find out how the team already uses AI and where ungoverned shadow use is happening, identify the opportunities, prioritize them by value, effort, feasibility, and risk, and agree a practical plan before anything is built or configured. It is a paid month because real diagnosis takes real time—and because a firm that skips this phase usually ends up implementing the wrong thing.
 

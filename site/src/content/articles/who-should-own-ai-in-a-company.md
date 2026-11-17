@@ -22,7 +22,9 @@ keywords:
   - who should own ai in a company
   - fractional ai
 draft: false
-internalLinks: []
+internalLinks:
+  - slug: fractional-ai
+    anchor: fractional AI
 externalLinks:
   - label: "Global Indicator: Artificial Intelligence - Gallup"
     url: "https://www.gallup.com/699797/indicator-artificial-intelligence.aspx"
@@ -55,7 +57,7 @@ faqs:
 
 Every company using AI needs one person or partner who is accountable for the whole agenda. Not the person who knows ChatGPT best, not a committee, and not the collective goodwill of a team that picked up new tools on their own. One accountable owner: someone who chooses what to build, connects it to real workflows, drives [adoption](/articles/ai-adoption/) across the team, measures what changed, and decides where AI does not belong.
 
-The right owner depends on your size, budget, and how fast you need to move. A full-time Head of AI, a fractional AI lead, or an outside AI partner are the three realistic options for most growing businesses. If nobody owns it, the default outcome is scattered tool use, wasted spend, and no measurable change to the business — which, as the data makes clear, is where most companies are right now.
+The right owner depends on your size, budget, and how fast you need to move. A full-time Head of AI, a [fractional AI](/articles/fractional-ai/) lead, or an outside AI partner are the three realistic options for most growing businesses. If nobody owns it, the default outcome is scattered tool use, wasted spend, and no measurable change to the business — which, as the data makes clear, is where most companies are right now.
 
 As of May 2026, 47% of U.S. employees say their organization has integrated AI tools, but only 25% say it has communicated a clear plan for doing so. Think about what that gap means in practice: roughly half of businesses have added AI, but three in four of their people have no shared understanding of where it is going or who is steering it. Even where organizations have begun integrating AI, only 30% of employees use it regularly. The integration-adoption lag is not a technology problem. It is an ownership problem.
 
@@ -123,7 +125,7 @@ The best outside partner — fractional or full — takes a business-first view:
 
 ## How No Black Swan Acts as Your Outside AI Owner
 
-No Black Swan is a small AI integration agency run personally by founder Dori Fussmann, working with startups and growing businesses from a solo founder to a few hundred people — the range where AI ownership is most often unresolved and most consequential.
+[No Black Swan](/book-call/) is a small AI integration agency run personally by founder Dori Fussmann, working with startups and growing businesses from a solo founder to a few hundred people — the range where AI ownership is most often unresolved and most consequential.
 
 Dori's background is unusual for an [AI consulting](/articles/ai-consulting/) context. His experience spans investment banking at Citi, Morgan Stanley, and Ion Pacific; founding and operating a technology-enabled healthcare company (The Vets, merged with BetterVet); and fractional CFO work for companies including BlueMark, Natrion, Snout and Translucent AI. That combination — operator, founder, and finance executive — is what shapes the No Black Swan view of a business. The question is never which tool is newest; it is where work, cost, and margin actually sit and what AI can do to move those things.
 

@@ -21,7 +21,9 @@ imageAlt: Founder reviewing an AI workflow map on a whiteboard with a consultant
 keywords:
   - ai consulting
 draft: false
-internalLinks: []
+internalLinks:
+  - slug: ai-integration-agency
+    anchor: AI integration agency
 externalLinks:
   - label: fortunebusinessinsights.com
     url: "https://www.fortunebusinessinsights.com/ai-consulting-services-market-111179"
@@ -102,11 +104,11 @@ Avoid any firm that leads with guaranteed savings, guaranteed headcount reductio
 
 ## What No Black Swan Does Differently
 
-No Black Swan is a small AI integration agency for startups and growing businesses, run personally by founder Dori Fussmann. The engagement is structured in two parts: a paid setup and assessment for the first month to map the business and agree a prioritized plan, followed by an ongoing flat monthly engagement scaled to the project's size and the client's pace. No percentage fees. No guaranteed savings. No fixed tool pushed regardless of fit. The exact scope and fee are agreed after a free 30-minute consultation, because every business differs and no article can tell you your exact plan.
+No Black Swan is a small [AI integration agency](/articles/ai-integration-agency/) for startups and growing businesses, run personally by founder Dori Fussmann. The engagement is structured in two parts: a paid setup and assessment for the first month to map the business and agree a prioritized plan, followed by an ongoing flat monthly engagement scaled to the project's size and the client's pace. No percentage fees. No guaranteed savings. No fixed tool pushed regardless of fit. The exact scope and fee are agreed after a free 30-minute consultation, because every business differs and no article can tell you your exact plan.
 
 Dori brings an operator's, founder's and fractional CFO's view of the business — not a technologist's view looking for somewhere to apply a tool. His background spans investment banking at Citi, Morgan Stanley and Ion Pacific; founding and running The Vets, a technology-enabled pet healthcare company; fractional CFO work across multiple companies including BlueMark, Natrion, Snout and Translucent AI; and advising and mentoring at Cornell Tech and Yale. That combination — finance, operations, company-building — is the lens through which every AI opportunity gets evaluated. It is an AI operator's view, not an advisor's view.
 
-No Black Swan acts as the company's outside AI owner. It owns the agenda, decides what gets built next based on value and feasibility, drives team adoption and moves to the next opportunity each month rather than delivering a report and leaving. It is honest about where AI does not belong and will not push a tool-first rollout, run a large transformation programme or promise results it cannot guarantee. The edge is not the tools — the tools are increasingly available to everyone. The edge is the operational judgment to know which ones belong where, and the implementation discipline to actually make them run.
+[No Black Swan](/book-call/) acts as the company's outside AI owner. It owns the agenda, decides what gets built next based on value and feasibility, drives team adoption and moves to the next opportunity each month rather than delivering a report and leaving. It is honest about where AI does not belong and will not push a tool-first rollout, run a large transformation programme or promise results it cannot guarantee. The edge is not the tools — the tools are increasingly available to everyone. The edge is the operational judgment to know which ones belong where, and the implementation discipline to actually make them run.
 
 ## How to Get Started
 
