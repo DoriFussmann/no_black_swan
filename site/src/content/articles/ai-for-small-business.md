@@ -4,7 +4,7 @@ h1: How Small Businesses Can Actually Use AI — and Where to Start
 description: "Most small businesses use AI ad hoc, with no one owning it. Here's how to find where it fits, start without disruption, and avoid wasting money on tools."
 slug: ai-for-small-business
 date: "2026-11-06"
-updatedDate: "2026-11-06"
+updatedDate: "2026-11-19"
 author: dori-fussmann
 category: ai integration
 pillarKeyword: ai integration
@@ -51,11 +51,15 @@ faqs:
     answer: "Yes, often more so than for larger teams. A solo founder or very small team has fewer internal politics around change, faster decisions, and usually a handful of repetitive tasks that consume a disproportionate share of their time. The key is starting with one task that genuinely costs hours each week and has a clear, structured output — not trying to transform the whole business at once. The right first project pays for itself quickly, frees time for higher-value work, and builds confidence for the next one."
 ---
 
+## The Short Answer
+
+AI for small business works best on **specific, repetitive tasks** your team already does: drafting a client reply from notes, summarizing a call into actions, routing an inquiry, building a quote, booking appointments. Each removes **one layer of manual work** rather than transforming the business. In a Goldman Sachs survey published in March 2026, 93% of small businesses reported a positive impact from AI, but only 14% had fully integrated it. **Start with one task**, give one person ownership of it, and measure the change.
+
+## How Small Businesses Actually Use AI
+
 Most small businesses have the same AI story: a few people on the team have ChatGPT open in a browser tab, someone tried a new tool for a week, and nothing really changed. The technology is real. The [adoption](/articles/ai-adoption/) is scattered. And nobody owns what happens next.
 
-That gap between using AI and integrating AI is where most of the value is lost — and most of the money too. This article is a practical guide to closing it: where to start, what to automate first, what the honest alternatives look like, and how to avoid the most common waste.
-
-## How Small Businesses Actually Use AI: The Direct Answer
+That gap between using AI and integrating AI is where most of the value is lost — and most of the money too.
 
 The most useful frame for AI in a [small business](/articles/ai-consulting-for-small-business/) is not about technology — it is about tasks. AI works best when it handles a specific, repetitive job that your team already does, that follows a recognizable pattern, and that does not depend on a fresh human judgment call each time. Drafting a client response from a set of notes. Summarizing a recorded call into action items. Routing an inbound inquiry to the right person. Generating a quote from structured data. Confirming and scheduling appointments.
 
@@ -119,15 +123,15 @@ Honest AI integration also means knowing where AI does not belong. Not every wor
 
 ## Who Can Help You Integrate AI Into Your Small Business
 
-[No Black Swan](/book-call/) is a small AI integration agency for startups and growing businesses, run personally by founder Dori Fussmann. The engagement has two parts, designed to avoid the most common failure modes.
+One option is an operator-led provider such as [No Black Swan](/book-call/), run personally by its founder, Dori Fussmann. Its engagement is staged to avoid the most common failure modes.
 
-The first part is a setup and assessment — a paid first month — built to understand the business before any AI is introduced. That means mapping current workflows, identifying how the team already uses AI informally, finding the real opportunities, and prioritizing them by value, effort, feasibility, and risk. The output is a practical plan with a defined first project and a clear way to measure whether it worked. The setup and assessment starts from a low entry point specifically so that any business — from a solo founder to a growing team — can begin without a large upfront commitment.
+It starts with a free 30-minute consultation and then a fixed-fee discovery, built to understand the business before any AI is introduced: mapping current workflows, finding how the team already uses AI informally, identifying the real opportunities and ranking them by value, effort, feasibility and risk. The output is a practical plan with a defined first project and a clear way to measure whether it worked.
 
-The second part is a flat monthly engagement, scaled to the project's size and the client's pace. This is where the work happens: building and connecting the chosen AI into existing systems and workflows, driving team adoption, measuring what changed, and moving to the next opportunity. In effect, No Black Swan functions as the company's [outside AI owner](/articles/who-should-own-ai-in-a-company/) — the person who holds the agenda month to month and ensures that the first project is not also the last. The monthly fee is agreed after a free 30-minute consultation, because the right scope and pace differ for every business.
+Strategy and setup follow, with an agreed scope and fee, then ongoing execution on a flat monthly fee, month to month: building and connecting the chosen AI into existing systems, driving adoption, measuring what changed and moving to the next opportunity. In effect, No Black Swan acts as the company's [outside AI owner](/articles/who-should-own-ai-in-a-company/), so the first project is not also the last.
 
 Dori brings a background that is unusual for an AI agency: former investment banker at Citi, Morgan Stanley, and Ion Pacific; founder and CEO of a technology-enabled healthcare company; fractional CFO across multiple companies; and hands-on experience putting AI into operations across finance, operations, sales, customer service, and management. The perspective is an operator's and a CFO's — focused on where work, cost, and margin actually sit in a business, not on what the tools can theoretically do.
 
-No Black Swan is business-first, not tools-first. It implements rather than advises. It is honest about where AI does not belong. If you are a founder or owner who wants someone senior to say what is worth doing, then do it, the right next step is a [free 30-minute consultation](/book-call/). In that call, you will hear specifically what would be done in your context.
+It is business first, not tools first, and it implements rather than advises. It will also say when AI is not worth it. In Dori's words: "Sometimes the most professional recommendation an AI consultant can make is: don't spend the money. You don't need AI for this." If you want someone senior to say what is worth doing and then do it, start with a [free 30-minute consultation](/book-call/).
 
 ## Where Things Stand
 <!-- WHERE-THINGS-STAND:START -->

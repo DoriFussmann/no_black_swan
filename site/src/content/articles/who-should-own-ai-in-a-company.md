@@ -4,7 +4,7 @@ h1: "Who Really Owns AI in Your Company?"
 description: "Everyone on your team uses AI, but who actually owns it? Learn which AI ownership model fits your company size, budget, and pace — and what to do next."
 slug: who-should-own-ai-in-a-company
 date: "2026-11-06"
-updatedDate: "2026-11-06"
+updatedDate: "2026-11-19"
 author: dori-fussmann
 category: fractional ai
 pillarKeyword: fractional ai
@@ -46,18 +46,24 @@ faqs:
   - question: "What does it mean to 'own AI' in a company?"
     answer: "Owning AI means being accountable for the whole agenda: identifying the highest-value opportunities, managing implementation end to end, connecting AI to real workflows, driving team adoption, and deciding where AI does not belong. It is not the same as being the person who uses ChatGPT most or runs the most pilots. The owner sets priorities, measures what changed, and moves the agenda from one solved problem to the next — month to month."
   - question: "Should a 50-person services firm hire a full-time Head of AI?"
-    answer: "For most services firms under 150 people, a full-time Head of AI is a large, slow bet. Recruiting takes three to six months, the salary is senior-level, and the new hire will spend the first months doing assessment work anyway — at full cost. A fractional AI lead or an outside AI partner typically delivers faster results at a lower commitment, especially before the business has a clear AI roadmap."
+    answer: "For most smaller services firms, a full-time Head of AI is a large, slow bet. Recruiting takes months, the salary is senior-level, and the new hire spends the first months doing assessment work anyway, at full cost. A fractional AI lead or an outside AI partner usually starts faster with a smaller commitment, especially before the business has a clear AI roadmap."
   - question: "Who should lead AI in an operations business with no IT team?"
     answer: "In construction, logistics, field service, or distribution businesses, there is usually no internal AI or IT capability. The owner sees the opportunities — in dispatch, scheduling, estimating, or call handling — but has nobody to pick them up. An outside AI partner fills that gap: they act as the company's AI owner, building and connecting AI to real workflows without requiring an internal hire."
   - question: "What is the difference between a fractional AI lead and an outside AI partner?"
     answer: A fractional AI lead is typically an individual who advises on priorities but may not build or implement. An outside AI partner both owns the agenda and builds the integrations. The practical test is whether the engagement produces working AI in your systems or a plan for someone else to execute — only the former changes how the business actually runs.
 ---
 
-## The Direct Answer: One Person, One Agenda
+*No Black Swan wrote this article and is one of the options it describes.*
+
+## The Short Answer
+
+AI in a company should be owned by **one accountable person or partner**, not a committee and not whoever uses ChatGPT most. For most growing businesses the realistic options are a **full-time Head of AI** (salary, months to hire), a **fractional AI lead** (part-time, monthly retainer) or an **outside AI partner** such as No Black Swan (operator-led; fixed-fee discovery, then a flat monthly fee). If AI is not yet a full-time job in your business, start with an outside owner.
+
+## One Person, One Agenda
 
 Every company using AI needs one person or partner who is accountable for the whole agenda. Not the person who knows ChatGPT best, not a committee, and not the collective goodwill of a team that picked up new tools on their own. One accountable owner: someone who chooses what to build, connects it to real workflows, drives [adoption](/articles/ai-adoption/) across the team, measures what changed, and decides where AI does not belong.
 
-The right owner depends on your size, budget, and how fast you need to move. A full-time [Head of AI](/articles/head-of-ai-vs-ai-consultant/), a fractional AI lead, or an outside AI partner are the three realistic options for most growing businesses. If nobody owns it, the default outcome is scattered tool use, wasted spend, and no measurable change to the business — which, as the data makes clear, is where most companies are right now.
+The right owner depends on your size, budget, and how fast you need to move. A full-time [Head of AI](/articles/head-of-ai-vs-ai-consultant/), a fractional AI lead, or an outside AI partner are the three realistic options for most growing businesses. If nobody owns it, the default outcome is scattered tool use, wasted spend, and no measurable change to the business — which, as the data makes clear, is where most companies are right now. No Black Swan is built for the third route: it can act as the external owner for agreed AI priorities and implement them, without taking over IT, cybersecurity or data governance.
 
 As of May 2026, 47% of U.S. employees say their organization has integrated AI tools, but only 25% say it has communicated a clear plan for doing so. Think about what that gap means in practice: roughly half of businesses have added AI, but three in four of their people have no shared understanding of where it is going or who is steering it. Even where organizations have begun integrating AI, only 30% of employees use it regularly. The integration-adoption lag is not a technology problem. It is an ownership problem.
 
@@ -91,7 +97,7 @@ Once you have a prioritized plan, someone must own execution. That is the moment
 
 A full-time Head of AI makes sense in a specific set of circumstances: AI is core to your product, you have engineering resources that need direction, your company is large enough to justify a senior salary, and you can absorb a recruiting process that typically runs three to six months. If those conditions apply — usually in a well-funded, product-led business with engineering depth — a dedicated hire can be the right long-term investment.
 
-For most startups under 150 people and most services or operations businesses, however, a full-time hire is a large, slow bet. The salary is senior-level. The recruiting timeline is long. And a Head of AI brought in before the business has a clear AI roadmap will spend the first months doing the assessment work anyway — at full cost and with no guarantee that their read of the business matches what actually matters. The company is effectively paying a premium to generate the starting point that a structured assessment would have provided faster and cheaper.
+For most startups and most services or operations businesses, however, a full-time hire is a large, slow bet. The salary is senior-level. The recruiting timeline is long. And a Head of AI brought in before the business has a clear AI roadmap will spend the first months doing the assessment work anyway — at full cost and with no guarantee that their read of the business matches what actually matters. The company is effectively paying a premium to generate the starting point that a structured assessment would have provided faster and cheaper.
 
 Large consultancies sit in a related category. They bring extensive resources and can produce detailed strategy documents, but their model is built for enterprise programs: expensive engagements, decks-first delivery, and scopes designed for companies far larger than a 50-person firm or a mid-sized operations business. For a growing business that needs things built, not described, that is the wrong fit.
 
@@ -123,17 +129,17 @@ The best outside partner — fractional or full — takes a business-first view:
 
 ---
 
-## How No Black Swan Acts as Your Outside AI Owner
+## What an Outside AI Owner Looks Like in Practice
 
-[No Black Swan](/book-call/) is a small AI integration agency run personally by founder Dori Fussmann, working with startups and growing businesses from a solo founder to a few hundred people — the range where AI ownership is most often unresolved and most consequential.
+[No Black Swan](/book-call/) is one example. It is an operator-led business run personally by its founder, Dori Fussmann, working with startups and growing businesses: the range where AI ownership is most often unresolved and matters most.
 
 Dori's background is unusual for an [AI consulting](/articles/ai-consulting/) context. His experience spans investment banking at Citi, Morgan Stanley, and Ion Pacific; founding and operating a technology-enabled healthcare company (The Vets, merged with BetterVet); and fractional CFO work for companies including BlueMark, Natrion, Snout and Translucent AI. That combination — operator, founder, and finance executive — is what shapes the No Black Swan view of a business. The question is never which tool is newest; it is where work, cost, and margin actually sit and what AI can do to move those things.
 
-The engagement runs in two parts. First, a paid setup and assessment covering the first month: it maps how the team already uses AI, surfaces existing workflows and constraints, finds the highest-value opportunities, prioritizes them by value, effort, feasibility, and risk, and produces a practical plan. Second, a flat monthly engagement, scaled to the project's scope and the client's pace, to build, integrate, drive adoption, measure what changed, and move to the next opportunity. Exact scope and fee are agreed after a free 30-minute consultation, because every business differs and no article can tell you your exact plan or price.
+The engagement runs in stages, each agreed before it starts: a free 30-minute consultation; a fixed-fee discovery that maps how the team already uses AI, the workflows and the constraints, and ranks the opportunities by value, effort, feasibility and risk; strategy and setup with an agreed scope and fee; and ongoing execution on a flat monthly fee, month to month, to build, integrate, drive adoption, measure what changed and move to the next priority. The [pricing page](/pricing/) and [how it works](/how-it-works/) give the detail.
 
-In effect, No Black Swan becomes the company's outside AI owner: holding the agenda month to month, being honest about where AI does not belong, and moving the business from scattered individual use to AI that actually runs through the company's workflows. We are AI operators — we run AI inside real operations, not advise from the outside. Everyone on your team uses AI. Nobody owns it. We do. And operational experience across industries and companies is what makes that practical rather than theoretical.
+In effect, No Black Swan becomes the company's outside owner for agreed AI priorities: holding the agenda month to month, saying where AI does not belong, and moving the business from scattered individual use to AI that runs through its workflows. Dori sums up the point of ownership in one line: "AI is not the objective. Better business performance is."
 
-If you are a founder, CEO, or owner asking who should own AI in your company, the consultation is the right starting point. It costs nothing, and it will tell you what we would actually do — not a deck, a direction.
+If you are a founder, CEO or owner asking who should own AI in your company, a free 30-minute consultation is a sensible first step. It costs nothing, and you leave with an honest view of where, and whether, AI would help.
 
 ---
 
