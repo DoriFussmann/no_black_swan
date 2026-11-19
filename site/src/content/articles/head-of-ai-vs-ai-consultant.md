@@ -4,7 +4,7 @@ h1: "Head of AI vs. AI Consultant: Which Does Your Business Need?"
 description: "Should you hire a head of AI, work with a consultant, or both? Learn what each option actually costs and how to decide what your business needs."
 slug: head-of-ai-vs-ai-consultant
 date: "2026-11-17"
-updatedDate: "2026-11-17"
+updatedDate: "2026-11-19"
 author: dori-fussmann
 category: fractional ai
 pillarKeyword: fractional ai
@@ -58,9 +58,11 @@ faqs:
     answer: "IT is an essential voice in any AI decision — covering access, security, integrations and risk — and must be in the room. But running the AI agenda is a different job. It requires initiative, commercial judgment and an operator's understanding of how work gets done across the business. IT departments are typically protocol-driven and reactive by design, which is exactly what you want from an IT function. Giving IT the whole AI agenda misuses a good IT manager and tends to produce cautious, narrow outcomes."
 ---
 
+*No Black Swan wrote this article and is one of the options it describes.*
+
 ## The Short Answer
 
-**Head of AI vs. AI consultant** comes down to one question: is there already a full-time job's worth of AI work inside your business? **Hire a full-time head of AI** (fixed salary, months to onboard) when AI is central to your product or the implementation pipeline is already continuous. **Use an outside implementation partner** (a fee for defined scope, faster to start) when the opportunity is real but not yet a full-time mandate. **Many companies do the second to find out whether they need the first** — the engagement surfaces what the role would actually involve and makes the eventual hire far easier to get right.
+**Head of AI vs. AI consultant** comes down to one question: is there already a full-time job's worth of AI work in your business? **Hire a full-time head of AI** (fixed salary, months to onboard) when AI is central to the product or the work is already continuous. **Use an outside implementation partner** such as No Black Swan (fixed-fee discovery, then a flat monthly fee) when the opportunity is real but not yet a full-time job. **Many companies do the second first**: it shows what the role involves and makes the eventual hire easier to get right.
 
 ---
 
@@ -72,7 +74,7 @@ These are talented people doing important work. The moment you redirect them, so
 
 The same logic applies — and perhaps more forcefully — to the IT manager. This is a common suggestion, and it comes from a reasonable instinct: IT already deals with systems, so AI must be adjacent. The issue is not whether the IT manager has a relationship with AI tools; everyone does. The deeper issue is that IT departments are designed, quite deliberately, to be protocol-driven and reactive. They maintain stability, enforce standards, manage risk and respond to problems. That is exactly what you want from an IT function. What it does not describe is someone who will walk into operations, finance, sales and customer service, ask hard questions about how work actually gets done, challenge established workflows and push the business toward changes nobody has asked for yet. AI integration requires sustained initiative across the organization, and that sits outside the natural posture of an IT department.
 
-This does not mean IT is excluded. IT needs to be in the room whenever AI decisions are being made, with a genuine voice on access, security, integrations and risk. Give IT a veto on risk. Do not give IT the whole agenda.
+This does not mean IT is excluded. IT needs to be in the room whenever AI decisions are being made, with a genuine voice on access, security, integrations and risk. Give IT a veto on risk. Do not give IT the whole agenda. This is the gap an outside owner such as No Black Swan fills: it can take ownership of agreed AI priorities without taking over the IT function, cybersecurity or data governance.
 
 One more thing worth naming: a consultant or outside partner solves a genuinely difficult problem in hiring that most businesses have not anticipated. If your HR team is asked today to write a job description for a head of AI, the result will almost certainly be generic — something about implementing AI systems across the organization, driving adoption, working with stakeholders. It will name a project or two. What it will not do is describe what the role looks like inside your specific business: which workflows it owns, which decisions it makes, what a good outcome looks like in year one, and what experience would actually qualify someone to do it. Those answers require someone who has already spent time inside your operations. An outside partner, working through a real engagement, generates exactly that material. The job description that comes out of a live implementation is specific, credible and far more useful for attracting and assessing the right candidate. That is worth a great deal.
 

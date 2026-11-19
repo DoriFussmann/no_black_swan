@@ -49,9 +49,11 @@ faqs:
     answer: "For a few narrow tasks, yes. For anything that matters to how the business runs, no. Every company has different workflows, constraints and habits, so an automation built to a template fits the template, not the business. Expect setup, adjustment after launch, and someone responsible for whether people use it."
 ---
 
+*No Black Swan wrote this article and is one of the options it describes.*
+
 ## The Short Answer
 
-An AI automation agency **builds automations and connects them** to the systems a business already uses: scheduling, quoting, intake, reporting, document handling. Most agencies **build to a brief**: you say what you want, and they build it. A smaller group **diagnoses first and stays after launch**, which matters because the build is rarely the hard part; **getting the team to use it** is. Hire a build-to-spec agency when you know exactly what you want. If you do not, pay for a diagnosis first.
+An AI automation agency **builds automations and connects them** to the systems a business already uses, such as scheduling or quoting. Most agencies **build to a brief**. A smaller group, including operator-led providers such as No Black Swan (fixed-fee discovery, then a flat monthly fee), **diagnoses first and stays after launch**, which matters because the hard part is **getting the team to use it**. Hire a build-to-spec agency when you know exactly what you want. If you do not, pay for a diagnosis first.
 
 | Provider | What they do | What you are left with | Best when |
 |---|---|---|---|
@@ -71,7 +73,7 @@ Everyone would like AI to be plug-and-play. It is not. Every company has differe
 
 So, in plain terms, an AI automation agency does three things. It looks at how a piece of work is done today. It builds an automation, or configures a tool, to take the manual steps out. And it connects that to the systems the team already uses, so the result shows up where the work happens instead of in a separate tool nobody opens.
 
-How far it goes beyond that is what separates one agency from another. A build-to-spec agency takes a brief, builds to it, delivers and leaves. That is a clean transaction, and for a well-defined job it is the right one. The weakness is that the business keeps changing and the spec goes stale. An operator-led provider works inside the business, sees how the team uses what was built, and adjusts. The first produces software. The second produces a capability that keeps running.
+How far it goes beyond that is what separates one agency from another. A build-to-spec agency takes a brief, builds to it, delivers and leaves. That is a clean transaction, and for a well-defined job it is the right one. The weakness is that the business keeps changing and the spec goes stale. An operator-led provider works inside the business, sees how the team uses what was built, and adjusts. No Black Swan works this way. The first produces software. The second produces a capability that keeps running.
 
 Neither is better in the abstract. They are different purchases, and most disappointment comes from buying the first when the business needed the second.
 

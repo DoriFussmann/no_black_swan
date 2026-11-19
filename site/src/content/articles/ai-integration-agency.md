@@ -61,9 +61,11 @@ faqs:
     answer: "It should. Integration means connecting AI to the systems you already run, such as your CRM, finance software and project tools, not replacing them. Be wary of an agency that wants to move you onto its preferred platform before it has looked at how your team works."
 ---
 
+*No Black Swan wrote this article and is one of the options it describes.*
+
 ## The Short Answer
 
-Before you hire an AI integration agency, be clear on three things: **what you need built** (or whether you first need someone to work that out), **who will do the work**, and **how the agency is paid**. Then ask the question that sorts agencies fastest: how familiar are you with **my type of business**? An agency that knows how work, cost and margin flow in a business like yours will build something practical. If you cannot yet name the workflow, start with a paid diagnosis, not a build.
+Before you hire an AI integration agency, be clear on **what you need built**, **who will do the work** and **how they are paid**. Then ask how familiar they are with **my type of business**: an agency that knows how work and margin flow in a business like yours builds something practical. If you cannot name the workflow yet, start with a paid diagnosis, from an agency or from an operator-led provider such as No Black Swan (fixed-fee discovery, then a flat monthly fee), not with a build.
 
 **Before you sign, check:**
 
@@ -83,7 +85,7 @@ An agency is one of several routes covered in our guide to [AI consulting](/arti
 
 An AI integration agency configures AI tools and connects them to the systems and workflows a business already runs, then gets the team to use them. That is different from a consultancy that delivers a strategy deck, and different from a freelancer who fixes one tool. The job is implementation with accountability: something works on Monday that did not work before, people use it, and somebody checks whether it changed anything.
 
-The demand for that job is easy to explain. In a Goldman Sachs 10,000 Small Businesses Voices survey published in March 2026, 76% of small businesses said they use AI, yet only 14% said they had fully integrated it into their core operations. Most teams have the tools. Few have turned them into the way the company works.
+The demand for that job is easy to explain. In a Goldman Sachs 10,000 Small Businesses Voices survey published in March 2026, 76% of small businesses said they use AI, yet only 14% said they had fully integrated it into their core operations. Most teams have the tools. Few have turned them into the way the company works. No Black Swan is not an agency, but it does this job: it works directly with the client and moves from diagnosis into implementation.
 
 A good agency starts with the business problem, not with a platform it wants to sell. It maps the existing workflows before recommending anything. It learns the constraints: the systems already in place, the habits the team already has, the parts of the operation that are fragile. Only then does it say where AI belongs and, just as usefully, where it does not. An agency that is candid about where AI does not fit is worth more than one that promises transformation in every department.
 
