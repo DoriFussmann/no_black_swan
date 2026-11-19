@@ -57,9 +57,11 @@ faqs:
     answer: "Yes, and for a single well-defined job that is often the sensible order. Keep what the freelancer builds in your own accounts, ask for it to be documented, and be clear that nobody owns the next step once the build is delivered. When the work spreads across several workflows, or adoption becomes the problem, you need someone who stays."
 ---
 
+*No Black Swan wrote this article and is one of the options it describes.*
+
 ## The Short Answer
 
-Choosing between an AI consulting firm, a freelancer and doing it yourself depends on the shape of the job. A **freelancer** fits one well-defined build with a clear finish line. A **large consulting firm** fits a complex programme across many departments, at enterprise prices. **DIY** works only when someone inside has the time, the knowledge and the authority to change workflows. A **small operator-led partner** fits a business that needs several workflows implemented and someone accountable afterwards. If you can describe the job in one paragraph, hire a freelancer.
+Choosing between an AI consulting firm, a freelancer and doing it yourself depends on the shape of the job. A **freelancer** fits one well-defined build. A **large consulting firm** fits a programme across many departments, at enterprise prices. **DIY** works only when someone inside has the time, knowledge and authority. A **small operator-led partner** such as No Black Swan (fixed-fee discovery, then a flat monthly fee) fits several workflows and ongoing accountability. If you can describe the job in one paragraph, hire a freelancer.
 
 | Option | Best for | What you get | Who owns it afterwards | Watch for |
 |---|---|---|---|---|
@@ -78,7 +80,7 @@ Large consultancies such as McKinsey, BCG, Deloitte, EY and PwC bring something 
 
 The model is built for enterprises, and the economics show it. Engagements are designed around long discovery phases, large project teams, formal change-management tracks, and fees set for companies with internal project owners and multi-year budgets. For a smaller company, the deliverable is typically a roadmap that the internal team is then expected to carry out, with nobody from the consultancy still on the project when implementation starts. That mismatch is not a failing of any one firm. It is what the model is built to do.
 
-For a startup or a growing business, the budget needed to reach a large firm's senior people rarely matches the size of the problem being solved.
+For a startup or a growing business, the budget needed to reach a large firm's senior people rarely matches the size of the problem being solved. That gap is what smaller partners such as No Black Swan are built for: one senior operator who stays from diagnosis through to daily use.
 
 ---
 

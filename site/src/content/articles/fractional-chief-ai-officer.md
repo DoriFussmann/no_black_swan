@@ -4,7 +4,7 @@ h1: "Do You Actually Need a Fractional Chief AI Officer?"
 description: "What a fractional chief AI officer does, what it costs, and whether your business needs one—or needs someone who will also implement the work."
 slug: fractional-chief-ai-officer
 date: "2026-11-18"
-updatedDate: "2026-11-18"
+updatedDate: "2026-11-19"
 author: dori-fussmann
 category: fractional ai
 pillarKeyword: fractional ai
@@ -57,9 +57,11 @@ faqs:
     answer: "In scope: AI strategy, prioritization, workflow automation, integration of tools, implementation of agreed solutions, and adoption support. Out of scope: full IT management, cybersecurity governance, data compliance programs, and legal or regulatory advice. Be clear about these boundaries in writing before work begins."
 ---
 
+*No Black Swan wrote this article and is one of the options it describes.*
+
 ## The Short Answer
 
-A **fractional chief AI officer** is a senior AI executive who works part-time—typically one to three days a week—on a monthly retainer, owning AI strategy, governance, and vendor decisions across a small number of companies at once. It suits organizations that need **someone accountable for AI priorities** but cannot justify a full-time hire. The gap to watch: many fractional arrangements deliver **strategic direction without implementation**, leaving the execution problem exactly where it started. If your company needs someone to decide what to do with AI and then actually build it, clarify which of those two things is on the table before you sign anything.
+A **fractional chief AI officer** is a senior AI executive who works part-time, typically one to three days a week, on a monthly retainer, owning AI strategy, governance and vendor decisions for several companies at once. It suits organizations that need **someone accountable for AI priorities** but cannot justify a full-time hire. Many fractional arrangements deliver **strategic direction without implementation**; operator-led providers such as No Black Swan (fixed-fee discovery, then a flat monthly fee) also build. Before you sign, ask which of the two you are buying.
 
 ---
 
@@ -71,7 +73,7 @@ The role emerged because AI moved from an IT experiment to a board-level concern
 
 You need a fractional AI officer when AI decisions are being made by nobody, or by everybody at once. The first situation means opportunities accumulate, tools go unevaluated, and the team makes independent choices with no shared standard. The second means competing priorities, duplicated tools, inconsistent workflows, and no single person accountable for outcomes. Both are common. Neither resolves itself.
 
-What the role is not: it is not an IT function, a software vendor, a development team, or a cybersecurity lead. A fractional CAIO owns the AI agenda; they do not replace the operational infrastructure around it.
+What the role is not: it is not an IT function, a software vendor, a development team, or a cybersecurity lead. A fractional CAIO owns the AI agenda; they do not replace the operational infrastructure around it. No Black Swan draws the same line: it can own agreed AI priorities and their implementation without taking over a client's IT, cybersecurity or data governance.
 
 ---
 

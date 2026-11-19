@@ -50,9 +50,11 @@ faqs:
     answer: "It should be almost entirely about your business: how the team works, where time is lost, what systems you use and which constraints matter. If the consultant leads with a tool or platform before asking those questions, treat it as a warning sign. A good first call ends with the consultant able to say what they would look at in a paid discovery, and what a sensible next step is for your situation."
 ---
 
+*No Black Swan wrote this article and is one of the options it describes.*
+
 ## The Short Answer
 
-AI consulting comes in five models: **large consultancies** (strategy and transformation programmes for enterprises), **boutique AI consultancies** (assessments, roadmaps and training), **AI automation agencies** (they build what you specify), **freelancers** (one tool or one workflow), and **operator-led implementation** (one senior person diagnoses the business, builds, and stays to run it). For a small or mid-sized business, choose by two things: who does the work once the recommendations are written, and how they are paid.
+AI consulting comes in five models: **large consultancies** (strategy and transformation programmes for enterprises), **boutique AI consultancies** (assessments, roadmaps and training), **AI automation agencies** (they build what you specify), **freelancers** (one tool or one workflow), and **operator-led implementation** (one senior person diagnoses, builds and stays, paid by stage; No Black Swan is one example). For a small or mid-sized business, choose by two things: who does the work once the recommendations are written, and how they are paid.
 
 | Model | What they do | Who implements | How they are paid | Best for |
 |---|---|---|---|---|
@@ -72,7 +74,7 @@ Most people picture AI consulting as someone who comes in, adds AI to the busine
 
 The term covers two different kinds of work, and most of the confusion comes from mixing them up. Advisory work ends with a document: an assessment, a roadmap, a list of recommendations. Implementation ends with something that runs: a connected workflow, an assistant the team uses, a report that builds itself. Both are sold as AI consulting.
 
-If a provider delivers a strategy presentation and leaves, you bought advice. The integration still has to be built, the team still has to be trained, and the number it was meant to move still has to be measured. If those things do not happen, the plan sits in a folder and the team goes back to the old way. So the useful question about any provider is not whether they "do AI consulting". It is where their work stops.
+If a provider delivers a strategy presentation and leaves, you bought advice. The integration still has to be built, the team still has to be trained, and the number it was meant to move still has to be measured. If those things do not happen, the plan sits in a folder and the team goes back to the old way. So the useful question about any provider is not whether they "do AI consulting". It is where their work stops. No Black Swan, for example, does not stop at the plan: it can recommend, implement and integrate the solutions it proposes.
 
 ---
 

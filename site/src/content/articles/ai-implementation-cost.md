@@ -65,9 +65,11 @@ faqs:
     answer: "Usually not. In Bitkom's September 2026 survey of 603 German companies with 20 or more employees, the companies using AI named infrastructure (51%), data preparation (50%) and integration into existing systems (41%) as major cost items. Only 21% said the same of subscriptions and licences. Budget for the work around the tool, not only for the tool."
 ---
 
+*No Black Swan wrote this article and is one of the options it describes.*
+
 ## The Short Answer
 
-AI implementation cost for a small or mid-sized business usually runs **$5,000 to $25,000 for a single project** or **$2,000 to $8,000 a month** for ongoing work, according to published 2026 rate guides, and far more for large consultancy programmes. The software licence is rarely the expensive part; **data preparation and integration** usually are. The biggest driver is **how much you change and how fast**. If you cannot yet name the first workflow, buy a short discovery before you commit to a monthly fee.
+AI implementation cost for a small or mid-sized business usually runs **$5,000 to $25,000 for a single project** or **$2,000 to $8,000 a month** for ongoing work, according to published 2026 rate guides. Some providers, such as No Black Swan, charge per stage instead (a fixed-fee discovery, then a flat monthly fee). The licence is rarely the expensive part; **data preparation and integration** are. The biggest driver is **how much you change and how fast**. If you cannot name the first workflow yet, pay for discovery first.
 
 | Route | How you pay | Published 2026 range | Watch for |
 |---|---|---|---|
@@ -89,7 +91,7 @@ Some owners start with one workflow, run it properly, measure what changed, and 
 
 It helps to see pricing this way, because it puts the lever in your hands. If you are careful with cash, start with one focused workflow, prove that it pays, and widen the scope only when the first one is working. If a board or an investor is pressing you to show AI progress, a faster and broader rollout costs more per month but gets you there sooner. What you want to avoid is a contract that fixes the scope for a year before anyone has seen the first result.
 
-This is also why a proper diagnosis comes before a rollout decision. Someone has to map how the work is done today, find where people already use AI on their own, and rank the opportunities by value, effort, feasibility and risk. A plan built on that is what makes a monthly number mean something. Skipping it is how businesses end up paying for the wrong workflow first.
+This is also why a proper diagnosis comes before a rollout decision. Someone has to map how the work is done today, find where people already use AI on their own, and rank the opportunities by value, effort, feasibility and risk. A plan built on that is what makes a monthly number mean something. Skipping it is how businesses end up paying for the wrong workflow first. It is also why No Black Swan prices one stage at a time: the scope and fee of each stage are agreed only once the stage before has shown what is worth doing.
 
 ---
 

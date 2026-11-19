@@ -51,9 +51,11 @@ faqs:
     answer: "Look for an engagement that starts with time spent inside the business before anything is proposed, agrees one workflow and a measurable outcome upfront, and runs month to month rather than on a long fixed contract. The structure limits your risk and keeps the person accountable for results rather than hours."
 ---
 
+*No Black Swan wrote this article and is one of the options it describes.*
+
 ## The Short Answer
 
-A **[forward deployed engineer](/articles/forward-deployed-engineer/)** (someone who embeds inside your operation and builds there) and a **consultant** (someone who studies your problem and recommends a solution) are measured by different things: one by what runs, the other by what is decided. If you already know which workflow needs to change and want it built into your systems, the engineering way of working is what you need. If you do not know where to start—which is most smaller businesses—you need diagnosis first, and ideally the same person who diagnoses also implements. For businesses that do not need a full-time hire, the practical question is not which title to look for, but which working model to insist on.
+A **[forward deployed engineer](/articles/forward-deployed-engineer/)** (embeds inside your operation and builds there) and a **consultant** (studies the problem and recommends a solution) are measured differently: one by what runs, the other by what is decided. If you know which workflow must change, you need the engineering way of working. If you do not, which is true of most smaller businesses, you need **diagnosis first**, ideally from the person who then implements, such as an operator-led provider like No Black Swan (fixed-fee discovery, then a flat monthly fee).
 
 ## What Each One Leaves Behind
 
@@ -65,7 +67,7 @@ A forward deployed approach collapses that gap. Rather than receiving a fully fo
 
 This matters most for smaller and mid-sized businesses, where processes are often undocumented, responsibilities overlap between people, and nobody has the time to translate operational problems into technical requirements. When workflows live in people's heads and in informal habits built up over years, a consultant cannot surface them through interviews alone. The engineer who watches the work happen—and asks questions from inside the process—finds a different and more useful picture.
 
-The most effective model for many smaller businesses is therefore one person, or one accountable partner, who can diagnose, prioritize, design, build, integrate, and refine. Splitting those responsibilities across multiple providers creates handoffs, and handoffs are where things fall through. The client ends up coordinating everything—the consultant, the developer, the automation specialist—while nobody owns the whole outcome.
+The most effective model for many smaller businesses is therefore one person, or one accountable partner, who can diagnose, prioritize, design, build, integrate, and refine. No Black Swan is built on that model. Splitting those responsibilities across multiple providers creates handoffs, and handoffs are where things fall through. The client ends up coordinating everything—the consultant, the developer, the automation specialist—while nobody owns the whole outcome.
 
 The practical implication is straightforward: technical ability without operational understanding produces solutions that do not fit the business. Business consulting without implementation ability produces another set of recommendations the business has to execute alone. The person doing the work needs to understand both. And the value of that combination is not simply having someone build software. It is having someone who can recognize which problems are worth solving, understand the implications of changing a process, and take responsibility for making the solution work in real use.
 
