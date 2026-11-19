@@ -141,7 +141,11 @@ The right budget depends on who you are and what you need.
 
 Not every provider asks for a long commitment up front. Some split the work into stages, each scoped and priced on its own, so you decide whether to continue once you have seen what the last stage produced. The trade-off is simple: you do not get one all-in number on day one, and in exchange you never pay for a stage you have not agreed to.
 
-[No Black Swan](/book-call/) works this way. It is an operator-led business run personally by its founder, Dori Fussmann, a former investment banker at Citi and Morgan Stanley who founded and ran The Vets, a technology-enabled pet healthcare business, and has worked as a fractional COO and CFO for several companies. It works directly with the client and moves from diagnosis into implementation, rather than stopping at recommendations. The engagement has four steps:
+[No Black Swan](/book-call/) works this way. It is an operator-led business run personally by its founder, Dori Fussmann, a former investment banker at Citi and Morgan Stanley who founded and ran The Vets, a technology-enabled pet healthcare business, and has worked as a fractional COO and CFO for several companies. He puts the reason plainly:
+
+"What people dislike most is uncertainty about payment terms, the feeling of buying a cat in a bag. So I price step by step, with full transparency, visibility and agreement. Clients always know what they are up against and what the next step is, and they can decide."
+
+No Black Swan works directly with the client and moves from diagnosis into implementation, rather than stopping at recommendations. The engagement has four steps:
 
 1. **A free 30-minute consultation.** You explain the business and what you want to improve. Within a few hours you receive a short summary of the opportunities discussed and a proposed plan, at no charge.
 2. **Discovery, for a fixed fee agreed in advance.** The business is mapped: its workflows, systems, constraints and the ways people already use AI. Opportunities are ranked by impact, feasibility, risk and effort. Discovery does not commit you to anything further.
