@@ -1,10 +1,10 @@
 ---
 title: "How to Find and Choose an AI Integration Agency: A Guide"
 h1: The One Question to Ask Any AI Integration Agency
-description: "Not all AI integration agencies deliver real results. Learn what to look for, how to compare your options, and what a good engagement looks like."
+description: "How to choose an AI integration agency: the one question to ask first, what to check before you sign, the red flags, and the alternatives to an agency."
 slug: ai-integration-agency
 date: "2026-11-06"
-updatedDate: "2026-11-06"
+updatedDate: "2026-11-19"
 author: dori-fussmann
 category: ai consulting
 pillarKeyword: ai consulting
@@ -24,6 +24,18 @@ keywords:
 draft: false
 internalLinks: []
 externalLinks:
+  - label: "Goldman Sachs: Small businesses embrace AI but need training and support"
+    url: "https://www.goldmansachs.com/pressroom/press-releases/2026/small-businesses-embrace-ai-but-need-training-and-support-to-fully-harness-it"
+    addedAt: 2026-11-19
+    kind: claim
+  - label: "Value Add VC: How to Hire a Head of AI"
+    url: "https://valueaddvc.com/blog/how-to-hire-a-head-of-ai-the-job-description-interview-process-and-red-flags"
+    addedAt: 2026-11-19
+    kind: claim
+  - label: "How Much Does an AI Consultant Cost? ($5K–$25K, 2026)"
+    url: "https://aiessentials.us/blog/how-much-does-it-cost-to-hire-an-ai-consultant-for-my-small"
+    addedAt: 2026-11-19
+    kind: claim
   - label: "AI Industry Trends | November, 2026 (STARTUP EDITION)"
     url: "https://blog.mean.ceo/ai-industry-trends-november-2026/"
     addedAt: 2026-11-06
@@ -38,110 +50,139 @@ externalLinks:
     kind: where-things-stand
 faqs:
   - question: "What is an AI integration agency?"
-    answer: "An AI integration agency configures and connects AI tools into your existing business workflows and systems, then measures what changed and moves to the next opportunity. Unlike a consultancy that delivers a strategy deck, a true integration agency implements inside your operations, drives team adoption, and owns the AI agenda over time."
+    answer: "An AI integration agency configures AI tools and connects them to the workflows and systems a business already runs, then gets the team to use them and checks what changed. A consultancy that delivers a strategy deck is doing something different, and so is a freelancer who fixes one tool. The mark of an integration agency is that it implements inside your operations."
   - question: "How is an AI integration agency different from an AI freelancer?"
-    answer: "A freelancer typically handles one tool or one workflow, then moves on. An AI integration agency maps your whole business first, prioritizes opportunities across departments, and continues refining the implementation over time. The scope is broader, the accountability is longer, and the results are more likely to compound."
+    answer: "A freelancer usually handles one tool or one workflow and then moves on. An AI integration agency takes a wider brief: it looks at the business first, ranks opportunities across departments, and keeps refining what it has built. The scope is broader and the accountability lasts longer."
   - question: "What should I expect to pay for an AI integration agency?"
-    answer: "Pricing varies widely depending on the scope and the agency's model. No Black Swan's engagement starts with a setup and assessment for a fixed fee agreed in advance, then moves to a flat monthly engagement scaled to project size and pace. It does not publish prices. Exact scope and fee are agreed after a free 30-minute consultation, because every business differs."
-  - question: "Does location matter when choosing an AI integration agency?"
-    answer: "For most engagements, no. Workflow mapping, system configuration, adoption coaching and measurement can all be done remotely. What matters far more than geography is whether the agency has genuine operational experience in businesses that resemble yours. A remote agency with deep experience in your type of business will serve you better than a local generalist."
+    answer: "It depends on scope and on how the agency charges. Published 2026 rate guides put a single small-business project at $5,000 to $25,000 and ongoing work at $2,000 to $8,000 a month. Whatever the model, expect a paid diagnosis before a long commitment, and ask for the fee, what it includes and the minimum term in writing."
+  - question: "Is No Black Swan an AI integration agency?"
+    answer: "No. No Black Swan is an operator-led business run personally by its founder, Dori Fussmann. It is led by one experienced operator who works directly with the client and moves from diagnosis into implementation, where an agency typically assigns a team to build what the client specifies. The engagement starts with a free 30-minute consultation and a fixed-fee discovery, and ongoing work runs on a flat monthly fee, month to month."
+  - question: "Can an AI integration agency work with the tools we already have?"
+    answer: "It should. Integration means connecting AI to the systems you already run, such as your CRM, finance software and project tools, not replacing them. Be wary of an agency that wants to move you onto its preferred platform before it has looked at how your team works."
+---
+
+## The Short Answer
+
+Before you hire an AI integration agency, be clear on three things: **what you need built** (or whether you first need someone to work that out), **who will do the work**, and **how the agency is paid**. Then ask the question that sorts agencies fastest: how familiar are you with **my type of business**? An agency that knows how work, cost and margin flow in a business like yours will build something practical. If you cannot yet name the workflow, start with a paid diagnosis, not a build.
+
+**Before you sign, check:**
+
+- They ask about your workflows, margins and team before they mention a tool
+- They have worked inside businesses like yours, and can say what went wrong there
+- They implement: the deliverable is something your team uses, not a report
+- A paid diagnosis comes before any long commitment
+- The fee is in writing: what it includes, tool costs, and the minimum term
+- No guaranteed savings, and no fee tied to a percentage of savings
+- You know who does the work, and you own what is built
+
+An agency is one of several routes covered in our guide to [AI consulting](/articles/ai-consulting/). This article is about choosing one well, and about knowing when a different route fits better.
+
 ---
 
 ## What a Good AI Integration Agency Actually Does
 
-Before you search for an AI integration agency, it helps to know what question to ask once you find one. There is a single question that separates an agency that will actually change your business from one that will waste your time and budget: *How familiar are you with my type of business?*
+An AI integration agency configures AI tools and connects them to the systems and workflows a business already runs, then gets the team to use them. That is different from a consultancy that delivers a strategy deck, and different from a freelancer who fixes one tool. The job is implementation with accountability: something works on Monday that did not work before, people use it, and somebody checks whether it changed anything.
 
-That question is not a formality. The answer tells you whether the agency knows how work, cost, and margin actually flow in a business like yours — or whether you will end up with generic recommendations that do not translate into practice. Practical AI solutions are not built from tool knowledge alone. They come from operational familiarity: knowing how a field-service business dispatches crews, how a founder-led agency handles client delivery, how a growing team's sales motion creates bottlenecks. Without that familiarity, an AI agency is essentially guessing. And a wrong guess is not just unhelpful — it costs you months of implementation effort and diverts your team's attention from the work that actually matters.
+The demand for that job is easy to explain. In a Goldman Sachs 10,000 Small Businesses Voices survey published in March 2026, 76% of small businesses said they use AI, yet only 14% said they had fully integrated it into their core operations. Most teams have the tools. Few have turned them into the way the company works.
 
-A good AI integration agency starts with your business problems, not with a tool or platform it wants to sell you. It maps your existing workflows before recommending anything. It understands your constraints — the systems you are already running, the team habits that are already established, and the parts of the operation that are genuinely fragile. Only then does it identify where AI belongs and, just as importantly, where it does not. An agency that is honest about where AI does not fit is worth more than one that promises transformation across every department.
+A good agency starts with the business problem, not with a platform it wants to sell. It maps the existing workflows before recommending anything. It learns the constraints: the systems already in place, the habits the team already has, the parts of the operation that are fragile. Only then does it say where AI belongs and, just as usefully, where it does not. An agency that is candid about where AI does not fit is worth more than one that promises transformation in every department.
 
-What separates a true integration agency from a strategy-only consultant is implementation accountability. A good agency does not hand you a plan and leave. It configures and connects the chosen AI into your existing systems, drives team adoption, measures what actually changed, and then moves to the next opportunity. It owns the AI agenda month to month rather than delivering a one-off project and disappearing. That ownership — the sequencing, the accountability, the prioritization — is exactly what most growing businesses lack internally.
+---
 
-## Should You Hire an AI Agency, or Is There a Better Option?
+## The One Question to Ask First
 
-If you are a founder, CEO, or owner of a growing business wondering whether to hire an AI integration agency, it helps to compare the realistic alternatives honestly. Each option has genuine trade-offs, and the right choice depends on where your business actually sits.
+Ask every agency the same thing: *how familiar are you with my type of business?*
 
-Large consultancies are built for enterprise programs. They are expensive, deck-heavy, and slow to get inside the operations of a startup or a founder-led services firm. The methodology is designed for transformation programs that run for years, not for practical implementation in a fast-moving small business. If your company is still growing, you are unlikely to be their priority engagement, and the team assigned to you will often be junior staff following a standard playbook.
+The answer tells you whether the agency knows how work, cost and margin flow in a business like yours, or whether you will get generic recommendations that do not survive contact with the operation. Practical solutions do not come from tool knowledge alone. They come from knowing how a field service business dispatches crews, how a founder-led agency delivers client work, how a growing sales team creates its own bottlenecks. Without that, an agency is guessing, and a wrong guess costs months of effort and pulls the team away from work that matters.
 
-Freelancers who specialize in AI tend to cover one tool or one workflow. That is valuable for narrow problems, but it leaves the rest of your business unchanged. You still have no one who owns the AI agenda across your operation or who can prioritize which problem to solve next. The scope ends where the brief ends.
+Listen for specifics. Someone who has worked in businesses like yours will ask about the things that go wrong in them. Someone who has not will talk about the tools.
 
-DIY AI tools — the platforms designed to let non-technical users build automations — depend on internal time and skill that most growing businesses do not actually have. Someone has to map the workflows, configure the connections, test the outputs, train the team, and troubleshoot when things break. If that person does not exist in your business today, the tool will sit underused regardless of how good the software is.
+---
 
-Hiring a full-time head of AI is a large, slow bet. The search takes months, the salary and equity are significant, and the person still needs time to learn your business before they can contribute meaningfully. For most companies under a few hundred people, it is a commitment that is hard to justify before you have proven where AI creates real value.
+## Should You Hire an Agency, or Is There a Better Option?
 
-An outside AI integration agency fills the gap between all of these options. It implements rather than just advising. It measures rather than just recommending. And it moves to the next opportunity without the fixed overhead of a hire. For a startup or growing business that wants someone senior to say what is worth doing and then do it, an outside agency is often the most practical path.
+Compare the realistic alternatives before you decide. Each has real trade-offs.
 
-## Is There a Small AI Integration Agency Built for Businesses Like Yours?
+**Large consultancies** are built for enterprise programmes. They are expensive, heavy on documents, and slow to get inside the operations of a startup or a founder-led firm. A growing company is unlikely to be their priority.
 
-The answer is yes — and the distinction matters. Most of the [AI consulting](/articles/ai-consulting/) market is oriented toward either large enterprise programs or narrow freelance deliverables. There is a real gap for founders and operators who want someone who thinks like an owner, implements like a practitioner, and is built for businesses that are still growing rather than already optimized.
+**Freelancers** usually cover one tool or one workflow. That is valuable for a narrow problem, and it leaves the rest of the business unchanged. Nobody owns the question of what to do next. The [comparison of firms and freelancers](/articles/ai-consulting-firm-vs-freelancer/) covers this in detail.
 
-[No Black Swan](/book-call/) is a small AI integration agency run personally by founder Dori Fussmann, built specifically for startups and growing businesses from a solo founder to a few hundred people. It is not structured like a large consultancy: there is no programme team behind the engagement, no junior associates running the work, and no transformation methodology to sell. The engagement is run by Dori directly — an operator who has built and led businesses, served as a fractional CFO across multiple companies, and worked across finance, operations, sales, customer service, and management as an AI practitioner.
+**DIY tools**, the platforms that let non-technical people build automations, depend on time and skill inside the business. Someone has to map the workflow, configure the connections, test the output, train the team, and fix it when it breaks. If that person does not exist today, the tool will sit underused however good it is.
 
-No Black Swan works with three kinds of businesses: founder-led services firms such as agencies, consultancies, clinic groups, and professional services practices; operations-heavy businesses with dispatch, scheduling, field crews, or distribution complexity; and startups or scale-ups, typically under about a hundred and fifty people, that are either VC-backed or founder-funded. If your business fits one of those categories and you want a small AI integration agency for small business that treats your operation the way an operator would — not the way a consultant would — that is the specific positioning to look for.
+**A full-time head of AI** is a large, slow bet. Value Add VC's 2026 hiring guide puts the time to fill the role at 9 to 16 weeks, and the person then needs time to learn the business. For most smaller companies that is hard to justify before anyone has shown where AI pays. [What AI implementation costs](/articles/ai-implementation-cost/) sets the salary beside the other routes.
 
-If you want a small AI integration agency rather than a big consultancy, the right question is not just "who is the best AI integration agency?" but "who has actually run operations in businesses like mine?" That answer narrows the field considerably, and it is the question No Black Swan is built to answer yes to.
+**An agency** implements what you ask for, without the overhead of a hire. It fits best when you already know what you want built.
 
-## How to Find an AI Integration Agency You Can Trust
+**An outside AI owner** is the route for a business that does not yet know. One senior operator diagnoses the business, decides with you what is worth doing, builds it, and stays to take on the next priority. The [guide to who should own AI](/articles/who-should-own-ai-in-a-company/) explains the role.
 
-The best AI integration agencies reveal themselves through how they behave before you sign anything. Here are the signals that separate a trustworthy AI integration consultant from one that is primarily selling itself.
+---
 
-**They start with your business, not with a tool.** The first conversation should be about your workflows, your constraints, and how your team currently uses AI — not about a platform the agency wants to implement. If the first thing you hear is a recommendation for a specific tool, that is a signal the agency is working backward from a product rather than forward from your problems. Business-first orientation is the signal that separates operators from salespeople.
+## How to Vet an AI Integration Agency Before You Sign
 
-**They implement, not just advise.** Ask directly: will you configure and connect AI into our systems, or will you produce documentation and hand it to us? A good AI integration partner takes implementation accountability. If the deliverable is a report, you are paying for a consultant. If the deliverable is a working integration that your team is actually using, you are paying for an operator.
+The best agencies show themselves by how they behave before there is a contract.
 
-**They are honest about where AI does not belong.** This is a harder signal to detect, but it is one of the most important. An agency that tells you AI is the answer to every problem in your business is not being straight with you. Good agencies push back. They tell you where the risk outweighs the benefit, where the workflow is too fragile to automate yet, and where a simpler process change would do more than any AI tool.
+**They start with your business, not with a tool.** The first conversation should be about your workflows, your constraints and how the team uses AI today. If the first thing you hear is a platform recommendation, the agency is working backward from a product.
 
-**Their pricing is transparent and flat.** Look for a flat monthly fee with no percentage fees and no guaranteed savings claims. Honest agencies do not promise what they cannot control. If an agency offers to work on a percentage of savings generated, that is an incentive structure that tends to push AI into places where it does not belong. A paid discovery or assessment phase before a long engagement is a good sign: it means the agency will not sell you a plan without first understanding your business.
+**They implement, not only advise.** Ask directly: will you configure and connect this in our systems, or write it up and hand it to us? If the deliverable is a report, you are paying for a consultant. If it is a working integration your team uses, you are paying for an operator.
 
-No Black Swan's engagement is structured exactly this way. It starts with a setup and assessment — a paid month of understanding your business before anything is built — and then moves to a flat monthly engagement, scaled to project size and pace. No percentage fees. Scope and fee agreed after a free 30-minute consultation, because every business differs.
+**They say where AI does not belong.** An agency that finds an AI answer to every problem is not being straight with you. Good ones push back. They tell you where the risk outweighs the benefit, where a workflow is too fragile to automate yet, and where a simple process change would do more than any tool.
 
-## How to Pick the Right AI Integration Partner for Your Company Type
+**Their pricing is plain.** You should know what you are paying, and for what, before each piece of work begins. A paid discovery or assessment before a long engagement is a good sign: the agency will not sell you a plan before it understands the business. As [No Black Swan](/book-call/)'s founder, Dori Fussmann, puts it: "What people dislike most is uncertainty about payment terms, the feeling of buying a cat in a bag."
 
-The right AI integration consultant looks different depending on your type of business. Generic expertise is not enough. What matters is whether the agency has worked inside operations that resemble yours — not just read about them or advised on them from the outside.
+**They put it in writing.** Scope, what counts as done, who does the work, who owns what is built, the minimum term, and what it costs to stop.
 
-**For a founder-led services firm**, the AI integration questions are specific. How does AI affect billable hours? What happens to client confidentiality when you route information through a third-party model? How do you use AI to improve delivery quality without deskilling your team? An AI agency for a services firm needs to understand professional services economics — not just back-office automation.
+---
 
-**For an operations-heavy business** — a construction general contractor, a field-service company, a trucking or logistics operation, a distributor — the complexity is in workflows that are already tightly sequenced. Dispatch, scheduling, job costing, crew communication, and compliance reporting are not areas where generic AI tools slot in cleanly. You need an agency with hands-on experience integrating AI into operational workflows, not just configuring software tools.
+## Red Flags That Should End the Conversation
 
-**For a startup or scale-up with a growing team**, the challenge is usually not finding an AI tool — it is installing ownership and accountability around AI across the whole organization. Everyone on a typical growing team uses AI individually and ad hoc. [Nobody owns it](/articles/who-should-own-ai-in-a-company/). That gap — between individual tool use and genuine operational integration — is exactly where an outside AI integration partner creates the most value.
+- **Guaranteed savings or headcount cuts.** Nobody controls how your team takes to a new way of working. A guarantee is a sales line.
+- **A fee tied to a percentage of savings.** It rewards pushing AI into places where it does not belong.
+- **One tool for every client.** The agency is a reseller, whatever it calls itself.
+- **A large retainer before any diagnosis.** Scope and fee cannot be right if nobody has looked at the business.
+- **A senior person in the pitch and juniors in the work.** Ask who you will be talking to three months in.
+- **A scope that cannot be written down.** If it is vague before you sign, it will grow afterwards.
 
-For companies of any of these types, what makes AI consulting practical rather than theoretical is operational experience across industries and departments. Dori Fussmann brings that combination at No Black Swan: an operator's, founder's, and fractional CFO's view of the business — across finance, operations, sales, customer service, and management — which shapes what gets prioritized and how implementation is sequenced. That is a different lens from a tool specialist or a generalist consultant, and it is the lens that tends to surface the opportunities worth acting on first.
+---
 
-## Does Location Matter When Choosing an AI Agency?
+## How to Pick the Right Partner for Your Type of Business
 
-Searching for an "AI agency near me" is a reasonable instinct, but do not let geography narrow your options before you have checked whether a remote agency would serve you better. Most AI integration work does not depend on physical proximity. Workflow mapping, system configuration, adoption coaching, and outcome measurement can all be done remotely, and often more efficiently than on-site. The more important filter is whether the agency has genuine operational experience in businesses that resemble yours, regardless of where they are based. A local generalist is rarely a better choice than a remote specialist who has spent years inside operations like yours.
+**A founder-led services firm** has its own questions. What does AI do to billable hours? What happens to client confidentiality when information passes through a third-party model? How do you improve delivery without deskilling the team? An agency for a services firm has to understand professional services economics, not only back-office automation. [AI for professional services](/articles/ai-for-professional-services/) goes further.
 
-That said, if you genuinely want someone who can sit alongside your team at key moments — during a workflow redesign session or a critical onboarding period — it is worth asking any agency how they handle that. What matters is not the city the agency operates from; it is whether the engagement model fits how your business actually works.
+**An operations-heavy business**, such as a general contractor, a field service company, a logistics operation or a distributor, runs on tightly sequenced workflows. Dispatch, scheduling, job costing, crew communication and compliance reporting are not places where a generic tool slots in cleanly. You need someone who has integrated AI into [operations](/articles/ai-for-operations/), not only configured software.
 
-No Black Swan works with businesses regardless of location. The engagement is structured around your workflows, not around site visits. If you are looking for an AI integration consultant for your operations and you are in an English-speaking market, location should be one of the last things you filter on — operational fit should be the first.
+**A startup or scale-up** rarely struggles to find a tool. The problem is ownership. Everyone uses AI individually, and nobody owns it across the company. That gap, between personal use and operational integration, is where an outside partner adds the most.
 
-## What a Good AI Integration Engagement Looks Like, Step by Step
+---
 
-Understanding the shape of a well-structured engagement helps you evaluate any agency you speak with — and immediately flags the ones that do not have a coherent process. **Month one is a paid setup and assessment.** A good agency does not start building before it understands your business. The first month should involve mapping current workflows, identifying constraints, understanding how the team already uses AI, and finding opportunities across the operation. Those opportunities should then be prioritized by value, effort, feasibility, and risk — not just by what is technically possible. The output is not a deck. It is an agreed plan, specific to your business, with a clear sequence and rationale for what comes first.
+## Does Location Matter?
 
-**From month two onward, the agency builds, integrates, and refines.** It configures and connects the chosen AI into your existing systems and workflows. It drives team adoption — which is typically the hardest part of any AI rollout, not the technology itself. It measures what changed. And then it moves to the next opportunity, following the prioritized plan rather than chasing whatever new tool appeared last week.
+Searching for an agency nearby is a reasonable instinct, but geography should be one of the last filters. Workflow mapping, system configuration, adoption coaching and measurement can all be done remotely. A remote specialist who has spent years inside operations like yours will serve you better than a local generalist. If you want someone beside the team at key moments, such as a workflow redesign session, ask how the agency handles that.
 
-**The fee structure should keep incentives aligned.** A flat monthly fee with no percentage fees and scope agreed in advance means the agency is paid to do what is right for your business, not to maximize billable hours or push solutions into areas where they do not fit. No variable fees. No opaque project scopes that expand after you have signed.
+---
 
-No Black Swan describes this model as being your outside AI owner. The agenda, the sequencing, and the accountability sit with the agency month to month — not with you. That is the practical difference between an integration agency and a one-off consultant: someone who stays, measures, and moves to the next problem rather than leaving after the report is delivered.
+## What a Good Engagement Looks Like, Step by Step
 
-## How to Take the Next Step
+**First, a diagnosis.** Nothing is built before the business is understood. Workflows are mapped, constraints are noted, current AI use is recorded, and opportunities are ranked by value, effort, feasibility and risk, not by what is technically possible. The output is an agreed plan with a clear order, not a deck.
 
-Before committing to any AI integration agency, take a free 30-minute call. A good agency will tell you specifically what it would do in your business — not give you a generic pitch. That specificity, grounded in what you describe about your workflows and constraints, is itself a signal of whether the agency has the operational familiarity to actually help you.
+**Then build, integrate and refine.** The chosen AI is configured and connected to existing systems. The team is brought along, which is usually the hardest part of any rollout. What changed is measured. Then the work moves to the next item on the plan, not to whichever tool launched last week.
 
-No Black Swan offers a free 30-minute consultation where the conversation covers what an engagement would actually look like for your specific situation. Because every business differs, exact scope and [pricing](/articles/ai-implementation-cost/) are agreed after that call, not quoted in advance from a price list. You can book that conversation at /dori-fussmann-lqbqlb/. If you want to understand what AI consulting involves more broadly before that conversation, the article on AI consulting at /ai-consulting/ covers what it is and what you can expect to get from it.
+**Throughout, a fee that keeps incentives straight.** A scope agreed in advance and a predictable fee mean the provider is paid to do what is right for the business, not to maximize hours.
 
-If you have been looking for a small AI integration agency that works the way an operator thinks — business first, implementation accountable, honest about where AI does not belong — the consultation is where that conversation starts.
+No Black Swan is not an agency. It is an operator-led business run personally by Dori Fussmann, a former investment banker who founded and ran The Vets, a technology-enabled pet healthcare business, and has worked as a fractional COO and CFO. It works in these steps: a free 30-minute consultation, a fixed-fee discovery, strategy and setup with an agreed scope and fee, then ongoing execution on a flat monthly fee, month to month. There are no percentage or success fees. [How it works](/how-it-works/) and the [pricing page](/pricing/) set out each stage.
+
+---
 
 ## Where Things Stand
 <!-- WHERE-THINGS-STAND:START -->
 As of early November 2026, the clearest shift in the AI integration landscape is a move from individual tool adoption toward what analysts and founders alike are calling team-level orchestration: AI that connects departments, data, and tasks rather than helping one person work faster in isolation. Recent industry coverage describes this as AI moving from personal productivity into workflow architecture, with buyers increasingly asking whether AI saves time, cuts errors, or reduces risk — not just whether it is impressive. At the enterprise level, the AI automation market has grown substantially, with major platforms racing to deploy agentic capabilities across operational workflows. For smaller businesses, the practical implication is that the gap between individual AI tool use and genuine operational integration is widening, making the role of an experienced outside AI integration agency more relevant rather than less. The market is getting stricter: decision-makers now want proof that AI changes business outcomes, not just proof that it runs.
 <!-- WHERE-THINGS-STAND:END -->
 
+---
+
 ## Key Takeaways
 
-- The single most important question to ask any AI integration agency is how familiar they are with your type of business — that answer reveals whether you will get practical solutions or wasted time and resources.
-- A trustworthy AI integration agency starts with your business problems, not with a tool recommendation; it implements and measures outcomes rather than advising and departing.
-- The alternatives — large consultancies, AI freelancers, DIY tools, and a full-time hire — each have real limitations for startups and growing businesses; an outside AI integration agency fills the gap without the fixed overhead.
-- For founder-led services firms, operations-heavy businesses, and growing startups, the right agency has genuine hands-on operational experience in businesses like yours, not just tool knowledge.
-- Before committing to any agency, take a free 30-minute call and ask what they would specifically do in your business — a good agency will tell you exactly that, not give you a generic pitch.
+- The fastest way to sort agencies is to ask how familiar they are with your type of business. The answer shows whether you will get practical solutions or generic ones.
+- A good AI integration agency starts with the business problem, implements, measures what changed, and says where AI does not belong.
+- An agency fits best when you know what you want built. If you do not, start with a paid diagnosis or an outside AI owner.
+- Walk away from guaranteed savings, fees tied to a percentage of savings, one tool for every client, and a large retainer before any diagnosis.
+- Get the scope, the fee, the minimum term and the ownership of what is built in writing before you sign.
