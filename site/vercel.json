@@ -294,6 +294,16 @@
       "source": "/case-studies/:path*",
       "destination": "/about/",
       "permanent": true
+    },
+    {
+      "source": "/articles/fractional-ai",
+      "destination": "/articles/head-of-ai-vs-ai-consultant/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/fractional-ai/",
+      "destination": "/articles/head-of-ai-vs-ai-consultant/",
+      "permanent": true
     }
   ]
 }
