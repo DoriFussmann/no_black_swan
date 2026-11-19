@@ -178,7 +178,7 @@ No Black Swan is also honest about where AI doesn't belong. If a workflow isn't 
 
 If your team is already using AI individually but the company isn't AI-run, the assessment stage will show you exactly where the gap is and what to fix first. That's the starting point for most of the businesses No Black Swan works with: AI use that is real but scattered, with no one owning the agenda and no way to know what's actually changing.
 
-The right next step is a free 30-minute consultation. The conversation covers your workflows, constraints, and what a practical plan would look like for your specific business. Exact scope and fee are agreed after that call—every business differs, and no fixed quotes are given in advance. If you're curious what the assessment would surface for your team, that call is where to start. You can book it at /dori-fussmann-lqbqlb/.
+The right next step is a free 30-minute consultation. The conversation covers your workflows, constraints, and what a practical plan would look like for your specific business. Exact scope and fee are agreed after that call—every business differs, and no fixed quotes are given in advance. If you're curious what the assessment would surface for your team, that call is where to start. You can [book it here](/book-call/).
 
 ---
 

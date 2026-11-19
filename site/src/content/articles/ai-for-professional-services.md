@@ -160,7 +160,7 @@ We cannot tell you your exact plan or price in an article, because every profess
 
 What we can tell you is that the starting point is always the same: map the work before choosing the tools. Identify the high-frequency, low-judgment tasks where time savings are real and risk is manageable. Address the ungoverned AI use that is already happening before scaling anything. Measure what changes after implementation, not just what gets purchased.
 
-If you want to know specifically what we would do, where we would start, and what it would cost for your situation, the right next step is a free 30-minute consultation at /dori-fussmann-lqbqlb/. The setup and assessment is the first paid step, and scope and fee are agreed after that call. If AI is not the right move for a particular part of your business, we will say so.
+If you want to know specifically what we would do, where we would start, and what it would cost for your situation, the right next step is a [free 30-minute consultation](/book-call/). The setup and assessment is the first paid step, and scope and fee are agreed after that call. If AI is not the right move for a particular part of your business, we will say so.
 
 ## Where Things Stand
 <!-- WHERE-THINGS-STAND:START -->

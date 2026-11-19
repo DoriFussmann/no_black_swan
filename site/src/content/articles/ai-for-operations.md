@@ -124,7 +124,7 @@ Dori's background is an operator's and CFO's view of where work, cost, and margi
 
 We can't tell you your exact plan or price in an article, because every business differs. The scope depends on which workflow comes first, how many systems need to connect, and how fast you want to move. In a free 30-minute call, we'll tell you what we'd do—and if AI doesn't fit a particular part of your operation, we'll say so. That honesty is part of how this works.
 
-If you run crews, trucks, or a dispatch operation and you've been meaning to do something with AI without knowing where to start, the place to start is a conversation. Book a free consultation at /dori-fussmann-lqbqlb/ and we'll map the bottleneck together.
+If you run crews, trucks, or a dispatch operation and you've been meaning to do something with AI without knowing where to start, the place to start is a conversation. [Book a free consultation](/book-call/) and we'll map the bottleneck together.
 
 ## Where Things Stand
 <!-- WHERE-THINGS-STAND:START -->
