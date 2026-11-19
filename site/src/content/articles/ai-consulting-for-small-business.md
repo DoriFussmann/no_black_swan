@@ -67,9 +67,9 @@ This is why a business-first orientation matters so much. An AI consultant who l
 
 A 50-person company occupies an awkward middle ground in the AI consulting market. It's too large to be served well by a single-workflow freelancer and too small to be a sensible fit for a large consultancy's enterprise programme. What it needs is someone who understands both the operational reality—dispatch, scheduling, estimating, field communications—and how AI fits into the specific systems already in use, not just what AI can theoretically do.
 
-No Black Swan's setup and assessment, from $250 for the first month, is designed exactly for this. It maps current workflows and existing systems, identifies where the real opportunities are, and prioritizes them by value, effort, feasibility, and risk. A plan is agreed before a single tool is chosen or configured. That sequence matters: choosing tools before understanding the workflows is how businesses end up with integrations that don't connect to anything important.
+No Black Swan's setup and assessment is designed exactly for this. It maps current workflows and existing systems, identifies where the real opportunities are, and prioritizes them by value, effort, feasibility, and risk. A plan is agreed before a single tool is chosen or configured. That sequence matters: choosing tools before understanding the workflows is how businesses end up with integrations that don't connect to anything important.
 
-After assessment, the flat monthly engagement—typically from $2,000 a month, scaled to the project's size and the client's pace—handles configuration, integration into existing systems, team adoption, and measurement. The structure gives a growing business a dedicated outside AI owner without [the cost](/articles/ai-implementation-cost/) or commitment of a full-time hire.
+After assessment, the flat monthly engagement—scaled to the project's size and the client's pace—handles configuration, integration into existing systems, team adoption, and measurement. The structure gives a growing business a dedicated outside AI owner without [the cost](/articles/ai-implementation-cost/) or commitment of a full-time hire.
 
 ## AI Consulting for Startups and Scale-Ups: What Does Good Look Like?
 
@@ -113,7 +113,7 @@ No Black Swan never sells a tool-first rollout, never produces strategy decks wi
 
 ## What Does It Cost and How Do You Start?
 
-No Black Swan publishes its pricing as "from" ranges because the right scope depends on the business. The setup and assessment starts from $250 for the first month. The ongoing monthly engagement is typically from $2,000 a month, scaled to the project's size and the client's pace. There are no percentage fees and no guaranteed savings or headcount cuts quoted before a conversation—because every business differs, and any consultant who quotes those things before understanding your business is guessing.
+No Black Swan does not publish prices, because the right scope depends on the business. The fee for the setup and assessment is fixed and agreed before it starts. The ongoing engagement runs on a flat monthly fee, scaled to the project's size and the client's pace. There are no percentage fees and no guaranteed savings or headcount cuts quoted before a conversation—because every business differs, and any consultant who quotes those things before understanding your business is guessing.
 
 We can't tell you your exact plan or price in an article, because every business differs. What we can tell you is that the right starting point is a free 30-minute consultation. In that call, No Black Swan will tell you specifically what it would do, in what order, and what it would cost for your situation—not a range applied to every client, but a real answer based on your business.
 
@@ -129,5 +129,5 @@ AI adoption among small businesses has accelerated sharply in 2026, shifting the
 - Good AI consulting for a small business means implementation inside your actual workflows—not a strategy deck, not a single tool handed back at project end, and not a framework applied from the outside.
 - The method barely changes with company size: start precise and surgical in one place, then expand slowly and in a connected way. What scales at around 150 people is the cross-department mapping and change management required before any implementation begins.
 - The four main alternatives—large consultancies, AI freelancers, DIY tools, and a full-time AI hire—each have genuine trade-offs; the right choice depends on whether you need a one-time fix, an enterprise programme, or an ongoing outside AI owner.
-- No Black Swan's two-part structure—a paid setup and assessment from $250, then a flat monthly engagement typically from $2,000—gives growing businesses a dedicated outside AI owner scaled to their pace and size.
+- No Black Swan's two-part structure—a paid setup and assessment, then a flat monthly engagement—gives growing businesses a dedicated outside AI owner scaled to their pace and size.
 - The free 30-minute consultation is where the specific plan and price are agreed; no article or generic framework can replace that conversation, because every business differs.

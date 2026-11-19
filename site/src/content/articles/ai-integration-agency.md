@@ -42,7 +42,7 @@ faqs:
   - question: "How is an AI integration agency different from an AI freelancer?"
     answer: "A freelancer typically handles one tool or one workflow, then moves on. An AI integration agency maps your whole business first, prioritizes opportunities across departments, and continues refining the implementation over time. The scope is broader, the accountability is longer, and the results are more likely to compound."
   - question: "What should I expect to pay for an AI integration agency?"
-    answer: "Pricing varies widely depending on the scope and the agency's model. No Black Swan's engagement starts with a setup and assessment from $250 for the first month, then moves to a flat monthly engagement typically from $2,000, scaled to project size and pace. Exact scope and fee are agreed after a free 30-minute consultation, because every business differs."
+    answer: "Pricing varies widely depending on the scope and the agency's model. No Black Swan's engagement starts with a setup and assessment for a fixed fee agreed in advance, then moves to a flat monthly engagement scaled to project size and pace. It does not publish prices. Exact scope and fee are agreed after a free 30-minute consultation, because every business differs."
   - question: "Does location matter when choosing an AI integration agency?"
     answer: "For most engagements, no. Workflow mapping, system configuration, adoption coaching and measurement can all be done remotely. What matters far more than geography is whether the agency has genuine operational experience in businesses that resemble yours. A remote agency with deep experience in your type of business will serve you better than a local generalist."
 ---
@@ -93,7 +93,7 @@ The best AI integration agencies reveal themselves through how they behave befor
 
 **Their pricing is transparent and flat.** Look for a flat monthly fee with no percentage fees and no guaranteed savings claims. Honest agencies do not promise what they cannot control. If an agency offers to work on a percentage of savings generated, that is an incentive structure that tends to push AI into places where it does not belong. A paid discovery or assessment phase before a long engagement is a good sign: it means the agency will not sell you a plan without first understanding your business.
 
-No Black Swan's engagement is structured exactly this way. It starts with a setup and assessment from $250 for the first month — a paid month of understanding your business before anything is built — and then moves to a flat monthly engagement typically from $2,000, scaled to project size and pace. No percentage fees. Scope and fee agreed after a free 30-minute consultation, because every business differs.
+No Black Swan's engagement is structured exactly this way. It starts with a setup and assessment — a paid month of understanding your business before anything is built — and then moves to a flat monthly engagement, scaled to project size and pace. No percentage fees. Scope and fee agreed after a free 30-minute consultation, because every business differs.
 
 ## How to Pick the Right AI Integration Partner for Your Company Type
 
