@@ -53,7 +53,7 @@ faqs:
 
 ## The Short Answer
 
-A **forward deployed engineer** (someone who embeds inside your operation and builds there) and a **consultant** (someone who studies your problem and recommends a solution) are measured by different things: one by what runs, the other by what is decided. If you already know which workflow needs to change and want it built into your systems, the engineering way of working is what you need. If you do not know where to start—which is most smaller businesses—you need diagnosis first, and ideally the same person who diagnoses also implements. For businesses that do not need a full-time hire, the practical question is not which title to look for, but which working model to insist on.
+A **[forward deployed engineer](/articles/forward-deployed-engineer/)** (someone who embeds inside your operation and builds there) and a **consultant** (someone who studies your problem and recommends a solution) are measured by different things: one by what runs, the other by what is decided. If you already know which workflow needs to change and want it built into your systems, the engineering way of working is what you need. If you do not know where to start—which is most smaller businesses—you need diagnosis first, and ideally the same person who diagnoses also implements. For businesses that do not need a full-time hire, the practical question is not which title to look for, but which working model to insist on.
 
 ## What Each One Leaves Behind
 
