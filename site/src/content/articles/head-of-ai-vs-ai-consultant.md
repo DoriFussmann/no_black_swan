@@ -2,11 +2,11 @@
 title: "Head of AI vs. AI Consultant: Hire, Outsource, or Both?"
 h1: "Head of AI vs. AI Consultant: Which Does Your Business Need?"
 description: "Should you hire a head of AI, work with a consultant, or both? Learn what each option actually costs and how to decide what your business needs."
-slug: fractional-ai
+slug: head-of-ai-vs-ai-consultant
 date: "2026-11-17"
 updatedDate: "2026-11-17"
 author: dori-fussmann
-category: fractional-ai
+category: fractional ai
 pillarKeyword: fractional ai
 articleType: comprehensive
 targetKeyword: head of ai vs ai consultant
@@ -16,7 +16,7 @@ tags:
   - hire ai specialist or consultant
   - in-house ai vs outsourced ai
   - outsource ai implementation
-image: ../../assets/articles/fractional-ai.png
+image: ../../assets/articles/head-of-ai-vs-ai-consultant.png
 imageAlt: "A business owner at a whiteboard weighing two paths: a full-time hire versus an outside AI partner, with workflow diagrams and sticky notes visible"
 keywords:
   - fractional ai
