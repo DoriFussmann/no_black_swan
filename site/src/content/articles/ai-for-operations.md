@@ -116,7 +116,7 @@ The pattern across all four alternatives is the same: they either stop short of 
 
 [No Black Swan](/book-call/) is a small AI integration agency run personally by founder Dori Fussmann. It works with growing businesses from a solo founder to a few hundred people, including operations-heavy companies with crews, trucks, and high call volume. The approach is built around a simple belief: business first, not tools first. No tool gets chosen until the workflows are mapped, the constraints are understood, and the highest-value opportunity is identified.
 
-Every engagement starts with a paid setup and assessment in the first month, from $250. That month is spent understanding the business: mapping current workflows, identifying where AI is already being used ad hoc, finding the real opportunities, and prioritizing them by value, effort, feasibility, and risk. The output is a practical plan, not a deck. The plan is agreed before any configuration begins.
+Every engagement starts with a paid setup and assessment in the first month. That month is spent understanding the business: mapping current workflows, identifying where AI is already being used ad hoc, finding the real opportunities, and prioritizing them by value, effort, feasibility, and risk. The output is a practical plan, not a deck. The plan is agreed before any configuration begins.
 
 The ongoing monthly engagement is scaled to the project's size and pace. It covers building, integrating, driving team adoption, measuring what changed, and moving to the next priority. No Black Swan acts as the company's [outside AI owner](/articles/who-should-own-ai-in-a-company/)—which means the agenda doesn't stop when a single deliverable is done, and adoption doesn't get treated as someone else's problem.
 
