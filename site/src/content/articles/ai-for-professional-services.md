@@ -4,7 +4,7 @@ h1: How Professional Services Firms Can Put AI to Work
 description: AI in professional services means fewer manual steps around billable work—not replacing judgment. Here's where to start and what to fix first.
 slug: ai-for-professional-services
 date: "2026-11-06"
-updatedDate: "2026-11-06"
+updatedDate: "2026-11-19"
 author: dori-fussmann
 category: ai for professional services
 pillarKeyword: ai for professional services
@@ -63,14 +63,16 @@ faqs:
   - question: "What's the difference between a staff member using AI and a firm actually running on AI?"
     answer: "Individual use means someone opens a tool, runs a task, and closes it—there's no consistency, no shared standard, and no measurement. A firm running on AI has integrated it into the actual workflow: the AI is triggered as part of how the work gets done, adoption is consistent across the team, and someone is measuring what changed in delivery capacity. The gap between the two is an execution and ownership problem, not a technology problem."
   - question: "How long does it take to see results from AI integration in a professional services firm?"
-    answer: "The fastest results typically come within the first month, from high-frequency, low-judgment tasks like meeting notes, status reports, and proposal drafts—tasks where time savings are visible immediately. Deeper integration into delivery workflows takes longer and depends on the complexity of your systems and the pace of team adoption. No Black Swan structures the engagement to show early wins during the setup and assessment phase, then build from there in the monthly engagement."
+    answer: "The fastest results usually come from high-frequency, low-judgment tasks such as meeting notes, status reports and proposal drafts, where the time saved is visible at once. Deeper integration into delivery workflows takes longer and depends on the complexity of your systems and the pace of team adoption. Aim for an early win in one workflow, then build from there."
 ---
 
-In a professional services firm, AI shows up mostly in the efficiency of labor. That is not a dramatic claim—it is the most honest way to describe where the value actually lands. The firm either uses AI so the same team can handle more engagements and deliver sharper work for clients, or it uses AI to hold revenue steady with fewer people on the payroll. Both routes improve margin. What matters is that this is a deliberate choice, not an accidental outcome. And right now, most founder-led services businesses are making no conscious choice at all—they have tools, they have individuals using those tools in private, and they have no one steering the agenda.
+## The Short Answer
 
-This article covers what AI in professional services actually means in practice: where to start, how to avoid the traps, what alternatives honestly look like, and why getting this right is now a matter of competitive positioning rather than optional exploration.
+AI for professional services mostly changes **the efficiency of labor**: the same team handles more work, or the firm holds revenue with fewer hours. In its 2026 report, Thomson Reuters found organization-wide AI use at 40% of firms, but only 18% tracking the return. The best starting points are **high-frequency, low-judgment tasks** such as meeting notes, status reports and proposal drafts, with **client confidentiality settled first**. Choose deliberately between capacity and cost, or the choice makes itself.
 
 ## How AI Is Changing Professional Services: Labor, Margin, and a Choice the Firm Has to Make
+
+In a professional services firm, AI shows up mostly in the efficiency of labor. That is not a dramatic claim—it is the most honest way to describe where the value actually lands. The firm either uses AI so the same team can handle more engagements and deliver sharper work for clients, or it uses AI to hold revenue steady with fewer people on the payroll. Both routes improve margin. What matters is that this is a deliberate choice, not an accidental outcome. And right now, most founder-led services businesses are making no conscious choice at all—they have tools, they have individuals using those tools in private, and they have no one steering the agenda.
 
 The traditional professional services model is under structural pressure, and AI is the main force applying it. For decades, the implicit bargain was simple: a firm billed clients for the hours that smart people spent on hard problems. AI is making that bargain harder to sustain because it compresses the time required to do many of the tasks that once filled those hours.
 
@@ -144,23 +146,23 @@ A full-time head of AI is the right answer eventually, for firms large enough an
 
 The gap these alternatives leave is an outside operator who works inside your existing systems, owns the agenda month to month, drives adoption, and is honest when a particular workflow is not worth automating. That is a different model, and whether it fits depends on whether you have someone internal who can fill that role.
 
-## How No Black Swan Works With Professional Services Firms
+## What an Operator-Led Engagement Looks Like for a Services Firm
 
-[No Black Swan](/book-call/) is a small AI integration agency run personally by founder Dori Fussmann, with hands-on operational experience across finance, operations, sales, customer service, and management. The model is built for founder-led and growing firms—not enterprise transformation programmes, not product companies building AI, and not anyone who wants guaranteed savings handed to them.
+[No Black Swan](/book-call/) is an operator-led business run personally by its founder, Dori Fussmann, with hands-on operating experience across finance, operations, sales, customer service and management. It works with founder-led and growing firms, not enterprise transformation programmes, not companies building AI products, and not buyers who want guaranteed savings.
 
-The engagement starts with a paid setup and assessment covering the first month. This is the mapping phase: understand the business first, map current workflows and constraints, find out how the team already uses AI and where ungoverned shadow use is happening, identify the opportunities, prioritize them by value, effort, feasibility, and risk, and agree a practical plan before anything is built or configured. It is a paid month because real diagnosis takes real time—and because a firm that skips this phase usually ends up implementing the wrong thing.
+It starts with a free 30-minute consultation and then a fixed-fee discovery. This is the mapping stage: understand the business, map workflows and constraints, find out how the team already uses AI and where unsanctioned use is happening, rank the opportunities by value, effort, feasibility and risk, and agree a practical plan before anything is built. Discovery is paid because real diagnosis takes real time, and a firm that skips it usually implements the wrong thing.
 
-The ongoing monthly engagement, scaled to project size and pace, builds, integrates, and refines. Configure and connect the chosen AI into existing systems, drive team adoption, measure what changed, then move to the next opportunity. In effect, No Black Swan acts as the firm's [outside AI owner](/articles/who-should-own-ai-in-a-company/)—the entity that keeps the agenda moving and brings both an operator's and a former fractional CFO's view of where cost, margin, and delivery time actually sit in the business.
+Strategy and setup follow, with an agreed scope and fee, then ongoing execution on a flat monthly fee, month to month: configure and connect the chosen AI into existing systems, drive adoption, measure what changed, then move to the next opportunity. In effect, No Black Swan acts as the firm's [outside AI owner](/articles/who-should-own-ai-in-a-company/), bringing an operator's and a former fractional CFO's view of where cost, margin and delivery time sit.
 
-The approach is business first, not tools first. That means being honest about where AI does not belong—where the accuracy risk outweighs the time saving, where confidentiality constraints are real, where the workflow is too variable to automate reliably. No Black Swan does not sell a tool-first rollout, produce strategy decks with no implementation, or push AI where it does not fit.
+The approach is business first, not tools first, and that includes saying where AI does not belong: where the accuracy risk outweighs the time saved, where confidentiality constraints are real, or where the work is too variable to automate reliably. Dori puts it this way: "I'm not in the business of finding an AI use case for everything. I'm in the business of improving how companies operate."
 
 ## What to Do Next if You Want to Start
 
-We cannot tell you your exact plan or price in an article, because every professional services business differs. The workflows that eat the most non-billable time, the systems the team already uses, the client confidentiality constraints, the firm's pace and appetite—all of these shape what makes sense to do first and what to leave alone.
+No article can give you a plan or a price, because every professional services business differs. The workflows that eat the most non-billable time, the systems the team already uses, the client confidentiality constraints, the firm's pace and appetite—all of these shape what makes sense to do first and what to leave alone.
 
-What we can tell you is that the starting point is always the same: map the work before choosing the tools. Identify the high-frequency, low-judgment tasks where time savings are real and risk is manageable. Address the ungoverned AI use that is already happening before scaling anything. Measure what changes after implementation, not just what gets purchased.
+What does not change is the starting point: map the work before choosing the tools. Identify the high-frequency, low-judgment tasks where time savings are real and risk is manageable. Address the ungoverned AI use that is already happening before scaling anything. Measure what changes after implementation, not just what gets purchased.
 
-If you want to know specifically what we would do, where we would start, and what it would cost for your situation, the right next step is a [free 30-minute consultation](/book-call/). The setup and assessment is the first paid step, and scope and fee are agreed after that call. If AI is not the right move for a particular part of your business, we will say so.
+To talk through where to start in your firm, book a [free 30-minute consultation](/book-call/). Discovery is the first paid stage, with its fee agreed before it starts. If AI is not the right move for part of the business, you will hear that too.
 
 ## Where Things Stand
 <!-- WHERE-THINGS-STAND:START -->

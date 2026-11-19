@@ -4,7 +4,7 @@ h1: What a Forward Deployed Engineer Actually Does
 description: "A forward deployed engineer embeds inside a business to make AI run—not just advise. Learn what the role means, who it's for, and when you need one."
 slug: forward-deployed-engineer
 date: "2026-11-06"
-updatedDate: "2026-11-06"
+updatedDate: "2026-11-19"
 author: dori-fussmann
 category: fractional ai
 pillarKeyword: fractional ai
@@ -63,6 +63,10 @@ faqs:
     answer: "An embedded AI operator is the plain-English name for what a forward deployed engineer does when the client isn't a tech company. The function is the same—an outside owner who is both an AI expert and an operations expert, working inside your business to make AI run—but the framing fits non-tech environments better. The person brings implementation knowledge and AI operations know-how, not just technical coding skills."
 ---
 
+## The Short Answer
+
+A forward deployed engineer (FDE) is **a technical person who works inside a client's business** to build AI or software into its real operations, rather than advising from outside. The title comes from Palantir, and in 2026 Anthropic, OpenAI, AWS, Microsoft and Google Cloud all built teams around it. For businesses that are not tech companies, the same function is better called an **embedded AI operator**: someone who **knows both the AI and the operation**. If you need AI built into how you work, look for that combination.
+
 ## What a Forward Deployed Engineer Is, in Plain Terms
 
 The term "forward deployed" comes from the military. It means stationed at the front—where the actual work happens—rather than at headquarters issuing instructions from a distance. That origin is a useful guide to what a forward deployed engineer (FDE) does: this is a technical person who works inside a client's business to build, integrate, and ship AI or software into that company's real operations. They don't send recommendations from an office. They show up where the dispatchers, estimators, and operations managers actually work, figure out what's broken or slow, and fix it with AI.
@@ -113,19 +117,19 @@ The forward deployed engineering role is growing 42-fold because companies reali
 
 As companies move from experimentation to the deployment of AI workflows, new job categories are emerging —and the reason those categories exist is that implementation is a distinct skill from both model development and business strategy. It requires someone who can read a workflow, understand where cost and margin actually sit, and choose and configure AI to fit—not someone who starts with a tool and finds a use case to match it.
 
-## How No Black Swan Fills This Role
+## What an Embedded AI Operator Looks Like for a Growing Business
 
-[No Black Swan](/book-call/) is a small AI integration agency for startups and growing businesses, run personally by founder Dori Fussmann. It acts as the outside AI owner—the embedded AI operator—for companies that don't have one internally. The founding perspective is an operator's and fractional CFO's view of business: understanding where work, cost, and margin actually sit before recommending anything, and then building rather than advising.
+[No Black Swan](/book-call/) is one example: an operator-led business run personally by its founder, Dori Fussmann, that acts as the outside AI owner, the embedded AI operator, for companies that do not have one. The founding view is an operator's and a fractional CFO's: understand where work, cost and margin sit before recommending anything, then build rather than advise.
 
-The engagement is structured in two parts. It starts with a paid setup and assessment covering the first month: mapping current workflows, identifying the right AI opportunities, and agreeing a practical plan before any tool is touched. Business first, not tools first. The ongoing monthly engagement that follows covers building, integrating, measuring, and moving to the next opportunity—the same cycle an embedded AI operator runs. No percentage fees. No guaranteed results. No strategy decks that go nowhere.
+The engagement runs in stages, each agreed before it starts: a free 30-minute consultation; a fixed-fee discovery that maps workflows, finds the right AI opportunities and agrees a practical plan before any tool is touched; strategy and setup with an agreed scope and fee; then ongoing execution on a flat monthly fee, month to month, covering building, integrating, measuring and moving to the next opportunity. That is the same cycle an embedded AI operator runs. There are no percentage or success fees and no guaranteed results.
 
-No Black Swan is honest about where AI doesn't belong. Not every workflow is a good candidate for AI integration right now, and saying so is part of the value. The scope and fee for each engagement are agreed after a free 30-minute consultation, because every business is different and no article can give you an exact plan.
+Dori's reason for insisting on an operator is the same reason the FDE role exists: "The integration of AI is too sensitive and complex for someone who is not practical and operational. When it is done by non-operational people, it is pointless: it remains a presentation deck, or a tool paid for and not used. An operator sees through that and goes to the very pragmatic elements of impact and benefit to the business."
 
 ## What to Do If You Think Your Business Needs This
 
 If your team is using AI individually but nothing has measurably changed at the company level, you are describing the problem this function solves. If your board is asking about AI and you don't have a clear owner for the answer, same problem. If you run an [operations-heavy](/articles/ai-for-operations/) business and can see AI opportunities everywhere but have nobody internal to pick them up, same problem again.
 
-The right starting point is a conversation, not a proposal. We can't tell you your exact plan or price in an article, because every business differs—but in a free 30-minute call, No Black Swan will tell you specifically what it would do in your business and what it would cost. If that sounds useful, you can [book directly](/book-call/).
+The right starting point is a conversation, not a proposal. In a free 30-minute call you can talk through your operation and hear what would be worth doing first; scope and fee for any paid stage are agreed before it starts. You can [book directly](/book-call/).
 
 ## Where Things Stand
 <!-- WHERE-THINGS-STAND:START -->

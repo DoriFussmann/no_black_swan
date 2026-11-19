@@ -4,7 +4,7 @@ h1: Where AI Actually Pays Off in Operations-Heavy Businesses
 description: "AI pays off fastest where the bottleneck is. A practical guide to AI for operations in businesses with crews, trucks, and constant call volume."
 slug: ai-for-operations
 date: "2026-11-06"
-updatedDate: "2026-11-06"
+updatedDate: "2026-11-19"
 author: dori-fussmann
 category: ai for operations
 pillarKeyword: ai for operations
@@ -49,6 +49,10 @@ faqs:
   - question: "Is AI useful for a small trucking or logistics company, or just large fleets?"
     answer: "AI is useful at a range of fleet sizes. Dispatch automation, route optimization, and back-office document handling are all available through platforms designed for smaller operators. The practical question is not whether the tools exist but whether someone is in place to configure them, connect them to the systems you already use, and make sure your team actually uses them."
 ---
+
+## The Short Answer
+
+AI for operations pays off first **at the bottleneck**: the dispatch board that takes two hours, the calls that go to voicemail after 5 p.m., the estimate that takes too long. Operations businesses gain more than most because **the results are measurable** in hours saved, calls answered and jobs turned around. Start with **one workflow, not five**, connect AI to the tools your crews already use, and measure the change before moving on. The work is **configuration and adoption**, not software development.
 
 ## Why Operations-Heavy Businesses Have the Most to Gain from AI
 
@@ -112,19 +116,19 @@ Before committing to any approach, it is worth being honest about the realistic 
 
 The pattern across all four alternatives is the same: they either stop short of implementation, stop short of adoption, or require internal capacity that most operations businesses don't have. The gap is not tools—it's ownership.
 
-## How No Black Swan Works With Operations Businesses
+## What an Operator-Led Engagement Looks Like in Operations
 
-[No Black Swan](/book-call/) is a small AI integration agency run personally by founder Dori Fussmann. It works with growing businesses from a solo founder to a few hundred people, including operations-heavy companies with crews, trucks, and high call volume. The approach is built around a simple belief: business first, not tools first. No tool gets chosen until the workflows are mapped, the constraints are understood, and the highest-value opportunity is identified.
+[No Black Swan](/book-call/) is an operator-led business run personally by its founder, Dori Fussmann. It works with growing businesses, including operations-heavy companies with crews, trucks and high call volume. The approach is business first, not tools first: no tool is chosen until the workflows are mapped, the constraints understood and the highest-value opportunity identified.
 
-Every engagement starts with a paid setup and assessment in the first month. That month is spent understanding the business: mapping current workflows, identifying where AI is already being used ad hoc, finding the real opportunities, and prioritizing them by value, effort, feasibility, and risk. The output is a practical plan, not a deck. The plan is agreed before any configuration begins.
+The engagement starts with a free 30-minute consultation and then a fixed-fee discovery: mapping current workflows, finding where AI is already used ad hoc, identifying the real opportunities and ranking them by value, effort, feasibility and risk. The output is a practical plan, not a deck, agreed before any configuration begins.
 
-The ongoing monthly engagement is scaled to the project's size and pace. It covers building, integrating, driving team adoption, measuring what changed, and moving to the next priority. No Black Swan acts as the company's [outside AI owner](/articles/who-should-own-ai-in-a-company/)—which means the agenda doesn't stop when a single deliverable is done, and adoption doesn't get treated as someone else's problem.
+Strategy and setup follow, with an agreed scope and fee, and then ongoing execution on a flat monthly fee, month to month: building, integrating, driving adoption, measuring what changed and moving to the next priority. No Black Swan acts as the company's [outside AI owner](/articles/who-should-own-ai-in-a-company/), so the agenda does not stop when one deliverable is done and adoption is not left to someone else.
 
 Dori's background is an operator's and CFO's view of where work, cost, and margin actually sit in a company. Former investment banker at Citi, Morgan Stanley, and Ion Pacific; founder and CEO of The Vets, a technology-enabled pet healthcare company; Fractional CFO across multiple companies including Natrion, BlueMark, and Translucent AI. That experience shapes how No Black Swan looks at an operations business: not through the lens of which AI tools are available, but through the lens of where the actual cost and friction live.
 
-We can't tell you your exact plan or price in an article, because every business differs. The scope depends on which workflow comes first, how many systems need to connect, and how fast you want to move. In a free 30-minute call, we'll tell you what we'd do—and if AI doesn't fit a particular part of your operation, we'll say so. That honesty is part of how this works.
+It also means saying when AI is the wrong tool for part of an operation. In Dori's words: "I tell a business not to use AI when it doesn't solve a meaningful business problem, when the process isn't ready for it, or when the risks outweigh the benefits."
 
-If you run crews, trucks, or a dispatch operation and you've been meaning to do something with AI without knowing where to start, the place to start is a conversation. [Book a free consultation](/book-call/) and we'll map the bottleneck together.
+If you run crews, trucks, or a dispatch operation and you've been meaning to do something with AI without knowing where to start, the place to start is a conversation. [Book a free consultation](/book-call/) to talk through the bottleneck.
 
 ## Where Things Stand
 <!-- WHERE-THINGS-STAND:START -->

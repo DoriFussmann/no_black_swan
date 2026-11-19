@@ -4,7 +4,7 @@ h1: What Actually Makes Teams Change How They Work With AI
 description: Most teams already use AI individually—but no one owns it. Here's a practical framework to get employees to actually change how they work with AI.
 slug: ai-adoption
 date: "2026-11-06"
-updatedDate: "2026-11-06"
+updatedDate: "2026-11-19"
 author: dori-fussmann
 category: ai adoption
 pillarKeyword: ai adoption
@@ -70,9 +70,13 @@ faqs:
     answer: "An AI adoption framework is a repeatable process for deciding which workflows to change, in what order, and how to measure whether the change worked. Without one, AI use stays scattered and individual—some people use it, most don't, and nothing changes operationally. Small businesses need a framework as much as large ones; the difference is it should be simpler, faster, and built around the workflows that actually drive the business."
   - question: "Why does AI adoption fail in most companies?"
     answer: "The most common failure is buying a tool without changing the workflow around it, so staff continue the old process and the tool goes unused. A close second is no one owning the agenda: without someone accountable for adoption, measurement, and what comes next, momentum dies after the first install. Strategy documents without implementation, and rollouts that start with the tool instead of the problem, produce the same result."
-  - question: "How is an AI integration agency different from hiring a freelancer or a full-time head of AI?"
-    answer: "A freelancer typically handles one tool or one workflow well but doesn't own the cross-workflow agenda or drive team adoption beyond that narrow deliverable. A full-time head of AI is a large, slow bet—recruiting, onboarding, and ramp-up take months before anything changes operationally. An AI integration agency sits between the two: it implements (not just advises), owns the agenda month to month, and scales to the company's pace without the fixed cost of a senior hire."
+  - question: "How is an AI integration partner different from hiring a freelancer or a full-time head of AI?"
+    answer: "A freelancer usually handles one tool or one workflow well, but does not own the wider agenda or drive adoption beyond that deliverable. A full-time head of AI is a large, slow bet: recruiting, onboarding and ramp-up take months before anything changes. An integration partner sits between the two: it implements, holds the agenda month to month, and moves at the company's pace without the fixed cost of a senior hire."
 ---
+
+## The Short Answer
+
+AI adoption happens when AI is **built into the steps people already take**, not when they are told to use it more. Teams change how they work when the tool helps **inside an existing step** (research, drafting, reporting) and returns output in the format they already use. Rollouts fail when AI sits beside the work, when nobody **owns the agenda**, and when nobody **measures what changed**. Start with one workflow where the benefit is visible within weeks, then move to the next.
 
 ## The Real Question: Why Teams Don't Change, Even When the Tool Is There
 
@@ -160,25 +164,25 @@ None of these is a wrong answer in every situation. The question is whether the 
 
 ---
 
-## How No Black Swan Approaches AI Adoption
+## What an Operator-Led Adoption Engagement Looks Like
 
-[No Black Swan](/book-call/) is a small AI integration agency for startups and growing businesses, run personally by founder Dori Fussmann. Every engagement is hands-on—there is no junior team the work is delegated to.
+[No Black Swan](/book-call/) is an operator-led business run personally by its founder, Dori Fussmann. The work is hands-on; there is no junior team it is handed to.
 
-The engagement has two parts. The first is a paid setup and assessment (the first month): understand the business, map current workflows and constraints, surface how the team already uses AI, find the real opportunities, prioritize them by value, effort, feasibility, and risk, and agree a practical plan. The second is a flat monthly engagement, scaled to the project's size and the client's pace: build, integrate, and refine—configure and connect the chosen AI into existing systems, drive team adoption, measure what changed, then move to the next opportunity. No prices are published: the scope and fee for each part are agreed after a free 30-minute consultation, because every business differs.
+The engagement runs in stages, each agreed before it starts: a free 30-minute consultation; a fixed-fee discovery that maps workflows, constraints and how the team already uses AI, then ranks the opportunities by value, effort, feasibility and risk; strategy and setup with an agreed scope and fee; and ongoing execution on a flat monthly fee, month to month, to configure and connect the chosen AI, drive adoption, measure what changed and move to the next opportunity. No prices are published, because the scope differs for every business.
 
 In practice, No Black Swan acts as the company's [outside AI owner](/articles/who-should-own-ai-in-a-company/). It holds the agenda month to month, tracks what changed, and decides what comes next. That role—owning the AI agenda rather than delivering a one-time project—is what separates sustained operational change from a single-tool install that gets abandoned when the initial excitement fades.
 
 The edge is first-hand. Dori's background spans investment banking at Citi, Morgan Stanley, and Ion Pacific; founding and operating The Vets, a technology-enabled pet healthcare company; fractional CFO work across companies including BlueMark, Natrion, Snout, and Translucent AI; and advisory roles at Ambi Robotics and Manatee. That's an operator's and CFO's view of where work, cost, and margin actually sit—which is what makes the prioritization in the assessment stage genuinely practical rather than theoretical.
 
-No Black Swan is also honest about where AI doesn't belong. If a workflow isn't a good fit, that's the advice given, not a tool sold anyway. No percentage fees, no guaranteed results, no strategy decks without implementation.
+The order of that work comes from Dori's view of where most adoption goes wrong: "Most businesses approach AI as a technology adoption exercise. They should approach it as an operational improvement exercise." And: "I would rather help a business implement three workflows that genuinely improve its operations than leave it with twenty AI tools and nothing fundamentally changed." There are no percentage or success fees and no guaranteed results.
 
 ---
 
 ## What to Do Next
 
-If your team is already using AI individually but the company isn't AI-run, the assessment stage will show you exactly where the gap is and what to fix first. That's the starting point for most of the businesses No Black Swan works with: AI use that is real but scattered, with no one owning the agenda and no way to know what's actually changing.
+If your team already uses AI individually but the company does not run on it, a diagnosis will show where the gap is and what to fix first. AI use that is real but scattered, with nobody owning the agenda, is the most common starting point.
 
-The right next step is a free 30-minute consultation. The conversation covers your workflows, constraints, and what a practical plan would look like for your specific business. Exact scope and fee are agreed after that call—every business differs, and no fixed quotes are given in advance. If you're curious what the assessment would surface for your team, that call is where to start. You can [book it here](/book-call/).
+The right next step is a free 30-minute consultation about your workflows, your constraints and what a practical plan would look like. Scope and fee for any paid stage are agreed before it starts. You can [book it here](/book-call/).
 
 ---
 

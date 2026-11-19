@@ -62,7 +62,7 @@ faqs:
 
 ## The Short Answer
 
-**Head of AI vs. AI consultant** comes down to one question: is there already a full-time job's worth of AI work in your business? **Hire a full-time head of AI** (fixed salary, months to onboard) when AI is central to the product or the work is already continuous. **Use an outside implementation partner** such as No Black Swan (fixed-fee discovery, then a flat monthly fee) when the opportunity is real but not yet a full-time job. **Many companies do the second first**: it shows what the role involves and makes the eventual hire easier to get right.
+**Head of AI vs. AI consultant** comes down to one question: is there already a full-time job's worth of AI work in your business? **Hire a full-time head of AI** (fixed salary, months to onboard) when AI is central to the product or the work is already continuous. **Use an outside implementation partner** such as No Black Swan (fixed-fee discovery, then a flat monthly fee) when the opportunity is real but not yet a full-time job. **Many companies do the second first** to learn what the role involves.
 
 ---
 

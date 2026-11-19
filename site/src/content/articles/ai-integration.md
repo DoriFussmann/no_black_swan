@@ -4,7 +4,7 @@ h1: How to Actually Integrate AI Into Your Business
 description: AI integration means changing how work actually happens—not just buying tools. Here's a practical step-by-step guide for founders and growing teams.
 slug: ai-integration
 date: "2026-11-06"
-updatedDate: "2026-11-06"
+updatedDate: "2026-11-19"
 author: dori-fussmann
 category: ai integration
 pillarKeyword: ai integration
@@ -37,18 +37,22 @@ externalLinks:
     kind: claim
 faqs:
   - question: "How long does AI integration typically take for a small business?"
-    answer: "The first month is a paid setup and assessment: mapping workflows, identifying opportunities, and agreeing a plan. From month two onward, integrations are built and refined one at a time at the client's pace. Most businesses see the first meaningful change within six to ten weeks—faster if the priority opportunity is well-defined and the team is ready to adopt."
+    answer: "It depends on how many workflows change and how ready the team is. A short diagnosis comes first: mapping workflows, finding opportunities and agreeing a plan. Integrations are then built and refined one at a time. A well-defined first workflow, with a team ready to use it, can show a meaningful change within weeks; a broader rollout takes months."
   - question: "Do I need technical staff to integrate AI into my business?"
-    answer: "No. Most AI integrations for growing businesses work within existing tools—your CRM, inbox, scheduling system, or project management software—and don't require custom development or in-house engineers. What matters more than technical staff is a clear picture of how your workflows actually run today, which is what the setup and assessment phase is designed to produce."
+    answer: "No. Most AI integrations for growing businesses work within existing tools—your CRM, inbox, scheduling system, or project management software—and don't require custom development or in-house engineers. What matters more than technical staff is a clear picture of how your workflows actually run today, which is what a diagnosis is designed to produce."
   - question: "What's the difference between using AI tools and AI integration?"
     answer: "Using AI tools means individuals pull up an AI assistant when they feel like it—privately, inconsistently, with no shared standard and no way to measure impact. AI integration means connecting AI into existing workflows so the benefit is consistent, owned, and measurable across the team, not dependent on whoever happened to try it first."
   - question: "How do I know which workflow to integrate AI into first?"
-    answer: "Start with the highest-volume, most repetitive task that is already creating a bottleneck—wherever your team spends the most time on work that follows a predictable pattern. Prioritize by four factors: the value of improving it, the effort required, feasibility with available tools, and the risk of disruption. That prioritization is exactly what a setup and assessment phase is designed to produce."
+    answer: "Start with the highest-volume, most repetitive task that is already creating a bottleneck—wherever your team spends the most time on work that follows a predictable pattern. Prioritize by four factors: the value of improving it, the effort required, feasibility with available tools, and the risk of disruption. That ranking is what a proper diagnosis produces."
 ---
 
-Most businesses already have people using AI. Someone on the sales team drafts follow-ups with it. The ops manager runs reports through it. A founder uses it to prep for board calls. The tools are there, the usage is real — but none of it connects, none of it compounds, and [nobody owns it](/articles/who-should-own-ai-in-a-company/). That is the problem AI integration is designed to solve. And how you go about solving it is the difference between a business that extracts real, durable value from AI and one that keeps buying tools nobody uses.
+## The Short Answer
+
+AI integration is the work of **connecting AI to the workflows your team already runs**, so the work changes, not just the software. It has three parts: **understand the business first**, **configure and connect** the right AI into real steps, then **drive adoption and measure** what changed. Skip the first and you configure the wrong thing; skip the last and two people use it. Start with one high-volume, repetitive workflow that already causes a bottleneck, and add the next once the first one runs.
 
 ## What AI Integration Actually Means (and What It Isn't)
+
+Most businesses already have people using AI. Someone on the sales team drafts follow-ups with it. The ops manager runs reports through it. A founder uses it to prep for board calls. The tools are there, the usage is real — but none of it connects, none of it compounds, and [nobody owns it](/articles/who-should-own-ai-in-a-company/). That is the problem AI integration is designed to solve. And how you go about solving it is the difference between a business that extracts real, durable value from AI and one that keeps buying tools nobody uses.
 
 AI integration means connecting AI tools into your existing workflows, systems, and team habits so the *work* changes, not just the software stack. It is not buying a subscription and hoping [adoption](/articles/ai-adoption/) follows. It is not a strategy deck that sits in a shared drive. And it is not running a pilot in one corner of the business and declaring success.
 
@@ -98,9 +102,9 @@ Finally, be deliberate about what integration means for pricing and scope. If th
 
 The AI implementation process is not a one-time project. It is a structured, ongoing engagement — and that structure is what separates integrations that hold from ones that fade after the first month.
 
-Month one is a paid setup and assessment. The work here is understanding the business before anything is built: mapping current workflows, documenting how the team already uses AI, identifying and ranking opportunities, and agreeing a practical plan. This phase produces clarity — a prioritized agenda you actually believe in — before any configuration begins. It is also the phase that surfaces the integrations that look good on paper but don't belong in this business right now.
+It starts with a diagnosis. The work here is understanding the business before anything is built: mapping current workflows, recording how the team already uses AI, finding and ranking opportunities, and agreeing a practical plan. This stage produces a prioritized agenda you believe in before any configuration begins. It is also where the integrations that look good on paper but do not belong in this business yet are found and dropped.
 
-From month two onward, the work shifts to building, integrating, and refining. That means configuring and connecting chosen AI tools into existing systems, driving team adoption, and measuring what changed. Each opportunity is addressed in sequence rather than all at once, moving at the client's pace. The agenda advances from one integration to the next — compounding over time rather than front-loading a large transformation that the business isn't ready to absorb.
+After that, the work shifts to building, integrating and refining: configuring and connecting the chosen AI into existing systems, driving team adoption, and measuring what changed. Each opportunity is handled in turn, not all at once, at a pace the business can absorb. The agenda moves from one integration to the next and compounds over time, instead of front-loading a large transformation the business is not ready for.
 
 An honest implementation process also names where AI doesn't belong. Not every workflow benefits from AI integration. Some are too irregular, too judgment-heavy, or too sensitive to automate reliably. Part of the value of a structured assessment is producing that honest map — the places to invest effort, and the places to leave alone. Pushing AI into the wrong workflow wastes time, creates errors, and kills team trust in the whole initiative.
 
@@ -124,13 +128,13 @@ Implementation experience across operations, finance, sales, and customer servic
 
 An honest partner will tell you where AI doesn't fit, and will not push a rollout in areas where the risk or disruption outweighs the benefit. That honesty is a differentiator, not a limitation — it protects you from wasted effort and protects the team's trust in the initiative. And ongoing ownership of the agenda, month to month, matters more than a one-time setup. The first integration creates a foundation; the second and third are where compounding value comes from.
 
-## How No Black Swan Approaches AI Integration
+## What an Operator-Led Integration Engagement Looks Like
 
-No Black Swan is a small AI integration agency run personally by founder Dori Fussmann, working with startups and growing businesses from a solo founder to a few hundred people. The engagement is structured in two parts that reflect exactly the process described above.
+[No Black Swan](/book-call/) is an operator-led business run personally by its founder, Dori Fussmann, and its engagement follows the process described above, in stages that are each agreed before they start.
 
-The first part is a paid setup and assessment covering the first month. This is where the business-first work happens: understanding the business, mapping workflows and existing AI use, identifying and ranking opportunities, and agreeing a practical plan. Nothing is built until there is a clear, agreed picture of what belongs on the agenda and why. Pricing for this phase starts from a low entry point that is published on the site — the goal is to make it easy to begin, not to front-load a large commitment before either side knows what the work will look like.
+It begins with a free 30-minute consultation, then a fixed-fee discovery: understanding the business, mapping workflows and existing AI use, finding and ranking opportunities, and agreeing a practical plan. Nothing is built until there is a clear, agreed picture of what belongs on the agenda and why. Strategy and setup follow, with an agreed scope and fee.
 
-The second part is an ongoing flat monthly engagement, scaled to project size and pace. This is where the integration work happens: configuring and connecting chosen AI tools into existing systems, driving team adoption, and measuring what changed. No Black Swan acts as the company's outside AI owner — advancing the agenda from one integration to the next, rather than handing off after the first setup. There are no percentage fees and no guaranteed results — the engagement is scoped honestly, based on what the business actually needs.
+Ongoing execution runs on a flat monthly fee, month to month: configuring and connecting the chosen AI into existing systems, driving adoption, measuring what changed, and moving to the next integration. There are no percentage fees and no guaranteed results. Dori's rule for where to begin: "My starting point with any business is simple: understand how it operates today, identify where the friction and inefficiencies are, and determine where technology can make a measurable difference. Then choose the tools. Not the other way around."
 
 Dori's background is an operator's and CFO's background, not a technologist's. Former investment banker at Citi, Morgan Stanley, and Ion Pacific; founder and CEO of a technology-enabled business; Fractional CFO across multiple companies. That operational and financial lens is what shapes the prioritization — finding where cost, time, and margin actually sit in the business, not just where AI is technically applicable.
 

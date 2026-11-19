@@ -4,7 +4,7 @@ h1: How to Measure AI ROI in Your Business
 description: "AI ROI is real but narrow. Learn how to measure it by department, track the right metrics, and know when an AI project has actually paid for itself."
 slug: ai-roi
 date: "2026-11-06"
-updatedDate: "2026-11-06"
+updatedDate: "2026-11-19"
 author: dori-fussmann
 category: ai roi
 pillarKeyword: ai roi
@@ -50,11 +50,13 @@ faqs:
     answer: "Tools bought without changing a workflow produce no measurable result. Scattered individual use across a team, with no shared system and no one owning it, generates no business-level ROI even if individuals save time. Without a baseline measurement, there is no way to attribute any improvement to AI rather than to other changes happening at the same time. The fix is fewer workflows, properly measured, with AI genuinely integrated into how the work gets done."
 ---
 
-AI ROI is not a single number, and it is not visible on day one. That gap between expectation and reality is the reason so many founders and operators buy AI tools, feel vaguely disappointed six months later, and wonder whether the money was well spent.
+## The Short Answer
 
-The honest answer is that you can only know whether AI paid off by comparing before and after — over time, in a specific workflow, against metrics that belong to that workflow. ROI does not emerge from a tool purchase. It emerges from measurement, integration, and the patience to let improvement compound. What follows is a practical guide to measuring it correctly, and knowing what a real return actually looks like.
+AI ROI is measured by **comparing a workflow before and after**, over months, against that workflow's own metrics: tickets resolved per hour in support, close time and error rate in finance, pipeline created in sales. It is not visible on day one; the return **compounds over three to four months** as the team adopts the tool. Decide first whether you want **more output, lower cost or faster work**, because that sets the metric. Record the baseline before you switch anything on.
 
 ## Steroids, Painkillers, and Vitamins: A CFO's Framework for AI ROI
+
+Many founders buy AI tools, feel vaguely disappointed six months later, and wonder whether the money was well spent. ROI does not come from a tool purchase. It comes from measurement, integration, and the patience to let improvement compound.
 
 The most useful framing for AI ROI comes not from the technology world but from the financial and operational perspective that a CFO brings to any investment decision. Think of AI as delivering three distinct kinds of value, each of which requires different metrics and different timelines to prove.
 
@@ -144,17 +146,17 @@ If you're weighing whether to bring in outside help for AI ROI work, the realist
 
 An outside AI owner — someone who implements rather than advises, works across workflows rather than one tool, and measures results month to month — sits between the freelancer and the full-time hire in both cost and scope.
 
-## How No Black Swan Approaches AI ROI
+## What an Operator-Led Engagement Does About ROI
 
-[No Black Swan](/book-call/) is a small AI integration agency for startups and growing businesses, run personally by founder Dori Fussmann. The background that shapes the approach is specific: investment banking at Citi, Morgan Stanley, and Ion Pacific; founding and operating a technology-enabled business; working as a Fractional CFO across multiple companies in different sectors. That combination — an operator's view, a CFO's view of where cost and margin actually sit, and hands-on experience putting AI into real workflows across finance, operations, sales, and customer service — is what makes [AI consulting](/articles/ai-consulting/) practical rather than theoretical.
+[No Black Swan](/book-call/) is an operator-led business run personally by its founder, Dori Fussmann. The background behind its approach to ROI is specific: investment banking at Citi, Morgan Stanley and Ion Pacific; founding and running The Vets, a technology-enabled pet healthcare business; and fractional CFO work across several companies. That combination, an operator's view and a CFO's view of where cost and margin sit, is what makes [AI consulting](/articles/ai-consulting/) practical rather than theoretical.
 
-The engagement is structured to match how ROI actually works. It starts with a paid setup and assessment during the first month: map current workflows, identify constraints, understand how the team already uses AI, find the highest-value opportunities, prioritize them by value, effort, feasibility, and risk, and agree a practical plan. The first month exists to prevent the most expensive mistake in AI implementation: starting with the wrong workflow.
+The engagement is built around how ROI works. After a free 30-minute consultation, a fixed-fee discovery maps current workflows and constraints, records how the team already uses AI, finds the highest-value opportunities, ranks them by value, effort, feasibility and risk, and agrees a practical plan. Discovery exists to prevent the most expensive mistake in AI implementation: starting with the wrong workflow.
 
-The ongoing monthly engagement, scaled to project size and pace, builds and integrates the chosen AI into existing systems and workflows, drives team adoption, measures what changed, and moves to the next opportunity. No Black Swan functions as the company's outside AI owner — the person who keeps the agenda moving and is accountable for whether the work actually changes anything.
+Strategy and setup follow, with an agreed scope and fee, then ongoing execution on a flat monthly fee, month to month: building and integrating the chosen AI, driving adoption, measuring what changed and moving to the next opportunity. No Black Swan acts as the company's outside AI owner, accountable for whether the work changes anything.
 
-This approach is honest about where AI does not belong. Not every workflow is worth automating. Some processes are too variable, too judgment-dependent, or too low-volume to generate a return. Part of the value of the setup and assessment is finding those boundaries, so the business invests where the return is real. No guaranteed savings, no headcount reduction promises — the goal is an honest before-and-after comparison, with the right metrics for the right department, over enough time to see what actually changed.
+The approach is honest about where AI does not belong. Not every workflow is worth automating: some are too variable, too dependent on judgment or too low in volume to return anything, and part of discovery is finding those boundaries. There are no guaranteed savings and no headcount promises. Dori measures the work the way this article does: "I don't measure success by how many AI tools a company uses, how many agents we've deployed or how much of its operation we've automated. I measure it by whether the business operates better: less friction, lower costs, better decisions, faster execution and greater capacity."
 
-We can't tell you your exact plan or price in an article, because every business differs. In a [free 30-minute call](/book-call/), we'll tell you what we'd do.
+To see what that would mean for your business, book a [free 30-minute call](/book-call/).
 
 ## Where Things Stand
 <!-- WHERE-THINGS-STAND:START -->
