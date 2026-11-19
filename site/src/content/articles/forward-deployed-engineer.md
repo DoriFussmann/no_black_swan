@@ -125,7 +125,7 @@ No Black Swan is honest about where AI doesn't belong. Not every workflow is a g
 
 If your team is using AI individually but nothing has measurably changed at the company level, you are describing the problem this function solves. If your board is asking about AI and you don't have a clear owner for the answer, same problem. If you run an [operations-heavy](/articles/ai-for-operations/) business and can see AI opportunities everywhere but have nobody internal to pick them up, same problem again.
 
-The right starting point is a conversation, not a proposal. We can't tell you your exact plan or price in an article, because every business differs—but in a free 30-minute call, No Black Swan will tell you specifically what it would do in your business and what it would cost. If that sounds useful, you can book directly at /dori-fussmann-lqbqlb/.
+The right starting point is a conversation, not a proposal. We can't tell you your exact plan or price in an article, because every business differs—but in a free 30-minute call, No Black Swan will tell you specifically what it would do in your business and what it would cost. If that sounds useful, you can [book directly](/book-call/).
 
 ## Where Things Stand
 <!-- WHERE-THINGS-STAND:START -->

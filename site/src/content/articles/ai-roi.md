@@ -154,7 +154,7 @@ The ongoing monthly engagement, scaled to project size and pace, builds and inte
 
 This approach is honest about where AI does not belong. Not every workflow is worth automating. Some processes are too variable, too judgment-dependent, or too low-volume to generate a return. Part of the value of the setup and assessment is finding those boundaries, so the business invests where the return is real. No guaranteed savings, no headcount reduction promises — the goal is an honest before-and-after comparison, with the right metrics for the right department, over enough time to see what actually changed.
 
-We can't tell you your exact plan or price in an article, because every business differs. In a free 30-minute call at /dori-fussmann-lqbqlb/, we'll tell you what we'd do.
+We can't tell you your exact plan or price in an article, because every business differs. In a [free 30-minute call](/book-call/), we'll tell you what we'd do.
 
 ## Where Things Stand
 <!-- WHERE-THINGS-STAND:START -->

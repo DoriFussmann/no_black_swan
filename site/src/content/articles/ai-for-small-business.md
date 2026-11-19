@@ -127,7 +127,7 @@ The second part is a flat monthly engagement, scaled to the project's size and t
 
 Dori brings a background that is unusual for an AI agency: former investment banker at Citi, Morgan Stanley, and Ion Pacific; founder and CEO of a technology-enabled healthcare company; fractional CFO across multiple companies; and hands-on experience putting AI into operations across finance, operations, sales, customer service, and management. The perspective is an operator's and a CFO's — focused on where work, cost, and margin actually sit in a business, not on what the tools can theoretically do.
 
-No Black Swan is business-first, not tools-first. It implements rather than advises. It is honest about where AI does not belong. If you are a founder or owner who wants someone senior to say what is worth doing, then do it, the right next step is a free 30-minute consultation at /dori-fussmann-lqbqlb/. In that call, you will hear specifically what would be done in your context.
+No Black Swan is business-first, not tools-first. It implements rather than advises. It is honest about where AI does not belong. If you are a founder or owner who wants someone senior to say what is worth doing, then do it, the right next step is a [free 30-minute consultation](/book-call/). In that call, you will hear specifically what would be done in your context.
 
 ## Where Things Stand
 <!-- WHERE-THINGS-STAND:START -->
