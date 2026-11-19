@@ -65,7 +65,7 @@ A **fractional chief AI officer** is a senior AI executive who works part-time�
 
 ## What Is a Fractional Chief AI Officer?
 
-The role is straightforward in structure. A fractional chief AI officer—sometimes called a fractional CAIO, fractional head of AI, or fractional AI lead—takes on executive ownership of an organization's AI agenda on a part-time basis. They set the priorities, establish governance standards, evaluate vendors, make build-versus-buy decisions, and report to the CEO or board on AI progress. They do this for several companies simultaneously rather than one company full-time.
+The role is straightforward in structure. A fractional chief AI officer—sometimes called a fractional CAIO, fractional head of AI, or [fractional AI](/articles/head-of-ai-vs-ai-consultant/) lead—takes on executive ownership of an organization's AI agenda on a part-time basis. They set the priorities, establish governance standards, evaluate vendors, make build-versus-buy decisions, and report to the CEO or board on AI progress. They do this for several companies simultaneously rather than one company full-time.
 
 The role emerged because AI moved from an IT experiment to a board-level concern faster than most companies could hire for it. A ProfessionLens census conducted in September 2026 found a dedicated chief AI officer at 24 of the Fortune 500 companies, rising to 54 once combined titles such as chief data and AI officer were included. That is a meaningful foothold at the enterprise level, but it also means the vast majority of large companies—and nearly all smaller ones—are still working out who actually owns this.
 
