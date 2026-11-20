@@ -22,7 +22,9 @@ keywords:
   - ai consulting for small business
   - ai consulting
 draft: false
-internalLinks: []
+internalLinks:
+  - slug: ai-automation-agency
+    anchor: AI automation agency
 externalLinks:
   - label: "Goldman Sachs: Small businesses embrace AI but need training and support"
     url: "https://www.goldmansachs.com/pressroom/press-releases/2026/small-businesses-embrace-ai-but-need-training-and-support-to-fully-harness-it"
@@ -47,7 +49,7 @@ faqs:
 
 ## The Short Answer
 
-AI consulting for a small business is worth paying for when the consultant **implements inside your workflows**, not when they hand over a plan. The realistic options are a **freelancer** (one tool or workflow, fixed fee), an **AI automation agency** (builds what you specify) or an **operator-led provider** such as No Black Swan (diagnoses, builds and stays; fixed-fee discovery, then a flat monthly fee). If you cannot yet name the first workflow, **start with a paid diagnosis**.
+AI consulting for a small business is worth paying for when the consultant **implements inside your workflows**, not when they hand over a plan. The realistic options are a **freelancer** (one tool or workflow, fixed fee), an **[AI automation agency](/articles/ai-automation-agency/)** (builds what you specify) or an **operator-led provider** such as No Black Swan (diagnoses, builds and stays; fixed-fee discovery, then a flat monthly fee). If you cannot yet name the first workflow, **start with a paid diagnosis**.
 
 ## AI Consulting for Small Businesses: What Good Actually Looks Like
 
